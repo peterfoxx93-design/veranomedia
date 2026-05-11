@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-white text-[#1C1C1E] font-sans antialiased;
+  }
+
+  ::selection {
+    @apply bg-[#007AFF]/20 text-[#007AFF];
+  }
+}
+
+@layer components {
+  .container-vm {
+    @apply mx-auto max-w-[1200px] px-6 lg:px-8;
+  }
+
+  .section-vm {
+    @apply py-24;
+  }
+
+  .section-vm-alt {
+    @apply py-24 bg-[#F5F5F7];
+  }
+}
