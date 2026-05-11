@@ -4,7 +4,7 @@ import { useRef } from 'react'
 
 const projects = [
   {
-    title: 'Clínicas Dentales RD',
+    title: 'Clínicas Dentales',
     category: 'Investigación de Mercado',
     desc: 'Análisis de 83 clínicas dentales en zonas turísticas. Identificamos que 39% no tienen presencia web.',
     gradient: 'from-blue-500/10 to-blue-600/5',
