@@ -102,6 +102,7 @@ export default function Hero() {
             &ldquo;Tu marca en su{' '}
             <span className="text-[#5E9FFF]">mejor temporada</span>&rdquo;
           </p>
+          <p className="text-xs text-[#636366] mt-3 tracking-wider">Verano Media &mdash; Est. 2026</p>
         </motion.div>
 
         {/* ─── HERO CONTENT ─────────────────────── */}
