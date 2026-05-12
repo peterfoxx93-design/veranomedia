@@ -16,6 +16,12 @@
   }
 }
 
+@layer utilities {
+  .bg-gradient-radial {
+    background-image: radial-gradient(var(--tw-gradient-stops));
+  }
+}
+
 @layer components {
   .container-vm {
     @apply mx-auto max-w-[1200px] px-6 lg:px-8;
