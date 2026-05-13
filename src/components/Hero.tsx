@@ -32,8 +32,10 @@ export default function Hero() {
     }
   })
 
-  // Fade: the video speaks for itself — we just overlay CTAs
-  const ctaOpacity = Math.max(0, Math.min((scrollProgress - 0.2) * 4, 1)) // CTAs appear at ~20% scroll
+  // Brand text visible at start, fades as video shows its own branding
+  const brandOpacity = Math.max(0, Math.min(1 - scrollProgress * 8, 1)) // fades by ~12% scroll
+  // CTAs appear at ~20% scroll
+  const ctaOpacity = Math.max(0, Math.min((scrollProgress - 0.2) * 4, 1))
 
   return (
     <section ref={sectionRef} className="relative h-[150vh]">
@@ -70,7 +72,21 @@ export default function Hero() {
 
         {/* Content */}
         <div className="relative z-10 h-full flex flex-col items-center justify-center px-6">
-          {/* Badge — aparece sutil al inicio */}
+          {/* Brand text — sutil, solo visible al inicio, se desvanece cuando el video muestra el suyo */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+            className="mb-4"
+            style={{ opacity: brandOpacity }}
+          >
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.05]">
+              <span className="text-white">Verano</span>
+              <span className="text-[#0066CC]">Media</span>
+            </h1>
+          </motion.div>
+
+          {/* Badge */}
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: scrollProgress < 0.1 ? 1 : 0 }}

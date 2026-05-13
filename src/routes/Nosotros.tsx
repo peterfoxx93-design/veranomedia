@@ -1,5 +1,5 @@
 import { motion, useInView } from 'motion/react'
-import { useRef } from 'react'
+import { useRef, useEffect } from 'react'
 
 const teamMembers = [
   { name: 'Carlos Méndez', role: 'Director Creativo', desc: 'Diseño visual y estrategia de marca. Más de 10 años creando identidades digitales.', img: '/carlos-mendez.jpg' },
