@@ -15,6 +15,7 @@ const navItems = [
   { label: 'Inicio', href: '/' },
   { label: 'Servicios', href: '/servicios', hasDropdown: true },
   { label: 'Portafolio', href: '/portafolio' },
+  { label: 'Blog', href: '/blog' },
   { label: 'Nosotros', href: '/nosotros' },
 ]
 
@@ -235,6 +236,15 @@ export default function Navbar() {
               }`}
             >
               Nosotros
+            </Link>
+            <Link
+              to="/blog"
+              onClick={() => setMobileOpen(false)}
+              className={`text-base font-medium py-2.5 transition-colors ${
+                isActive('/blog') ? 'text-[#0066CC]' : 'text-[#636366]'
+              }`}
+            >
+              Blog
             </Link>
 
             <div className="mt-4 pt-4 border-t border-[#E8E8ED]">

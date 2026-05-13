@@ -10,6 +10,7 @@ const footerLinks = {
     { label: 'Paquete Completo', href: '/paquete-completo' },
   ],
   company: [
+    { label: 'Blog', href: '/blog' },
     { label: 'Portafolio', href: '/portafolio' },
     { label: 'Nosotros', href: '/nosotros' },
     { label: 'Contacto', href: '/contacto' },
