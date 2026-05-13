@@ -28,10 +28,10 @@
   }
 
   .section-vm {
-    @apply py-24;
+    @apply py-16;
   }
 
   .section-vm-alt {
-    @apply py-24 bg-[#F5F5F7];
+    @apply py-16 bg-[#F5F5F7];
   }
 }

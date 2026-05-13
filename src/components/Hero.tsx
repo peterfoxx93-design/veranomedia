@@ -15,12 +15,10 @@ export default function Hero() {
     offset: ['start start', 'end start'],
   })
 
-  // Ensure video is paused on mount and stays paused
+  // Ensure video is paused on mount
   useEffect(() => {
     const v = videoRef.current
-    if (v) {
-      v.pause()
-    }
+    if (v) v.pause()
   }, [])
 
   useMotionValueEvent(scrollYProgress, 'change', (latest) => {
@@ -32,14 +30,11 @@ export default function Hero() {
     }
   })
 
-  // Brand text visible at start, fades as video shows its own branding
-  const brandOpacity = Math.max(0, Math.min(1 - scrollProgress * 8, 1)) // fades by ~12% scroll
-  // CTAs appear at ~20% scroll
-  const ctaOpacity = Math.max(0, Math.min((scrollProgress - 0.2) * 4, 1))
+  // Everything visible at start, fades gradually as video takes over
+  const contentOpacity = Math.max(0, Math.min(1 - scrollProgress * 3, 1)) // starts fading at ~33% scroll
 
   return (
     <section ref={sectionRef} className="relative h-[150vh]">
-      {/* Sticky container */}
       <div className="sticky top-0 h-screen overflow-hidden">
         {/* Video — no autoPlay, scrubbed by scroll */}
         <video
@@ -71,26 +66,12 @@ export default function Hero() {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 h-full flex flex-col items-center justify-center px-6">
-          {/* Brand text — sutil, solo visible al inicio, se desvanece cuando el video muestra el suyo */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-            className="mb-4"
-            style={{ opacity: brandOpacity }}
-          >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.05]">
-              <span className="text-white">Verano</span>
-              <span className="text-[#0066CC]">Media</span>
-            </h1>
-          </motion.div>
-
+        <div className="relative z-10 h-full flex flex-col items-center justify-center px-6" style={{ opacity: contentOpacity }}>
           {/* Badge */}
           <motion.div
             initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: scrollProgress < 0.1 ? 1 : 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
             className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/15 rounded-full px-4 py-1.5 mb-6"
           >
             <span className="w-2 h-2 bg-[#34C759] rounded-full animate-pulse" />
@@ -99,11 +80,33 @@ export default function Hero() {
             </span>
           </motion.div>
 
-          {/* CTAs — aparecen al scrollear */}
+          {/* Main title */}
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+            className="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight leading-[1.05] text-center"
+          >
+            <span className="text-white">Verano</span>
+            <span className="text-[#0066CC]">Media</span>
+          </motion.h1>
+
+          {/* Tagline */}
+          <motion.p
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
+            className="text-white/70 text-sm md:text-base tracking-[0.2em] uppercase mt-4 mb-10"
+          >
+            Tu marca en su mejor temporada
+          </motion.p>
+
+          {/* CTAs */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
-            style={{ opacity: ctaOpacity }}
           >
             <a
               href="https://wa.me/18296848477"
