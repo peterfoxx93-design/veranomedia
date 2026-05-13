@@ -23,6 +23,15 @@ function TeamMemberCard({ member, index }: { member: typeof teamMembers[0]; inde
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-30px' })
 
+  // Use real image for Neo, initials for others
+  const avatarContent = member.name === 'Neo' ? (
+    <img src="/neo-avatar.png" alt="Neo" className="w-14 h-14 rounded-full mx-auto object-cover" />
+  ) : (
+    <div className="w-14 h-14 rounded-full bg-gradient-to-br from-[#0066CC]/20 to-[#0066CC]/5 flex items-center justify-center text-xl font-bold text-[#0066CC] mx-auto">
+      {member.name.split(' ').map(n => n[0]).slice(0, 2).join('')}
+    </div>
+  )
+
   return (
     <motion.div
       ref={ref}
@@ -31,9 +40,7 @@ function TeamMemberCard({ member, index }: { member: typeof teamMembers[0]; inde
       transition={{ duration: 0.4, delay: index * 0.06, ease: [0.16, 1, 0.3, 1] }}
       className="bg-white rounded-vm-xl p-6 border border-[#E8E8ED]/50 hover:shadow-vm-lg transition-all duration-300 hover:-translate-y-1"
     >
-      <div className="w-14 h-14 rounded-full bg-gradient-to-br from-[#0066CC]/20 to-[#0066CC]/5 flex items-center justify-center text-xl font-bold text-[#0066CC] mb-4 mx-auto">
-        {member.name.split(' ').map(n => n[0]).slice(0, 2).join('')}
-      </div>
+      {avatarContent}
       <h3 className="text-center font-bold text-[#1C1C1E] text-sm">{member.name}</h3>
       <p className="text-center text-xs text-[#0066CC] font-medium mt-0.5 mb-2">{member.role}</p>
       <p className="text-center text-xs text-[#8E8E93] leading-relaxed">{member.desc}</p>
