@@ -28,6 +28,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Inter', ...fontFamily.sans],
+        serif: ['Playfair Display', ...fontFamily.serif],
       },
       fontSize: {
         'display': ['5rem', { lineHeight: '1', letterSpacing: '-0.04em', fontWeight: '800' }],

@@ -11,6 +11,8 @@ import PaqueteCompleto from './routes/PaqueteCompleto'
 import PortafolioPage from './routes/PortafolioPage'
 import Nosotros from './routes/Nosotros'
 import Contacto from './routes/Contacto'
+import Blog from './routes/Blog'
+import BlogPost from './routes/BlogPost'
 
 export default function App() {
   return (
@@ -28,6 +30,8 @@ export default function App() {
           <Route path="/portafolio" element={<PortafolioPage />} />
           <Route path="/nosotros" element={<Nosotros />} />
           <Route path="/contacto" element={<Contacto />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
         </Route>
       </Routes>
       </HashRouter>
