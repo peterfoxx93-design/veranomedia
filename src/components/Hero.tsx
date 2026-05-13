@@ -30,8 +30,10 @@ export default function Hero() {
     }
   })
 
-  // Everything visible at start, fades gradually as video takes over
-  const contentOpacity = Math.max(0, Math.min(1 - scrollProgress * 3, 1)) // starts fading at ~33% scroll
+  // Brand text fades gradually as video takes over (starts at ~50% scroll)
+  const textOpacity = Math.max(0, Math.min(1 - (scrollProgress - 0.2) * 4, 1))
+  // CTAs stay visible until the very end (start fading at ~80% scroll)
+  const ctaOpacity = Math.max(0, Math.min(1 - (scrollProgress - 0.75) * 6, 1))
 
   return (
     <section ref={sectionRef} className="relative h-[150vh]">
@@ -65,48 +67,52 @@ export default function Hero() {
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-white/5 rounded-full blur-3xl" />
         </div>
 
-        {/* Content */}
-        <div className="relative z-10 h-full flex flex-col items-center justify-center px-6" style={{ opacity: contentOpacity }}>
-          {/* Badge */}
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/15 rounded-full px-4 py-1.5 mb-6"
-          >
-            <span className="w-2 h-2 bg-[#34C759] rounded-full animate-pulse" />
-            <span className="text-sm text-white/80 font-medium tracking-wide">
-              Agencia de marketing digital
-            </span>
-          </motion.div>
+        {/* Content wrapper */}
+        <div className="relative z-10 h-full flex flex-col items-center justify-center px-6">
+          {/* Text content (badge + title + tagline) — fades with scroll */}
+          <div style={{ opacity: textOpacity }}>
+            {/* Badge */}
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/15 rounded-full px-4 py-1.5 mb-6"
+            >
+              <span className="w-2 h-2 bg-[#34C759] rounded-full animate-pulse" />
+              <span className="text-sm text-white/80 font-medium tracking-wide">
+                Agencia de marketing digital
+              </span>
+            </motion.div>
 
-          {/* Main title */}
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            className="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight leading-[1.05] text-center"
-          >
-            <span className="text-white">Verano</span>
-            <span className="text-[#0066CC]">Media</span>
-          </motion.h1>
+            {/* Main title */}
+            <motion.h1
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+              className="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight leading-[1.05] text-center"
+            >
+              <span className="text-white">Verano</span>
+              <span className="text-[#0066CC]">Media</span>
+            </motion.h1>
 
-          {/* Tagline */}
-          <motion.p
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
-            className="text-white/70 text-sm md:text-base tracking-[0.2em] uppercase mt-4 mb-10"
-          >
-            Tu marca en su mejor temporada
-          </motion.p>
+            {/* Tagline */}
+            <motion.p
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
+              className="text-white/70 text-sm md:text-base tracking-[0.2em] uppercase mt-4 mb-10 text-center"
+            >
+              Tu marca en su mejor temporada
+            </motion.p>
+          </div>
 
-          {/* CTAs */}
+          {/* CTAs — separados del fade, visibles casi todo el recorrido */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
+            style={{ opacity: ctaOpacity }}
           >
             <a
               href="https://wa.me/18296848477"
