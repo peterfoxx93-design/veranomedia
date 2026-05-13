@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import MainLayout from './layouts/MainLayout'
 import Home from './routes/Home'
+import ServiciosOverview from './routes/ServiciosOverview'
 import ServiciosWeb from './routes/ServiciosWeb'
 import ServiciosRedes from './routes/ServiciosRedes'
 import ServiciosSEO from './routes/ServiciosSEO'
@@ -17,6 +18,7 @@ export default function App() {
       <Routes>
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />
+          <Route path="/servicios" element={<ServiciosOverview />} />
           <Route path="/servicios/web" element={<ServiciosWeb />} />
           <Route path="/servicios/redes" element={<ServiciosRedes />} />
           <Route path="/servicios/anuncios-seo" element={<ServiciosSEO />} />

@@ -1,5 +1,5 @@
 import { motion } from 'motion/react'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 
 const serviceCategories = [
@@ -13,7 +13,7 @@ const serviceCategories = [
 
 const navItems = [
   { label: 'Inicio', href: '/' },
-  { label: 'Servicios', href: '#', hasDropdown: true },
+  { label: 'Servicios', href: '/servicios', hasDropdown: true },
   { label: 'Portafolio', href: '/portafolio' },
   { label: 'Nosotros', href: '/nosotros' },
 ]
@@ -22,11 +22,13 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
   const [dropdownOpen, setDropdownOpen] = useState(false)
+  const dropdownTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
   const location = useLocation()
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 20)
+    const handleScroll = () => setScrolled(window.scrollY > 30)
     window.addEventListener('scroll', handleScroll)
+    handleScroll() // check initial state
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
@@ -38,7 +40,26 @@ export default function Navbar() {
 
   const isActive = (href: string) => {
     if (href === '/') return location.pathname === '/'
+    if (href === '/servicios') return location.pathname.startsWith('/servicios')
     return location.pathname.startsWith(href)
+  }
+
+  const openDropdown = () => {
+    if (dropdownTimer.current) clearTimeout(dropdownTimer.current)
+    setDropdownOpen(true)
+  }
+
+  const closeDropdown = () => {
+    dropdownTimer.current = setTimeout(() => {
+      setDropdownOpen(false)
+    }, 150) // 150ms grace period to move mouse to dropdown
+  }
+
+  // Text color: white on transparent (dark hero), gray on scrolled
+  const linkColor = (href: string) => {
+    const active = isActive(href)
+    if (!scrolled) return active ? 'text-white font-semibold' : 'text-white/80 hover:text-white'
+    return active ? 'text-[#0066CC] font-semibold' : 'text-[#636366] hover:text-[#0066CC]'
   }
 
   return (
@@ -54,7 +75,9 @@ export default function Navbar() {
     >
       <nav className="container-vm flex items-center justify-between h-16 lg:h-20">
         <Link to="/" className="flex items-center gap-2">
-          <span className="text-xl font-bold text-[#1C1C1E] tracking-tight">
+          <span className={`text-xl font-bold tracking-tight transition-colors duration-300 ${
+            scrolled ? 'text-[#1C1C1E]' : 'text-white'
+          }`}>
             Verano<span className="text-[#0066CC]">Media</span>
           </span>
         </Link>
@@ -66,10 +89,13 @@ export default function Navbar() {
               <div
                 key={item.label}
                 className="relative"
-                onMouseEnter={() => setDropdownOpen(true)}
-                onMouseLeave={() => setDropdownOpen(false)}
+                onMouseEnter={openDropdown}
+                onMouseLeave={closeDropdown}
               >
-                <button className="flex items-center gap-1 text-sm text-[#636366] hover:text-[#0066CC] transition-colors duration-200 font-medium">
+                <Link
+                  to={item.href}
+                  className={`flex items-center gap-1 text-sm transition-colors duration-200 font-medium ${linkColor(item.href)}`}
+                >
                   {item.label}
                   <svg
                     className={`w-3 h-3 transition-transform duration-200 ${
@@ -81,15 +107,23 @@ export default function Navbar() {
                   >
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
-                </button>
+                </Link>
 
-                {dropdownOpen && (
-                  <motion.div
-                    initial={{ opacity: 0, y: 8 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.15 }}
-                    className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-56 bg-white rounded-vm-lg shadow-vm-lg border border-[#E8E8ED]/50 overflow-hidden"
-                  >
+                {/* Dropdown with padded bridge zone */}
+                <div
+                  className={`absolute top-full left-1/2 -translate-x-1/2 pt-2 transition-all duration-150 ${
+                    dropdownOpen ? 'opacity-100 visible' : 'opacity-0 invisible pointer-events-none'
+                  }`}
+                  onMouseEnter={openDropdown}
+                  onMouseLeave={closeDropdown}
+                >
+                  <div className="w-56 bg-white rounded-vm-lg shadow-vm-lg border border-[#E8E8ED]/50 overflow-hidden">
+                    <Link
+                      to="/servicios"
+                      className="block px-5 py-3 text-sm font-semibold text-[#0066CC] border-b border-[#E8E8ED]/50 hover:bg-[#F5F5F7] transition-colors duration-150"
+                    >
+                      Todos los servicios →
+                    </Link>
                     {serviceCategories.map((cat) => (
                       <Link
                         key={cat.href}
@@ -104,18 +138,14 @@ export default function Navbar() {
                         <div className="text-xs text-[#8E8E93] mt-0.5">{cat.desc}</div>
                       </Link>
                     ))}
-                  </motion.div>
-                )}
+                  </div>
+                </div>
               </div>
             ) : (
               <Link
                 key={item.href}
                 to={item.href}
-                className={`text-sm transition-colors duration-200 font-medium ${
-                  isActive(item.href)
-                    ? 'text-[#0066CC]'
-                    : 'text-[#636366] hover:text-[#0066CC]'
-                }`}
+                className={`text-sm transition-colors duration-200 font-medium ${linkColor(item.href)}`}
               >
                 {item.label}
               </Link>
@@ -123,7 +153,11 @@ export default function Navbar() {
           )}
           <Link
             to="/contacto"
-            className="bg-[#0066CC] text-white px-5 py-2.5 rounded-vm-md text-sm font-semibold hover:bg-[#0066CC]/90 transition-all duration-200 hover:shadow-vm-md hover:-translate-y-0.5"
+            className={`${
+              scrolled
+                ? 'bg-[#0066CC] text-white hover:bg-[#0066CC]/90'
+                : 'bg-white text-[#0066CC] hover:bg-white/90'
+            } px-5 py-2.5 rounded-vm-md text-sm font-semibold transition-all duration-200 hover:shadow-vm-md hover:-translate-y-0.5`}
           >
             Diagnóstico Gratuito
           </Link>
@@ -135,9 +169,9 @@ export default function Navbar() {
           className="md:hidden flex flex-col gap-1.5 p-2"
           aria-label="Menu"
         >
-          <span className={`block w-6 h-0.5 bg-[#1C1C1E] transition-all duration-300 ${mobileOpen ? 'rotate-45 translate-y-2' : ''}`} />
-          <span className={`block w-6 h-0.5 bg-[#1C1C1E] transition-all duration-300 ${mobileOpen ? 'opacity-0' : ''}`} />
-          <span className={`block w-6 h-0.5 bg-[#1C1C1E] transition-all duration-300 ${mobileOpen ? '-rotate-45 -translate-y-2' : ''}`} />
+          <span className={`block w-6 h-0.5 transition-all duration-300 ${mobileOpen ? 'rotate-45 translate-y-2' : ''} ${scrolled ? 'bg-[#1C1C1E]' : 'bg-white'}`} />
+          <span className={`block w-6 h-0.5 transition-all duration-300 ${mobileOpen ? 'opacity-0' : ''} ${scrolled ? 'bg-[#1C1C1E]' : 'bg-white'}`} />
+          <span className={`block w-6 h-0.5 transition-all duration-300 ${mobileOpen ? '-rotate-45 -translate-y-2' : ''} ${scrolled ? 'bg-[#1C1C1E]' : 'bg-white'}`} />
         </button>
       </nav>
 
@@ -159,9 +193,24 @@ export default function Navbar() {
               Inicio
             </Link>
 
-            {/* Mobile services submenu */}
-            <div className="text-base font-medium text-[#636366] py-2.5">Servicios</div>
+            {/* Mobile Servicios: link + submenu */}
+            <Link
+              to="/servicios"
+              onClick={() => setMobileOpen(false)}
+              className={`text-base font-medium py-2.5 transition-colors ${
+                location.pathname.startsWith('/servicios') ? 'text-[#0066CC]' : 'text-[#636366]'
+              }`}
+            >
+              Servicios
+            </Link>
             <div className="pl-4 flex flex-col gap-1 mb-2 border-l-2 border-[#E8E8ED]">
+              <Link
+                to="/servicios"
+                onClick={() => setMobileOpen(false)}
+                className="text-sm py-2 text-[#0066CC] font-semibold"
+              >
+                Todos los servicios →
+              </Link>
               {serviceCategories.map((cat) => (
                 <Link
                   key={cat.href}
@@ -172,7 +221,6 @@ export default function Navbar() {
                   }`}
                 >
                   {cat.label}
-                  <span className="text-xs text-[#AEAEB2] ml-2">{cat.desc}</span>
                 </Link>
               ))}
             </div>

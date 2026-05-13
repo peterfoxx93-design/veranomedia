@@ -7,7 +7,7 @@ const teamMembers = [
   { name: 'Luis Fernando Peña', role: 'Desarrollador Web', desc: 'Código limpio, sitios rápidos. Especialista en React, Tailwind y rendimiento.' },
   { name: 'María José Castillo', role: 'Especialista SEO', desc: 'Posicionamiento orgánico y estrategia de contenido. Hace que Google te encuentre.' },
   { name: 'Pedro Ramírez', role: 'Growth & Ads', desc: 'Google Ads, Meta Ads y estrategias de crecimiento con resultados medibles.' },
-  { name: 'Valentina Suárez', role: 'Diseñadora Gráfica', desc: 'Identidad visual, carruseles, reels y todo lo que necesita tu marca para brillar.' },
+  { name: 'Neo', role: 'Agente de IA', desc: 'Automatización inteligente, análisis de datos y contenido generado con tecnología de punta.' },
   { name: 'Peter Fx', role: 'Fundador & Director General', desc: 'Visión estratégica y liderazgo. Asegura que cada proyecto supere expectativas.' },
 ]
 
