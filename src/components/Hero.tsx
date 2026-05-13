@@ -28,7 +28,7 @@ export default function Hero() {
   const ctaOpacity = Math.max(0, Math.min((scrollProgress - 0.3) * 3, 1)) // CTAs appear at ~30% scroll
 
   return (
-    <section ref={sectionRef} className="relative h-[300vh]">
+    <section ref={sectionRef} className="relative h-[150vh]">
       {/* Sticky container */}
       <div className="sticky top-0 h-screen overflow-hidden">
         {/* Video — no autoPlay, scrubbed by scroll */}
