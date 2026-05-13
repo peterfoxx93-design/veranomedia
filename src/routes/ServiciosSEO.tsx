@@ -1,6 +1,26 @@
 import { motion, useInView } from 'motion/react'
 import { useRef } from 'react'
 
+function ServiceCard({ s, i }: { s: typeof services[number]; i: number }) {
+  const cardRef = useRef(null)
+  const cardInView = useInView(cardRef, { once: true, margin: '-50px' })
+
+  return (
+    <motion.div ref={cardRef}
+      initial={{ opacity: 0, y: 30 }} animate={cardInView ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.6, delay: i * 0.1, ease: [0.16, 1, 0.3, 1] }}
+      className="bg-white rounded-vm-xl p-8 border border-[#E8E8ED]/50 hover:shadow-vm-lg transition-all duration-500 hover:-translate-y-1">
+      <div className="w-12 h-12 rounded-vm-md flex items-center justify-center mb-5" style={{ backgroundColor: `${s.color}15`, color: s.color }}>
+        {s.icon}
+      </div>
+      <h3 className="text-heading-sm text-[#1C1C1E] mb-3">{s.title}</h3>
+      <p className="text-base text-[#636366] mb-3">{s.desc}</p>
+      <p className="text-sm text-[#8E8E93] italic mb-4">{s.tagline}</p>
+      <div className="text-sm font-semibold text-[#0066CC]">{s.price}</div>
+    </motion.div>
+  )
+}
+
 const services = [
   {
     icon: (
@@ -60,24 +80,9 @@ export default function ServiciosSEO() {
       <section className="section-vm-alt" ref={ref}>
         <div className="container-vm">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {services.map((s, i) => {
-              const cardRef = useRef(null)
-              const cardInView = useInView(cardRef, { once: true, margin: '-50px' })
-              return (
-                <motion.div key={s.title} ref={cardRef}
-                  initial={{ opacity: 0, y: 30 }} animate={cardInView ? { opacity: 1, y: 0 } : {}}
-                  transition={{ duration: 0.6, delay: i * 0.1, ease: [0.16, 1, 0.3, 1] }}
-                  className="bg-white rounded-vm-xl p-8 border border-[#E8E8ED]/50 hover:shadow-vm-lg transition-all duration-500 hover:-translate-y-1">
-                  <div className="w-12 h-12 rounded-vm-md flex items-center justify-center mb-5" style={{ backgroundColor: `${s.color}15`, color: s.color }}>
-                    {s.icon}
-                  </div>
-                  <h3 className="text-heading-sm text-[#1C1C1E] mb-3">{s.title}</h3>
-                  <p className="text-base text-[#636366] mb-3">{s.desc}</p>
-                  <p className="text-sm text-[#8E8E93] italic mb-4">{s.tagline}</p>
-                  <div className="text-sm font-semibold text-[#0066CC]">{s.price}</div>
-                </motion.div>
-              )
-            })}
+            {services.map((s, i) => (
+              <ServiceCard key={s.title} s={s} i={i} />
+            ))}
           </div>
         </div>
       </section>
