@@ -1,54 +1,104 @@
+import { Link } from 'react-router-dom'
+
+const footerLinks = {
+  servicios: [
+    { label: 'Diseño Web', href: '/servicios/web' },
+    { label: 'Redes Sociales', href: '/servicios/redes' },
+    { label: 'SEO y Anuncios', href: '/servicios/anuncios-seo' },
+    { label: 'Automatización', href: '/servicios/automatizacion' },
+    { label: 'Contenido', href: '/servicios/contenido' },
+    { label: 'Paquete Completo', href: '/paquete-completo' },
+  ],
+  company: [
+    { label: 'Portafolio', href: '/portafolio' },
+    { label: 'Nosotros', href: '/nosotros' },
+    { label: 'Contacto', href: '/contacto' },
+  ],
+}
+
 export default function Footer() {
   return (
-    <footer className="bg-[#F5F5F7] border-t border-[#E8E8ED]/50">
-      <div className="container-vm py-12 md:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-          <div>
-            <a href="/" className="text-xl font-bold text-[#1C1C1E] tracking-tight">
-              Verano<span className="text-[#007AFF]">Media</span>
-            </a>
-            <p className="text-sm text-[#8E8E93] mt-3 max-w-xs leading-relaxed">
-              Diseñamos la presencia digital que tu negocio merece.
-              Páginas web modernas, Google Maps optimizado y automatización inteligente.
+    <footer className="bg-[#1C1C1E] text-white">
+      <div className="container-vm py-16 md:py-20">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
+          {/* Brand */}
+          <div className="md:col-span-1">
+            <Link to="/" className="text-xl font-bold tracking-tight">
+              Verano<span className="text-[#0066CC]">Media</span>
+            </Link>
+            <p className="mt-3 text-sm text-white/50 max-w-xs leading-relaxed">
+              Agencia de marketing digital. Tu marca en su mejor temporada.
             </p>
           </div>
 
+          {/* Services */}
           <div>
-            <h4 className="text-sm font-semibold text-[#1C1C1E] uppercase tracking-wider mb-4">
-              Navegación
+            <h4 className="text-sm font-semibold text-white/70 uppercase tracking-wider mb-4">
+              Servicios
             </h4>
-            <div className="flex flex-col gap-3">
-              <a href="#servicios" className="text-sm text-[#8E8E93] hover:text-[#007AFF] transition-colors">Servicios</a>
-              <a href="#portafolio" className="text-sm text-[#8E8E93] hover:text-[#007AFF] transition-colors">Portafolio</a>
-              <a href="#nosotros" className="text-sm text-[#8E8E93] hover:text-[#007AFF] transition-colors">Nosotros</a>
-              <a href="#contacto" className="text-sm text-[#8E8E93] hover:text-[#007AFF] transition-colors">Contacto</a>
-            </div>
+            <ul className="space-y-2.5">
+              {footerLinks.servicios.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    to={link.href}
+                    className="text-sm text-white/50 hover:text-[#0066CC] transition-colors duration-200"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
 
+          {/* Company */}
           <div>
-            <h4 className="text-sm font-semibold text-[#1C1C1E] uppercase tracking-wider mb-4">
+            <h4 className="text-sm font-semibold text-white/70 uppercase tracking-wider mb-4">
+              Compañía
+            </h4>
+            <ul className="space-y-2.5">
+              {footerLinks.company.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    to={link.href}
+                    className="text-sm text-white/50 hover:text-[#0066CC] transition-colors duration-200"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Contact */}
+          <div>
+            <h4 className="text-sm font-semibold text-white/70 uppercase tracking-wider mb-4">
               Contacto
             </h4>
-            <div className="flex flex-col gap-3">
-              <a href="mailto:info@veranomedia.digital" className="text-sm text-[#8E8E93] hover:text-[#007AFF] transition-colors">
-                info@veranomedia.digital
-              </a>
-              <a href="https://wa.me/18091234567" target="_blank" rel="noopener noreferrer" className="text-sm text-[#8E8E93] hover:text-[#34C759] transition-colors">
+            <div className="space-y-3 text-sm text-white/50">
+              <a
+                href="https://wa.me/18296848477"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block hover:text-[#34C759] transition-colors duration-200"
+              >
                 WhatsApp
               </a>
-              <span className="text-sm text-[#8E8E93]">
-                veranomedia.digital
-              </span>
+              <a
+                href="mailto:info@veranomedia.digital"
+                className="block hover:text-[#0066CC] transition-colors duration-200"
+              >
+                info@veranomedia.digital
+              </a>
             </div>
           </div>
         </div>
 
-        <div className="border-t border-[#E8E8ED]/50 mt-10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-[#8E8E93]">
-            &copy; {new Date().getFullYear()} Verano Media. Todos los derechos reservados.
+        <div className="mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
+          <p className="text-xs text-white/30">
+            © {new Date().getFullYear()} Verano Media. Todos los derechos reservados.
           </p>
-          <p className="text-xs text-[#D1D1D6]">
-            Hecho con ❤️ para negocios que quieren crecer.
+          <p className="text-xs text-white/20">
+            Tu marca en su mejor temporada
           </p>
         </div>
       </div>
