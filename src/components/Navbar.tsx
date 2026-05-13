@@ -55,29 +55,26 @@ export default function Navbar() {
     }, 150) // 150ms grace period to move mouse to dropdown
   }
 
-  // Text color: white on transparent (dark hero), gray on scrolled
+  // Text color: always readable on white background
   const linkColor = (href: string) => {
     const active = isActive(href)
-    if (!scrolled) return active ? 'text-white font-semibold' : 'text-white/80 hover:text-white'
     return active ? 'text-[#0066CC] font-semibold' : 'text-[#636366] hover:text-[#0066CC]'
   }
 
   return (
     <motion.header
-      initial={{ y: -20, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-400 ${
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.3 }}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-white/80 backdrop-blur-xl border-b border-[#E8E8ED]/50'
-          : 'bg-transparent'
+          ? 'bg-white/95 backdrop-blur-xl border-b border-[#E8E8ED]/50 shadow-sm'
+          : 'bg-white/95 backdrop-blur-xl'
       }`}
     >
       <nav className="container-vm flex items-center justify-between h-16 lg:h-20">
         <Link to="/" className="flex items-center gap-2">
-          <span className={`text-xl font-bold tracking-tight transition-colors duration-300 ${
-            scrolled ? 'text-[#1C1C1E]' : 'text-white'
-          }`}>
+          <span className="text-xl font-bold text-[#1C1C1E] tracking-tight">
             Verano<span className="text-[#0066CC]">Media</span>
           </span>
         </Link>
@@ -153,11 +150,7 @@ export default function Navbar() {
           )}
           <Link
             to="/contacto"
-            className={`${
-              scrolled
-                ? 'bg-[#0066CC] text-white hover:bg-[#0066CC]/90'
-                : 'bg-white text-[#0066CC] hover:bg-white/90'
-            } px-5 py-2.5 rounded-vm-md text-sm font-semibold transition-all duration-200 hover:shadow-vm-md hover:-translate-y-0.5`}
+            className="bg-[#0066CC] text-white px-5 py-2.5 rounded-vm-md text-sm font-semibold hover:bg-[#0066CC]/90 transition-all duration-200 hover:shadow-vm-md hover:-translate-y-0.5"
           >
             Diagnóstico Gratuito
           </Link>
@@ -169,9 +162,9 @@ export default function Navbar() {
           className="md:hidden flex flex-col gap-1.5 p-2"
           aria-label="Menu"
         >
-          <span className={`block w-6 h-0.5 transition-all duration-300 ${mobileOpen ? 'rotate-45 translate-y-2' : ''} ${scrolled ? 'bg-[#1C1C1E]' : 'bg-white'}`} />
-          <span className={`block w-6 h-0.5 transition-all duration-300 ${mobileOpen ? 'opacity-0' : ''} ${scrolled ? 'bg-[#1C1C1E]' : 'bg-white'}`} />
-          <span className={`block w-6 h-0.5 transition-all duration-300 ${mobileOpen ? '-rotate-45 -translate-y-2' : ''} ${scrolled ? 'bg-[#1C1C1E]' : 'bg-white'}`} />
+          <span className={`block w-6 h-0.5 bg-[#1C1C1E] transition-all duration-300 ${mobileOpen ? 'rotate-45 translate-y-2' : ''}`} />
+          <span className={`block w-6 h-0.5 bg-[#1C1C1E] transition-all duration-300 ${mobileOpen ? 'opacity-0' : ''}`} />
+          <span className={`block w-6 h-0.5 bg-[#1C1C1E] transition-all duration-300 ${mobileOpen ? '-rotate-45 -translate-y-2' : ''}`} />
         </button>
       </nav>
 
