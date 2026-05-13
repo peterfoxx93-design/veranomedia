@@ -171,7 +171,7 @@ export default function Services() {
           className="text-center"
         >
           <Link
-            to="/servicios/web"
+            to="/servicios"
             className="inline-flex items-center gap-2 bg-[#0066CC] hover:bg-[#0052CC] text-white font-semibold px-8 py-3.5 rounded-full transition-all duration-300 shadow-lg shadow-[#0066CC]/20 hover:shadow-[#0066CC]/35"
           >
             Ver todos los servicios

@@ -1,5 +1,5 @@
 import { motion, useInView } from 'motion/react'
-import { useRef } from 'react'
+import { useRef, useEffect } from 'react'
 
 const projects = [
   {
@@ -31,7 +31,7 @@ const projects = [
       </svg>
     ),
     title: 'Estrategias de Contenido',
-    category: 'Redes',
+    category: 'Redes Sociales',
     desc: 'Planes de contenido para Instagram, Facebook y LinkedIn que generan engagement y seguidores reales.',
     gradient: 'from-orange-500/10 to-orange-600/5',
   },
@@ -48,8 +48,29 @@ const projects = [
   },
 ]
 
-export default function PortafolioPage() {
+function ProjectCard({ project, index }: { project: typeof projects[0]; index: number }) {
   const ref = useRef(null)
+  const isInView = useInView(ref, { once: true, margin: '-50px' })
+
+  return (
+    <motion.div ref={ref}
+      initial={{ opacity: 0, y: 30 }}
+      animate={isInView ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.6, delay: index * 0.12, ease: [0.16, 1, 0.3, 1] }}
+      className={`rounded-vm-xl p-8 bg-gradient-to-br ${project.gradient} border border-[#E8E8ED]/50 hover:shadow-vm-lg transition-all duration-500 hover:-translate-y-1 cursor-default`}
+    >
+      <div className="w-10 h-10 rounded-vm-md flex items-center justify-center mb-4 text-[#0066CC] bg-[#0066CC]/10">
+        {project.icon}
+      </div>
+      <div className="text-xs font-semibold text-[#0066CC] uppercase tracking-wider mb-2">{project.category}</div>
+      <h3 className="text-heading-sm text-[#1C1C1E] mb-3">{project.title}</h3>
+      <p className="text-base text-[#636366] leading-relaxed">{project.desc}</p>
+    </motion.div>
+  )
+}
+
+export default function PortafolioPage() {
+  useEffect(() => { window.scrollTo(0, 0) }, [])
 
   return (
     <div className="pt-20">
@@ -64,26 +85,12 @@ export default function PortafolioPage() {
         </div>
       </section>
 
-      <section className="section-vm-alt" ref={ref}>
+      <section className="section-vm-alt">
         <div className="container-vm">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {projects.map((p, i) => {
-              const cardRef = useRef(null)
-              const cardInView = useInView(cardRef, { once: true, margin: '-50px' })
-              return (
-                <motion.div key={p.title} ref={cardRef}
-                  initial={{ opacity: 0, y: 30 }} animate={cardInView ? { opacity: 1, y: 0 } : {}}
-                  transition={{ duration: 0.6, delay: i * 0.12, ease: [0.16, 1, 0.3, 1] }}
-                  className={`rounded-vm-xl p-8 bg-gradient-to-br ${p.gradient} border border-[#E8E8ED]/50 hover:shadow-vm-lg transition-all duration-500 hover:-translate-y-1 cursor-default`}>
-                  <div className="w-10 h-10 rounded-vm-md flex items-center justify-center mb-4 text-[#0066CC] bg-[#0066CC]/10">
-                    {p.icon}
-                  </div>
-                  <div className="text-xs font-semibold text-[#0066CC] uppercase tracking-wider mb-2">{p.category}</div>
-                  <h3 className="text-heading-sm text-[#1C1C1E] mb-3">{p.title}</h3>
-                  <p className="text-base text-[#636366] leading-relaxed">{p.desc}</p>
-                </motion.div>
-              )
-            })}
+            {projects.map((p, i) => (
+              <ProjectCard key={p.title} project={p} index={i} />
+            ))}
           </div>
         </div>
       </section>

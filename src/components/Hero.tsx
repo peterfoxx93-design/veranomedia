@@ -1,18 +1,27 @@
 import { motion, useScroll, useMotionValueEvent } from 'motion/react'
-import { useRef, useState } from 'react'
+import { useRef, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
-const VIDEO_DURATION = 8 // seconds (new video)
+const VIDEO_DURATION = 8 // seconds
 
 export default function Hero() {
   const sectionRef = useRef<HTMLElement>(null)
   const videoRef = useRef<HTMLVideoElement>(null)
   const [canScrub, setCanScrub] = useState(false)
   const [scrollProgress, setScrollProgress] = useState(0)
+
   const { scrollYProgress } = useScroll({
     target: sectionRef,
     offset: ['start start', 'end start'],
   })
+
+  // Ensure video is paused on mount and stays paused
+  useEffect(() => {
+    const v = videoRef.current
+    if (v) {
+      v.pause()
+    }
+  }, [])
 
   useMotionValueEvent(scrollYProgress, 'change', (latest) => {
     setScrollProgress(latest)
@@ -23,9 +32,8 @@ export default function Hero() {
     }
   })
 
-  // The video shows frames progressively; the text fades in/stays based on scroll
-  const textOpacity = Math.min(scrollProgress * 8, 1) // fast fade in at start
-  const ctaOpacity = Math.max(0, Math.min((scrollProgress - 0.3) * 3, 1)) // CTAs appear at ~30% scroll
+  // Fade: the video speaks for itself — we just overlay CTAs
+  const ctaOpacity = Math.max(0, Math.min((scrollProgress - 0.2) * 4, 1)) // CTAs appear at ~20% scroll
 
   return (
     <section ref={sectionRef} className="relative h-[150vh]">
@@ -43,6 +51,7 @@ export default function Hero() {
             const v = videoRef.current
             if (v) {
               v.currentTime = 0
+              v.pause()
               setCanScrub(true)
             }
           }}
@@ -61,10 +70,10 @@ export default function Hero() {
 
         {/* Content */}
         <div className="relative z-10 h-full flex flex-col items-center justify-center px-6">
-          {/* Badge */}
+          {/* Badge — aparece sutil al inicio */}
           <motion.div
             initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
+            animate={{ opacity: scrollProgress < 0.1 ? 1 : 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
             className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/15 rounded-full px-4 py-1.5 mb-6"
           >
@@ -74,36 +83,9 @@ export default function Hero() {
             </span>
           </motion.div>
 
-          {/* Logo text — fades in with scroll */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-            className="mb-4"
-            style={{ opacity: textOpacity }}
-          >
-            <h1 className="text-[3.5rem] md:text-[6rem] lg:text-[7rem] font-extrabold tracking-tight leading-[1.05]">
-              <span className="text-white">Verano</span>
-              <span className="text-[#0066CC]">Media</span>
-            </h1>
-          </motion.div>
-
-          {/* Tagline */}
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
-            className="text-white/70 text-sm md:text-base tracking-[0.2em] uppercase mb-10"
-            style={{ opacity: textOpacity }}
-          >
-            Tu marca en su mejor temporada
-          </motion.p>
-
-          {/* CTAs — appear at ~30% scroll */}
+          {/* CTAs — aparecen al scrollear */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.7, ease: [0.16, 1, 0.3, 1] }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
             style={{ opacity: ctaOpacity }}
           >
@@ -119,7 +101,7 @@ export default function Hero() {
               Diagnóstico Gratuito
             </a>
             <Link
-              to="/servicios/web"
+              to="/servicios"
               className="inline-flex items-center gap-2 text-white/80 hover:text-white border border-white/20 hover:border-white/40 font-medium px-8 py-3.5 rounded-full transition-all duration-300"
             >
               Ver Servicios
@@ -132,7 +114,7 @@ export default function Hero() {
           {/* Scroll indicator */}
           <motion.div
             initial={{ opacity: 0 }}
-            animate={{ opacity: textOpacity > 0.5 ? 1 : 0 }}
+            animate={{ opacity: scrollProgress < 0.15 ? 1 : 0 }}
             transition={{ delay: 0.3 }}
             className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
           >
