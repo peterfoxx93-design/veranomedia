@@ -43,7 +43,7 @@ export default function Hero() {
           playsInline
           preload="auto"
           className="absolute inset-0 w-full h-full object-cover"
-          poster="/hero-frame.jpg"
+          poster="hero-frame.jpg"
           onLoadedMetadata={() => {
             const v = videoRef.current
             if (v) {
@@ -53,8 +53,8 @@ export default function Hero() {
             }
           }}
         >
-          <source src="/hero-bg.webm" type="video/webm" />
-          <source src="/hero-bg.mp4" type="video/mp4" />
+          <source src="hero-bg.webm" type="video/webm" />
+          <source src="hero-bg.mp4" type="video/mp4" />
         </video>
 
         {/* Dark overlay */}
