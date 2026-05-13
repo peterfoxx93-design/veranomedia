@@ -6,9 +6,9 @@ const teamMembers = [
   { name: 'Ana Paula Reyes', role: 'Community Manager', desc: 'Redes sociales, contenido y engagement. Conecta marcas con audiencias reales.', img: '/ana-paula.jpg' },
   { name: 'Luis Fernando Peña', role: 'Desarrollador Web', desc: 'Código limpio, sitios rápidos. Especialista en React, Tailwind y rendimiento.', img: '/luis-fernando.jpg' },
   { name: 'María José Castillo', role: 'Especialista SEO', desc: 'Posicionamiento orgánico y estrategia de contenido. Hace que Google te encuentre.', img: '/maria-jose.jpg' },
-  { name: 'Pedro Ramírez', role: 'Growth & Ads', desc: 'Google Ads, Meta Ads y estrategias de crecimiento con resultados medibles.', img: null },
+  { name: 'Pedro Ramírez', role: 'Growth & Ads', desc: 'Google Ads, Meta Ads y estrategias de crecimiento con resultados medibles.', img: '/pedro-ramirez.jpg' },
   { name: 'Sofía Martínez', role: 'Diseñadora Gráfica', desc: 'Identidad visual, contenido visual y diseño editorial para marcas que quieren destacar.', img: '/sofia-martinez.jpg' },
-  { name: 'Neo', role: 'Agente de IA', desc: 'Automatización inteligente, análisis de datos y contenido generado con tecnología de punta.', img: '/neo-avatar.png' },
+  { name: 'Neo', role: 'Agente de IA', desc: 'Automatización inteligente, análisis de datos y contenido generado con tecnología de punta.', img: '/neo-photo.jpg' },
   { name: 'Peter Fx', role: 'Fundador & Director General', desc: 'Visión estratégica y liderazgo. Asegura que cada proyecto supere expectativas.', img: '/peter-fx.jpg' },
 ]
 
