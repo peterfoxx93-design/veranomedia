@@ -2,13 +2,14 @@ import { motion, useInView } from 'motion/react'
 import { useRef } from 'react'
 
 const teamMembers = [
-  { name: 'Carlos Méndez', role: 'Director Creativo', desc: 'Diseño visual y estrategia de marca. Más de 10 años creando identidades digitales.' },
-  { name: 'Ana Paula Reyes', role: 'Community Manager', desc: 'Redes sociales, contenido y engagement. Conecta marcas con audiencias reales.' },
-  { name: 'Luis Fernando Peña', role: 'Desarrollador Web', desc: 'Código limpio, sitios rápidos. Especialista en React, Tailwind y rendimiento.' },
-  { name: 'María José Castillo', role: 'Especialista SEO', desc: 'Posicionamiento orgánico y estrategia de contenido. Hace que Google te encuentre.' },
-  { name: 'Pedro Ramírez', role: 'Growth & Ads', desc: 'Google Ads, Meta Ads y estrategias de crecimiento con resultados medibles.' },
-  { name: 'Neo', role: 'Agente de IA', desc: 'Automatización inteligente, análisis de datos y contenido generado con tecnología de punta.' },
-  { name: 'Peter Fx', role: 'Fundador & Director General', desc: 'Visión estratégica y liderazgo. Asegura que cada proyecto supere expectativas.' },
+  { name: 'Carlos Méndez', role: 'Director Creativo', desc: 'Diseño visual y estrategia de marca. Más de 10 años creando identidades digitales.', img: '/carlos-mendez.jpg' },
+  { name: 'Ana Paula Reyes', role: 'Community Manager', desc: 'Redes sociales, contenido y engagement. Conecta marcas con audiencias reales.', img: '/ana-paula.jpg' },
+  { name: 'Luis Fernando Peña', role: 'Desarrollador Web', desc: 'Código limpio, sitios rápidos. Especialista en React, Tailwind y rendimiento.', img: '/luis-fernando.jpg' },
+  { name: 'María José Castillo', role: 'Especialista SEO', desc: 'Posicionamiento orgánico y estrategia de contenido. Hace que Google te encuentre.', img: '/maria-jose.jpg' },
+  { name: 'Pedro Ramírez', role: 'Growth & Ads', desc: 'Google Ads, Meta Ads y estrategias de crecimiento con resultados medibles.', img: null },
+  { name: 'Sofía Martínez', role: 'Diseñadora Gráfica', desc: 'Identidad visual, contenido visual y diseño editorial para marcas que quieren destacar.', img: '/sofia-martinez.jpg' },
+  { name: 'Neo', role: 'Agente de IA', desc: 'Automatización inteligente, análisis de datos y contenido generado con tecnología de punta.', img: '/neo-avatar.png' },
+  { name: 'Peter Fx', role: 'Fundador & Director General', desc: 'Visión estratégica y liderazgo. Asegura que cada proyecto supere expectativas.', img: '/peter-fx.jpg' },
 ]
 
 const values = [
@@ -23,9 +24,9 @@ function TeamMemberCard({ member, index }: { member: typeof teamMembers[0]; inde
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-30px' })
 
-  // Use real image for Neo, initials for others
-  const avatarContent = member.name === 'Neo' ? (
-    <img src="/neo-avatar.png" alt="Neo" className="w-14 h-14 rounded-full mx-auto object-cover" />
+  // Use real image if available, initials otherwise
+  const avatarContent = member.img ? (
+    <img src={member.img} alt={member.name} className="w-14 h-14 rounded-full mx-auto object-cover border-2 border-[#0066CC]/20" />
   ) : (
     <div className="w-14 h-14 rounded-full bg-gradient-to-br from-[#0066CC]/20 to-[#0066CC]/5 flex items-center justify-center text-xl font-bold text-[#0066CC] mx-auto">
       {member.name.split(' ').map(n => n[0]).slice(0, 2).join('')}
