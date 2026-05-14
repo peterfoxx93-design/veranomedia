@@ -35,9 +35,9 @@ export default function Contacto() {
               </svg>
               Escríbenos por WhatsApp
             </a>
-            <a href="mailto:info@veranomedia.digital"
+            <a href="mailto:hola@veranomedia.digital"
               className="text-white/80 hover:text-white px-8 py-4 rounded-vm-md text-base font-semibold border-2 border-white/20 hover:border-white/40 transition-all duration-300">
-              info@veranomedia.digital
+              hola@veranomedia.digital
             </a>
           </motion.div>
         </div>
