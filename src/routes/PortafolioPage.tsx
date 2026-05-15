@@ -60,10 +60,10 @@ const realProjects = [
   },
   {
     title: 'Bienes Raíces Costa Norte',
-    category: 'Próximamente',
+    category: 'Bienes Raíces',
     desc: 'Plataforma inmobiliaria con galería de propiedades, búsqueda por filtros, tour virtual y contacto directo con agentes.',
-    image: null,
-    link: null,
+    image: 'images/realestate/hero-beach-house.jpg',
+    link: '/modelos/bienes-raices',
     gradient: 'from-emerald-500/10 to-emerald-600/5',
   },
   {
