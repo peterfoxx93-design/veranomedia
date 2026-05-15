@@ -9,6 +9,7 @@ import ServiciosAutomatizacion from './routes/ServiciosAutomatizacion'
 import ServiciosContenido from './routes/ServiciosContenido'
 import PaqueteCompleto from './routes/PaqueteCompleto'
 import PortafolioPage from './routes/PortafolioPage'
+import ClinicaDental from './routes/ClinicaDental'
 import Nosotros from './routes/Nosotros'
 import Contacto from './routes/Contacto'
 import Blog from './routes/Blog'
@@ -28,6 +29,7 @@ export default function App() {
           <Route path="/servicios/contenido" element={<ServiciosContenido />} />
           <Route path="/paquete-completo" element={<PaqueteCompleto />} />
           <Route path="/portafolio" element={<PortafolioPage />} />
+          <Route path="/modelos/clinica-dental" element={<ClinicaDental />} />
           <Route path="/nosotros" element={<Nosotros />} />
           <Route path="/contacto" element={<Contacto />} />
           <Route path="/blog" element={<Blog />} />
