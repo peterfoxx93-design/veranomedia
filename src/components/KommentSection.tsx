@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from 'motion/react'
 // ═══════════════════════════════════════════════════════════════
 
 /** URL del Web App de Google Apps Script (rellenar tras deploy) */
-const APPS_SCRIPT_URL = 'URL_DEL_SCRIPT_AQUI'
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbz74EkNdlohQR25TqEIN-xdrFRwwCUwmriELNAEuYhehoJ9a5bbmleNaCAFO81F3owD/exec'
 
 // ═══════════════════════════════════════════════════════════════
 // Tipos
