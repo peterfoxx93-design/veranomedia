@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from 'motion/react'
 // ═══════════════════════════════════════════════════════════════
 
 /** URL del Web App de Google Apps Script (rellenar tras deploy) */
-const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbz74EkNdlohQR25TqEIN-xdrFRwwCUwmriELNAEuYhehoJ9a5bbmleNaCAFO81F3owD/exec'
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwZXYwk2vmJANBA-P-Ym2kQkAe_DBTTSEY_ICLRLUPku01Q_LyoHtGWeVDo54bcJ1CD/exec'
 const APPS_SCRIPT_URL_GET = APPS_SCRIPT_URL + '?v=' + Date.now()
 
 // ═══════════════════════════════════════════════════════════════
