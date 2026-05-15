@@ -7,6 +7,7 @@ import { motion, AnimatePresence } from 'motion/react'
 
 /** URL del Web App de Google Apps Script (rellenar tras deploy) */
 const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbz74EkNdlohQR25TqEIN-xdrFRwwCUwmriELNAEuYhehoJ9a5bbmleNaCAFO81F3owD/exec'
+const APPS_SCRIPT_URL_GET = APPS_SCRIPT_URL + '?v=' + Date.now()
 
 // ═══════════════════════════════════════════════════════════════
 // Tipos
@@ -49,7 +50,7 @@ export default function KommentSection({ articleSlug }: { articleSlug: string })
       setLoading(false)
       return
     }
-    fetch(`${APPS_SCRIPT_URL}?article=${encodeURIComponent(articleSlug)}`)
+    fetch(`${APPS_SCRIPT_URL_GET}&article=${encodeURIComponent(articleSlug)}`)
       .then(res => res.json())
       .then(data => {
         if (data.success) setComments(data.data || [])
