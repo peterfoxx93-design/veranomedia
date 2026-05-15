@@ -19,6 +19,16 @@ export const articles = [
     date: 'Junio 2026',
     published: true,
   },
+  {
+    id: 'tu-negocio-no-aparece-en-google-maps',
+    title: 'Tu negocio no aparece en Google Maps? Esto es lo que estás haciendo mal',
+    category: 'SEO Local',
+    slug: 'tu-negocio-no-aparece-en-google-maps',
+    readTime: 7,
+    excerpt: 'Si tu negocio no aparece cuando alguien busca "dentista cerca de mí", no es culpa de Google. Es culpa tuya.',
+    date: 'Junio 2026',
+    published: true,
+  },
 ]
 
 export type Article = typeof articles[0]

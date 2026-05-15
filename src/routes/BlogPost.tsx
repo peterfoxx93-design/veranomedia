@@ -546,6 +546,208 @@ function ArticleChatbotsWhatsApp() {
   )
 }
 
+function ArticleGoogleMaps() {
+  return (
+    <>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        <DropCap>I</DropCap>maginá esto: sos una clínica dental en Puerto Plata. Un turista se rompe una muela un sábado a las 7 de la tarde. Saca el teléfono, abre Google Maps y escribe:
+      </p>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8] italic text-center my-6">
+        — <em>"dentista cerca de mí"</em>
+      </p>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Google Maps le muestra 5 opciones. Tu clínica no aparece. Llama a la primera que ve. Agenda una cita de emergencia. Se convierte en paciente de ese consultorio.
+      </p>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Ese paciente no te eligió a vos ni al otro. Eligió al que apareció primero. Y vos perdiste esa oportunidad no porque tu clínica sea peor, sino porque <strong className="text-[#1C1C1E]">Google no sabía que existías</strong>.
+      </p>
+
+      <PullQuote>
+        En el mundo digital, si no aparecés en Google Maps, no existís. Tan simple como eso.
+      </PullQuote>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Y lo peor de todo: la herramienta para aparecer es completamente <strong className="text-[#1C1C1E]">gratuita</strong>. Google Business Profile (antes Google My Business) no cuesta un centavo. Lo que cuesta es el tiempo de configurarlo bien.
+      </p>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        ¿Qué es Google Business Profile?
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Es el perfil de tu negocio que aparece en Google cuando alguien busca tu marca o servicios relacionados. Incluye:
+      </p>
+
+      <MiniTable rows={[
+        ['📍 Ubicación', 'Tu dirección exacta en el mapa, con indicaciones para llegar'],
+        ['🕐 Horarios', 'Días y horarios de atención, incluyendo feriados'],
+        ['📸 Fotos', 'Imágenes de tu local, productos, equipo y servicios'],
+        ['⭐ Reseñas', 'Calificaciones y comentarios de tus clientes'],
+        ['📞 Contacto', 'Teléfono, WhatsApp y sitio web con un clic'],
+        ['❓ Preguntas', 'Sección de preguntas frecuentes que cualquier cliente puede ver'],
+      ]} />
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+          Y todo esto aparece <strong className="text-[#1C1C1E]">sin que el usuario tenga que visitar tu sitio web</strong>. La información está ahí, en el mapa, en el momento exacto en que alguien te busca.
+      </p>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        Los 5 errores que mantienen tu negocio invisible
+      </h2>
+
+      <div className="space-y-6 my-8">
+        <div className="bg-[#F5F5F7] rounded-vm-md p-5 border border-[#E8E8ED]/50">
+          <div className="text-sm font-semibold text-[#FF453A] uppercase tracking-[0.1em] mb-2">Error #1</div>
+          <p className="text-base text-[#636366] leading-relaxed">
+            <strong className="text-[#1C1C1E]">No verificaste tu perfil.</strong> Creaste el perfil pero nunca completaste la verificación por correo postal, teléfono o video. Google no confirma tu dirección y tu negocio aparece como "no verificado" — prácticamente invisible en los resultados.
+          </p>
+        </div>
+        <div className="bg-[#F5F5F7] rounded-vm-md p-5 border border-[#E8E8ED]/50">
+          <div className="text-sm font-semibold text-[#FF453A] uppercase tracking-[0.1em] mb-2">Error #2</div>
+          <p className="text-base text-[#636366] leading-relaxed">
+            <strong className="text-[#1C1C1E]">Información incompleta o incorrecta.</strong> Falta el horario de los sábados. El teléfono está desactualizado. La dirección dice "Calle Principal" sin número. Google no confía en perfiles incompletos y los muestra después de los que están completos.
+          </p>
+        </div>
+        <div className="bg-[#F5F5F7] rounded-vm-md p-5 border border-[#E8E8ED]/50">
+          <div className="text-sm font-semibold text-[#FF453A] uppercase tracking-[0.1em] mb-2">Error #3</div>
+          <p className="text-base text-[#636366] leading-relaxed">
+            <strong className="text-[#1C1C1E]">Sin fotos o con fotos de mala calidad.</strong> Los perfiles con más de 10 fotos reciben <strong className="text-[#1C1C1E]">2.5 veces más clics</strong> que los que tienen menos. Una foto borrosa de la fachada no da confianza. Tu perfil necesita imágenes profesionales de tu local, equipo y trabajos realizados.
+          </p>
+        </div>
+        <div className="bg-[#F5F5F7] rounded-vm-md p-5 border border-[#E8E8ED]/50">
+          <div className="text-sm font-semibold text-[#FF453A] uppercase tracking-[0.1em] mb-2">Error #4</div>
+          <p className="text-base text-[#636366] leading-relaxed">
+            <strong className="text-[#1C1C1E]">Cero reseñas o reseñas sin respuesta.</strong> El 87% de los consumidores lee reseñas antes de elegir un negocio local. Si tenés 0 reseñas, desconfían. Si tenés reseñas y nunca respondiste, das la impresión de que no te importa la opinión de tus clientes.
+          </p>
+        </div>
+        <div className="bg-[#F5F5F7] rounded-vm-md p-5 border border-[#E8E8ED]/50">
+          <div className="text-sm font-semibold text-[#FF453A] uppercase tracking-[0.1em] mb-2">Error #5</div>
+          <p className="text-base text-[#636366] leading-relaxed">
+            <strong className="text-[#1C1C1E]">Elegiste la categoría equivocada.</strong> Si tu clínica dental aparece como "Consultorio médico general" en vez de "Odontólogo", Google no sabe mostrarte a la persona correcta. Las categorías determinan cuándo y para qué búsquedas aparecés.
+          </p>
+        </div>
+      </div>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        El impacto real de un perfil optimizado
+      </h2>
+
+      <DataBox icon="📊">
+        <strong>Lo que un perfil bien configurado genera:</strong>
+        <div className="mt-3 space-y-1.5 text-sm text-[#636366] leading-relaxed">
+          <p>📍 <strong>2.7x más visitas</strong> al sitio web desde Google Maps</p>
+          <p>📞 <strong>3.5x más llamadas</strong> directas desde el perfil</p>
+          <p>🚶 <strong>7x más solicitudes de indicaciones</strong> para llegar al local</p>
+          <p className="text-[#1C1C1E] font-medium mt-3">Todo esto sin pagar un centavo en publicidad.</p>
+        </div>
+      </DataBox>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        No es magia. Es simplemente darle a Google la información que necesita para mostrarte a las personas que te buscan.
+      </p>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        Cómo arreglarlo en 5 pasos
+      </h2>
+
+      <div className="space-y-4 my-8">
+        <div className="flex gap-4 items-start">
+          <span className="w-7 h-7 rounded-full bg-[#0066CC] text-white text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">1</span>
+          <div>
+            <p className="text-sm font-semibold text-[#1C1C1E]">Reclamá o creá tu perfil</p>
+            <p className="text-sm text-[#636366] mt-0.5">Andá a google.com/business. Si tu negocio ya aparece, reclamalo. Si no, crealo desde cero.</p>
+          </div>
+        </div>
+        <div className="flex gap-4 items-start">
+          <span className="w-7 h-7 rounded-full bg-[#0066CC] text-white text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">2</span>
+          <div>
+            <p className="text-sm font-semibold text-[#1C1C1E]">Completá CADA campo</p>
+            <p className="text-sm text-[#636366] mt-0.5">Nombre, dirección, teléfono, WhatsApp, horarios (incluyendo feriados), sitio web, categoría exacta. Todo.</p>
+          </div>
+        </div>
+        <div className="flex gap-4 items-start">
+          <span className="w-7 h-7 rounded-full bg-[#0066CC] text-white text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">3</span>
+          <div>
+            <p className="text-sm font-semibold text-[#1C1C1E]">Subí 10+ fotos de calidad</p>
+            <p className="text-sm text-[#636366] mt-0.5">Fachada, interior, equipo, trabajos realizados. Fotos nítidas, bien iluminadas. Nada de imágenes borrosas.</p>
+          </div>
+        </div>
+        <div className="flex gap-4 items-start">
+          <span className="w-7 h-7 rounded-full bg-[#0066CC] text-white text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">4</span>
+          <div>
+            <p className="text-sm font-semibold text-[#1C1C1E]">Gestioná las reseñas</p>
+            <p className="text-sm text-[#636366] mt-0.5">Pedile a tus clientes satisfechos que te dejen una reseña. Respondé a TODAS, las buenas y las malas, en menos de 24 horas.</p>
+          </div>
+        </div>
+        <div className="flex gap-4 items-start">
+          <span className="w-7 h-7 rounded-full bg-[#0066CC] text-white text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">5</span>
+          <div>
+            <p className="text-sm font-semibold text-[#1C1C1E]">Publicá semanalmente</p>
+            <p className="text-sm text-[#636366] mt-0.5">Google premia la actividad. Publicá ofertas, eventos, fotos nuevas. Un negocio activo aparece antes que uno abandonado.</p>
+          </div>
+        </div>
+      </div>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        En resumen
+      </h2>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 my-8">
+        <div className="bg-[#F5F5F7] rounded-vm-xl p-6 border border-[#E8E8ED]/50">
+          <div className="text-sm font-semibold text-[#FF453A] uppercase tracking-[0.1em] mb-3">Sin perfil optimizado</div>
+          <ul className="space-y-2 text-sm text-[#636366]">
+            <li className="flex gap-2">• No aparecés en búsquedas locales</li>
+            <li className="flex gap-2">• Tus clientes no te encuentran en Maps</li>
+            <li className="flex gap-2">• Sin reseñas = sin confianza</li>
+            <li className="flex gap-2">• Le regalás clientes a tu competencia</li>
+            <li className="flex gap-2 font-medium text-[#1C1C1E] mt-3">• Lo perdido: $$$$ en ventas</li>
+          </ul>
+        </div>
+        <div className="bg-[#F5F5F7] rounded-vm-xl p-6 border border-[#E8E8ED]/50">
+          <div className="text-sm font-semibold text-[#34C759] uppercase tracking-[0.1em] mb-3">Con perfil optimizado</div>
+          <ul className="space-y-2 text-sm text-[#636366]">
+            <li className="flex gap-2">• Aparecés en "cerca de mí" en Maps</li>
+            <li className="flex gap-2">• La info de tu negocio siempre visible</li>
+            <li className="flex gap-2">• Reseñas positivas atraen más clientes</li>
+            <li className="flex gap-2">• Le ganás exposure a tu competencia</li>
+            <li className="flex gap-2 font-medium text-[#1C1C1E] mt-3">• Inversión: $0 USD (gratis)</li>
+          </ul>
+        </div>
+      </div>
+
+      <Separator />
+
+      <div className="my-10 text-center">
+        <p className="text-base md:text-lg text-[#636366] leading-relaxed mb-6">
+          Google Maps no es un juego de azar. No es que "algunos negocios tienen suerte y aparecen". Hay reglas claras, y el que las sigue, aparece.
+        </p>
+        <p className="text-base md:text-lg text-[#636366] leading-relaxed mb-8">
+          La buena noticia: todo lo que necesitás hacer es gratis. Solo requiere tiempo y atención a los detalles.
+        </p>
+        <p className="text-base md:text-lg text-[#636366] leading-relaxed italic">
+          La próxima vez que alguien busque tu servicio en Google Maps:
+        </p>
+        <p className="text-lg md:text-xl text-[#1C1C1E] font-serif italic mt-4 leading-relaxed">
+          — ¿Va a aparecer tu negocio o el de la competencia?
+        </p>
+      </div>
+    </>
+  )
+}
+
 // ═══════════════════════════════════════════════════════════
 // Componente principal
 // ═══════════════════════════════════════════════════════════
@@ -562,6 +764,8 @@ export default function BlogPost() {
         return <ArticleLandingVsSitio />
       case 'chatbots-whatsapp':
         return <ArticleChatbotsWhatsApp />
+      case 'tu-negocio-no-aparece-en-google-maps':
+        return <ArticleGoogleMaps />
       default:
         return <ArticleLandingVsSitio />
     }
