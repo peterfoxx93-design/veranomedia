@@ -68,10 +68,10 @@ const realProjects = [
   },
   {
     title: 'Bufete Jurídico Rodríguez',
-    category: 'Próximamente',
+    category: 'Abogados',
     desc: 'Sitio web corporativo para despacho de abogados con áreas de práctica, equipo, casos de éxito y agendamiento de consultas.',
-    image: null,
-    link: null,
+    image: 'images/lawfirm/law-books.jpg',
+    link: '/modelos/bufete-abogados',
     gradient: 'from-amber-500/10 to-amber-600/5',
   },
 ]

@@ -11,6 +11,7 @@ import PaqueteCompleto from './routes/PaqueteCompleto'
 import PortafolioPage from './routes/PortafolioPage'
 import ClinicaDental from './routes/ClinicaDental'
 import BienesRaices from './routes/BienesRaices'
+import BufeteAbogados from './routes/BufeteAbogados'
 import Nosotros from './routes/Nosotros'
 import Contacto from './routes/Contacto'
 import Blog from './routes/Blog'
@@ -32,6 +33,7 @@ export default function App() {
           <Route path="/portafolio" element={<PortafolioPage />} />
           <Route path="/modelos/clinica-dental" element={<ClinicaDental />} />
           <Route path="/modelos/bienes-raices" element={<BienesRaices />} />
+          <Route path="/modelos/bufete-abogados" element={<BufeteAbogados />} />
           <Route path="/nosotros" element={<Nosotros />} />
           <Route path="/contacto" element={<Contacto />} />
           <Route path="/blog" element={<Blog />} />
