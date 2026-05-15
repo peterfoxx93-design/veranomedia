@@ -1,5 +1,6 @@
 import { motion, useInView } from 'motion/react'
 import { useRef, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
 const projects = [
   {
@@ -48,6 +49,82 @@ const projects = [
   },
 ]
 
+const realProjects = [
+  {
+    title: 'Sonrisa Dental Puerto Plata',
+    category: 'Clínica Dental',
+    desc: 'Sitio web profesional para clínica dental con 6 secciones: hero visual, servicios detallados, equipo, ubicación, testimonios y CTA. Diseño premium con animaciones fluidas.',
+    image: 'images/dental/hero-dentist.jpg',
+    link: '/modelos/clinica-dental',
+    gradient: 'from-[#007AFF]/10 to-[#0066CC]/5',
+  },
+  {
+    title: 'Bienes Raíces Costa Norte',
+    category: 'Próximamente',
+    desc: 'Plataforma inmobiliaria con galería de propiedades, búsqueda por filtros, tour virtual y contacto directo con agentes.',
+    image: null,
+    link: null,
+    gradient: 'from-emerald-500/10 to-emerald-600/5',
+  },
+  {
+    title: 'Bufete Jurídico Rodríguez',
+    category: 'Próximamente',
+    desc: 'Sitio web corporativo para despacho de abogados con áreas de práctica, equipo, casos de éxito y agendamiento de consultas.',
+    image: null,
+    link: null,
+    gradient: 'from-amber-500/10 to-amber-600/5',
+  },
+]
+
+function RealProjectCard({ project, index }: { project: typeof realProjects[0]; index: number }) {
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true, margin: '-50px' })
+
+  return (
+    <motion.div ref={ref}
+      initial={{ opacity: 0, y: 30 }}
+      animate={isInView ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.6, delay: index * 0.15, ease: [0.16, 1, 0.3, 1] }}
+      className={`rounded-vm-xl overflow-hidden bg-white border border-[#E8E8ED]/50 hover:shadow-vm-lg transition-all duration-500 hover:-translate-y-1`}
+    >
+      {project.image ? (
+        <div className="relative h-48 md:h-56 overflow-hidden bg-[#F5F5F7]">
+          <img
+            src={project.image}
+            alt={project.title}
+            className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+        </div>
+      ) : (
+        <div className="h-48 md:h-56 flex items-center justify-center bg-[#F5F5F7]">
+          <span className="text-[#D1D1D6] text-sm font-medium uppercase tracking-widest">Próximamente</span>
+        </div>
+      )}
+      <div className="p-6 md:p-8">
+        <div className="text-xs font-semibold text-[#0066CC] uppercase tracking-wider mb-2">{project.category}</div>
+        <h3 className="text-xl font-bold text-[#1C1C1E] mb-3">{project.title}</h3>
+        <p className="text-base text-[#636366] leading-relaxed mb-5">{project.desc}</p>
+        {project.link ? (
+          <Link
+            to={project.link}
+            className="inline-flex items-center gap-2 text-sm font-semibold text-[#0066CC] hover:text-[#0052CC] transition-colors group"
+          >
+            Ver proyecto
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="transition-transform duration-300 group-hover:translate-x-1">
+              <line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" />
+            </svg>
+          </Link>
+        ) : (
+          <span className="inline-flex items-center gap-2 text-sm font-semibold text-[#D1D1D6]">
+            Disponible pronto
+          </span>
+        )}
+      </div>
+    </motion.div>
+  )
+}
+
 function ProjectCard({ project, index }: { project: typeof projects[0]; index: number }) {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-50px' })
@@ -90,6 +167,22 @@ export default function PortafolioPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {projects.map((p, i) => (
               <ProjectCard key={p.title} project={p} index={i} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Proyectos Reales */}
+      <section className="section-vm">
+        <div className="container-vm">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <span className="text-sm font-semibold text-[#0066CC] uppercase tracking-widest">Proyectos Reales</span>
+            <h2 className="text-heading-lg text-[#1C1C1E] mt-3 mb-4">Construido para negocios como el tuyo</h2>
+            <p className="text-lg text-[#8E8E93]">Cada sitio es un caso real de lo que podemos hacer. El primero ya está listo; los siguientes, en camino.</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {realProjects.map((p, i) => (
+              <RealProjectCard key={p.title} project={p} index={i} />
             ))}
           </div>
         </div>
