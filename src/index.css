@@ -21,7 +21,7 @@
     background-image: radial-gradient(var(--tw-gradient-stops));
   }
 
-  /* Glassmorphism - light */
+  /* Premium Glassmorphism — inspirado en Ora Nova */
   .glass {
     background: rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(20px);
@@ -35,37 +35,55 @@
     border: 1px solid rgba(28, 28, 30, 0.06);
   }
   .glass-card {
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.65);
     backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(24px);
     border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.03);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   }
-  .glass-card-hover {
-    transition: all 0.3s ease;
+  .glass-card:hover {
+    background: rgba(255, 255, 255, 0.8);
+    border-color: rgba(0, 122, 255, 0.15);
+    box-shadow: 0 12px 40px rgba(0, 122, 255, 0.06), 0 4px 20px rgba(0, 0, 0, 0.04);
+    transform: translateY(-3px);
   }
-  .glass-card-hover:hover {
-    background: rgba(255, 255, 255, 0.85);
-    border-color: rgba(0, 102, 204, 0.2);
-    box-shadow: 0 8px 32px rgba(0, 102, 204, 0.1);
-    transform: translateY(-2px);
+
+  /* Premium glass overlay shine (like Ora Nova cards) */
+  .glass-shine {
+    position: relative;
+  }
+  .glass-shine::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.4) 0%, transparent 50%);
+    pointer-events: none;
+    border-radius: inherit;
   }
 
   /* Gradient text */
   .text-gradient {
-    background: linear-gradient(135deg, #0066CC, #34C759);
+    background: linear-gradient(135deg, #007AFF, #34C759);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
-  /* Bento grid helpers */
+  /* Premium bento grid items — glass style */
   .bento-item {
-    @apply rounded-vm-xl border border-[#E8E8ED]/50 overflow-hidden;
-    transition: all 0.3s ease;
+    @apply rounded-vm-xl overflow-hidden;
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(232, 232, 237, 0.6);
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.03);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   }
   .bento-item:hover {
-    border-color: rgba(0, 102, 204, 0.2);
-    box-shadow: 0 8px 32px rgba(28, 28, 30, 0.06);
+    border-color: rgba(0, 122, 255, 0.2);
+    box-shadow: 0 12px 40px rgba(0, 122, 255, 0.06), 0 4px 20px rgba(0, 0, 0, 0.04);
+    transform: translateY(-2px);
   }
 
   /* Maintenance badge */
@@ -76,17 +94,24 @@
     border: 1px solid rgba(52, 199, 89, 0.2);
   }
 
-  /* Price pill */
+  /* Price pill — premium glass style */
   .price-pill {
     @apply inline-flex items-center gap-1 text-sm font-semibold rounded-full px-3 py-1;
   }
   .price-pill-one {
-    background: rgba(0, 102, 204, 0.08);
-    color: #0066CC;
+    background: rgba(0, 122, 255, 0.08);
+    color: #007AFF;
   }
   .price-pill-monthly {
     background: rgba(52, 199, 89, 0.08);
     color: #34C759;
+  }
+
+  /* Floating orbs (like Ora Nova) */
+  .orb {
+    @apply absolute rounded-full pointer-events-none;
+    filter: blur(80px);
+    opacity: 0.5;
   }
 }
 
@@ -103,31 +128,28 @@
     @apply py-16 md:py-24 bg-[#F5F5F7];
   }
 
-  /* Hero gradient overlay */
-  .hero-gradient {
-    background: linear-gradient(
-      135deg,
-      rgba(0, 102, 204, 0.3) 0%,
-      rgba(28, 28, 30, 0.6) 50%,
-      rgba(0, 102, 204, 0.1) 100%
-    );
-  }
-
-  /* Glass card for service pricing */
+  /* Premium glass card for service pricing — estilo Ora Nova */
   .pricing-card {
     @apply relative overflow-hidden rounded-vm-xl;
-    background: linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.95) 0%,
-      rgba(245, 245, 247, 0.9) 100%
-    );
-    border: 1px solid rgba(232, 232, 237, 0.8);
+    background: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(24px);
-    transition: all 0.3s ease;
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.03);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .pricing-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.5) 0%, transparent 50%);
+    pointer-events: none;
+    border-radius: inherit;
   }
   .pricing-card:hover {
-    border-color: rgba(0, 102, 204, 0.15);
-    box-shadow: 0 12px 40px rgba(28, 28, 30, 0.08);
-    transform: translateY(-2px);
+    border-color: rgba(0, 122, 255, 0.2);
+    box-shadow: 0 12px 40px rgba(0, 122, 255, 0.08), 0 4px 20px rgba(0, 0, 0, 0.06);
+    transform: translateY(-3px);
+    background: rgba(255, 255, 255, 0.75);
   }
 }

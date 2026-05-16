@@ -96,7 +96,7 @@ function ServiceCard({ service, index }: { service: typeof services[0]; index: n
     >
       <Link
         to={service.link}
-        className="group block bg-white rounded-vm-lg p-8 border border-[#E8E8ED]/50 hover:border-[#D1D1D6] transition-all duration-500 hover:shadow-vm-lg hover:-translate-y-1 h-full"
+        className="group block glass-card glass-shine rounded-vm-xl p-8 h-full"
       >
         <div
           className="w-12 h-12 rounded-vm-md flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300"
@@ -135,7 +135,7 @@ export default function Services() {
             initial={{ opacity: 0, y: 10 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5 }}
-            className="text-sm font-semibold text-[#0066CC] uppercase tracking-widest"
+            className="text-sm font-semibold text-[#007AFF] uppercase tracking-widest"
           >
             Servicios
           </motion.span>
@@ -187,7 +187,7 @@ export default function Services() {
         >
           <Link
             to="/servicios"
-            className="inline-flex items-center gap-2 bg-[#0066CC] hover:bg-[#0052CC] text-white font-semibold px-8 py-3.5 rounded-full transition-all duration-300 shadow-lg shadow-[#0066CC]/20 hover:shadow-[#0066CC]/35"
+            className="inline-flex items-center gap-2 bg-[#007AFF] hover:bg-[#0066CC] text-white font-semibold px-8 py-3.5 rounded-full transition-all duration-300 shadow-lg shadow-[#007AFF]/20 hover:shadow-[#007AFF]/35"
           >
             Ver servicios y precios
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
