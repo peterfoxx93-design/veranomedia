@@ -4,20 +4,19 @@ import { Link } from 'react-router-dom'
 export default function Hero() {
   return (
     <section className="relative h-screen min-h-[600px] overflow-hidden">
-      {/* Background image with gradient overlay */}
-      <div className="absolute inset-0">
-        <img
-          src="hero-frame.jpg"
-          alt=""
-          className="w-full h-full object-cover"
-          loading="eager"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80" />
-      </div>
+      {/* Dark gradient background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-[#0A0A0A] via-[#1C1C1E] to-[#0A0A0A]" />
+
+      {/* Premium grid pattern overlay */}
+      <div className="absolute inset-0 opacity-[0.03]" style={{
+        backgroundImage: `radial-gradient(circle at 1px 1px, white 1px, transparent 0)`,
+        backgroundSize: '40px 40px'
+      }} />
 
       {/* Floating glass orbs for depth */}
-      <div className="absolute top-1/4 left-1/6 w-[400px] h-[400px] bg-[#0066CC]/20 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-1/3 right-1/5 w-[300px] h-[300px] bg-[#34C759]/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-1/4 -left-1/4 w-[500px] h-[500px] bg-[#007AFF]/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-1/3 -right-1/4 w-[400px] h-[400px] bg-[#34C759]/5 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-2/3 left-1/3 w-[300px] h-[300px] bg-[#007AFF]/5 rounded-full blur-3xl pointer-events-none" />
 
       {/* Content */}
       <div className="relative z-10 h-full flex flex-col items-center justify-center px-6">
@@ -42,7 +41,7 @@ export default function Hero() {
           className="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight leading-[1.05] text-center"
         >
           <span className="text-white">Verano</span>
-          <span className="text-[#0066CC]">Media</span>
+          <span className="text-[#007AFF]">Media</span>
         </motion.h1>
 
         {/* Tagline */}
@@ -66,7 +65,7 @@ export default function Hero() {
             href="https://wa.me/18296848477"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-[#0066CC] hover:bg-[#0052CC] text-white font-semibold px-8 py-3.5 rounded-full transition-all duration-300 shadow-lg shadow-[#0066CC]/25 hover:shadow-[#0066CC]/40 hover:scale-[1.02]"
+            className="inline-flex items-center gap-2 bg-[#007AFF] hover:bg-[#0066CC] text-white font-semibold px-8 py-3.5 rounded-full transition-all duration-300 shadow-lg shadow-[#007AFF]/25 hover:shadow-[#007AFF]/40 hover:scale-[1.02]"
           >
             <svg className="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
               <path d="M10 0C4.48 0 0 4.48 0 10c0 1.85.5 3.58 1.38 5.07L.02 20l5.15-1.36C6.6 19.5 8.25 20 10 20c5.52 0 10-4.48 10-10S15.52 0 10 0zm0 18c-1.45 0-2.8-.4-3.97-1.08l-.3-.18-3.06.8.82-2.98-.2-.32A7.97 7.97 0 012 10c0-4.42 3.58-8 8-8s8 3.58 8 8-3.58 8-8 8zm5.1-5.5c-.28.28-1.16.56-1.65.56-.33 0-.38-.07-.74-.23-.5-.22-1.5-.6-2.87-1.77-1.1-.94-1.82-2.04-2.03-2.4-.2-.36-.1-.56.02-.68.1-.1.22-.27.33-.4.1-.13.14-.24.2-.4s.02-.3-.02-.42c-.04-.12-.36-1.06-.5-1.46-.14-.4-.28-.4-.42-.4H5.5c-.2 0-.44.12-.58.28-.14.16-.68.76-.68 1.84 0 1.08.76 2.12.86 2.28.1.16 1.5 2.4 3.68 3.6 2.18 1.2 2.18.8 2.56.76.4-.04 1.28-.56 1.46-1.1.18-.54.18-1 .12-1.1-.06-.1-.2-.16-.34-.22-.14-.06-.26-.1-.36-.18-.1-.08-.1-.18-.06-.32.04-.14.62-1.42.7-1.54.08-.12.16-.12.26-.1.1.02.32.06.44.08.12.02.3 0 .42-.06.14-.06.68-.34 1.2-.7.24-.17.48-.35.68-.5.16-.12.32-.1.44.04.14.14.56.74.68.84.12.1.2.18.28.22.08.04.14.1.16.18.02.08.02.42-.18.7z" />
