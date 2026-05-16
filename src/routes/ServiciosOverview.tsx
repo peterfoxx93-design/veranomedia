@@ -60,23 +60,13 @@ function ServiceCard({ s, i }: { s: Service; i: number }) {
     >
       <Link
         to={s.link}
-        className="block group pricing-card h-full p-5 md:p-6"
+        className="relative block group pricing-card h-full p-5 md:p-6"
       >
         {/* Icon */}
         <div className="text-2xl mb-3">{s.icon}</div>
 
-        {/* Title + type badge */}
-        <div className="flex items-start justify-between gap-2 mb-2">
-          <h3 className="text-heading-sm text-[#1C1C1E]">{s.title}</h3>
-          {s.type === 'monthly' && (
-            <span className="badge-maintenance shrink-0 mt-1">
-              <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
-              </svg>
-              Recurrente
-            </span>
-          )}
-        </div>
+        {/* Title */}
+        <h3 className="text-heading-sm text-[#1C1C1E] mb-2">{s.title}</h3>
 
         {/* Description */}
         <p className="text-sm text-[#636366] mb-2 leading-relaxed">{s.desc}</p>
@@ -84,8 +74,9 @@ function ServiceCard({ s, i }: { s: Service; i: number }) {
         {/* Tagline */}
         <p className="text-xs text-[#8E8E93] italic mb-4">{s.tagline}</p>
 
-        {/* Pricing */}
-        <div className="flex flex-wrap items-center gap-2 mt-auto">
+        {/* Pricing — pointer-events-none en badges para que no activen el Link */}
+        <div className="flex flex-wrap items-center gap-2 mt-auto pointer-events-none">
+          {/* Badge de precio principal */}
           <span className="price-pill price-pill-one">
             <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
@@ -93,14 +84,42 @@ function ServiceCard({ s, i }: { s: Service; i: number }) {
             {s.price}
           </span>
 
-          {s.maintenance && (
+          {/* Segundo badge: maintenance o recurrente */}
+          {s.type === 'monthly' ? (
+            <span className="price-pill price-pill-monthly">
+              <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+              Recurrente
+            </span>
+          ) : s.maintenance ? (
             <span className="price-pill price-pill-monthly">
               <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
               </svg>
               {s.maintenance}
             </span>
+          ) : s.type === 'one-time' && (
+            <span className="price-pill" style={{ background: 'rgba(142,142,147,0.08)', color: '#8E8E93' }}>
+              <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+              </svg>
+              Una vez
+            </span>
           )}
+        </div>
+
+        {/* Badge tipo de servicio — solo visual, fuera del flujo de clic */}
+        <div className="absolute top-3 right-3 pointer-events-none">
+          {s.type === 'monthly' ? (
+            <span className="badge-maintenance text-[10px] px-2 py-0.5">
+              ⟳ Recurrente
+            </span>
+          ) : s.maintenance ? (
+            <span className="badge-maintenance text-[10px] px-2 py-0.5">
+              🛡️ Con mant.
+            </span>
+          ) : null}
         </div>
       </Link>
     </motion.div>
