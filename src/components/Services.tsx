@@ -163,18 +163,33 @@ export default function Services() {
           ))}
         </div>
 
+        {/* Maintenance teaser */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.5, delay: 0.5 }}
+          className="text-center mb-8"
+        >
+          <div className="inline-flex items-center gap-2 bg-[#34C759]/5 text-[#34C759] text-xs font-medium px-4 py-2 rounded-full border border-[#34C759]/10">
+            <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+            Todos nuestros proyectos incluyen mantenimiento mensual
+          </div>
+        </motion.div>
+
         {/* Button to see all services */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.5 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
           className="text-center"
         >
           <Link
             to="/servicios"
             className="inline-flex items-center gap-2 bg-[#0066CC] hover:bg-[#0052CC] text-white font-semibold px-8 py-3.5 rounded-full transition-all duration-300 shadow-lg shadow-[#0066CC]/20 hover:shadow-[#0066CC]/35"
           >
-            Ver todos los servicios
+            Ver servicios y precios
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>

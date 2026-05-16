@@ -20,6 +20,74 @@
   .bg-gradient-radial {
     background-image: radial-gradient(var(--tw-gradient-stops));
   }
+
+  /* Glassmorphism - light */
+  .glass {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+  }
+  .glass-dark {
+    background: rgba(28, 28, 30, 0.06);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(28, 28, 30, 0.06);
+  }
+  .glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+  }
+  .glass-card-hover {
+    transition: all 0.3s ease;
+  }
+  .glass-card-hover:hover {
+    background: rgba(255, 255, 255, 0.85);
+    border-color: rgba(0, 102, 204, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 102, 204, 0.1);
+    transform: translateY(-2px);
+  }
+
+  /* Gradient text */
+  .text-gradient {
+    background: linear-gradient(135deg, #0066CC, #34C759);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Bento grid helpers */
+  .bento-item {
+    @apply rounded-vm-xl border border-[#E8E8ED]/50 overflow-hidden;
+    transition: all 0.3s ease;
+  }
+  .bento-item:hover {
+    border-color: rgba(0, 102, 204, 0.2);
+    box-shadow: 0 8px 32px rgba(28, 28, 30, 0.06);
+  }
+
+  /* Maintenance badge */
+  .badge-maintenance {
+    @apply inline-flex items-center gap-1.5 text-xs font-semibold rounded-full px-3 py-1;
+    background: rgba(52, 199, 89, 0.1);
+    color: #34C759;
+    border: 1px solid rgba(52, 199, 89, 0.2);
+  }
+
+  /* Price pill */
+  .price-pill {
+    @apply inline-flex items-center gap-1 text-sm font-semibold rounded-full px-3 py-1;
+  }
+  .price-pill-one {
+    background: rgba(0, 102, 204, 0.08);
+    color: #0066CC;
+  }
+  .price-pill-monthly {
+    background: rgba(52, 199, 89, 0.08);
+    color: #34C759;
+  }
 }
 
 @layer components {
@@ -28,10 +96,38 @@
   }
 
   .section-vm {
-    @apply py-16;
+    @apply py-16 md:py-24;
   }
 
   .section-vm-alt {
-    @apply py-16 bg-[#F5F5F7];
+    @apply py-16 md:py-24 bg-[#F5F5F7];
+  }
+
+  /* Hero gradient overlay */
+  .hero-gradient {
+    background: linear-gradient(
+      135deg,
+      rgba(0, 102, 204, 0.3) 0%,
+      rgba(28, 28, 30, 0.6) 50%,
+      rgba(0, 102, 204, 0.1) 100%
+    );
+  }
+
+  /* Glass card for service pricing */
+  .pricing-card {
+    @apply relative overflow-hidden rounded-vm-xl;
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(245, 245, 247, 0.9) 100%
+    );
+    border: 1px solid rgba(232, 232, 237, 0.8);
+    backdrop-filter: blur(24px);
+    transition: all 0.3s ease;
+  }
+  .pricing-card:hover {
+    border-color: rgba(0, 102, 204, 0.15);
+    box-shadow: 0 12px 40px rgba(28, 28, 30, 0.08);
+    transform: translateY(-2px);
   }
 }

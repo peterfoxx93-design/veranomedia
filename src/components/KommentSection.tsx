@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from 'motion/react'
 // ═══════════════════════════════════════════════════════════════
 
 /** URL del Web App de Google Apps Script (rellenar tras deploy) */
-const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwZXYwk2vmJANBA-P-Ym2kQkAe_DBTTSEY_ICLRLUPku01Q_LyoHtGWeVDo54bcJ1CD/exec'
+const APPS_SCRIPT_URL: string = 'https://script.google.com/macros/s/AKfycbwZXYwk2vmJANBA-P-Ym2kQkAe_DBTTSEY_ICLRLUPku01Q_LyoHtGWeVDo54bcJ1CD/exec'
 const APPS_SCRIPT_URL_GET = APPS_SCRIPT_URL + '?v=' + Date.now()
 
 // ═══════════════════════════════════════════════════════════════
@@ -46,7 +46,7 @@ export default function KommentSection({ articleSlug }: { articleSlug: string })
 
   // Cargar comentarios aprobados
   useEffect(() => {
-    if (APPS_SCRIPT_URL === 'URL_DEL_SCRIPT_AQUI') {
+    if ((APPS_SCRIPT_URL as string) === 'URL_DEL_SCRIPT_AQUI') {
       setLoading(false)
       return
     }
@@ -122,7 +122,7 @@ export default function KommentSection({ articleSlug }: { articleSlug: string })
 
   const labelClass = 'block text-xs font-medium text-[#636366] uppercase tracking-[0.12em] mb-1.5'
 
-  const isDemo = APPS_SCRIPT_URL === 'URL_DEL_SCRIPT_AQUI'
+  const isDemo = (APPS_SCRIPT_URL as string) === 'URL_DEL_SCRIPT_AQUI'
 
   return (
     <section className="bg-white border-t border-[#E8E8ED]/30">
