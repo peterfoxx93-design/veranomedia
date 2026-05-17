@@ -1,3 +1,5 @@
+import { useState, useCallback } from 'react'
+
 const platforms = [
   {
     id: 'x',
@@ -45,8 +47,7 @@ const platforms = [
         <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
       </svg>
     ),
-    shareUrl: (url: string, title: string) =>
-      `https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(url)}&title=${encodeURIComponent(title)}`,
+    copyAndOpen: 'https://www.linkedin.com',
   },
   {
     id: 'threads',
@@ -63,11 +64,24 @@ const platforms = [
 ]
 
 export default function ShareButtons({ slug, title }: { slug: string; title: string }) {
+  const [toast, setToast] = useState<string | null>(null)
   const url = `${window.location.origin}/blog/${slug}`
   const fullTitle = `${title} — Un cuaderno de Verano`
 
+  const showToast = useCallback((msg: string) => {
+    setToast(msg)
+    setTimeout(() => setToast(null), 3000)
+  }, [])
+
   const handleShare = (platform: typeof platforms[0]) => {
-    window.open(platform.shareUrl(url, fullTitle), '_blank', 'noopener,noreferrer')
+    if (platform.shareUrl) {
+      window.open(platform.shareUrl(url, fullTitle)!, '_blank', 'noopener,noreferrer')
+    } else if (platform.copyAndOpen) {
+      navigator.clipboard.writeText(url as string).then(() => {
+        showToast('✅ Link copiado — pégalo en tu post de LinkedIn')
+      })
+      window.open(platform.copyAndOpen, '_blank', 'noopener,noreferrer')
+    }
   }
 
   const handleNativeShare = () => {
@@ -77,7 +91,7 @@ export default function ShareButtons({ slug, title }: { slug: string; title: str
   }
 
   return (
-    <div className="my-10 pt-6 border-t border-[#E8E8ED]/40">
+    <div className="my-10 pt-6 border-t border-[#E8E8ED]/40 relative">
       <p className="text-sm text-[#636366] leading-relaxed text-center mb-5">
         ¿Te gustó este artículo? <strong className="text-[#1C1C1E]">Compártelo con tu comunidad</strong> 👇
       </p>
@@ -113,6 +127,13 @@ export default function ShareButtons({ slug, title }: { slug: string; title: str
           </button>
         </div>
       </div>
+
+      {/* Toast flotante para LinkedIn */}
+      {toast && (
+        <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 translate-y-full bg-[#1C1C1E] text-white text-xs px-4 py-2 rounded-vm-md shadow-lg whitespace-nowrap z-50 transition-all duration-300">
+          {toast}
+        </div>
+      )}
     </div>
   )
 }
