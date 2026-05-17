@@ -29,6 +29,16 @@ export const articles = [
     date: 'Junio 2026',
     published: true,
   },
+  {
+    id: 'cm-vs-publicidad',
+    title: 'Community Management vs Publicidad: ¿qué necesita tu negocio primero?',
+    category: 'Redes Sociales',
+    slug: 'cm-vs-publicidad',
+    readTime: 7,
+    excerpt: 'Uno construye confianza a largo plazo. El otro vende hoy. La mayoría de los negocios elige mal porque no entiende la diferencia.',
+    date: 'Junio 2026',
+    published: true,
+  },
 ]
 
 export type Article = typeof articles[0]

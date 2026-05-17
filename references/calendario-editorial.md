@@ -11,11 +11,11 @@
 2. ✅ **Chatbots en WhatsApp: cómo funcionan y cuánto puedes ahorrar**
    Publicado. Categoría: Automatización
 
-3. 📝 **Tu negocio no aparece en Google Maps? Esto es lo que estás haciendo mal**
-   Pendiente. Categoría: SEO Local
+3. ✅ **Tu negocio no aparece en Google Maps? Esto es lo que estás haciendo mal**
+   Publicado. Categoría: SEO Local
 
-4. 📝 **Community Management vs. Publicidad: ¿qué necesita tu negocio primero?**
-   Pendiente. Categoría: Redes Sociales
+4. ✅ **Community Management vs. Publicidad: ¿qué necesita tu negocio primero?**
+   Publicado. Categoría: Redes Sociales
 
 5. 📝 **Automatización para pequeñas empresas: mitos y realidades**
    Pendiente. Categoría: Automatización

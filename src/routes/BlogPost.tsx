@@ -749,6 +749,271 @@ function ArticleGoogleMaps() {
 }
 
 // ═══════════════════════════════════════════════════════════
+// Artículo 4: Community Management vs Publicidad
+// ═══════════════════════════════════════════════════════════
+
+function ArticleCMvsPublicidad() {
+  return (
+    <>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        <DropCap>T</DropCap>e voy a hacer una pregunta incómoda: ¿cuánto gastaste en anuncios el mes pasado?
+      </p>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Ahora otra: ¿cuánto invertiste en construir una comunidad alrededor de tu marca?
+      </p>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Si la primera respuesta fue un número concreto y la segunda fue un "eh...", no estás solo. Nueve de cada diez dueños de negocio están en el mismo lugar. Y hay una razón: la publicidad se siente como acción, mientras que construir comunidad se siente como trabajo lento y sin resultados inmediatos.
+      </p>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Pero la realidad es más sutil. <strong className="text-[#1C1C1E]">No se trata de elegir uno sobre el otro.</strong> Se trata de entender qué hace cada uno, cuándo funciona y cómo combinarlos para que no estés quemando dinero.
+      </p>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        Primero lo primero: ¿qué es cada cosa?
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Vamos a definiciones simples, porque en marketing la confusión empieza cuando usamos palabras grandes sin saber qué significan.
+      </p>
+
+      <h3 className="font-serif text-xl md:text-2xl text-[#1C1C1E] mt-8 mb-4">
+        Community Management
+      </h3>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Es el trabajo de <strong className="text-[#1C1C1E]">construir y mantener una relación</strong> con las personas que siguen tu marca. Publicar contenido, responder comentarios, crear conversación, resolver dudas, mostrar el detrás de escena. No es solo "postear". Es <strong className="text-[#1C1C1E]">estar presente</strong>.
+      </p>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        El community management construye confianza a largo plazo. No esperes que un post de Instagram te venda algo mañana. Pero sí espera que, cuando alguien necesite lo que vendes, tu marca sea la primera que le venga a la mente.
+      </p>
+
+      <h3 className="font-serif text-xl md:text-2xl text-[#1C1C1E] mt-8 mb-4">
+        Publicidad Digital
+      </h3>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Es el trabajo de <strong className="text-[#1C1C1E]">pagar por atención</strong>. Le dices a Meta, Google o TikTok: "aquí tengo $500, muéstrale mi anuncio a personas que cumplen este perfil". Y ellos lo hacen. Te garantizan alcance, clics y conversiones — siempre y cuando tu segmentación y tu oferta sean correctas.
+      </p>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        La publicidad genera resultados <strong className="text-[#1C1C1E]">aquí y ahora</strong>. Pero el momento en que dejas de pagar, dejas de aparecer. No construye recuerdo de marca por sí sola.
+      </p>
+
+      <PullQuote>
+        Community management construye el terreno. Publicidad enciende el motor. Si no tienes terreno, el motor solo levanta polvo.
+      </PullQuote>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        La tabla de la verdad
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Pongamos las cartas sobre la mesa para que veas las diferencias claras:
+      </p>
+
+      <MiniTable rows={[
+        ['Objetivo', 'Relación a largo plazo vs. Venta inmediata'],
+        ['Velocidad', 'Lenta, constante (3—12 meses) vs. Rápida (hoy mismo)'],
+        ['Costo', 'Tiempo + consistencia vs. Presupuesto mensual'],
+        ['Alcance', 'Orgánico, limitado a seguidores vs. Pagado, segmentado'],
+        ['Riesgo', 'Bajo (inviertes tiempo) vs. Alto (inviertes dinero)'],
+        ['Resultado', 'Confianza y recuerdo de marca vs. Clientes y leads'],
+        ['Duración', 'Permanente (la comunidad crece) vs. Temporal (se apaga sin presupuesto)'],
+        ['Medición', 'Cualitativa: engagement, menciones vs. Cuantitativa: CPC, ROAS, CPL'],
+      ]} />
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        <strong className="text-[#1C1C1E]">Ninguna es mejor que la otra.</strong> Son herramientas diferentes que resuelven problemas diferentes. El error es usarlas como si fueran intercambiables.
+      </p>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        El momento de cada una
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        La pregunta del millón: <strong className="text-[#1C1C1E]">¿por dónde empiezo?</strong>
+      </p>
+
+      <h3 className="font-serif text-xl md:text-2xl text-[#1C1C1E] mt-8 mb-4">
+        Si estás empezando — Community Management primero
+      </h3>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Cuando tu marca es nueva, nadie te conoce, nadie confía en ti. Si pones un anuncio, la gente va a ver tu perfil y se va a encontrar con 3 publicaciones y cero interacción. <strong className="text-[#1C1C1E]">El anuncio va a generar clics, pero no ventas.</strong> Porque no hay comunidad que respalde la promesa.
+      </p>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Invierte los primeros 3 meses en construir:
+      </p>
+
+      <CheckList items={[
+        'Un perfil coherente con tu identidad visual',
+        'Contenido que eduque sobre tu rubro (no que venda)',
+        'Interacción genuina con cada comentario y mensaje',
+        'Testimonios de tus primeros clientes (así sean gratis)',
+        'Un estilo de comunicación consistente — tu "voz de marca"',
+      ]} />
+
+      <DataBox icon="📈">
+        <strong>La métrica que importa al inicio:</strong> No los seguidores. La cantidad de personas que te escriben por iniciativa propia.
+      </DataBox>
+
+      <h3 className="font-serif text-xl md:text-2xl text-[#1C1C1E] mt-8 mb-4">
+        Cuando ya tienes tracción — Activa la publicidad
+      </h3>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Una vez que tienes contenido de calidad, interacción orgánica y algunos clientes satisfechos, la publicidad se convierte en un <strong className="text-[#1C1C1E]">acelerador</strong>. Ya no estás poniendo un anuncio delante de personas que no saben quién eres. Estás poniendo un anuncio delante de personas que, al llegar a tu perfil, ven actividad, ven comentarios, ven que hay vida ahí.
+      </p>
+
+      <div className="my-6 pl-4 border-l-4 border-[#007AFF]">
+        <p className="text-base md:text-lg text-[#636366] leading-[1.8] italic">
+          "La publicidad sin community management es como invitar gente a una fiesta vacía. Llegan, miran, y se van."
+        </p>
+      </div>
+
+      <h3 className="font-serif text-xl md:text-2xl text-[#1C1C1E] mt-8 mb-4">
+        Si ya tienes ambas — equílibralas
+      </h3>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Cuando las dos ruedas giran, el coche avanza rápido. El community management alimenta el recuerdo de marca y la confianza. La publicidad captura la demanda y convierte en clientes. Juntas crean un ciclo virtuoso:
+      </p>
+
+      <div className="my-8 bg-[#F5F5F7] rounded-vm-md p-5 md:p-6 border border-[#E8E8ED]/50">
+        <p className="text-sm font-semibold text-[#007AFF] uppercase tracking-[0.1em] mb-2">El ciclo ideal</p>
+        <ol className="space-y-2 text-sm text-[#636366]">
+          <li><strong className="text-[#1C1C1E]">1.</strong> Publicas contenido orgánico que educa y engancha → la gente te conoce</li>
+          <li><strong className="text-[#1C1C1E]">2.</strong> Activas anuncios dirigidos a audiencias que ya vieron tu contenido → el clic vale más</li>
+          <li><strong className="text-[#1C1C1E]">3.</strong> El cliente llega, encuentra un perfil activo, ve reseñas, ve interacción → confía más</li>
+          <li><strong className="text-[#1C1C1E]">4.</strong> Compra. Y si el servicio es bueno, deja un testimonio → alimenta el paso 1</li>
+        </ol>
+      </div>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        El error que más duele
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Hay un error que veo repetirse en todos los rubros, todos los países, todos los presupuestos:
+      </p>
+
+      <PullQuote>
+        Gastar $1,000 en anuncios cuando tu perfil de Instagram tiene 3 publicaciones y la última es de hace 2 meses.
+      </PullQuote>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Es como poner un letrero luminoso en una tienda que está cerrada. La gente llega, mira por la ventana, ve que no hay nada, y se va. Y no solo se va: ahora sabe que no estás ahí. <strong className="text-[#1C1C1E]">Pagaste para que te descubrieran y te mostraste vacío.</strong>
+      </p>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Si solo tienes presupuesto para una cosa, que sea community management los primeros meses. Construye el escaparate. Luego enciende el letrero.
+      </p>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        ¿Y cuánto deberías invertir en cada una?
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        No hay una fórmula mágica, pero sí una regla general que funciona para la mayoría de los negocios locales y pequeñas empresas:
+      </p>
+
+      <DataBox icon="📊">
+        <strong>Regla del 70/30 si estás empezando:</strong>
+        <div className="mt-3 space-y-1.5 text-sm text-[#636366]">
+          <p>📱 <strong>70% de tu esfuerzo</strong> → Community Management (contenido, interacción, comunidad)</p>
+          <p>📢 <strong>30% de tu presupuesto</strong> → Publicidad experimental (prueba con $200—$300 USD/mes)</p>
+        </div>
+      </DataBox>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        A medida que creces, la relación se invierte: marcas consolidadas pueden estar en 40% CM / 60% publicidad. Pero si no tienes base, la publicidad te va a costar más caro porque cada clic vale menos.
+      </p>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        El caso real
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Conozco un caso — y apuesto a que tú también conoces uno similar — de una clínica dental que invirtió $600 USD en anuncios de Facebook. Resultado: 5 leads, 0 citas agendadas. ¿La razón? Su página de Facebook tenía 4 fotos, el perfil decía "Clínica Dental" sin descripción, y la última publicación era de 8 meses atrás.
+      </p>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        La gente hizo clic, vio el perfil vacío, y pensó: <em>"¿Esta clínica sigue abierta?"</em>. Y siguieron scrolleando.
+      </p>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Tres meses después, se tomaron el trabajo de hacer contenido semanal: fotos de la clínica, antes y después, tips de salud dental, respuestas a preguntas frecuentes. Volvieron a invertir los mismos $600 en anuncios. Esa vez: 22 leads, 8 citas agendadas. <strong className="text-[#1C1C1E]">El anuncio era casi idéntico. La diferencia fue el perfil.</strong>
+      </p>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        En resumen
+      </h2>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 my-8">
+        <div className="bg-[#F5F5F7] rounded-vm-xl p-6 border border-[#E8E8ED]/50">
+          <div className="text-sm font-semibold text-[#007AFF] uppercase tracking-[0.1em] mb-3">
+            Solo Community Management
+          </div>
+          <ul className="space-y-2 text-sm text-[#636366]">
+            <li className="flex gap-2">• Crecimiento lento pero sólido</li>
+            <li className="flex gap-2">• Marca con personalidad y confianza</li>
+            <li className="flex gap-2">• Dificultad para escalar rápido</li>
+            <li className="flex gap-2">• Depende de algoritmos orgánicos</li>
+            <li className="flex gap-2 font-medium text-[#1C1C1E] mt-3">• Ideal para construir los cimientos</li>
+          </ul>
+        </div>
+        <div className="bg-[#F5F5F7] rounded-vm-xl p-6 border border-[#E8E8ED]/50">
+          <div className="text-sm font-semibold text-[#34C759] uppercase tracking-[0.1em] mb-3">
+            CM + Publicidad combinados
+          </div>
+          <ul className="space-y-2 text-sm text-[#636366]">
+            <li className="flex gap-2">• Crecimiento acelerado y sostenible</li>
+            <li className="flex gap-2">• Anuncios más efectivos (perfil activo)</li>
+            <li className="flex gap-2">• Audiencia fría → tibia → cliente</li>
+            <li className="flex gap-2">• Datos para optimizar continuamente</li>
+            <li className="flex gap-2 font-medium text-[#1C1C1E] mt-3">• El estándar de las marcas que crecen</li>
+          </ul>
+        </div>
+      </div>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        No necesitas elegir. Necesitas <strong className="text-[#1C1C1E]">entender el orden</strong>.
+      </p>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8] mb-8">
+        Primero construye algo que valga la pena mostrar. Después paga para que más gente lo vea.
+      </p>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8] italic">
+        La próxima vez que te pregunten cuánto inviertes en redes:
+      </p>
+      <p className="text-lg md:text-xl text-[#1C1C1E] font-serif italic mt-4 leading-relaxed">
+        — ¿Sabes cuánto de eso es construir comunidad y cuánto es comprar atención?
+      </p>
+    </>
+  )
+}
+
+// ═══════════════════════════════════════════════════════════
 // Componente principal
 // ═══════════════════════════════════════════════════════════
 
@@ -766,6 +1031,8 @@ export default function BlogPost() {
         return <ArticleChatbotsWhatsApp />
       case 'tu-negocio-no-aparece-en-google-maps':
         return <ArticleGoogleMaps />
+      case 'cm-vs-publicidad':
+        return <ArticleCMvsPublicidad />
       default:
         return <ArticleLandingVsSitio />
     }
