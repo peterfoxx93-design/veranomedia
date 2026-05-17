@@ -131,7 +131,7 @@ export default function Nosotros() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="bg-white rounded-vm-xl p-8 border border-[#E8E8ED]/50"
+              className="bg-white rounded-vm-xl p-8 border border-[#E8E8ED]/50 hover:shadow-vm-lg transition-all duration-300 hover:-translate-y-1"
             >
               <h3 className="text-heading-sm text-[#0066CC] mb-4">Nuestra Misión</h3>
               <p className="text-base text-[#636366] leading-relaxed">
@@ -144,7 +144,7 @@ export default function Nosotros() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="bg-white rounded-vm-xl p-8 border border-[#E8E8ED]/50"
+              className="bg-white rounded-vm-xl p-8 border border-[#E8E8ED]/50 hover:shadow-vm-lg transition-all duration-300 hover:-translate-y-1"
             >
               <h3 className="text-heading-sm text-[#0066CC] mb-4">Nuestra Visión</h3>
               <p className="text-base text-[#636366] leading-relaxed">
