@@ -89,15 +89,19 @@ export default function Nosotros() {
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-              className="relative"
+              className="relative group cursor-pointer"
             >
+              {/* Overlay gradient on hover */}
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0066CC]/0 via-transparent to-[#0066CC]/0 rounded-vm-xl transition-all duration-500 group-hover:from-[#0066CC]/10 group-hover:to-[#0066CC]/10 z-10 pointer-events-none" />
               <img
                 src="team-photo.jpg"
                 alt="Equipo de Verano Media"
-                className="w-full h-auto rounded-vm-xl shadow-vm-lg object-cover"
+                className="w-full h-auto rounded-vm-xl shadow-vm-lg object-cover transition-all duration-500 group-hover:scale-[1.03] group-hover:shadow-2xl"
                 style={{ maxHeight: '420px' }}
               />
-              <div className="absolute -bottom-3 -right-3 bg-[#0066CC] text-white text-xs font-semibold px-4 py-2 rounded-vm-md shadow-lg">
+              {/* Decorative border glow on hover */}
+              <div className="absolute inset-0 rounded-vm-xl border-2 border-transparent transition-all duration-500 group-hover:border-[#0066CC]/30 z-10 pointer-events-none" />
+              <div className="absolute -bottom-3 -right-3 bg-[#0066CC] text-white text-xs font-semibold px-4 py-2 rounded-vm-md shadow-lg transition-all duration-500 group-hover:-translate-y-1 group-hover:shadow-[#0066CC]/30 group-hover:shadow-xl z-20">
                 🚀 Creciendo juntos
               </div>
             </motion.div>
