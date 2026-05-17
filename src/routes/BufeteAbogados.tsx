@@ -264,7 +264,7 @@ export default function BufeteAbogados() {
       {/* ═══════════════════════════════════
          CTA FINAL
          ═══════════════════════════════════ */}
-      <section className="relative bg-[#1C1C1E] text-white py-24 md:py-32 overflow-hidden">
+      <section className="relative bg-[#0F1A2E] text-white py-24 md:py-32 overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-1/2 right-1/4 w-[500px] h-[500px] bg-[#D4A017]/10 rounded-full blur-3xl" />
         </div>

@@ -7,7 +7,7 @@ export default function CTA() {
   const isInView = useInView(ref, { once: true })
 
   return (
-    <section id="contacto" className="relative bg-[#1C1C1E] text-white overflow-hidden">
+    <section id="contacto" className="relative bg-[#0F1A2E] text-white overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/2 left-1/4 w-[400px] h-[400px] bg-[#007AFF]/10 rounded-full blur-3xl" />
         <div className="absolute bottom-1/4 right-1/4 w-[300px] h-[300px] bg-[#34C759]/5 rounded-full blur-3xl" />

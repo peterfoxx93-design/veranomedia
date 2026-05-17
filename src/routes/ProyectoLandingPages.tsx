@@ -66,7 +66,7 @@ export default function ProyectoLandingPages() {
       </section>
 
       {/* CTA */}
-      <section className="relative bg-[#1C1C1E] text-white overflow-hidden py-24">
+      <section className="relative bg-[#0F1A2E] text-white overflow-hidden py-24">
         <div className="container-vm text-center relative z-10">
           <h2 className="text-heading-lg font-extrabold mb-6">¿Listo para tu landing page?</h2>
           <p className="text-white/70 mb-8 max-w-lg mx-auto">Contáctanos y en 48 horas tienes un prototipo de tu sitio.</p>

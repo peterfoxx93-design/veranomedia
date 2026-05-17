@@ -400,7 +400,7 @@ export default function ClinicaDental() {
       </section>
 
       {/* ─────────────── CTA FINAL ─────────────── */}
-      <section className="relative bg-[#1C1C1E] text-white overflow-hidden">
+      <section className="relative bg-[#0F1A2E] text-white overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-1/2 left-1/4 w-[400px] h-[400px] bg-[#007AFF]/10 rounded-full blur-3xl" />
         </div>

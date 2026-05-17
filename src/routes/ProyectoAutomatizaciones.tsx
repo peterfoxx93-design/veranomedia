@@ -58,7 +58,7 @@ export default function ProyectoAutomatizaciones() {
         </div>
       </section>
 
-      <section className="relative bg-[#1C1C1E] text-white py-24">
+      <section className="relative bg-[#0F1A2E] text-white py-24">
         <div className="container-vm text-center">
           <h2 className="text-heading-lg font-extrabold mb-6">¿Qué proceso quieres automatizar hoy?</h2>
           <p className="text-white/70 mb-8 max-w-lg mx-auto">Cuéntanos tu caso y te mostramos cómo podría funcionar automatizado.</p>
