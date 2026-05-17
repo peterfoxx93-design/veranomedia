@@ -14,7 +14,7 @@ const platforms = [
 ]
 
 export default function ShareButtons({ slug, title }: { slug: string; title: string }) {
-  const version = 'v4'
+  const version = 'v5'
   const url = `${window.location.origin}/blog/${slug}`
   const fullTitle = `${title} — Un cuaderno de Verano`
 
@@ -58,3 +58,4 @@ export default function ShareButtons({ slug, title }: { slug: string; title: str
     </div>
   )
 }
+
