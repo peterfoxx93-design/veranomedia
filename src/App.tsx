@@ -9,6 +9,10 @@ import ServiciosAutomatizacion from './routes/ServiciosAutomatizacion'
 import ServiciosContenido from './routes/ServiciosContenido'
 import PaqueteCompleto from './routes/PaqueteCompleto'
 import PortafolioPage from './routes/PortafolioPage'
+import ProyectoLandingPages from './routes/ProyectoLandingPages'
+import ProyectoPosicionamientoLocal from './routes/ProyectoPosicionamientoLocal'
+import ProyectoPaquetesIntegrales from './routes/ProyectoPaquetesIntegrales'
+import ProyectoAutomatizaciones from './routes/ProyectoAutomatizaciones'
 import ClinicaDental from './routes/ClinicaDental'
 import BienesRaices from './routes/BienesRaices'
 import BufeteAbogados from './routes/BufeteAbogados'
@@ -31,6 +35,10 @@ export default function App() {
           <Route path="/servicios/contenido" element={<ServiciosContenido />} />
           <Route path="/paquete-completo" element={<PaqueteCompleto />} />
           <Route path="/portafolio" element={<PortafolioPage />} />
+          <Route path="/proyectos/landing-pages" element={<ProyectoLandingPages />} />
+          <Route path="/proyectos/posicionamiento-local" element={<ProyectoPosicionamientoLocal />} />
+          <Route path="/proyectos/paquetes-integrales" element={<ProyectoPaquetesIntegrales />} />
+          <Route path="/proyectos/automatizaciones" element={<ProyectoAutomatizaciones />} />
           <Route path="/modelos/clinica-dental" element={<ClinicaDental />} />
           <Route path="/modelos/bienes-raices" element={<BienesRaices />} />
           <Route path="/modelos/bufete-abogados" element={<BufeteAbogados />} />

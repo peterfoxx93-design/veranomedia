@@ -4,44 +4,36 @@ import { Link } from 'react-router-dom'
 
 const projects = [
   {
-    icon: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <rect x="2" y="3" width="20" height="14" rx="2" ry="2" /><line x1="8" y1="21" x2="16" y2="21" /><line x1="12" y1="17" x2="12" y2="21" />
-      </svg>
-    ),
+    image: '/images/proyectos/landing-pages.webp',
     title: 'Landing Pages',
     category: 'Diseño Web',
     desc: 'Páginas profesionales optimizadas para convertir visitantes en clientes. Diseño responsive, SEO y velocidad.',
     gradient: 'from-blue-500/10 to-blue-600/5',
+    link: '/proyectos/landing-pages',
   },
   {
-    icon: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" />
-      </svg>
-    ),
+    image: '/images/proyectos/posicionamiento-local.webp',
     title: 'Posicionamiento Local',
     category: 'Google Business',
     desc: 'Clínicas, restaurantes y comercios que ahora aparecen en Google Maps y atraen clientes locales todos los días.',
     gradient: 'from-green-500/10 to-green-600/5',
+    link: '/proyectos/posicionamiento-local',
   },
   {
-    icon: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-      </svg>
-    ),
+    image: '/images/proyectos/paquetes-integrales.webp',
     title: 'Paquetes Integrales',
     category: 'Marketing Completo',
     desc: 'Estrategias 360° que combinan web, redes, anuncios y automatización para negocios que quieren crecer de verdad.',
     gradient: 'from-purple-500/10 to-purple-600/5',
+    link: '/proyectos/paquetes-integrales',
   },
   {
-    image: '/assets/collage-automatizaciones.webp',
+    image: '/images/proyectos/automatizaciones.webp',
     title: 'Automatizaciones',
     category: 'Workflow & IA',
-    desc: 'Conectamos tus herramientas con Zapier, Make y n8n para que los procesos repetitivos de tu negocio se ejecuten solos. Ahorra tiempo, reduce errores y escala sin esfuerzo.',
+    desc: 'Conectamos tus herramientas con Zapier, Make y n8n para que los procesos repetitivos de tu negocio se ejecuten solos.',
     gradient: 'from-cyan-500/10 to-cyan-600/5',
+    link: '/proyectos/automatizaciones',
   },
 ]
 
@@ -55,26 +47,31 @@ function ProjectCard({ project, index }: { project: typeof projects[number]; ind
       initial={{ opacity: 0, y: 30 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.6, delay: index * 0.15, ease: [0.16, 1, 0.3, 1] }}
-      className={`rounded-vm-xl p-8 bg-gradient-to-br ${project.gradient} border border-[#E8E8ED]/50 hover:shadow-vm-lg transition-all duration-500 hover:-translate-y-1 cursor-default`}
     >
-      {'image' in project ? (
-        <div className="mb-3 -mx-2 -mt-2 rounded-t-vm-xl overflow-hidden h-32">
+      <Link
+        to={project.link}
+        className={`block rounded-vm-xl overflow-hidden bg-white border border-[#E8E8ED]/50 hover:shadow-vm-lg transition-all duration-500 hover:-translate-y-1 group`}
+      >
+        <div className="relative h-44 md:h-52 overflow-hidden bg-[#0A0A0A]">
           <img
             src={project.image}
             alt={project.title}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
           />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
         </div>
-      ) : (
-        <div className="w-10 h-10 rounded-vm-md flex items-center justify-center mb-4 text-[#0066CC] bg-[#0066CC]/10">
-          {project.icon}
+        <div className="p-6 md:p-8">
+          <div className="text-xs font-semibold text-[#0066CC] uppercase tracking-wider mb-2">
+            {project.category}
+          </div>
+          <h3 className="text-heading-sm text-[#1C1C1E] mb-3">{project.title}</h3>
+          <p className="text-base text-[#636366] leading-relaxed mb-4">{project.desc}</p>
+          <span className="inline-flex items-center gap-2 text-sm font-semibold text-[#0066CC] group-hover:gap-3 transition-all">
+            Ver proyecto
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
+          </span>
         </div>
-      )}
-      <div className="text-xs font-semibold text-[#0066CC] uppercase tracking-wider mb-2">
-        {project.category}
-      </div>
-      <h3 className="text-heading-sm text-[#1C1C1E] mb-3">{project.title}</h3>
-      <p className="text-base text-[#636366] leading-relaxed">{project.desc}</p>
+      </Link>
     </motion.div>
   )
 }
@@ -93,7 +90,7 @@ export default function Portfolio() {
             transition={{ duration: 0.5 }}
             className="text-sm font-semibold text-[#0066CC] uppercase tracking-widest"
           >
-            Trabajo realizado
+            Demos de proyectos
           </motion.span>
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -109,11 +106,11 @@ export default function Portfolio() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg text-[#8E8E93]"
           >
-            Cada proyecto es único y refleja la calidad que ponemos en todo lo que hacemos.
+            Cada demo muestra lo que podemos hacer por tu negocio.
           </motion.p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects.map((project, index) => (
             <ProjectCard key={project.title} project={project} index={index} />
           ))}
