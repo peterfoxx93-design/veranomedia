@@ -1,5 +1,3 @@
-import { useState, useCallback } from 'react'
-
 const platforms = [
   {
     id: 'x',
@@ -51,17 +49,6 @@ const platforms = [
       `https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(url)}&title=${encodeURIComponent(title)}`,
   },
   {
-    id: 'instagram',
-    label: 'Instagram',
-    color: 'hover:bg-gradient-to-tr hover:from-[#F58529] hover:via-[#DD2A7B] hover:to-[#8134AF] hover:text-white border-[#D1D1D6] hover:border-[#DD2A7B]',
-    icon: (
-      <svg viewBox="0 0 24 24" className="w-4 h-4" fill="currentColor">
-        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
-      </svg>
-    ),
-    copyOnly: true,
-  },
-  {
     id: 'threads',
     label: 'Threads',
     color: 'hover:bg-[#000] hover:text-white border-[#D1D1D6] hover:border-[#000]',
@@ -76,24 +63,11 @@ const platforms = [
 ]
 
 export default function ShareButtons({ slug, title }: { slug: string; title: string }) {
-  const [toast, setToast] = useState<string | null>(null)
-
   const url = `${window.location.origin}/blog/${slug}`
   const fullTitle = `${title} — Un cuaderno de Verano`
 
-  const showToast = useCallback((msg: string) => {
-    setToast(msg)
-    setTimeout(() => setToast(null), 3000)
-  }, [])
-
   const handleShare = (platform: typeof platforms[0]) => {
-    if (platform.shareUrl) {
-      window.open(platform.shareUrl(url, fullTitle), '_blank', 'noopener,noreferrer')
-    } else if (platform.copyOnly) {
-      navigator.clipboard.writeText(url).then(() => {
-        showToast('✅ Link copiado — pégalo en tu historia de Instagram')
-      })
-    }
+    window.open(platform.shareUrl(url, fullTitle), '_blank', 'noopener,noreferrer')
   }
 
   const handleNativeShare = () => {
@@ -103,7 +77,7 @@ export default function ShareButtons({ slug, title }: { slug: string; title: str
   }
 
   return (
-    <div className="my-10 pt-6 border-t border-[#E8E8ED]/40 relative">
+    <div className="my-10 pt-6 border-t border-[#E8E8ED]/40">
       <p className="text-sm text-[#636366] leading-relaxed text-center mb-5">
         ¿Te gustó este artículo? <strong className="text-[#1C1C1E]">Compártelo con tu comunidad</strong> 👇
       </p>
@@ -139,13 +113,6 @@ export default function ShareButtons({ slug, title }: { slug: string; title: str
           </button>
         </div>
       </div>
-
-      {/* Toast flotante para Instagram */}
-      {toast && (
-        <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 translate-y-full bg-[#1C1C1E] text-white text-xs px-4 py-2 rounded-vm-md shadow-lg whitespace-nowrap z-50 transition-all duration-300">
-          {toast}
-        </div>
-      )}
     </div>
   )
 }
