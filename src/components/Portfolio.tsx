@@ -36,9 +36,16 @@ const projects = [
     desc: 'Estrategias 360° que combinan web, redes, anuncios y automatización para negocios que quieren crecer de verdad.',
     gradient: 'from-purple-500/10 to-purple-600/5',
   },
+  {
+    image: '/assets/collage-automatizaciones.webp',
+    title: 'Automatizaciones',
+    category: 'Workflow & IA',
+    desc: 'Conectamos tus herramientas con Zapier, Make y n8n para que los procesos repetitivos de tu negocio se ejecuten solos. Ahorra tiempo, reduce errores y escala sin esfuerzo.',
+    gradient: 'from-cyan-500/10 to-cyan-600/5',
+  },
 ]
 
-function ProjectCard({ project, index }: { project: typeof projects[0]; index: number }) {
+function ProjectCard({ project, index }: { project: typeof projects[number]; index: number }) {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-50px' })
 
@@ -50,11 +57,19 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
       transition={{ duration: 0.6, delay: index * 0.15, ease: [0.16, 1, 0.3, 1] }}
       className={`rounded-vm-xl p-8 bg-gradient-to-br ${project.gradient} border border-[#E8E8ED]/50 hover:shadow-vm-lg transition-all duration-500 hover:-translate-y-1 cursor-default`}
     >
-      <div
-        className="w-10 h-10 rounded-vm-md flex items-center justify-center mb-4 text-[#0066CC] bg-[#0066CC]/10"
-      >
-        {project.icon}
-      </div>
+      {'image' in project ? (
+        <div className="mb-3 -mx-2 -mt-2 rounded-t-vm-xl overflow-hidden h-32">
+          <img
+            src={project.image}
+            alt={project.title}
+            className="w-full h-full object-cover"
+          />
+        </div>
+      ) : (
+        <div className="w-10 h-10 rounded-vm-md flex items-center justify-center mb-4 text-[#0066CC] bg-[#0066CC]/10">
+          {project.icon}
+        </div>
+      )}
       <div className="text-xs font-semibold text-[#0066CC] uppercase tracking-wider mb-2">
         {project.category}
       </div>
