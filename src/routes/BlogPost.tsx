@@ -3,6 +3,7 @@ import { useRef, useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { articles } from '../blog/articles'
 import KommentSection from '../components/KommentSection'
+import ShareButtons from '../components/ShareButtons'
 
 // ═══════════════════════════════════════════════════════════
 // Componentes editoriales reutilizables
@@ -1095,6 +1096,7 @@ export default function BlogPost() {
         <div className="container-vm max-w-[700px] mx-auto py-10 md:py-14">
           <div className="prose-custom">
             {renderArticleBody()}
+            <ShareButtons slug={article.slug} title={article.title} />
           </div>
         </div>
       </article>
