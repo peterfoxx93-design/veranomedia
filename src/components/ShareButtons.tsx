@@ -79,7 +79,7 @@ const platforms = [
 export default function ShareButtons({ slug, title }: { slug: string; title: string }) {
   const [copied, setCopied] = useState<string | null>(null)
 
-  const url = `https://veranomedia.digital/blog/${slug}`
+  const url = `${window.location.origin}/blog/${slug}`
   const fullTitle = `${title} — Un cuaderno de Verano`
 
   const handleShare = (platform: typeof platforms[0]) => {
