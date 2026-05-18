@@ -7,27 +7,24 @@ const demos = [
     tag: 'Gimnasio & Fitness',
     tagline: 'Donde el movimiento encuentra su equilibrio.',
     url: 'https://kinetic-rest.vercel.app',
-    bg: 'bg-[#0A0A0A]',
     accent: '#007AFF',
-    glowColor: 'bg-[#007AFF]',
+    heroImage: '/images/demos/kinetic-hero.jpg',
   },
   {
-    brand: 'ATLÁNTICO RS',
+    brand: 'ATLÁNTICO REAL STATE',
     tag: 'Bienes Raíces',
     tagline: 'Tu propiedad, nuestra prioridad.',
     url: 'https://atlantico-rs.vercel.app',
-    bg: 'bg-[#0A0A0A]',
     accent: '#34C759',
-    glowColor: 'bg-[#34C759]',
+    heroImage: '/images/demos/atlantico-hero.jpg',
   },
   {
-    brand: 'ORA NOVA 2',
+    brand: 'ORA NOVA',
     tag: 'Asistente IA',
     tagline: 'Inteligencia artificial para tu negocio.',
     url: 'https://ora-nova-2.vercel.app',
-    bg: 'bg-[#0A0A0A]',
     accent: '#AF52DE',
-    glowColor: 'bg-[#AF52DE]',
+    heroImage: '/images/demos/oranova-hero.jpg',
   },
 ]
 
@@ -44,37 +41,41 @@ function DemoCard({ demo, index }: { demo: typeof demos[number]; index: number }
       initial={{ opacity: 0, y: 30 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.6, delay: index * 0.15, ease: [0.16, 1, 0.3, 1] }}
-      className={`block rounded-vm-xl overflow-hidden ${demo.bg} border border-white/10 hover:shadow-vm-lg transition-all duration-500 hover:-translate-y-1 group relative`}
+      className="block rounded-vm-xl overflow-hidden group relative h-[320px]"
     >
-      {/* Glow effect */}
-      <div className={`absolute -top-20 -right-20 w-40 h-40 ${demo.glowColor}/10 rounded-full blur-3xl pointer-events-none`} />
-      <div className={`absolute -bottom-20 -left-20 w-40 h-40 ${demo.glowColor}/5 rounded-full blur-3xl pointer-events-none`} />
+      {/* Hero image background */}
+      <div className="absolute inset-0">
+        <img
+          src={demo.heroImage}
+          alt={demo.brand}
+          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+        />
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-black/40" />
+        <div className="absolute inset-0 bg-black/20" />
+      </div>
 
-      <div className="relative z-10 p-8 md:p-10 flex flex-col items-center text-center min-h-[260px] justify-center">
-        {/* Tag */}
+      {/* Content */}
+      <div className="relative z-10 p-8 md:p-10 flex flex-col items-center text-center justify-end min-h-full">
         <div
-          className="text-[10px] font-semibold uppercase tracking-[0.15em] mb-5"
+          className="text-[10px] font-semibold uppercase tracking-[0.15em] mb-3"
           style={{ color: demo.accent }}
         >
           {demo.tag}
         </div>
 
-        {/* Brand name — hero style */}
         <h3 className="text-[1.75rem] md:text-[2rem] font-extrabold text-white leading-tight mb-3 tracking-tight">
           {demo.brand}
         </h3>
 
-        {/* Accent line */}
-        <div className="w-8 h-[2px] mb-4" style={{ backgroundColor: demo.accent }} />
+        <div className="w-8 h-[2px] mb-3" style={{ backgroundColor: demo.accent }} />
 
-        {/* Tagline */}
-        <p className="text-sm text-white/50 leading-relaxed max-w-[220px]">
+        <p className="text-sm text-white/60 leading-relaxed max-w-[220px]">
           {demo.tagline}
         </p>
 
-        {/* CTA */}
         <span
-          className="mt-6 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider transition-all duration-300 group-hover:gap-3"
+          className="mt-5 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider transition-all duration-300 group-hover:gap-3"
           style={{ color: demo.accent }}
         >
           Ver demo en vivo

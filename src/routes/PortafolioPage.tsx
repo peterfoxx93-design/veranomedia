@@ -55,20 +55,23 @@ const realProjects = [
     tagline: 'Donde el movimiento encuentra su equilibrio.',
     url: 'https://kinetic-rest.vercel.app',
     accent: '#007AFF',
+    heroImage: '/images/demos/kinetic-hero.jpg',
   },
   {
-    brand: 'ATLÁNTICO RS',
+    brand: 'ATLÁNTICO REAL STATE',
     tag: 'Bienes Raíces',
     tagline: 'Tu propiedad, nuestra prioridad.',
     url: 'https://atlantico-rs.vercel.app',
     accent: '#34C759',
+    heroImage: '/images/demos/atlantico-hero.jpg',
   },
   {
-    brand: 'ORA NOVA 2',
+    brand: 'ORA NOVA',
     tag: 'Asistente IA',
     tagline: 'Inteligencia artificial para tu negocio.',
     url: 'https://ora-nova-2.vercel.app',
     accent: '#AF52DE',
+    heroImage: '/images/demos/oranova-hero.jpg',
   },
 ]
 
@@ -85,12 +88,21 @@ function RealProjectCard({ project, index }: { project: typeof realProjects[0]; 
       initial={{ opacity: 0, y: 30 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.6, delay: index * 0.15, ease: [0.16, 1, 0.3, 1] }}
-      className="block rounded-vm-xl overflow-hidden bg-[#0A0A0A] border border-white/10 hover:shadow-vm-lg transition-all duration-500 hover:-translate-y-1 group relative"
+      className="block rounded-vm-xl overflow-hidden group relative h-[320px]"
     >
-      <div className="absolute -top-20 -right-20 w-40 h-40 rounded-full blur-3xl pointer-events-none" style={{ backgroundColor: `${project.accent}15` }} />
-      <div className="absolute -bottom-20 -left-20 w-40 h-40 rounded-full blur-3xl pointer-events-none" style={{ backgroundColor: `${project.accent}10` }} />
+      {/* Hero image background */}
+      <div className="absolute inset-0">
+        <img
+          src={project.heroImage}
+          alt={project.brand}
+          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+        />
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-black/40" />
+        <div className="absolute inset-0 bg-black/20" />
+      </div>
 
-      <div className="relative z-10 p-8 md:p-10 flex flex-col items-center text-center min-h-[260px] justify-center">
+      <div className="relative z-10 p-8 md:p-10 flex flex-col items-center text-center justify-end min-h-full">
         <div
           className="text-[10px] font-semibold uppercase tracking-[0.15em] mb-5"
           style={{ color: project.accent }}
