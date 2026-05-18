@@ -39,6 +39,26 @@ export const articles = [
     date: 'Junio 2026',
     published: true,
   },
+  {
+    id: 'google-meta-ads',
+    title: 'Google Ads vs Meta Ads: cuándo invertir y cómo no perder dinero',
+    category: 'Anuncios',
+    slug: 'google-meta-ads',
+    readTime: 8,
+    excerpt: 'Invertir en anuncios sin estrategia es como prender fuego a tu presupuesto. Esta guía te dice dónde, cuándo y cómo anunciarte sin quemar dinero.',
+    date: 'Julio 2026',
+    published: true,
+  },
+  {
+    id: 'automatizacion-pymes',
+    title: 'Automatización para pequeñas empresas: mitos y realidades',
+    category: 'Automatización',
+    slug: 'automatizacion-pymes',
+    readTime: 7,
+    excerpt: '\"Eso es solo para empresas grandes\" o \"va a dejar a gente sin trabajo\". Cinco mitos sobre automatización que frenan a los negocios pequeños — y la realidad detrás de cada uno.',
+    date: 'Julio 2026',
+    published: true,
+  },
 ]
 
 export type Article = typeof articles[0]

@@ -1014,6 +1014,217 @@ function ArticleCMvsPublicidad() {
   )
 }
 
+function ArticleAutomatizacionPymes() {
+  return (
+    <>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        <DropCap>H</DropCap>ace unos meses hablé con el dueño de una ferretería en Santiago. Le mencioné que podía automatizar el envío de cotizaciones por WhatsApp. Su respuesta fue inmediata:
+      </p>
+
+      <div className="my-6 pl-4 border-l-4 border-[#007AFF]">
+        <p className="text-base md:text-lg text-[#636366] leading-[1.8] italic">
+          "Eso es para empresas grandes, no para un negocio como el mío."
+        </p>
+      </div>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Y ahí está el primer mito, el más común, el que más duele. Así que vamos a desmontar cinco creencias que están frenando a miles de negocios pequeños como el suyo.
+      </p>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        Mito #1: La automatización es solo para empresas grandes
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        <strong className="text-[#1C1C1E]">Realidad:</strong> Nunca fue tan barato ni tan fácil automatizar procesos. Herramientas como <strong className="text-[#1C1C1E]">Make, Zapier y n8n</strong> tienen planes gratuitos que permiten conectar apps sin escribir una línea de código.
+      </p>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Un negocio pequeño puede automatizar tareas como:
+      </p>
+
+      <CheckList items={[
+        'Responder cotizaciones automáticas por WhatsApp',
+        'Agendar citas en Google Calendar sin intervención humana',
+        'Enviar correos de seguimiento a clientes después de una compra',
+        'Publicar en Instagram y Facebook desde un solo lugar',
+        'Respaldar facturas y recibos en la nube automáticamente',
+      ]} />
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Todo esto por menos de lo que cuesta un café al día. No necesitas un departamento de IT. Necesitas 30 minutos y alguien que te guíe.
+      </p>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        Mito #2: La automatización va a dejar a gente sin trabajo
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        <strong className="text-[#1C1C1E]">Realidad:</strong> La automatización no reemplaza personas. Reemplaza <strong className="text-[#1C1C1E]">tareas repetitivas</strong>. Y eso es exactamente lo que los dueños de negocio necesitan: que su equipo deje de hacer trabajo manual para dedicarse a lo que realmente importa.
+      </p>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Cuando un chatbot responde las preguntas frecuentes a las 2 de la mañana, no está quitándole el trabajo a nadie. Está haciendo que el dueño del negocio no tenga que despertarse a responder. Y cuando el sistema de facturación envía automáticamente los recibos, tu asistente puede estar cerrando una venta en lugar de copiar y pegar datos en Excel.
+      </p>
+
+      <PullQuote>
+        La automatización no despide personas. La automatización libera personas para que hagan trabajo que las máquinas no pueden hacer.
+      </PullQuote>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        Mito #3: Es muy caro y solo se recupera a largo plazo
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        <strong className="text-[#1C1C1E]">Realidad:</strong> La mayoría de las automatizaciones se pagan solas en semanas, no en años. Hagamos cuentas simples:
+      </p>
+
+      <DataBox icon="🧮">
+        <strong>Ejemplo real:</strong>
+        <div className="mt-3 space-y-1.5 text-sm text-[#636366]">
+          <p>⏱️ Una clínica dental recibe 30 consultas de precio por WhatsApp a la semana.</p>
+          <p>👩‍⚕️ La recepcionista gasta 10 minutos por consulta respondiendo = 5 horas/semana.</p>
+          <p>🤖 Con un chatbot + automatización, la respuesta se da en 10 segundos.</p>
+          <p className="text-[#1C1C1E] font-medium mt-2">💰 Ahorro: ~20 horas al mes. Eso es medio sueldo de un empleado.</p>
+        </div>
+      </DataBox>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        La automatización no es un gasto. Es una de las inversiones con mejor retorno que puede hacer un negocio pequeño.
+      </p>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        Mito #4: Es complicado y solo los técnicos pueden usarlo
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        <strong className="text-[#1C1C1E]">Realidad:</strong> Las plataformas modernas de automatización son visuales. Arrastras, conectas, configuras. No necesitas saber programar.
+      </p>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Make y n8n funcionan con bloques visuales: "cuando llegue un mensaje → responde esto → guarda en Sheets → notifica al dueño". Esto es tan intuitivo que muchos dueños de negocio aprenden a crear sus propias automatizaciones en una tarde.
+      </p>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Y si no quieres hacerlo tú, agencias como Verano Media lo configuran por ti en 48 horas. Literalmente, te ahorramos el aprendizaje.
+      </p>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        Mito #5: Mi negocio es muy pequeño, no necesito automatizar
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        <strong className="text-[#1C1C1E]">Realidad:</strong> Es precisamente por eso que <strong className="text-[#1C1C1E]">más</strong> necesitas automatizar. Los negocios pequeños tienen menos personal, menos margen de error y menos tiempo. Cada minuto que tu equipo gasta en tareas repetitivas es un minuto que no están dedicando a vender, a atender bien al cliente, o a mejorar el negocio.
+      </p>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Automatizar no es cosa de grandes corporaciones. Es cosa de dueños inteligentes que entienden que su tiempo vale más que copiar y pegar datos.
+      </p>
+
+      <div className="my-8 bg-[#F5F5F7] rounded-vm-md p-5 md:p-6 border border-[#E8E8ED]/50">
+        <p className="text-sm font-semibold text-[#007AFF] uppercase tracking-[0.1em] mb-2">La regla de oro</p>
+        <p className="text-base text-[#636366] leading-relaxed">
+          Si haces una tarea manual más de 3 veces a la semana, pregúntate: <strong className="text-[#1C1C1E]">"¿Puede hacerlo una máquina?"</strong>. Si la respuesta es sí, <strong className="text-[#1C1C1E]">automatízala</strong>.
+        </p>
+      </div>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        Por dónde empezar (sin abrumarte)
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        No intentes automatizar todo de golpe. El orden correcto es:
+      </p>
+
+      <div className="my-8 space-y-4">
+        <div className="flex gap-4 items-start">
+          <div className="w-8 h-8 rounded-full bg-[#0066CC]/10 flex items-center justify-center shrink-0 mt-0.5">
+            <span className="text-sm font-bold text-[#0066CC]">1</span>
+          </div>
+          <div>
+            <p className="text-base font-semibold text-[#1C1C1E]">Identifica el dolor</p>
+            <p className="text-sm text-[#636366] mt-1">¿Qué tarea odias hacer? ¿Qué le roba más tiempo a tu equipo?</p>
+          </div>
+        </div>
+        <div className="flex gap-4 items-start">
+          <div className="w-8 h-8 rounded-full bg-[#0066CC]/10 flex items-center justify-center shrink-0 mt-0.5">
+            <span className="text-sm font-bold text-[#0066CC]">2</span>
+          </div>
+          <div>
+            <p className="text-base font-semibold text-[#1C1C1E]">Empieza por una</p>
+            <p className="text-sm text-[#636366] mt-1">Una sola automatización. Un proceso. Que funcione bien.</p>
+          </div>
+        </div>
+        <div className="flex gap-4 items-start">
+          <div className="w-8 h-8 rounded-full bg-[#0066CC]/10 flex items-center justify-center shrink-0 mt-0.5">
+            <span className="text-sm font-bold text-[#0066CC]">3</span>
+          </div>
+          <div>
+            <p className="text-base font-semibold text-[#1C1C1E]">Mide el resultado</p>
+            <p className="text-sm text-[#636366] mt-1">¿Cuánto tiempo ahorraste? ¿Valió la pena? Spoiler: sí.</p>
+          </div>
+        </div>
+        <div className="flex gap-4 items-start">
+          <div className="w-8 h-8 rounded-full bg-[#0066CC]/10 flex items-center justify-center shrink-0 mt-0.5">
+            <span className="text-sm font-bold text-[#0066CC]">4</span>
+          </div>
+          <div>
+            <p className="text-base font-semibold text-[#1C1C1E]">Escala</p>
+            <p className="text-sm text-[#636366] mt-1">Ahora que viste que funciona, automatiza el siguiente proceso.</p>
+          </div>
+        </div>
+      </div>
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        En resumen
+      </h2>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 my-8">
+        <div className="bg-[#F5F5F7] rounded-vm-xl p-6 border border-[#E8E8ED]/50">
+          <div className="text-sm font-semibold text-[#FF3B30] uppercase tracking-[0.1em] mb-3">Los mitos</div>
+          <ul className="space-y-2 text-sm text-[#636366]">
+            <li className="flex gap-2">✗ Solo para empresas grandes</li>
+            <li className="flex gap-2">✗ Deja a gente sin trabajo</li>
+            <li className="flex gap-2">✗ Es muy caro</li>
+            <li className="flex gap-2">✗ Es complicado</li>
+            <li className="flex gap-2">✗ No lo necesito</li>
+          </ul>
+        </div>
+        <div className="bg-[#F5F5F7] rounded-vm-xl p-6 border border-[#E8E8ED]/50">
+          <div className="text-sm font-semibold text-[#34C759] uppercase tracking-[0.1em] mb-3">Las realidades</div>
+          <ul className="space-y-2 text-sm text-[#636366]">
+            <li className="flex gap-2">✓ Nunca fue más barato</li>
+            <li className="flex gap-2">✓ Libera, no reemplaza</li>
+            <li className="flex gap-2">✓ Se paga sola en semanas</li>
+            <li className="flex gap-2">✓ Visual, sin código</li>
+            <li className="flex gap-2">✓ Lo necesitas más que una grande</li>
+          </ul>
+        </div>
+      </div>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        La automatización no es el futuro. Es el presente, y está al alcance de cualquier negocio que tenga conexión a internet y ganas de crecer.
+      </p>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8] italic">
+        La próxima vez que alguien te diga "eso es para empresas grandes", sonríe. Ahora sabes que no es verdad.
+      </p>
+    </>
+  )
+}
+
 // ═══════════════════════════════════════════════════════════
 // Componente principal
 // ═══════════════════════════════════════════════════════════
@@ -1034,6 +1245,8 @@ export default function BlogPost() {
         return <ArticleGoogleMaps />
       case 'cm-vs-publicidad':
         return <ArticleCMvsPublicidad />
+      case 'automatizacion-pymes':
+        return <ArticleAutomatizacionPymes />
       default:
         return <ArticleLandingVsSitio />
     }

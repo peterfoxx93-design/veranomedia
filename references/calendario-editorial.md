@@ -17,8 +17,8 @@
 4. ✅ **Community Management vs. Publicidad: ¿qué necesita tu negocio primero?**
    Publicado. Categoría: Redes Sociales
 
-5. 📝 **Automatización para pequeñas empresas: mitos y realidades**
-   Pendiente. Categoría: Automatización
+5. ✅ **Automatización para pequeñas empresas: mitos y realidades**
+   Publicado. Categoría: Automatización
 
 6. 📝 **SEO en 2026: lo que funciona y lo que ya no**
    Pendiente. Categoría: SEO
