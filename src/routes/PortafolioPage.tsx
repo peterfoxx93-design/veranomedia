@@ -189,7 +189,7 @@ export default function PortafolioPage() {
           <div className="text-center max-w-2xl mx-auto mb-12">
             <span className="text-sm font-semibold text-[#0066CC] uppercase tracking-widest">Demos de proyectos</span>
             <h2 className="text-heading-lg text-[#1C1C1E] mt-3 mb-4">Construido para negocios como el tuyo</h2>
-            <p className="text-lg text-[#8E8E93]">Cada demo muestra lo que podemos hacer. El primero ya está listo; los siguientes, en camino.</p>
+            <p className="text-lg text-[#8E8E93]">Listos para configurar tu negocio.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {realProjects.map((p, i) => (
