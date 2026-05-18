@@ -22,6 +22,11 @@ export default function ShareButtons({ slug, title, excerpt }: { slug: string; t
   const fullTitle = `${title} — Un cuaderno de Verano`
 
   const handleShare = (platform: typeof platforms[0]) => {
+    if (platform.id === 'linkedin') {
+      // Copiar título + texto al portapapeles
+      const postText = `${fullTitle}\n\n${excerpt || ''}\n\n${url}`
+      navigator.clipboard.writeText(postText).catch(() => {})
+    }
     window.open(platform.shareUrl(url, fullTitle), '_blank', 'noopener,noreferrer')
   }
 
