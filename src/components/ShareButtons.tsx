@@ -18,7 +18,7 @@ const platforms = [
 
 export default function ShareButtons({ slug, title, excerpt }: { slug: string; title: string; excerpt?: string }) {
   const version = 'v5'
-  const url = `${window.location.origin}/blog/${slug}`
+  const url = `${window.location.origin}/#/blog/${slug}`
   const fullTitle = `${title} — Un cuaderno de Verano`
 
   const handleShare = (platform: typeof platforms[0]) => {
