@@ -1096,7 +1096,7 @@ export default function BlogPost() {
         <div className="container-vm max-w-[700px] mx-auto py-10 md:py-14">
           <div className="prose-custom">
             {renderArticleBody()}
-            <ShareButtons slug={article.slug} title={article.title} />
+            <ShareButtons slug={article.slug} title={article.title} excerpt={article.excerpt} />
           </div>
         </div>
       </article>
