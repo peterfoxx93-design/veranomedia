@@ -4,27 +4,33 @@ import { useRef } from 'react'
 const demos = [
   {
     brand: 'KINETIC REST',
-    tag: 'Gimnasio & Fitness',
+    tag: 'GIMNASIO & FITNESS',
     tagline: 'Donde el movimiento encuentra su equilibrio.',
     url: 'https://kinetic-rest.vercel.app',
     accent: '#007AFF',
+    textColor: '#FFFFFF',
     heroImage: '/images/demos/kinetic-hero.jpg',
+    overlayStyle: 'bg-gradient-to-b from-black/10 via-black/30 to-black/60',
   },
   {
     brand: 'ATLÁNTICO REAL STATE',
-    tag: 'Bienes Raíces',
-    tagline: 'Tu propiedad, nuestra prioridad.',
+    tag: 'BIENES RAÍCES',
+    tagline: 'Redefiniendo el lujo tropical.',
     url: 'https://atlantico-rs.vercel.app',
     accent: '#34C759',
+    textColor: '#FFFFFF',
     heroImage: '/images/demos/atlantico-hero.jpg',
+    overlayStyle: 'bg-gradient-to-b from-black/5 via-black/15 to-black/50',
   },
   {
     brand: 'ORA NOVA',
-    tag: 'Asistente IA',
-    tagline: 'Inteligencia artificial para tu negocio.',
+    tag: 'ODONTOLOGÍA ESTÉTICA',
+    tagline: 'Donde la ciencia se encuentra con el arte.',
     url: 'https://ora-nova-2.vercel.app',
     accent: '#AF52DE',
+    textColor: '#FFFFFF',
     heroImage: '/images/demos/oranova-hero.jpg',
+    overlayStyle: 'bg-gradient-to-b from-black/10 via-black/20 to-black/50',
   },
 ]
 
@@ -50,9 +56,8 @@ function DemoCard({ demo, index }: { demo: typeof demos[number]; index: number }
           alt={demo.brand}
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
         />
-        {/* Dark overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-black/40" />
-        <div className="absolute inset-0 bg-black/20" />
+        {/* Subtle overlay — preserva la imagen visible */}
+        <div className={`absolute inset-0 ${demo.overlayStyle}`} />
       </div>
 
       {/* Content */}
@@ -64,13 +69,16 @@ function DemoCard({ demo, index }: { demo: typeof demos[number]; index: number }
           {demo.tag}
         </div>
 
-        <h3 className="text-[1.75rem] md:text-[2rem] font-extrabold text-white leading-tight mb-3 tracking-tight">
+        <h3
+          className="text-[1.75rem] md:text-[2rem] font-extrabold leading-tight mb-3 tracking-tight"
+          style={{ color: demo.textColor }}
+        >
           {demo.brand}
         </h3>
 
         <div className="w-8 h-[2px] mb-3" style={{ backgroundColor: demo.accent }} />
 
-        <p className="text-sm text-white/60 leading-relaxed max-w-[220px]">
+        <p className="text-sm leading-relaxed max-w-[220px]" style={{ color: `${demo.textColor}CC` }}>
           {demo.tagline}
         </p>
 

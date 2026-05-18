@@ -51,27 +51,30 @@ const projects = [
 const realProjects = [
   {
     brand: 'KINETIC REST',
-    tag: 'Gimnasio & Fitness',
+    tag: 'GIMNASIO & FITNESS',
     tagline: 'Donde el movimiento encuentra su equilibrio.',
     url: 'https://kinetic-rest.vercel.app',
     accent: '#007AFF',
     heroImage: '/images/demos/kinetic-hero.jpg',
+    overlayStyle: 'bg-gradient-to-b from-black/10 via-black/30 to-black/60',
   },
   {
     brand: 'ATLÁNTICO REAL STATE',
-    tag: 'Bienes Raíces',
-    tagline: 'Tu propiedad, nuestra prioridad.',
+    tag: 'BIENES RAÍCES',
+    tagline: 'Redefiniendo el lujo tropical.',
     url: 'https://atlantico-rs.vercel.app',
     accent: '#34C759',
     heroImage: '/images/demos/atlantico-hero.jpg',
+    overlayStyle: 'bg-gradient-to-b from-black/5 via-black/15 to-black/50',
   },
   {
     brand: 'ORA NOVA',
-    tag: 'Asistente IA',
-    tagline: 'Inteligencia artificial para tu negocio.',
+    tag: 'ODONTOLOGÍA ESTÉTICA',
+    tagline: 'Donde la ciencia se encuentra con el arte.',
     url: 'https://ora-nova-2.vercel.app',
     accent: '#AF52DE',
     heroImage: '/images/demos/oranova-hero.jpg',
+    overlayStyle: 'bg-gradient-to-b from-black/10 via-black/20 to-black/50',
   },
 ]
 
@@ -90,16 +93,15 @@ function RealProjectCard({ project, index }: { project: typeof realProjects[0]; 
       transition={{ duration: 0.6, delay: index * 0.15, ease: [0.16, 1, 0.3, 1] }}
       className="block rounded-vm-xl overflow-hidden group relative h-[320px]"
     >
-      {/* Hero image background */}
+        {/* Hero image background */}
       <div className="absolute inset-0">
         <img
           src={project.heroImage}
           alt={project.brand}
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
         />
-        {/* Dark overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-black/40" />
-        <div className="absolute inset-0 bg-black/20" />
+        {/* Subtle overlay */}
+        <div className={`absolute inset-0 ${project.overlayStyle}`} />
       </div>
 
       <div className="relative z-10 p-8 md:p-10 flex flex-col items-center text-center justify-end min-h-full">
