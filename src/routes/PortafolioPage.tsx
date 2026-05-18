@@ -1,6 +1,5 @@
 import { motion, useInView } from 'motion/react'
 import { useRef, useEffect } from 'react'
-import { Link } from 'react-router-dom'
 
 const projects = [
   {
@@ -51,28 +50,25 @@ const projects = [
 
 const realProjects = [
   {
-    title: 'Sonrisa Dental Puerto Plata',
-    category: 'Clínica Dental',
-    desc: 'Sitio web profesional para clínica dental con 6 secciones: hero visual, servicios detallados, equipo, ubicación, testimonios y CTA. Diseño premium con animaciones fluidas.',
-    image: 'images/dental/hero-dentist.jpg',
-    link: '/modelos/clinica-dental',
-    gradient: 'from-[#007AFF]/10 to-[#0066CC]/5',
+    brand: 'KINETIC REST',
+    tag: 'Gimnasio & Fitness',
+    tagline: 'Donde el movimiento encuentra su equilibrio.',
+    url: 'https://kinetic-rest.vercel.app',
+    accent: '#007AFF',
   },
   {
-    title: 'Bienes Raíces Costa Norte',
-    category: 'Bienes Raíces',
-    desc: 'Plataforma inmobiliaria con galería de propiedades, búsqueda por filtros, tour virtual y contacto directo con agentes.',
-    image: 'images/realestate/hero-beach-house.jpg',
-    link: '/modelos/bienes-raices',
-    gradient: 'from-emerald-500/10 to-emerald-600/5',
+    brand: 'ATLÁNTICO RS',
+    tag: 'Bienes Raíces',
+    tagline: 'Tu propiedad, nuestra prioridad.',
+    url: 'https://atlantico-rs.vercel.app',
+    accent: '#34C759',
   },
   {
-    title: 'Bufete Jurídico Rodríguez',
-    category: 'Abogados',
-    desc: 'Sitio web corporativo para despacho de abogados con áreas de práctica, equipo, casos de éxito y agendamiento de consultas.',
-    image: 'images/lawfirm/law-books.jpg',
-    link: '/modelos/bufete-abogados',
-    gradient: 'from-amber-500/10 to-amber-600/5',
+    brand: 'ORA NOVA 2',
+    tag: 'Asistente IA',
+    tagline: 'Inteligencia artificial para tu negocio.',
+    url: 'https://ora-nova-2.vercel.app',
+    accent: '#AF52DE',
   },
 ]
 
@@ -81,47 +77,48 @@ function RealProjectCard({ project, index }: { project: typeof realProjects[0]; 
   const isInView = useInView(ref, { once: true, margin: '-50px' })
 
   return (
-    <motion.div ref={ref}
+    <motion.a
+      ref={ref}
+      href={project.url}
+      target="_blank"
+      rel="noopener noreferrer"
       initial={{ opacity: 0, y: 30 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.6, delay: index * 0.15, ease: [0.16, 1, 0.3, 1] }}
-      className={`rounded-vm-xl overflow-hidden bg-white border border-[#E8E8ED]/50 hover:shadow-vm-lg transition-all duration-500 hover:-translate-y-1`}
+      className="block rounded-vm-xl overflow-hidden bg-[#0A0A0A] border border-white/10 hover:shadow-vm-lg transition-all duration-500 hover:-translate-y-1 group relative"
     >
-      {project.image ? (
-        <div className="relative h-48 md:h-56 overflow-hidden bg-[#F5F5F7]">
-          <img
-            src={project.image}
-            alt={project.title}
-            className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+      <div className="absolute -top-20 -right-20 w-40 h-40 rounded-full blur-3xl pointer-events-none" style={{ backgroundColor: `${project.accent}15` }} />
+      <div className="absolute -bottom-20 -left-20 w-40 h-40 rounded-full blur-3xl pointer-events-none" style={{ backgroundColor: `${project.accent}10` }} />
+
+      <div className="relative z-10 p-8 md:p-10 flex flex-col items-center text-center min-h-[260px] justify-center">
+        <div
+          className="text-[10px] font-semibold uppercase tracking-[0.15em] mb-5"
+          style={{ color: project.accent }}
+        >
+          {project.tag}
         </div>
-      ) : (
-        <div className="h-48 md:h-56 flex items-center justify-center bg-[#F5F5F7]">
-          <span className="text-[#D1D1D6] text-sm font-medium uppercase tracking-widest">Próximamente</span>
-        </div>
-      )}
-      <div className="p-6 md:p-8">
-        <div className="text-xs font-semibold text-[#0066CC] uppercase tracking-wider mb-2">{project.category}</div>
-        <h3 className="text-xl font-bold text-[#1C1C1E] mb-3">{project.title}</h3>
-        <p className="text-base text-[#636366] leading-relaxed mb-5">{project.desc}</p>
-        {project.link ? (
-          <Link
-            to={project.link}
-            className="inline-flex items-center gap-2 text-sm font-semibold text-[#0066CC] hover:text-[#0052CC] transition-colors group"
-          >
-            Ver proyecto
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="transition-transform duration-300 group-hover:translate-x-1">
-              <line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" />
-            </svg>
-          </Link>
-        ) : (
-          <span className="inline-flex items-center gap-2 text-sm font-semibold text-[#D1D1D6]">
-            Disponible pronto
-          </span>
-        )}
+
+        <h3 className="text-[1.75rem] md:text-[2rem] font-extrabold text-white leading-tight mb-3 tracking-tight">
+          {project.brand}
+        </h3>
+
+        <div className="w-8 h-[2px] mb-4" style={{ backgroundColor: project.accent }} />
+
+        <p className="text-sm text-white/50 leading-relaxed max-w-[220px]">
+          {project.tagline}
+        </p>
+
+        <span
+          className="mt-6 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider transition-all duration-300 group-hover:gap-3"
+          style={{ color: project.accent }}
+        >
+          Ver demo en vivo
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" />
+          </svg>
+        </span>
       </div>
-    </motion.div>
+    </motion.a>
   )
 }
 
@@ -182,7 +179,7 @@ export default function PortafolioPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {realProjects.map((p, i) => (
-              <RealProjectCard key={p.title} project={p} index={i} />
+              <RealProjectCard key={p.brand} project={p} index={i} />
             ))}
           </div>
         </div>
