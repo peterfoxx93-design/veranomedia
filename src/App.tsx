@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import MainLayout from './layouts/MainLayout'
 import Home from './routes/Home'
 import ServiciosOverview from './routes/ServiciosOverview'
@@ -23,7 +23,7 @@ import BlogPost from './routes/BlogPost'
 
 export default function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />
@@ -48,6 +48,6 @@ export default function App() {
           <Route path="/blog/:slug" element={<BlogPost />} />
         </Route>
       </Routes>
-      </HashRouter>
+      </BrowserRouter>
   )
 }
