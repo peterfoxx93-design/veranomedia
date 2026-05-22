@@ -59,7 +59,7 @@ export default function ProyectoPaquetesIntegrales() {
         <div className="container-vm text-center">
           <h2 className="text-heading-lg font-extrabold mb-6">Un plan hecho a tu medida</h2>
           <p className="text-white/70 mb-8 max-w-lg mx-auto">Hablemos de lo que tu negocio necesita y armamos el paquete perfecto.</p>
-          <a href="https://wa.me/18296848477" target="_blank" rel="noopener noreferrer"
+          <a href="https://wa.me/18093586497" target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-[#AF52DE] text-white px-8 py-4 rounded-vm-md font-semibold hover:bg-[#AF52DE]/90 transition-all hover:-translate-y-1">
             Cotizar mi paquete
           </a>

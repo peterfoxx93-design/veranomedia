@@ -56,7 +56,7 @@ export default function ProyectoPosicionamientoLocal() {
         <div className="container-vm text-center">
           <h2 className="text-heading-lg font-extrabold mb-6">¿No apareces en Google Maps?</h2>
           <p className="text-white/70 mb-8 max-w-lg mx-auto">Empecemos con un diagnóstico gratuito de tu presencia local.</p>
-          <a href="https://wa.me/18296848477" target="_blank" rel="noopener noreferrer"
+          <a href="https://wa.me/18093586497" target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-[#34C759] text-white px-8 py-4 rounded-vm-md font-semibold hover:bg-[#34C759]/90 transition-all hover:-translate-y-1">
             Diagnosticar mi negocio
           </a>

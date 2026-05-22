@@ -70,7 +70,7 @@ export default function ProyectoLandingPages() {
         <div className="container-vm text-center relative z-10">
           <h2 className="text-heading-lg font-extrabold mb-6">¿Listo para tu landing page?</h2>
           <p className="text-white/70 mb-8 max-w-lg mx-auto">Contáctanos y en 48 horas tienes un prototipo de tu sitio.</p>
-          <a href="https://wa.me/18296848477" target="_blank" rel="noopener noreferrer"
+          <a href="https://wa.me/18093586497" target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-[#007AFF] text-white px-8 py-4 rounded-vm-md font-semibold hover:bg-[#007AFF]/90 transition-all hover:-translate-y-1">
             Solicitar diagnóstico gratuito
           </a>

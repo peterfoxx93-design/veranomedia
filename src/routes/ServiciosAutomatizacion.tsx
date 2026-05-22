@@ -93,7 +93,7 @@ export default function ServiciosAutomatizacion() {
         <div className="container-vm relative z-10 py-24 md:py-32 text-center">
           <h2 className="text-heading-lg md:text-[3.5rem] font-extrabold mb-6">¿Listo para automatizar?</h2>
           <p className="text-lg md:text-xl text-white/70 mb-10 max-w-xl mx-auto">Descubre cómo la automatización puede hacer crecer tu negocio mientras duermes.</p>
-          <a href="https://wa.me/18296848477" target="_blank" rel="noopener noreferrer"
+          <a href="https://wa.me/18093586497" target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-[#0066CC] text-white px-8 py-4 rounded-vm-md text-base font-semibold hover:bg-[#0066CC]/90 transition-all duration-300 hover:shadow-vm-lg hover:-translate-y-1">
             Escríbenos por WhatsApp
           </a>

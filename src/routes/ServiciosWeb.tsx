@@ -131,7 +131,7 @@ export default function ServiciosWeb() {
           <p className="text-lg md:text-xl text-white/70 mb-10 max-w-xl mx-auto">
             Agenda tu Diagnóstico Digital Gratuito y descubre qué oportunidades estás perdiendo en internet.
           </p>
-          <a href="https://wa.me/18296848477" target="_blank" rel="noopener noreferrer"
+          <a href="https://wa.me/18093586497" target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-[#0066CC] text-white px-8 py-4 rounded-vm-md text-base font-semibold hover:bg-[#0066CC]/90 transition-all duration-300 hover:shadow-vm-lg hover:-translate-y-1">
             Escríbenos por WhatsApp
           </a>

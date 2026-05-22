@@ -62,7 +62,7 @@ export default function ProyectoAutomatizaciones() {
         <div className="container-vm text-center">
           <h2 className="text-heading-lg font-extrabold mb-6">¿Qué proceso quieres automatizar hoy?</h2>
           <p className="text-white/70 mb-8 max-w-lg mx-auto">Cuéntanos tu caso y te mostramos cómo podría funcionar automatizado.</p>
-          <a href="https://wa.me/18296848477" target="_blank" rel="noopener noreferrer"
+          <a href="https://wa.me/18093586497" target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-[#06B6D4] text-white px-8 py-4 rounded-vm-md font-semibold hover:bg-[#06B6D4]/90 transition-all hover:-translate-y-1">
             Empezar diagnóstico
           </a>
