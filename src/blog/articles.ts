@@ -59,6 +59,16 @@ export const articles = [
     date: 'Julio 2026',
     published: true,
   },
+  {
+    id: 'seo-2026',
+    title: 'SEO en 2026: lo que funciona y lo que ya no',
+    category: 'SEO',
+    slug: 'seo-2026',
+    readTime: 7,
+    excerpt: 'Si todavía crees que el SEO es \"poner palabras clave y esperar\", tengo una noticia: Google ya no busca keywords, busca respuestas.',
+    date: 'Julio 2026',
+    published: true,
+  },
 ]
 
 export type Article = typeof articles[0]

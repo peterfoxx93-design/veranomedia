@@ -1225,6 +1225,135 @@ function ArticleAutomatizacionPymes() {
   )
 }
 
+function ArticleSeo2026() {
+  return (
+    <>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        <DropCap>S</DropCap>i todavía crees que el SEO es "poner palabras clave y esperar", tengo una noticia: <strong className="text-[#1C1C1E]">Google ya no busca keywords, busca respuestas</strong>.
+      </p>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        En 2026, el SEO cambió más que en los últimos 10 años juntos. No porque el algoritmo sea diferente — porque <strong className="text-[#1C1C1E]">cómo busca la gente es diferente</strong>.
+      </p>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        Lo que ya no funciona
+      </h2>
+
+      <h3 className="font-serif text-xl md:text-2xl text-[#1C1C1E] mt-8 mb-4">
+        1. Rellenar de palabras clave
+      </h3>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Google ya no empareja términos. Entiende intención. Un artículo optimizado para "zapatos rojos baratos en Santo Domingo" y otro para "dónde comprar zapatos rojos económicos en RD" compiten por lo mismo si responden bien.
+      </p>
+
+      <h3 className="font-serif text-xl md:text-2xl text-[#1C1C1E] mt-8 mb-4">
+        2. Backlinks masivos
+      </h3>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Un solo link de un sitio relevante vale más que 50 de directorios basura. Google prioriza calidad sobre cantidad, y en 2026 esto se endureció.
+      </p>
+
+      <h3 className="font-serif text-xl md:text-2xl text-[#1C1C1E] mt-8 mb-4">
+        3. Contenido genérico generado por IA
+      </h3>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        El 91% de los marketeros ya usa IA para contenido (SE Ranking, 2025). Pero Google castiga lo que no aporta valor real. Si tu artículo lo pudo escribir cualquiera con ChatGPT, no va a posicionar.
+      </p>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        Lo que funciona en 2026
+      </h2>
+
+      <h3 className="font-serif text-xl md:text-2xl text-[#1C1C1E] mt-8 mb-4">
+        1. Optimización para motores de respuesta (AEO)
+      </h3>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Google ya no es un motor de búsqueda — es un <strong className="text-[#1C1C1E]">motor de respuestas</strong>. Cuando alguien pregunta "¿cómo facturar como freelancer en RD?", Google quiere darte la respuesta directa.
+      </p>
+
+      <CheckList items={[
+        'Estructura tu contenido en formato pregunta → respuesta clara',
+        'Usa listas, tablas, pasos numerados',
+        'Pon la respuesta principal al inicio del artículo',
+      ]} />
+
+      <h3 className="font-serif text-xl md:text-2xl text-[#1C1C1E] mt-8 mb-4">
+        2. EEAT 2.0 — Experiencia real
+      </h3>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        La "E" extra de Experience ahora pesa tanto como Expertise. Google quiere saber que <strong className="text-[#1C1C1E]">has hecho lo que explicas</strong>.
+      </p>
+
+      <CheckList items={[
+        'Autor con nombre y foto real',
+        'Datos propios, no solo teoría reciclada',
+        'Casos de estudio, testimonios, resultados concretos',
+      ]} />
+
+      <h3 className="font-serif text-xl md:text-2xl text-[#1C1C1E] mt-8 mb-4">
+        3. SEO para búsqueda por voz y visual
+      </h3>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Más del 50% de las búsquedas en LATAM ya son por voz (Vexus, 2025). La gente habla distinto a como escribe:
+      </p>
+
+      <MiniTable rows={[
+        ['Escrito', '"restaurante italiano Madrid"'],
+        ['Hablado', '"¿Dónde hay un buen restaurante italiano cerca de aquí?"'],
+      ]} />
+
+      <h3 className="font-serif text-xl md:text-2xl text-[#1C1C1E] mt-8 mb-4">
+        4. SEO local hiperpersonalizado
+      </h3>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Google Business Profile completo, reseñas y contenido local son la prioridad #1 para negocios que atienden presencial.
+      </p>
+
+      <h3 className="font-serif text-xl md:text-2xl text-[#1C1C1E] mt-8 mb-4">
+        5. Medir visibilidad, no solo tráfico
+      </h3>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        El 60% de las búsquedas ya no generan un clic (Semrush, 2026). Las nuevas métricas: fragmentos destacados, citas en IA, respuestas de voz y share of voice.
+      </p>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        Resumen práctico
+      </h2>
+
+      <MiniTable rows={[
+        ['Ya no funciona', 'Funciona en 2026'],
+        ['Keywords repetidas', 'Responder preguntas reales'],
+        ['Backlinks masivos', 'Autoridad temática + experiencia'],
+        ['Contenido IA genérico', 'EEAT 2.0 (datos propios, autor real)'],
+        ['Medir solo tráfico', 'Medir visibilidad en IA + voz'],
+      ]} />
+
+      <PullQuote>
+        El SEO de 2026 no se trata de engañar a un algoritmo, sino de convertirse en la fuente confiable de respuestas.
+      </PullQuote>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8] italic">
+        ¿Tu negocio aparece cuando te buscan? Si no estás seguro, probablemente no.
+      </p>
+    </>
+  )
+}
+
 // ═══════════════════════════════════════════════════════════
 // Componente principal
 // ═══════════════════════════════════════════════════════════
@@ -1247,6 +1376,8 @@ export default function BlogPost() {
         return <ArticleCMvsPublicidad />
       case 'automatizacion-pymes':
         return <ArticleAutomatizacionPymes />
+      case 'seo-2026':
+        return <ArticleSeo2026 />
       default:
         return <ArticleLandingVsSitio />
     }
