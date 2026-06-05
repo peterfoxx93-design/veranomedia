@@ -1354,6 +1354,164 @@ function ArticleSeo2026() {
   )
 }
 
+function ArticleFunnelDigital() {
+  return (
+    <>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        <DropCap>U</DropCap>n amigo me llamó la semana pasada. Acaba de abrir un consultorio de fisioterapia. Me dijo: <em>"Ya tengo Instagram, ya tengo WhatsApp, ya le pagué a un diseñador para el logo. ¿Qué más falta?"</em>
+      </p>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Le respondí con una pregunta que casi nadie se hace al empezar:
+      </p>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8] italic text-center my-6">
+        — <em>"¿Qué quieres que pase desde que alguien escucha tu nombre hasta que paga?"</em>
+      </p>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Ese camino — desde que una persona <strong className="text-[#1C1C1E]">descubre</strong> tu negocio hasta que <strong className="text-[#1C1C1E]">decide comprar</strong> — se llama <em>funnel digital</em>. Y la mayoría de los negocios lo construye al revés: invierten en diseño y anuncios antes de definir el recorrido del cliente.
+      </p>
+
+      <PullQuote>
+        Un funnel no es un embudo que atrapa gente. Es un camino que acompaña decisiones. Si lo construyes bien, el cliente siente que llegó solo.
+      </PullQuote>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        Las tres etapas del funnel (sin jerga de manual)
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Olvídate de TOFU, MOFU, BOFU y siglas que suenan a restaurante japonés. En la práctica, tu funnel tiene tres momentos:
+      </p>
+
+      <h3 className="font-serif text-xl md:text-2xl text-[#1C1C1E] mt-8 mb-4">
+        1. Descubrimiento: que te encuentren
+      </h3>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Aquí la persona no sabe que existes. Te encuentra porque alguien le habló de ti, porque apareciste en Google, porque vio tu post en Instagram, porque un anuncio le llamó la atención.
+      </p>
+
+      <DataBox icon="🔍">
+        <strong>Lo que necesitas en esta etapa:</strong> presencia donde tu cliente busca. Google Maps si es negocio local. Instagram si tu cliente pasa tiempo ahí. Un artículo de blog si resuelves una duda común. No necesitas convencer a nadie todavía. Solo <strong className="text-[#1C1C1E]">existir donde te buscan</strong>.
+      </DataBox>
+
+      <h3 className="font-serif text-xl md:text-2xl text-[#1C1C1E] mt-8 mb-4">
+        2. Consideración: que confíen en ti
+      </h3>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Ya te encontró. Ahora revisa tu perfil, tu sitio web, lo que otros dicen de ti. Compara. Investiga. En esta etapa <strong className="text-[#1C1C1E">no se compra, se decide</strong>.
+      </p>
+
+      <CheckList items={[
+        'Un sitio web profesional que cargue rápido en el celular',
+        'Testimonios o reseñas visibles (Google, Instagram, web)',
+        'Contenido que responda sus dudas (blog, FAQs, videos)',
+        'Fotos reales de tu negocio, no stock photos',
+        'Un tono consistente en todos los canales',
+      ]} />
+
+      <h3 className="font-serif text-xl md:text-2xl text-[#1C1C1E] mt-8 mb-4">
+        3. Decisión: que actúen
+      </h3>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Ya confía. Ahora necesita un empujón. Una oferta clara, un formulario simple, un WhatsApp directo, una razón para <strong className="text-[#1C1C1E">actuar hoy y no mañana</strong>.
+      </p>
+
+      <DataBox icon="🎯">
+        <strong>Lo que mata la decisión:</strong> pedir demasiada información, formularios largos, no tener WhatsApp a la vista, precios escondidos, páginas que cargan lento. Cada fricción es una venta perdida.
+      </DataBox>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        El error que casi todos cometen
+      </h2>
+
+      <div className="space-y-6 my-8">
+        <div className="bg-[#F5F5F7] rounded-vm-md p-5 border border-[#E8E8ED]/50">
+          <div className="text-sm font-semibold text-[#FF453A] uppercase tracking-[0.1em] mb-2">Error #1</div>
+          <p className="text-base text-[#636366] leading-relaxed">
+            <strong className="text-[#1C1C1E]">Saltarse la consideración.</strong> Invierten solo en descubrimiento (anuncios, redes) y esperan que la gente compre directo. Pero sin contenido que genere confianza, el visitante llega, mira y se va.
+          </p>
+        </div>
+        <div className="bg-[#F5F5F7] rounded-vm-md p-5 border border-[#E8E8ED]/50">
+          <div className="text-sm font-semibold text-[#FF453A] uppercase tracking-[0.1em] mb-2">Error #2</div>
+          <p className="text-base text-[#636366] leading-relaxed">
+            <strong className="text-[#1C1C1E]">Tener todo menos la decisión clara.</strong> Site bonito, Instagram activo, reseñas perfectas... pero ningún lugar visible que diga "reserva aquí" o "cómpralo ahora". El cliente quiere comprar y no encuentra cómo.
+          </p>
+        </div>
+        <div className="bg-[#F5F5F7] rounded-vm-md p-5 border border-[#E8E8ED]/50">
+          <div className="text-sm font-semibold text-[#FF453A] uppercase tracking-[0.1em] mb-2">Error #3</div>
+          <p className="text-base text-[#636366] leading-relaxed">
+            <strong className="text-[#1C1C1E]">Construir el funnel al revés.</strong> Empiezan por la página web (el final del camino) antes de saber cómo van a atraer gente al principio. Una web sin tráfico es un local en una calle sin peatones.
+          </p>
+        </div>
+      </div>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        Cómo construir tu funnel paso a paso
+      </h2>
+
+      <div className="space-y-8 my-8">
+        <div className="bg-[#F5F5F7] rounded-vm-md p-5 border border-[#E8E8ED]/50">
+          <div className="text-sm font-semibold text-[#0066CC] uppercase tracking-[0.1em] mb-2">Paso 1</div>
+          <p className="text-base text-[#636366] leading-relaxed">
+            <strong className="text-[#1C1C1E]">Define el recorrido.</strong> ¿Dónde busca tu cliente? ¿Qué necesita saber antes de comprar? ¿Cuál es la última pregunta que hace antes de decidir? Responde eso primero.
+          </p>
+        </div>
+        <div className="bg-[#F5F5F7] rounded-vm-md p-5 border border-[#E8E8ED]/50">
+          <div className="text-sm font-semibold text-[#0066CC] uppercase tracking-[0.1em] mb-2">Paso 2</div>
+          <p className="text-base text-[#636366] leading-relaxed">
+            <strong className="text-[#1C1C1E]">Asegura el descubrimiento.</strong> Google Business Profile completo, Instagram activo con contenido útil, un artículo que responda la pregunta principal de tu cliente. Una sola fuente de tráfico bien trabajada vale más que cinco a medias.
+          </p>
+        </div>
+        <div className="bg-[#F5F5F7] rounded-vm-md p-5 border border-[#E8E8ED]/50">
+          <div className="text-sm font-semibold text-[#0066CC] uppercase tracking-[0.1em] mb-2">Paso 3</div>
+          <p className="text-base text-[#636366] leading-relaxed">
+            <strong className="text-[#1C1C1E]">Construye la consideración.</strong> Una landing page o sitio web que muestre quién eres, qué haces, y por qué deberían confiar en ti. Testimonios, casos, contenido que eduque.
+          </p>
+        </div>
+        <div className="bg-[#F5F5F7] rounded-vm-md p-5 border border-[#E8E8ED]/50">
+          <div className="text-sm font-semibold text-[#0066CC] uppercase tracking-[0.1em] mb-2">Paso 4</div>
+          <p className="text-base text-[#636366] leading-relaxed">
+            <strong className="text-[#1C1C1E]">Facilita la decisión.</strong> Botón de WhatsApp visible, formulario simple (3 campos máximo), precio claro, llamado a la acción específico. Elimina toda fricción entre "quiero" y "compro".
+          </p>
+        </div>
+      </div>
+
+      <MiniTable rows={[
+        ['Antes del funnel', 'Después del funnel'],
+        ['Inviertes en anuncios y esperas', 'Sabes exactamente qué canal atrae clientes'],
+        ['Tienes web pero nadie la visita', 'Cada etapa alimenta a la siguiente'],
+        ['Los clientes llegan "de casualidad"', 'El proceso es repetible y medible'],
+        ['No sabes por qué no venden', 'Sabes exactamente dónde se pierden'],
+      ]} />
+
+      <Separator />
+
+      <div className="my-10 text-center">
+        <p className="text-base md:text-lg text-[#636366] leading-relaxed italic">
+          Un funnel digital no es una estrategia de marketing. Es la respuesta a la pregunta más importante de tu negocio:
+        </p>
+        <p className="text-lg md:text-xl text-[#1C1C1E] font-serif italic mt-4 leading-relaxed">
+          — "¿Qué pasa después de que alguien me descubre?"
+        </p>
+        <p className="text-base md:text-lg text-[#636366] leading-relaxed mt-6">
+          Si no tienes una respuesta clara para cada etapa, no es que te falte marketing. Es que te falta un camino. Y sin camino, el cliente se pierde antes de llegar.
+        </p>
+      </div>
+    </>
+  )
+}
+
 // ═══════════════════════════════════════════════════════════
 // Componente principal
 // ═══════════════════════════════════════════════════════════
@@ -1378,6 +1536,8 @@ export default function BlogPost() {
         return <ArticleAutomatizacionPymes />
       case 'seo-2026':
         return <ArticleSeo2026 />
+      case 'funnel-digital':
+        return <ArticleFunnelDigital />
       default:
         return <ArticleLandingVsSitio />
     }

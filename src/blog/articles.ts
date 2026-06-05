@@ -69,6 +69,16 @@ export const articles = [
     date: 'Julio 2026',
     published: true,
   },
+  {
+    id: 'funnel-digital',
+    title: 'De cero a cliente: el funnel digital que todo negocio debería tener',
+    category: 'Estrategia',
+    slug: 'funnel-digital',
+    readTime: 8,
+    excerpt: 'Un funnel no es un embudo que atrapa gente. Es un camino que acompaña decisiones. Si lo construyes bien, el cliente siente que llegó solo.',
+    date: 'Julio 2026',
+    published: true,
+  },
 ]
 
 export type Article = typeof articles[0]
