@@ -132,7 +132,7 @@ export default function Footer() {
                 +1 (809) 358-6497
               </a>
               <a
-                href="mailto:hola@veranomedia.digital"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=hola@veranomedia.digital"
                 className="flex items-center gap-2 hover:text-[#0066CC] transition-colors duration-200"
               >
                 <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
