@@ -5,6 +5,19 @@ const nextConfig = {
     unoptimized: true,
   },
   swcMinify: false,
+  async headers() {
+    return [
+      {
+        source: '/(.*)',
+        headers: [
+          {
+            key: 'x-vercel-ai-enabled',
+            value: 'false',
+          },
+        ],
+      },
+    ];
+  },
 }
 
 module.exports = nextConfig
