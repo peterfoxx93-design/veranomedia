@@ -149,6 +149,14 @@ export default function Navbar() {
               </Link>
             )
           )}
+          <a
+            href="https://veranomedia-crm-api.onrender.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm transition-colors duration-200 font-medium text-[#636366] hover:text-[#0066CC]"
+          >
+            Admin
+          </a>
           <Link
             to="/contacto"
             className="bg-[#0066CC] text-white px-5 py-2.5 rounded-vm-md text-sm font-semibold hover:bg-[#0066CC]/90 transition-all duration-200 hover:shadow-vm-md hover:-translate-y-0.5"
@@ -246,6 +254,14 @@ export default function Navbar() {
             >
               Blog
             </Link>
+            <a
+              href="https://veranomedia-crm-api.onrender.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm transition-colors duration-200 font-medium text-[#636366] hover:text-[#0066CC]"
+            >
+              Admin
+            </a>
 
             <div className="mt-4 pt-4 border-t border-[#E8E8ED]">
               <Link
