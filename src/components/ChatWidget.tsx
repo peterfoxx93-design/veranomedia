@@ -34,7 +34,12 @@ export default function ChatWidget({ apiUrl, botName, greeting = '¡Hola! ¿En q
       const res = await fetch(apiUrl, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ message: msg, history }),
+        body: JSON.stringify({
+          message: msg,
+          history,
+          channel_id: channelId,
+          phone: '',
+        }),
       })
       const data = await res.json()
       const reply = data.response || 'Disculpa, no pude procesar tu mensaje.'
