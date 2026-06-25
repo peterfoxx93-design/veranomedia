@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import MainLayout from './layouts/MainLayout'
+import ChatWidget from './components/ChatWidget'
 import Home from './routes/Home'
 import ServiciosOverview from './routes/ServiciosOverview'
 import ServiciosWeb from './routes/ServiciosWeb'
