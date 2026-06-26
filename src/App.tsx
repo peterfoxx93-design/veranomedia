@@ -49,6 +49,12 @@ export default function App() {
           <Route path="/blog/:slug" element={<BlogPost />} />
         </Route>
       </Routes>
+      <ChatWidget
+        apiUrl="https://veranomedia-crm-api.onrender.com/api/chat"
+        botName="María"
+        greeting="¡Hola! Soy María, asesora de Verano Media. ¿En qué puedo ayudarte?"
+        primaryColor="#007AFF"
+      />
       </BrowserRouter>
   )
 }
