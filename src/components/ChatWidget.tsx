@@ -5,6 +5,7 @@ import { useState, useRef, useEffect, KeyboardEvent } from 'react'
 interface ChatWidgetProps {
   apiUrl: string
   botName: string
+  avatarUrl?: string
   greeting?: string
   primaryColor?: string
 }
@@ -16,7 +17,7 @@ function generateId(): string {
   return Date.now().toString(36) + Math.random().toString(36).slice(2, 8)
 }
 
-export default function ChatWidget({ apiUrl, botName, greeting = '¡Hola! ¿En qué puedo ayudarte?', primaryColor = '#0D9488' }: ChatWidgetProps) {
+export default function ChatWidget({ apiUrl, botName, avatarUrl, greeting = '¡Hola! ¿En qué puedo ayudarte?', primaryColor = '#0D9488' }: ChatWidgetProps) {
   const [open, setOpen] = useState(false)
   const [messages, setMessages] = useState<Array<{ user: string; bot: string }>>([])
   const [input, setInput] = useState('')
@@ -88,12 +89,16 @@ export default function ChatWidget({ apiUrl, botName, greeting = '¡Hola! ¿En q
       <button
         onClick={() => setOpen(true)}
         style={{ backgroundColor: primaryColor }}
-        className="fixed bottom-6 right-6 w-14 h-14 rounded-full shadow-xl text-white flex items-center justify-center z-50 hover:scale-110 transition-all duration-200"
+        className="fixed bottom-6 right-6 w-14 h-14 rounded-full shadow-xl text-white flex items-center justify-center z-50 hover:scale-110 transition-all duration-200 overflow-hidden"
         aria-label="Chat"
       >
-        <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
-        </svg>
+        {avatarUrl ? (
+          <img src={avatarUrl} alt={botName} className="w-full h-full object-cover" />
+        ) : (
+          <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+          </svg>
+        )}
       </button>
     )
   }
@@ -101,8 +106,12 @@ export default function ChatWidget({ apiUrl, botName, greeting = '¡Hola! ¿En q
   return (
     <div className="fixed bottom-24 right-6 w-80 sm:w-96 h-[500px] max-h-[80vh] bg-white rounded-2xl shadow-2xl border border-gray-200 z-50 flex flex-col overflow-hidden animate-in fade-in slide-in-from-bottom-5 duration-200">
       <div style={{ backgroundColor: primaryColor }} className="text-white px-5 py-4 flex items-center gap-3">
-        <div className="w-9 h-9 rounded-full bg-white/20 flex items-center justify-center text-sm font-bold">
-          {botName[0]}
+        <div className="w-9 h-9 rounded-full bg-white/20 flex items-center justify-center text-sm font-bold overflow-hidden shrink-0">
+          {avatarUrl ? (
+            <img src={avatarUrl} alt={botName} className="w-full h-full object-cover" />
+          ) : (
+            botName[0]
+          )}
         </div>
         <div>
           <p className="font-semibold text-sm">{botName}</p>

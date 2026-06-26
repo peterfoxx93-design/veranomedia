@@ -52,6 +52,7 @@ export default function App() {
       <ChatWidget
         apiUrl="https://veranomedia-crm-api.onrender.com/api/chat"
         botName="María"
+        avatarUrl="/maria-avatar.jpg"
         greeting="¡Hola! Soy María, asesora de Verano Media. ¿En qué puedo ayudarte?"
         primaryColor="#007AFF"
       />
