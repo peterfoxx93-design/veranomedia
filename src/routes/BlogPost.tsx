@@ -1538,6 +1538,8 @@ export default function BlogPost() {
         return <ArticleSeo2026 />
       case 'funnel-digital':
         return <ArticleFunnelDigital />
+      case 'ia-contenido':
+        return <ArticleIA />
       default:
         return <ArticleLandingVsSitio />
     }
