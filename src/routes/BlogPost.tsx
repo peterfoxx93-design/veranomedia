@@ -1517,6 +1517,43 @@ function ArticleFunnelDigital() {
 // ═══════════════════════════════════════════════════════════
 
 export default 
+
+function ArticleIA() {
+  return (
+    <>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        <DropCap>S</DropCap>i tienes un negocio en Republica Dominicana, sabes que necesitas contenido digital. El problema es que no tienes tiempo para crearlo.
+      </p>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        La IA lo hace en segundos. Pero suena a robot.
+      </p>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        El truco no esta en la herramienta. Esta en como se usa.
+      </p>
+      <div className="my-10 md:my-12 pl-5 md:pl-6 border-l-4 border-[#0066CC] bg-[#F5F5F7] rounded-r-vm-md py-5 md:py-6 pr-5 md:pr-8">
+        <p className="font-serif text-xl md:text-2xl leading-relaxed text-[#1C1C1E] italic">
+          La IA encuentra los datos. Un humano pone la voz.
+        </p>
+      </div>
+      <div className="my-8 bg-[#0066CC]/5 border border-[#0066CC]/10 rounded-vm-md p-5 md:p-6">
+        <div className="flex gap-4 items-start">
+          <span className="text-xl flex-shrink-0 mt-0.5">AI</span>
+          <div className="text-base text-[#636366] leading-relaxed">
+            <strong>Y si, usamos IA.</strong> Pero tambien criterio y experiencia dominicana.
+          </div>
+        </div>
+      </div>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8] font-bold text-center my-6">
+        Cuantos clientes pierdes porque no apareces cuando te buscan?
+      </p>
+      <div className="my-8 bg-[#0066CC] rounded-vm-md p-6 md:p-8 text-center">
+        <p className="text-white text-lg md:text-xl font-semibold mb-2">Escribenos al wa.me/18093586497</p>
+        <p className="text-white/80 text-sm">En 24 horas tu negocio publica contenido que consigue clientes.</p>
+      </div>
+    </>
+  )
+}
+
 function BlogPost() {
   const { slug } = useParams()
   const article = articles.find(a => a.slug === slug) || articles[0]
@@ -1539,6 +1576,8 @@ function BlogPost() {
         return <ArticleSeo2026 />
       case 'funnel-digital':
         return <ArticleFunnelDigital />
+      case 'ia-contenido':
+        return <ArticleIA />
       default:
         return <ArticleLandingVsSitio />
     }
