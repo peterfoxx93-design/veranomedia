@@ -1527,19 +1527,20 @@ function ArticleIA() {
       <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
         La IA lo hace en segundos. Pero suena a robot.
       </p>
-      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
-        El truco no esta en la herramienta. Esta en como se usa.
-      </p>
       <div className="my-10 md:my-12 pl-5 md:pl-6 border-l-4 border-[#0066CC] bg-[#F5F5F7] rounded-r-vm-md py-5 md:py-6 pr-5 md:pr-8">
         <p className="font-serif text-xl md:text-2xl leading-relaxed text-[#1C1C1E] italic">
-          La IA encuentra los datos. Un humano pone la voz.
+          La IA encuentra los datos. Un humano pone la voz. El resultado es contenido que se lee como si lo hubiera escrito alguien con experiencia.
         </p>
       </div>
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">El metodo que si funciona</h2>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        En Verano Media combinamos investigacion con IA, estructura editorial y un humano que revisa cada palabra. El resultado: contenido que suena a ti, no a un robot.
+      </p>
       <div className="my-8 bg-[#0066CC]/5 border border-[#0066CC]/10 rounded-vm-md p-5 md:p-6">
         <div className="flex gap-4 items-start">
           <span className="text-xl flex-shrink-0 mt-0.5">AI</span>
           <div className="text-base text-[#636366] leading-relaxed">
-            <strong>Y si, usamos IA.</strong> Pero tambien criterio y experiencia dominicana.
+            <strong>Y si, usamos IA.</strong> Pero tambien criterio, experiencia y conocimiento del mercado dominicano.
           </div>
         </div>
       </div>
