@@ -1517,74 +1517,6 @@ function ArticleFunnelDigital() {
 // ═══════════════════════════════════════════════════════════
 
 export default 
-function ArticleIA() {
-  return (
-    <>
-      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
-        <DropCap>S</DropCap>i tienes un negocio en Republica Dominicana, ya sabes que necesitas publicar contenido en redes sociales, LinkedIn o un blog.
-      </p>
-      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
-        El problema no es que no quieras. El problema es que <strong className="text-[#1C1C1E]">no tienes tiempo</strong>.
-      </p>
-      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
-        La IA prometio resolverlo. Y lo resolvio a medias.
-      </p>
-      <div className="my-10 md:my-12 flex items-center justify-center gap-3 text-[#D1D1D6]">
-        <span className="block w-8 h-px bg-[#D1D1D6]" /><span className="text-sm">☀️</span><span className="block w-8 h-px bg-[#D1D1D6]" />
-      </div>
-      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">El problema con la IA cruda</h2>
-      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
-        Si, ChatGPT, Gemini y Claude pueden escribir un articulo en 30 segundos. El problema es que <strong className="text-[#1C1C1E]">suena a IA</strong>.
-      </p>
-      <p className="text-base md:text-lg text-[#636366] leading-[1.8] italic text-center my-6">
-        "En el dinamico mundo del marketing digital, las empresas deben adaptarse constantemente."
-      </p>
-      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
-        Cuando tu cliente potencial lee eso, sabe que no lo escribio un humano. Ese contenido no vende.
-      </p>
-      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
-        El truco no esta en la herramienta. Esta en <strong className="text-[#1C1C1E]">como se usa</strong>.
-      </p>
-      <div className="my-10 md:my-12 pl-5 md:pl-6 border-l-4 border-[#0066CC] bg-[#F5F5F7] rounded-r-vm-md py-5 md:py-6 pr-5 md:pr-8">
-        <p className="font-serif text-xl md:text-2xl leading-relaxed text-[#1C1C1E] italic">
-          La IA encuentra los datos. Un humano pone la voz. El resultado es contenido que se lee como si lo hubiera escrito alguien con experiencia.
-        </p>
-      </div>
-      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">El metodo que si funciona</h2>
-      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
-        En Verano Media hemos desarrollado un proceso que combina lo mejor de ambos mundos:
-      </p>
-      <h3 className="font-serif text-xl md:text-2xl text-[#1C1C1E] mt-8 mb-4">1. Investigacion con IA</h3>
-      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
-        La IA encuentra datos, estadisticas y tendencias en minutos. Lo que a un humano le tomaria 3 horas, la IA lo hace en 3 minutos.
-      </p>
-      <h3 className="font-serif text-xl md:text-2xl text-[#1C1C1E] mt-8 mb-4">2. Estructura editorial</h3>
-      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
-        No es lo mismo un post de LinkedIn que un articulo de blog. Cada formato tiene su estructura.
-      </p>
-      <h3 className="font-serif text-xl md:text-2xl text-[#1C1C1E] mt-8 mb-4">3. Voz humana</h3>
-      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
-        Despues de que la IA escribe, un humano revisa y anade personalidad. El resultado es contenido que se lee natural.
-      </p>
-      <div className="my-8 bg-[#0066CC]/5 border border-[#0066CC]/10 rounded-vm-md p-5 md:p-6">
-        <div className="flex gap-4 items-start">
-          <span className="text-xl flex-shrink-0 mt-0.5">AI</span>
-          <div className="text-base text-[#636366] leading-relaxed">
-            <strong>Y si, usamos IA.</strong> Pero tambien usamos criterio, experiencia y conocimiento del mercado dominicano.
-          </div>
-        </div>
-      </div>
-      <p className="text-base md:text-lg text-[#636366] leading-[1.8] font-bold text-center my-6">
-        Cuantos clientes estas perdiendo porque no apareces cuando te buscan?
-      </p>
-      <div className="my-8 bg-[#0066CC] rounded-vm-md p-6 md:p-8 text-center">
-        <p className="text-white text-lg md:text-xl font-semibold mb-2">Escribenos al wa.me/18093586497</p>
-        <p className="text-white/80 text-sm">En 24 horas tu negocio empieza a publicar contenido que consigue clientes.</p>
-      </div>
-    </>
-  )
-}
-
 function BlogPost() {
   const { slug } = useParams()
   const article = articles.find(a => a.slug === slug) || articles[0]
@@ -1607,8 +1539,6 @@ function BlogPost() {
         return <ArticleSeo2026 />
       case 'funnel-digital':
         return <ArticleFunnelDigital />
-      case 'ia-contenido':
-        return <ArticleIA />
       default:
         return <ArticleLandingVsSitio />
     }
