@@ -1555,6 +1555,7 @@ function ArticleIA() {
   )
 }
 
+// v1.0.1
 function BlogPost() {
   const { slug } = useParams()
   const article = articles.find(a => a.slug === slug) || articles[0]
