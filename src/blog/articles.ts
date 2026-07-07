@@ -81,4 +81,14 @@ export const articles = [
   },
 ]
 
-export type Article = typeof articles[0]
+export type Article = typeof articles[0  {
+    id: 'ia-contenido',
+    title: 'El poder del contenido generado por IA (sin que parezca IA)',
+    category: 'Contenido',
+    slug: 'ia-contenido',
+    readTime: 7,
+    excerpt: 'La IA escribe en segundos, pero suena a robot. El secreto no está en la herramienta. Está en el proceso que convierte texto genérico en contenido que vende.',
+    date: 'Julio 2026',
+    published: true,
+  },
+]
