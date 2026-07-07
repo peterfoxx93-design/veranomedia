@@ -91,4 +91,5 @@ export const articles = [
   },
 ]
 
+
 export type Article = typeof articles[0]
