@@ -1516,7 +1516,9 @@ function ArticleFunnelDigital() {
 // Componente principal
 // ═══════════════════════════════════════════════════════════
 
-export default function BlogPost() {
+export default 
+
+function BlogPost() {
   const { slug } = useParams()
   const article = articles.find(a => a.slug === slug) || articles[0]
 
