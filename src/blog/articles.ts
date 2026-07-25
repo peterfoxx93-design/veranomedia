@@ -89,7 +89,17 @@ export const articles = [
     date: 'Julio 2026',
     published: true,
   },
+  {
+    id: 'google-business-profile-clientes',
+    title: 'Google Business Profile: la herramienta gratuita que más clientes te puede dar',
+    category: 'SEO Local',
+    slug: 'google-business-profile-clientes',
+    readTime: 6,
+    excerpt: 'Muchos negocios en RD tienen ficha en Google Maps, pero no capturan clientes de ella. Hoy te mostramos cómo convertirla en canal de captación gratuito.',
+    date: 'Agosto 2026',
+    published: true,
+  },
 ]
 
-
+export type Article = typeof articles[0]
 export type Article = typeof articles[0]

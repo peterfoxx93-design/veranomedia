@@ -1512,6 +1512,140 @@ function ArticleFunnelDigital() {
   )
 }
 
+function ArticleGoogleBusinessProfile() {
+  return (
+    <>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        <DropCap>C</DropCap>ada día, miles de personas buscan negocios como el tuyo desde Google Maps o desde la búsqueda orgánica. Si tu ficha no está completa, no estás perdido: directamente estás regalando clientes. Y lo peor: probablemente tu competencia sí lo esté haciendo.
+      </p>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        Qué es y por qué duele no usarlo
+      </h2>
+
+      <DataBox icon="📍">
+        Google Business Profile (antes Google My Business) es tu ficha oficial en Google. Aparece cuando alguien te busca por nombre, por rubro o por cercanía. Si está incompleta, Google no te recomienda. Punto.
+      </DataBox>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Lo que duele:
+      </p>
+
+      <ul className="space-y-3 my-6">
+        <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
+          <span className="text-[#0066CC] flex-shrink-0 mt-0.5">•</span>
+          <span>Horarios mal cargados → cliente no aparece</span>
+        </li>
+        <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
+          <span className="text-[#0066CC] flex-shrink-0 mt-0.5">•</span>
+          <span>Fotos viejas o inexistentes → pérdida de confianza</span>
+        </li>
+        <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
+          <span className="text-[#0066CC] flex-shrink-0 mt-0.5">•</span>
+          <span>Sin respuestas a reseñas → reputación quieta</span>
+        </li>
+        <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
+          <span className="text-[#0066CC] flex-shrink-0 mt-0.5">•</span>
+          <span>Servicios no actualizados → Google no muestra tu ficha en búsquedas relevantes</span>
+        </li>
+      </ul>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        Los 5 campos que sí convierten
+      </h2>
+
+      <CheckList items={[
+        'Nombre exacto del negocio + categoría principal',
+        'Horario real y feriados actualizados',
+        'Servicios o productos con check-in',
+        'Fotos actuales: frente, interior, equipo y trabajos',
+        'Respuestas públicas a reseñas, buenas y malas'
+      ]} />
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        Errores comunes que dejamos ver en RD
+      </h2>
+
+      <MiniTable rows={[
+        ['Ficha duplicada', 'Creás una segunda ficha y te fragmenta la autoridad'],
+        ['Reseñas sin respuesta', 'Transmite desinterés y aleja nuevos leads'],
+        ['Categoría genérica', 'Aparecés en búsquedas muy amplias y no en las que compran'],
+        ['Descripción copiada', 'Google detecta contenido duplicado y no te premia']
+      ]} />
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        Cómo lo resolvemos en Verano Media
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Optimizamos tu ficha de principio a fin:
+      </p>
+
+      <ul className="space-y-3 my-6">
+        <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
+          <span className="text-[#0066CC] flex-shrink-0 mt-0.5">•</span>
+          <span>Auditoría de perfil actual</span>
+        </li>
+        <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
+          <span className="text-[#0066CC] flex-shrink-0 mt-0.5">•</span>
+          <span>Carga correcta de categorías y atributos</span>
+        </li>
+        <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
+          <span className="text-[#0066CC] flex-shrink-0 mt-0.5">•</span>
+          <span>Sistema de captura de reseñas</span>
+        </li>
+        <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
+          <span className="text-[#0066CC] flex-shrink-0 mt-0.5">•</span>
+          <span>Seguimiento mensual de métricas</span>
+        </li>
+      </ul>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        No es magia: es proceso. Y funciona sin invertir en publicidad.
+      </p>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        Cierre
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Google Business Profile es gratuito, pero el tiempo para hacerlo bien no lo es. Si tu ficha está abandonada, hoy es el día de cambiarla.
+      </p>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Escribinos y armamos tu optimización esta semana.
+      </p>
+
+      <Separator />
+
+      <div className="my-10 text-center">
+        <p className="text-xs text-[#8E8E93] uppercase tracking-[0.15em] mb-2">
+          ¿Necesitas ayuda con tu ficha?
+        </p>
+        <p className="text-base md:text-lg text-[#636366] leading-relaxed">
+          Peter — Verano Media
+        </p>
+        <p className="text-base text-[#636366] mt-2">
+          WhatsApp: <a href="https://wa.me/18093586497" className="text-[#0066CC] hover:underline">wa.me/18093586497</a>
+        </p>
+        <p className="text-base text-[#636366] mt-1">
+          Web: <a href="https://veranomedia.digital" className="text-[#0066CC] hover:underline">veranomedia.digital</a>
+        </p>
+      </div>
+    </>
+  )
+}
+
 // ═══════════════════════════════════════════════════════════
 // Componente principal
 // ═══════════════════════════════════════════════════════════
@@ -1540,6 +1674,8 @@ function BlogPost() {
         return <ArticleSeo2026 />
       case 'funnel-digital':
         return <ArticleFunnelDigital />
+      case 'google-business-profile-clientes':
+        return <ArticleGoogleBusinessProfile />
       default:
         return <ArticleLandingVsSitio />
     }
