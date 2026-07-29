@@ -22,6 +22,7 @@ import Contacto from './routes/Contacto'
 import Blog from './routes/Blog'
 import BlogPost from './routes/BlogPost'
 import SistemaVerano from './routes/SistemaVerano'
+import Diagnostico from './routes/Diagnostico'
 
 export default function App() {
   return (
@@ -49,6 +50,7 @@ export default function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/sistema-verano" element={<SistemaVerano />} />
+          <Route path="/diagnostico" element={<Diagnostico />} />
         </Route>
       </Routes>
       <ChatWidget

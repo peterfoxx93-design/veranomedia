@@ -3,26 +3,75 @@ import { useRef } from 'react'
 import { Link } from 'react-router-dom'
 
 const pillars = [
-  { title: 'Web de alta conversión', desc: 'Diseño orientado a convertir visitantes en leads, no solo a verse bien.' },
-  { title: 'Chatbot con IA 24/7', desc: 'Responde, califica y agenda sin demoras, incluso a las 11 p.m.' },
-  { title: 'CRM integrado', desc: 'Cada lead se guarda, se sigue y se cierra sin perder información.' },
-  { title: 'SEO + Maps', desc: 'Apareces cuando te buscan y conviertes tu ficha en canal de captación.' },
+  { title: 'Web de alta conversión', desc: 'Diseño orientado a convertir visitantes en leads cualificados, no solo a verse bien.' },
+  { title: 'Chatbot con IA 24/7', desc: 'Responde, califica y agenda sin demoras, incluso fuera de horario.' },
+  { title: 'CRM integrado', desc: 'Cada lead se guarda, se sigue y se cierra sin perder información ni oportunidades.' },
+  { title: 'SEO + Google Maps', desc: 'Apareces cuando te buscan y conviertes tu ficha en canal de captación.' },
   { title: 'Automatizaciones', desc: 'Flujos que eliminan trabajo repetitivo sin aumentar costos fijos.' },
-  { title: 'Analítica y seguimiento', desc: 'Métricas reales de captación, conversión y crecimiento mensual.' },
+  { title: 'Analítica y crecimiento', desc: 'Métricas reales de captación, conversión y optimización continua.' },
 ]
 
 const steps = [
-  { title: 'Diagnóstico', desc: 'Analizamos tu captación actual y la competencia local.' },
-  { title: 'Estrategia', desc: 'Definimos el sistema a medida, no solo herramientas.' },
-  { title: 'Implementación', desc: 'Web, CRM, IA y WhatsApp conectados en un mismo flujo.' },
-  { title: 'Lanzamiento', desc: 'SEO, Maps y campañas activas desde el día uno.' },
-  { title: 'Crecimiento', desc: 'Medimos, iteramos y escalamos cada mes.' },
+  { title: 'Diagnóstico', desc: 'Auditoría de captación actual, SEO, Maps, CRM y competencia local.' },
+  { title: 'Estrategia', desc: 'Definimos el sistema a medida: web, IA, WhatsApp, CRM y flujos.' },
+  { title: 'Implementación', desc: 'Web, chatbot, contenido y Maps conectados en un mismo sistema.' },
+  { title: 'Lanzamiento', desc: 'SEO, Maps, campañas iniciales y automatizaciones activas desde el día uno.' },
+  { title: 'Crecimiento', desc: 'Métricas semanales, iteración mensual y optimización continua.' },
 ]
 
 const proof = [
   { metric: '12→47 citas/semana', label: 'Clínica dental en 30 días' },
-  { metric: '-73% tiempo de respuesta', label: 'Con respuestas guardadas + flujo IA' },
-  { metric: '60% menos fugas', label: 'Con CRM y seguimiento automático' },
+  { metric: '-73% tiempo de respuesta', label: 'Flujo IA + respuestas guardadas' },
+  { metric: '60% menos fugas', label: 'CRM y seguimiento automático' },
+]
+
+const pricingCards = [
+  {
+    name: 'Sistema Inicial',
+    price: 'RD$ 18,000',
+    period: 'proyecto único',
+    bestFor: 'Negocios que inician su captación digital',
+    bullets: [
+      'Landing page de alta conversión',
+      'Chatbot WhatsApp con IA',
+      'CRM基本: leads + pipeline',
+      'SEO técnico inicial',
+      'Google Business optimizado',
+      'Entrega en 7 días',
+    ],
+    cta: 'Quiero mi diagnóstico',
+  },
+  {
+    name: 'Sistema Mensual',
+    price: 'RD$ 12,000/mes',
+    period: 'mínimo 3 meses',
+    bestFor: 'Negocios que quieren crecimiento predecible',
+    bullets: [
+      'Web completa + SEO mensual',
+      'IA + automatizaciones avanzadas',
+      'CRM completo + reportes',
+      'Contenido semanal para redes',
+      'Soporte prioritario',
+      'Reuniones de optimización mensuales',
+    ],
+    cta: 'Hablar con un especialista',
+    highlight: true,
+  },
+  {
+    name: 'Sistema 360',
+    price: 'RD$ 25,000/mes',
+    period: 'socio estratégico',
+    bestFor: 'Empresas que quieren escala real',
+    bullets: [
+      'Todo el Sistema Mensual',
+      'Campañas pagas administradas',
+      'Automatizaciones + integraciones',
+      'Analítica avanzada + BI',
+      'Consultoría estratégica semanal',
+      'SLA y soporte 24/7',
+    ],
+    cta: 'Solicitar propuesta',
+  },
 ]
 
 export default function SistemaVerano() {
@@ -86,7 +135,7 @@ export default function SistemaVerano() {
         </div>
       </section>
 
-      {/* Resultados */}
+      {/* Prueba social */}
       <section className="section-vm">
         <div className="container-vm" ref={ref}>
           <div className="text-center max-w-3xl mx-auto mb-16">
@@ -161,7 +210,7 @@ export default function SistemaVerano() {
             </motion.p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-24">
             {pillars.map((pillar, i) => (
               <motion.div
                 key={pillar.title}
@@ -174,6 +223,64 @@ export default function SistemaVerano() {
                 <p className="text-base text-[#636366] leading-relaxed">{pillar.desc}</p>
               </motion.div>
             ))}
+          </div>
+
+          <div className="text-center max-w-4xl mx-auto mb-24">
+            <motion.span
+              initial={{ opacity: 0, y: 10 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              className="text-sm font-semibold text-[#0066CC] uppercase tracking-widest"
+            >
+              Metodología
+            </motion.span>
+            <motion.h3
+              initial={{ opacity: 0, y: 20 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ delay: 0.1 }}
+              className="text-heading-lg text-[#1C1C1E] mt-3 mb-12"
+            >
+              Cómo implementamos tu sistema
+            </motion.h3>
+
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-10">
+              {steps.map((item, index) => (
+                <motion.div
+                  key={item.title}
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={isInView ? { opacity: 1, y: 0 } : {}}
+                  transition={{ delay: 0.1 + index * 0.1 }}
+                  className="relative text-center"
+                >
+                  <div className="mx-auto mb-4 flex items-center justify-center w-12 h-12 rounded-full bg-[#0066CC] text-white font-bold text-lg">
+                    {index + 1}
+                  </div>
+                  <h4 className="font-semibold text-[#1C1C1E] mb-1">{item.title}</h4>
+                  <p className="text-sm text-[#8E8E93] max-w-[260px] mx-auto">{item.desc}</p>
+                  {index < steps.length - 1 ? (
+                    <div className="hidden md:block absolute top-6 left-[calc(50%+24px)] w-[calc(100%-48px)] h-[1px] bg-gradient-to-r from-[#0066CC]/40 to-transparent" />
+                  ) : null}
+                </motion.div>
+              ))}
+            </div>
+          </div>
+
+          <div className="text-center max-w-2xl mx-auto mb-10">
+            <motion.h3
+              initial={{ opacity: 0, y: 20 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ delay: 0.1 }}
+              className="text-heading-lg text-[#1C1C1E] mb-4"
+            >
+              ¿Por qué elegir VeranoMedia?
+            </motion.h3>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ delay: 0.2 }}
+              className="text-lg text-[#636366]"
+            >
+              Combinamos experiencia humana con herramientas de inteligencia artificial para ofrecerte algo que las agencias tradicionales no pueden: velocidad, claridad y foco real en resultados.
+            </motion.p>
           </div>
         </div>
       </section>
