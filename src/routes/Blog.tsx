@@ -50,7 +50,7 @@ export default function Blog() {
             animate={{ opacity: 1, y: 0 }}
             className="text-sm font-semibold text-[#0066CC] uppercase tracking-widest"
           >
-            Un cuaderno de Verano
+            Sistema Verano
           </motion.span>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -58,7 +58,7 @@ export default function Blog() {
             transition={{ delay: 0.1 }}
             className="font-serif text-heading-xl md:text-[4.5rem] text-[#1C1C1E] mt-3 mb-4 leading-[1.05]"
           >
-            Aprende, aplica, crece
+            Estrategia, no solo herramientas
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -66,8 +66,7 @@ export default function Blog() {
             transition={{ delay: 0.2 }}
             className="text-lg text-[#636366] leading-relaxed max-w-xl mx-auto"
           >
-            Artículos semanales sobre marketing digital, diseño web y estrategia de contenido —
-            explicados como a ti te gustaría que te los explicaran.
+            Artículos sobre cómo construir un sistema de captación integrado: web, IA, WhatsApp, CRM, SEO y contenido orientado a resultados reales.
           </motion.p>
         </div>
       </section>

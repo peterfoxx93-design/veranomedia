@@ -29,7 +29,7 @@ export default function Hero() {
         >
           <span className="w-2 h-2 bg-[#34C759] rounded-full animate-pulse" />
           <span className="text-sm text-white/80 font-medium tracking-wide">
-            Agencia de marketing digital
+            Sistema Inteligente de Captación
           </span>
         </motion.div>
 
@@ -40,18 +40,27 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           className="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight leading-[1.05] text-center"
         >
-          <span className="text-white">Verano</span>
-          <span className="text-[#007AFF]">Media</span>
+          <span className="text-white">Más clientes.</span>
+          <span className="text-[#007AFF]"> Más autoridad.</span>
+          <span className="text-white"> Más crecimiento.</span>
         </motion.h1>
 
-        {/* Tagline */}
+        {/* Value prop — <5s clarity */}
         <motion.p
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
-          className="text-white/60 text-sm md:text-base tracking-[0.2em] uppercase mt-4 mb-10 text-center"
+          className="text-white/80 text-base md:text-lg max-w-2xl mx-auto mt-6 mb-2 text-center leading-relaxed"
         >
-          Tu marca en su mejor temporada
+          Ayudamos a empresas a crecer mediante estrategia, diseño y marketing digital.
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0, y: 15 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.45, ease: [0.16, 1, 0.3, 1] }}
+          className="text-white/60 text-sm md:text-base max-w-2xl mx-auto mb-10 text-center leading-relaxed"
+        >
+          Creamos sitios web, branding, SEO y contenido que convierten visitantes en clientes.
         </motion.p>
 
         {/* CTAs */}

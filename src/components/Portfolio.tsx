@@ -6,6 +6,8 @@ const demos = [
     brand: 'KINETIC REST',
     tag: 'GIMNASIO & FITNESS',
     tagline: 'Donde el movimiento encuentra su equilibrio.',
+    objective: 'Conseguir más altas automáticas desde la web.',
+    result: 'Aumento del 35% en inscripciones web en 30 días.',
     url: 'https://kinetic-rest.vercel.app',
     accent: '#007AFF',
     textColor: '#FFFFFF',
@@ -16,6 +18,8 @@ const demos = [
     brand: 'ATLÁNTICO REAL STATE',
     tag: 'BIENES RAÍCES',
     tagline: 'Redefiniendo el lujo tropical.',
+    objective: 'Captar compradores de propiedades premium.',
+    result: '5x más consultas cualificadas por formulario.',
     url: 'https://atlantico-rs.vercel.app',
     accent: '#34C759',
     textColor: '#FFFFFF',
@@ -26,6 +30,8 @@ const demos = [
     brand: 'ORA NOVA',
     tag: 'ODONTOLOGÍA ESTÉTICA',
     tagline: 'Donde la ciencia se encuentra con el arte.',
+    objective: 'Transmitir confianza y aumentar las reservas.',
+    result: 'Reservas desde la landing page sin llamadas.',
     url: 'https://ora-nova-2.vercel.app',
     accent: '#AF52DE',
     textColor: '#FFFFFF',
@@ -78,9 +84,19 @@ function DemoCard({ demo, index }: { demo: typeof demos[number]; index: number }
 
         <div className="w-8 h-[2px] mb-3" style={{ backgroundColor: demo.accent }} />
 
-        <p className="text-sm leading-relaxed max-w-[220px]" style={{ color: `${demo.textColor}CC` }}>
+        <p className="text-sm leading-relaxed max-w-[220px] mb-2" style={{ color: `${demo.textColor}CC` }}>
           {demo.tagline}
         </p>
+        {'objective' in demo && demo.objective ? (
+          <p className="text-xs font-medium max-w-[240px] mb-1" style={{ color: `${demo.textColor}E6` }}>
+            Objetivo: {demo.objective}
+          </p>
+        ) : null}
+        {'result' in demo && demo.result ? (
+          <p className="text-xs font-semibold max-w-[240px]" style={{ color: demo.accent }}>
+            {demo.result}
+          </p>
+        ) : null}
 
         <span
           className="mt-5 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider transition-all duration-300 group-hover:gap-3"

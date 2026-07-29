@@ -1014,6 +1014,78 @@ function ArticleCMvsPublicidad() {
   )
 }
 
+function ArticleIaContenido() {
+  return (
+    <>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        <DropCap>L</DropCap>a mayoría de los negocios en RD ya usa IA para generar contenido: posts, correos, ideas de campaña. El problema no es el volumen; es que el contenido sale genérico, repetitivo y, con el tiempo, deja de convertir. Hoy te explico cómo usarla como aliado sin que se note.
+      </p>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        Lo que la IA hace bien (y rápido)
+      </h2>
+
+      <DataBox icon="⚡">
+        <strong>La IA puede producir 3 ideas de post en 10 segundos, resumir un paper en un párrafo y crear borradores en minutos.</strong>
+        <div className="mt-3 space-y-1.5 text-sm text-[#636366] leading-relaxed">
+          <p>✅ Estructurar ideas desordenadas</p>
+          <p>✅ Proponer títulos y ganchos</p>
+          <p>✅ Adaptar un mismo mensaje a distintas plataformas</p>
+          <p>❌ Conocer tu tono sin entrenamiento</p>
+          <p>❌ Cierres que motiven a comprar</p>
+          <p>❌ Incluir datos locales reales sin verificación</p>
+        </div>
+      </DataBox>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        5 reglas para que no se note
+      </h2>
+
+      <CheckList items={[
+        "No publicar texto 1:1 del modelo crudo",
+        "Siempre agregar 1 dato propio o experiencia del negocio",
+        "Reemplazar frases genéricas por palabras que tu marca usaría con un cliente",
+        "Revisar el cierre: cada pieza debe pedir una acción concreta",
+        "Medir el resultado. Si un post no genera consultas en 48h, cambialo; no lo repitas",
+      ]} />
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        Ejemplo real
+      </h2>
+
+      <MiniTable rows={[
+        ["Antes (IA cruda)", "Nuestra empresa ofrece soluciones innovadoras para impulsar tu crecimiento."],
+        ["Después (VM)", "Los dueños de clínicas en Puerto Plata perdían 8-12 consultas por semana. Les activamos un agente que responde WhatsApp 24/7, califica al paciente y agenda la cita. En 30 días recuperaron esas consultas."],
+      ]} />
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        En resumen
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        La IA es productividad; la conversión la pone el mensaje. En Verano Media escribimos, editamos y publicamos contenido que suena humano porque detrás hay estrategia, no solo procesamiento.
+      </p>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        ¿Querés que tu contenido empiece a generar consultas esta semana? Escribinos.
+      </p>
+
+      <div className="mt-8 pt-6 border-t border-[#E8E8ED]/40 text-sm text-[#636366]">
+        <p>WhatsApp: <a href="https://wa.me/18093586497" className="text-[#0066CC] hover:underline">wa.me/18093586497</a></p>
+        <p className="mt-1">Web: <a href="https://veranomedia.digital" className="text-[#0066CC] hover:underline">veranomedia.digital</a></p>
+      </div>
+    </>
+  )
+}
+
 function ArticleAutomatizacionPymes() {
   return (
     <>
@@ -1674,11 +1746,13 @@ function BlogPost() {
         return <ArticleSeo2026 />
       case 'funnel-digital':
         return <ArticleFunnelDigital />
+      case 'ia-contenido':
+        return <ArticleIaContenido />
       case 'google-business-profile-clientes':
         return <ArticleGoogleBusinessProfile />
       default:
         return <ArticleLandingVsSitio />
-    }
+  }
   }
 
   return (
@@ -1691,7 +1765,7 @@ function BlogPost() {
               to="/blog"
               className="inline-flex items-center gap-1.5 text-xs font-medium text-[#8E8E93] hover:text-[#0066CC] transition-colors uppercase tracking-[0.15em] mb-6"
             >
-              ← Un cuaderno de Verano
+              ← Sistema Verano
             </Link>
           </motion.div>
 
@@ -1750,7 +1824,7 @@ function BlogPost() {
             Publicado originalmente en
           </p>
           <Link to="/blog" className="font-serif text-lg text-[#1C1C1E] hover:text-[#0066CC] transition-colors">
-            Un cuaderno de Verano
+            Sistema Verano
           </Link>
           <p className="text-sm text-[#8E8E93] mt-1">por el equipo de Verano Media</p>
           <div className="mt-6 pt-6 border-t border-[#E8E8ED]/40">

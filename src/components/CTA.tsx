@@ -21,11 +21,10 @@ export default function CTA() {
           className="text-center max-w-3xl mx-auto"
         >
           <h2 className="text-heading-lg md:text-[3.5rem] font-extrabold mb-6 leading-[1.1]">
-            ¿Listo para digitalizar tu negocio?
+            ¿Quieres saber qué está frenando el crecimiento de tu negocio?
           </h2>
           <p className="text-lg md:text-xl text-white/70 mb-10 max-w-xl mx-auto">
-            Agenda tu Diagnóstico Digital Gratuito y descubre qué oportunidades
-            estás perdiendo en internet.
+            Te implementamos un sistema de captación inteligente y, en menos de 20 minutos del diagnóstico, sabrás qué puedes mejorar.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
