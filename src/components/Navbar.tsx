@@ -150,7 +150,7 @@ export default function Navbar() {
             )
           )}
           <a
-            href="https://veranomedia-crm-api.onrender.com"
+            href="https://veranomedia-crm.vercel.app"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm transition-colors duration-200 font-medium text-[#636366] hover:text-[#0066CC]"
@@ -255,7 +255,7 @@ export default function Navbar() {
               Blog
             </Link>
             <a
-              href="https://veranomedia-crm-api.onrender.com"
+              href="https://veranomedia-crm.vercel.app"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm transition-colors duration-200 font-medium text-[#636366] hover:text-[#0066CC]"
