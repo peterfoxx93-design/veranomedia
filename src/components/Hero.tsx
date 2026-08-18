@@ -14,9 +14,9 @@ export default function Hero() {
       }} />
 
       {/* Floating glass orbs for depth */}
-      <div className="absolute top-1/4 -left-1/4 w-[500px] h-[500px] bg-[#007AFF]/10 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-1/3 -right-1/4 w-[400px] h-[400px] bg-[#34C759]/5 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute top-2/3 left-1/3 w-[300px] h-[300px] bg-[#007AFF]/5 rounded-full blur-3xl pointer-events-none" />
+      <div className="hidden md:block absolute top-1/4 -left-1/4 w-[500px] h-[500px] bg-[#007AFF]/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="hidden md:block absolute bottom-1/3 -right-1/4 w-[400px] h-[400px] bg-[#34C759]/5 rounded-full blur-3xl pointer-events-none" />
+      <div className="hidden md:block absolute top-2/3 left-1/3 w-[300px] h-[300px] bg-[#007AFF]/5 rounded-full blur-3xl pointer-events-none" />
 
       {/* Content */}
       <div className="relative z-10 h-full flex flex-col items-center justify-center px-6">
@@ -34,16 +34,13 @@ export default function Hero() {
         </motion.div>
 
         {/* Main title */}
-        <motion.h1
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+        <h1
           className="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight leading-[1.05] text-center"
         >
           <span className="text-white">Más clientes.</span>
           <span className="text-[#007AFF]"> Más autoridad.</span>
           <span className="text-white"> Más crecimiento.</span>
-        </motion.h1>
+        </h1>
 
         {/* Value prop — <5s clarity */}
         <motion.p
