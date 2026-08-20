@@ -16,12 +16,12 @@ export default function FAQ() {
         <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-10">Preguntas frecuentes</h2>
         <div className="space-y-4">
           {faqs.map((item, idx) => (
-            <div key={idx} className="rounded-2xl border border-white/10 bg-white/5">
+            <div key={idx} className="rounded-2xl border border-white/20 bg-white/10">
               <button onClick={() => setOpen(open === idx ? null : idx)} className="w-full flex items-center justify-between p-5 text-left">
                 <span className="text-lg font-semibold text-white">{item.q}</span>
-                <span className="text-white/60">{open === idx ? '−' : '+'}</span>
+                <span className="text-white/80">{open === idx ? '−' : '+'}</span>
               </button>
-              {open === idx && <div className="px-5 pb-5 text-white/80 leading-relaxed">{item.a}</div>}
+              {open === idx && <div className="px-5 pb-5 text-white/90 leading-relaxed">{item.a}</div>}
             </div>
           ))}
         </div>
