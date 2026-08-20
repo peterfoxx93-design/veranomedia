@@ -3,6 +3,7 @@ import Services from '../components/Services'
 import Evidence from '../components/Evidence'
 import Portfolio from '../components/Portfolio'
 import About from '../components/About'
+import FAQ from '../components/FAQ'
 import CTA from '../components/CTA'
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <Evidence />
       <Portfolio />
       <About />
+      <FAQ />
       <CTA />
     </>
   )
