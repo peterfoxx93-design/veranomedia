@@ -11,7 +11,7 @@ const faqs = [
 export default function FAQ() {
   const [open, setOpen] = useState<number | null>(null)
   return (
-    <section className="py-20 px-6">
+    <section className="py-20 px-6 bg-[#0A0A0A]">
       <div className="max-w-3xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-10">Preguntas frecuentes</h2>
         <div className="space-y-4">
