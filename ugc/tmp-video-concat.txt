@@ -1,2 +1,0 @@
-file '/data/data/com.termux/files/home/veranomedia/ugc/ugc-dental-v4-es.mp4'
-file '/data/data/com.termux/files/home/veranomedia/ugc/bumpers/01-vm-whatsapp.mp4'

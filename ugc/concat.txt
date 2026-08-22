@@ -1,2 +1,0 @@
-file 'ugc-dental-v4-es.mp4'
-file 'bumpers/01-vm-whatsapp.mp4'

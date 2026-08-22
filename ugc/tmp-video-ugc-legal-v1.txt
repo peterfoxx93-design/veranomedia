@@ -1,2 +1,0 @@
-file '/data/data/com.termux/files/home/veranomedia/ugc/tmp-ugc-legal-v1-va.mp4'
-file '/data/data/com.termux/files/home/veranomedia/ugc/tmp-bumper-va.mp4'
