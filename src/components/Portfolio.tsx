@@ -3,15 +3,15 @@ import { useRef } from 'react'
 
 const demos = [
   {
-    brand: 'KINETIC REST',
-    tag: 'GIMNASIO & FITNESS',
-    tagline: 'Donde el movimiento encuentra su equilibrio.',
-    objective: 'Conseguir más altas automáticas desde la web.',
-    result: 'Aumento del 35% en inscripciones web en 30 días.',
-    url: 'https://kinetic-rest.vercel.app',
-    accent: '#007AFF',
+    brand: 'HERNÁNDEZ & ASOCIADOS',
+    tag: 'BUFETE LEGAL',
+    tagline: 'Defensa jurídica con criterio y compromiso.',
+    objective: 'Captar consultas legales calificadas desde la web.',
+    result: 'Consultas desde la landing page con chatbot propio 24/7.',
+    url: 'https://hernandez-asociados.vercel.app',
+    accent: '#C9A227',
     textColor: '#FFFFFF',
-    heroImage: '/images/demos/kinetic-hero.jpg',
+    heroImage: '/images/demos/hernandez-hero.jpg',
     overlayStyle: 'bg-gradient-to-b from-black/10 via-black/30 to-black/60',
   },
   {

@@ -50,12 +50,12 @@ const projects = [
 
 const realProjects = [
   {
-    brand: 'KINETIC REST',
-    tag: 'GIMNASIO & FITNESS',
-    tagline: 'Donde el movimiento encuentra su equilibrio.',
-    url: 'https://kinetic-rest.vercel.app',
-    accent: '#007AFF',
-    heroImage: '/images/demos/kinetic-hero.jpg',
+    brand: 'HERNÁNDEZ & ASOCIADOS',
+    tag: 'BUFETE LEGAL',
+    tagline: 'Defensa jurídica con criterio y compromiso.',
+    url: 'https://hernandez-asociados.vercel.app',
+    accent: '#C9A227',
+    heroImage: '/images/demos/hernandez-hero.jpg',
     overlayStyle: 'bg-gradient-to-b from-black/10 via-black/30 to-black/60',
   },
   {

@@ -13,7 +13,6 @@ const footerLinks = {
     { label: 'Blog', href: '/blog' },
     { label: 'Portafolio', href: '/portafolio' },
     { label: 'Nosotros', href: '/nosotros' },
-    { label: 'Contacto', href: '/contacto' },
   ],
   social: [
     {
