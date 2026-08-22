@@ -49,6 +49,16 @@ export const articles = [
     date: 'Agosto 2026',
     published: true,
   },
+  {
+    id: 'diseno-web-movil-primero',
+    title: 'Diseño web móvil primero: por qué tu cliente decide en 3 segundos',
+    category: 'Diseño Web',
+    slug: 'diseno-web-movil-primero',
+    readTime: 6,
+    excerpt: 'El 78% de las visitas a sitios de pymes en RD vienen del móvil. Si tu web no se lee bien en celular, estás perdiendo clientes sin saberlo.',
+    date: 'Agosto 2026',
+    published: true,
+  },
 ]
 
 export type Article = typeof articles[0]

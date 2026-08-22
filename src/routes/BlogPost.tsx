@@ -1719,6 +1719,110 @@ function ArticleGoogleBusinessProfile() {
 }
 
 // ═══════════════════════════════════════════════════════════
+// Artículo 14 — Diseño web móvil primero
+// ═══════════════════════════════════════════════════════════
+
+function ArticleDisenoMovilPrimero() {
+  return (
+    <>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        <DropCap>E</DropCap>l 78% de las visitas a sitios de pymes en RD vienen del móvil. Si tu web no se lee bien en celular, estás perdiendo clientes sin saberlo.
+      </p>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        Lo que el cliente juzga en 3 segundos
+      </h2>
+
+      <ul className="space-y-3 my-6">
+        <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
+          <span className="text-[#0066CC] flex-shrink-0 mt-0.5">•</span>
+          <span>Velocidad de carga</span>
+        </li>
+        <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
+          <span className="text-[#0066CC] flex-shrink-0 mt-0.5">•</span>
+          <span>Claridad del mensaje</span>
+        </li>
+        <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
+          <span className="text-[#0066CC] flex-shrink-0 mt-0.5">•</span>
+          <span>Cómo pedir contacto</span>
+        </li>
+      </ul>
+
+      <DataBox icon="📱">
+        Un diseño móvil malo no es “estético”. Es un problema comercial directo.
+      </DataBox>
+
+      <PullQuote>
+        En móvil no hay segunda oportunidad de primera impresión. Si no se entiende rápido, se va a la competencia.
+      </PullQuote>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        Errores clásicos en RD
+      </h2>
+
+      <ul className="space-y-3 my-6">
+        <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
+          <span className="text-[#0066CC] flex-shrink-0 mt-0.5">•</span>
+          <span>Menús que no caben</span>
+        </li>
+        <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
+          <span className="text-[#0066CC] flex-shrink-0 mt-0.5">•</span>
+          <span>Botones pequeños</span>
+        </li>
+        <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
+          <span className="text-[#0066CC] flex-shrink-0 mt-0.5">•</span>
+          <span>Textos sin espaciado</span>
+        </li>
+        <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
+          <span className="text-[#0066CC] flex-shrink-0 mt-0.5">•</span>
+          <span>Formularios sin foco automático</span>
+        </li>
+      </ul>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        Nuestro estándar
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Diseñamos mobile-first, probado con usuarios reales: carga rápida, CTA visible, información esencial arriba.
+      </p>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        El cierre
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Tu web no es tuya; es de quien llega primero. Si no está optimizada, tu competencia se lleva la venta.
+      </p>
+
+      <PullQuote>
+        Escribinos y la revisamos sin costo.
+      </PullQuote>
+
+      <div className="my-10 text-center">
+        <p className="text-xs text-[#8E8E93] uppercase tracking-[0.15em] mb-2">
+          Peter — Verano Media
+        </p>
+        <p className="text-base text-[#636366] mt-2">
+          WhatsApp: <a href="https://wa.me/18093586497" className="text-[#0066CC] hover:underline">wa.me/18093586497</a>
+        </p>
+        <p className="text-base text-[#636366] mt-1">
+          Web: <a href="https://veranomedia.digital" className="text-[#0066CC] hover:underline">veranomedia.digital</a>
+        </p>
+      </div>
+    </>
+  )
+}
+
+// ═══════════════════════════════════════════════════════════
 // Componente principal
 // ═══════════════════════════════════════════════════════════
 
@@ -1750,6 +1854,8 @@ function BlogPost() {
         return <ArticleIaContenido />
       case 'google-business-profile-clientes':
         return <ArticleGoogleBusinessProfile />
+      case 'diseno-web-movil-primero':
+        return <ArticleDisenoMovilPrimero />
       default:
         return <ArticleLandingVsSitio />
   }
