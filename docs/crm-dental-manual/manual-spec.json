@@ -1,0 +1,255 @@
+{
+  "title": "Manual de Usuario — CRM Dental",
+  "author": "Verano Media RD",
+  "subject": "Sistema de Gestión de Pacientes - Clínica Dental Pimentel",
+  "keywords": "CRM, dental, clínica, pacientes, citas, odontograma",
+  "pages": [
+    {
+      "heading": "Manual de Usuario",
+      "subheading": "CRM Dental · Sistema de Gestión de Pacientes",
+      "paragraphs": [
+        "Clínica Dental Pimentel · Dra. Reyna Pimentel · Nagua, República Dominicana",
+        "Guía paso a paso para todo el personal",
+        "Hecho por Verano Media RD · Versión 1.0 · Agosto 2026"
+      ]
+    },
+    {
+      "heading": "Tabla de Contenidos",
+      "paragraphs": [
+        "1. ¿Qué es este sistema?",
+        "2. Cómo entrar (Iniciar sesión)",
+        "3. El panel principal (Dashboard)",
+        "4. Pacientes",
+        "5. El Odontograma digital",
+        "6. Consentimientos firmados",
+        "7. Citas",
+        "8. No-show: recuperar citas perdidas",
+        "9. Recuperación de presupuestos",
+        "10. Crecimiento: Hora Sillón y Orígenes",
+        "11. Administración",
+        "12. Preguntas frecuentes",
+        "13. Problemas comunes",
+        "14. Soporte"
+      ]
+    },
+    {
+      "heading": "1. ¿Qué es este sistema?",
+      "paragraphs": [
+        "El CRM de la Clínica es el cerebro digital de su consultorio. En una sola pantalla usted puede:"
+      ],
+      "bullets": [
+        "Ver todo el día de la clínica: pacientes, citas y facturación",
+        "Registrar el odontograma (mapa bucal) de cada paciente",
+        "Detectar citas perdidas y recuperarlas por WhatsApp",
+        "Recordar presupuestos sin cobrar en el día exacto",
+        "Saber cuánto vale cada hora de su sillón",
+        "Proteger los datos de sus pacientes (como exige la ley)"
+      ],
+      "paragraphs_after": [
+        "No necesita saber de computadoras. Si sabe usar WhatsApp, puede usar este sistema."
+      ]
+    },
+    {
+      "heading": "2. Cómo entrar al sistema (Iniciar sesión)",
+      "paragraphs": [
+        "El sistema se abre desde la página web de la clínica. Usted no necesita recordar ninguna dirección técnica — el botón Admin lo lleva al sistema."
+      ],
+      "bullets": [
+        "Abra el navegador de su teléfono o computadora (Chrome, Safari o Edge)",
+        "Escriba la dirección de la página web de la clínica: https://dra-reyna-pimentel.vercel.app",
+        "Toque el botón Admin (arriba a la derecha de la pantalla)",
+        "Se abrirá la pantalla de entrada del sistema",
+        "En el recuadro Usuario, escriba su usuario (ejemplo: admin)",
+        "En el recuadro Contraseña, escriba su contraseña",
+        "Toque el botón Entrar"
+      ],
+      "paragraphs_after": [
+        "Guarde la página web de la clínica en los favoritos. Desde ahí, el botón Admin siempre lo lleva al sistema."
+      ]
+    },
+    {
+      "heading": "3. El panel principal (Dashboard)",
+      "paragraphs": [
+        "El tablero de control: tarjetas con los números del día y menú lateral."
+      ],
+      "bullets": [
+        "Tarjetas arriba: cuántos pacientes tiene, cuántas citas hay hoy, cuánto ha facturado el mes",
+        "Menú lateral izquierdo: las secciones del sistema (Pacientes, Citas, Tratamientos, Facturación...)",
+        "Botón azul Agendar Cita: para crear una cita nueva rápidamente"
+      ],
+      "paragraphs_after": [
+        "Regla de oro: el menú lateral es su mapa. Cada opción abre una sección distinta."
+      ]
+    },
+    {
+      "heading": "4. Pacientes",
+      "subheadings": ["4.1 Ver la lista de pacientes", "4.2 Abrir la ficha de un paciente", "4.3 Registrar un paciente nuevo"],
+      "paragraphs": [
+        "4.1 Ver la lista de pacientes",
+        "Lista de pacientes con buscador y estado de cada uno.",
+        "1. Toque Pacientes en el menú lateral.",
+        "2. Aparece la lista completa con el nombre, teléfono y estado de cada paciente.",
+        "3. Use el buscador (arriba) para encontrar a alguien por nombre o teléfono."
+      ],
+      "bullets": [
+        "En la lista, toque el nombre del paciente",
+        "Se abre su ficha con toda su información: teléfono, email, motivo, última visita"
+      ],
+      "paragraphs_after": [
+        "4.3 Registrar un paciente nuevo",
+        "1. En la sección Pacientes, toque el botón + Nuevo paciente.",
+        "2. Escriba el nombre (obligatorio) y el teléfono.",
+        "3. Si viene referido por otro doctor, escriba su nombre en Referido por.",
+        "4. Toque Guardar."
+      ]
+    },
+    {
+      "heading": "5. El Odontograma digital",
+      "paragraphs": [
+        "El odontograma es el mapa bucal del paciente: los 32 dientes de adulto (o 20 de niño) dibujados en pantalla."
+      ],
+      "subheadings": ["5.1 Ver el odontograma", "5.2 Marcar el estado de un diente"],
+      "bullets": [
+        "Abra la ficha del paciente (paso 4.2)",
+        "Busque la sección Odontograma digital",
+        "Arriba aparecen los dientes de arriba"
+      ],
+      "paragraphs_after": [
+        "5.2 Marcar el estado de un diente",
+        "1. Toque el diente que quiere registrar (ejemplo: el diente 26).",
+        "2. Se abre una ventana con el diente en grande y sus 5 superficies (Oclusal = la mordida, Mesial, Bucal, Distal, Lingual).",
+        "3. Elija el estado tocando un chip de color: Sano, Caries (rojo), Obturado (azul), Endodoncia (morado), Corona (dorado), Extraído (gris), Implante (verde)...",
+        "4. Toque la superficie del diente grande para marcarla.",
+        "5. Si quiere, escriba una nota (ejemplo: \"Caries profunda, pendiente de endodoncia\").",
+        "6. Toque Guardar diente."
+      ]
+    },
+    {
+      "heading": "6. Consentimientos firmados",
+      "subheadings": ["6.1 Firmar un consentimiento con el paciente"],
+      "paragraphs": [
+        "6.1 Firmar un consentimiento con el paciente",
+        "1. En la ficha del paciente, busque la sección Consentimientos firmados.",
+        "2. Toque + Firmar consentimiento.",
+        "3. Elija el tipo: Tratamiento clínico, WhatsApp, Marketing o Privacidad.",
+        "4. Escriba el título (ejemplo: \"Endodoncia diente 26\").",
+        "5. Pase la tableta al paciente y pídale que firme con el dedo en el recuadro.",
+        "6. Toque Guardar firma."
+      ],
+      "paragraphs_after": [
+        "La firma queda guardada con fecha y responsable.",
+        "La firma queda registrada con fecha y nombre del responsable. Esto es lo que exige la ley de protección de datos (172-13)."
+      ]
+    },
+    {
+      "heading": "7. Citas",
+      "subheadings": ["7.1 Ver las citas", "7.2 Agendar una cita nueva", "7.3 Estados de una cita"],
+      "bullets": [
+        "Toque Citas en el menú lateral",
+        "Verá todas las citas con paciente, hora, servicio y estado"
+      ],
+      "paragraphs_after": [
+        "7.2 Agendar una cita nueva",
+        "1. Toque Agendar Cita (botón azul, arriba a la derecha).",
+        "2. Elija el paciente, la fecha y la hora.",
+        "3. Elija el servicio (consulta, limpieza...) y la duración.",
+        "4. Toque Guardar.",
+        "7.3 Estados de una cita",
+        "Pendiente: la cita está creada, falta confirmar.",
+        "Confirmada: el paciente confirmó que asistirá.",
+        "Completada: el paciente asistió y fue atendido.",
+        "Cancelada: se canceló.",
+        "No-show: el paciente no llegó (el sistema lo marca solo)."
+      ]
+    },
+    {
+      "heading": "8. No-show: recuperar citas perdidas",
+      "paragraphs": [
+        "El sistema detecta solo las citas que pasaron sin confirmarse y las marca como no-show."
+      ],
+      "bullets": [
+        "Toque No-show en el menú lateral",
+        "Verá la lista de pacientes que no llegaron a su cita",
+        "Cada uno tiene dos botones: WhatsApp (mensaje de reagendamiento ya escrito) y Reagendar (nueva cita al momento)"
+      ],
+      "paragraphs_after": [
+        "Cada cita recuperada es dinero que estaba perdido. El sistema le dice cuánto perdió por no-shows en la sección Crecimiento."
+      ]
+    },
+    {
+      "heading": "9. Recuperación de presupuestos",
+      "paragraphs": [
+        "¿Presentó un presupuesto y el paciente no volvió? Este sistema se acuerda por usted."
+      ],
+      "bullets": [
+        "Toque Recuperación en el menú lateral",
+        "Verá todos los presupuestos sin aceptar con su fase de seguimiento: Fase 3 (primer contacto), Fase 7 (URGENTE), Fase 30 (última llamada)",
+        "Botón WhatsApp: mensaje listo para preguntar si ya decidió",
+        "Botón Registrar seguimiento: anote que ya lo llamó, por qué medio, y si aceptó o rechazó"
+      ],
+      "paragraphs_after": [
+        "Las clínicas que hacen seguimiento sistemático aceptan 30-40% más presupuestos. Un plan de RD$45,000 olvidado es dinero en la mesa."
+      ]
+    },
+    {
+      "heading": "10. Crecimiento: Hora Sillón y Orígenes",
+      "subheadings": ["10.1 Cuánto vale su sillón", "10.2 De dónde vienen sus pacientes"],
+      "paragraphs": [
+        "10.1 Cuánto vale su sillón",
+        "Valor hora sillón: cuánto genera cada hora de trabajo.",
+        "Ingresos del mes.",
+        "Ocupación del sillón: % del tiempo que el consultorio está lleno.",
+        "Perdido por no-show: cuánto dinero se fue con las citas perdidas."
+      ],
+      "paragraphs_after": [
+        "10.2 De dónde vienen sus pacientes",
+        "La lista Orígenes de pacientes muestra cuántos llegaron por WhatsApp, Instagram, referidos... y cuánto facturaron. Útil para decidir dónde invertir."
+      ]
+    },
+    {
+      "heading": "11. Administración",
+      "subheadings": ["11.1 Auditoría (quién hizo qué)", "11.2 Usuarios (accesos del personal)"],
+      "paragraphs": [
+        "11.1 Auditoría (quién hizo qué)",
+        "1. Toque Auditoría en el menú lateral (solo el administrador ve esta sección).",
+        "2. Vea cada acción registrada: quién la hizo, cuándo y desde qué IP."
+      ],
+      "paragraphs_after": [
+        "11.2 Usuarios (accesos del personal)",
+        "1. Toque Usuarios en el menú lateral (solo administrador).",
+        "2. Toque + Nuevo usuario para crear la cuenta de un empleado.",
+        "3. Elija el rol: admin (acceso total), doctor (clínica y finanzas) o recepcionista (agenda y pacientes, sin finanzas).",
+        "4. Escriba usuario y contraseña, toque Guardar."
+      ]
+    },
+    {
+      "heading": "12. Preguntas frecuentes",
+      "bullets": [
+        "¿Se puede usar en el teléfono? Sí. Funciona en celular, tableta y computadora. En la tableta es ideal para el odontograma y las firmas.",
+        "¿Qué pasa si se va la luz o el internet? Nada. Los datos están guardados en la nube (servidores seguros). Al volver la conexión, todo sigue igual.",
+        "¿Puedo imprimir un reporte? Sí. En la sección Reportes puede generar el resumen del período y exportarlo.",
+        "¿Los datos están seguros? Sí. Acceso por roles, auditoría de cada acción, y cumplimiento de la Ley 172-13 de protección de datos.",
+        "¿Cómo cambio mi contraseña? El administrador la cambia en Usuarios > Editar."
+      ]
+    },
+    {
+      "heading": "13. Problemas comunes",
+      "bullets": [
+        "La página no carga — Revise el internet. Espere 10 segundos y vuelva a entrar.",
+        "Veo una pantalla vieja — Cierre la pestaña y ábrala de nuevo, o use el modo incógnito.",
+        "Olvidé mi contraseña — Pídale al administrador que la cambia en Usuarios.",
+        "No veo la sección Finanzas — Su usuario tiene rol de recepcionista. Pida acceso al administrador.",
+        "El diente no se marca — Toque primero el estado (chip de color) y luego la superficie del diente."
+      ]
+    },
+    {
+      "heading": "14. Soporte",
+      "paragraphs": [
+        "¿Dudas o problemas? Contáctenos por WhatsApp: 809-584-7033",
+        "Horario de soporte: lunes a viernes, 8:00 am - 5:00 pm.",
+        "Manual preparado por Verano Media RD — Sistemas Inteligentes para su clínica.",
+        "Sistema CRM Dental · Versión 1.0 · Agosto 2026"
+      ]
+    }
+  ]
+}

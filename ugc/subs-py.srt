@@ -1,0 +1,11 @@
+1
+00:00:00,000 --> 00:00:03,100
+Tu negocio no pierde clientes. Pierde horas.
+
+2
+00:00:03,100 --> 00:00:06,200
+El problema no es la competencia.
+
+3
+00:00:06,200 --> 00:00:09,288
+Es el sistema.

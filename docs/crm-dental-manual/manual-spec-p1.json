@@ -1,0 +1,38 @@
+{
+  "title": "Manual de Usuario — CRM Dental",
+  "author": "Verano Media RD",
+  "subject": "Sistema de Gestión de Pacientes — Clínica Dra. Reyna Pimentel",
+  "pages": [
+    {
+      "elements": [
+        {"type": "heading", "text": "MANUAL DE USUARIO", "size": 32, "y": 120},
+        {"type": "heading", "text": "CRM Dental", "size": 28, "y": 170},
+        {"type": "heading", "text": "Sistema de Gestión de Pacientes", "size": 20, "y": 210},
+        {"type": "heading", "text": "Clínica Dental Pimentel", "size": 18, "y": 245},
+        {"type": "paragraph", "text": "Dra. Reyna Pimentel · Nagua, República Dominicana", "size": 14, "y": 275},
+        {"type": "paragraph", "text": "Guía paso a paso para todo el personal", "size": 14, "y": 300},
+        {"type": "paragraph", "text": "Hecho por Verano Media RD · Versión 1.0 · Agosto 2026", "size": 12, "y": 340}
+      ]
+    },
+    {
+      "elements": [
+        {"type": "heading", "text": "Tabla de Contenidos", "size": 24, "y": 80},
+        {"type": "paragraph", "text": "1. ¿Qué es este sistema?", "size": 14, "y": 130},
+        {"type": "paragraph", "text": "2. Cómo entrar (Iniciar sesión)", "size": 14, "y": 155},
+        {"type": "paragraph", "text": "3. El panel principal (Dashboard)", "size": 14, "y": 180},
+        {"type": "paragraph", "text": "4. Pacientes", "size": 14, "y": 205},
+        {"type": "paragraph", "text": "5. El Odontograma digital", "size": 14, "y": 230},
+        {"type": "paragraph", "text": "6. Consentimientos firmados", "size": 14, "y": 255},
+        {"type": "paragraph", "text": "7. Citas", "size": 14, "y": 280},
+        {"type": "paragraph", "text": "8. No-show: recuperar citas perdidas", "size": 14, "y": 305},
+        {"type": "paragraph", "text": "9. Recuperación de presupuestos", "size": 14, "y": 330},
+        {"type": "paragraph", "text": "10. Crecimiento: Hora Sillón y Orígenes", "size": 14, "y": 355},
+        {"type": "paragraph", "text": "11. Administración", "size": 14, "y": 380},
+        {"type": "paragraph", "text": "12. Preguntas frecuentes", "size": 14, "y": 405},
+        {"type": "paragraph", "text": "13. Problemas comunes", "size": 14, "y": 430},
+        {"type": "paragraph", "text": "14. Soporte", "size": 14, "y": 455},
+        {"type": "footer", "text": "CRM Dental — Clínica Dra. Reyna Pimentel · Página 2", "size": 10, "y": 720}
+      ]
+    }
+  ]
+}

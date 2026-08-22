@@ -1,0 +1,2 @@
+file '/data/data/com.termux/files/home/veranomedia/ugc/tmp-ugc-pymes-v1.aac'
+file '/data/data/com.termux/files/home/veranomedia/ugc/tmp-sil.aac'

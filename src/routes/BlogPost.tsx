@@ -1726,33 +1726,16 @@ function ArticleDisenoMovilPrimero() {
   return (
     <>
       <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
-        <DropCap>E</DropCap>l 78% de las visitas a sitios de pymes en RD vienen del móvil. Si tu web no se lee bien en celular, estás perdiendo clientes sin saberlo.
+        <DropCap>H</DropCap>ay una cifra que define el juego digital dominicano actual: la gran mayoría de las visitas a sitios web de pequeñas empresas en República Dominicana vienen de un teléfono celular. No de una laptop en la oficina. De un celular, muchas veces con datos móviles, en pantalla de 6 pulgadas, mientras la persona está entre dos actividades del día.
       </p>
 
-      <Separator />
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8] mt-6">
+        Eso cambia todo. El cliente ya no "visita" tu sitio: lo escanea. Le da una oportunidad de aproximadamente tres segundos antes de decidir si se queda o vuelve a los resultados de Google — donde tu competencia espera, un clic más abajo.
+      </p>
 
-      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
-        Lo que el cliente juzga en 3 segundos
-      </h2>
-
-      <ul className="space-y-3 my-6">
-        <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
-          <span className="text-[#0066CC] flex-shrink-0 mt-0.5">•</span>
-          <span>Velocidad de carga</span>
-        </li>
-        <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
-          <span className="text-[#0066CC] flex-shrink-0 mt-0.5">•</span>
-          <span>Claridad del mensaje</span>
-        </li>
-        <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
-          <span className="text-[#0066CC] flex-shrink-0 mt-0.5">•</span>
-          <span>Cómo pedir contacto</span>
-        </li>
-      </ul>
-
-      <DataBox icon="📱">
-        Un diseño móvil malo no es “estético”. Es un problema comercial directo.
-      </DataBox>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8] mt-6">
+        En Verano Media revisamos decenas de sitios de clínicas, bufetes e inmobiliarias cada mes, y el patrón se repite: negocios que invirtieron en publicidad para atraer visitantes… y los pierden en la puerta por decisiones de diseño que nadie cuestionó. Este artículo desarma ese problema pieza por pieza: qué juzga el cliente en esos tres segundos, los errores que más vemos en el mercado local, cómo se corrige cada uno, y un checklist completo que puedes aplicar a tu sitio hoy mismo, sin contratar a nadie.
+      </p>
 
       <PullQuote>
         En móvil no hay segunda oportunidad de primera impresión. Si no se entiende rápido, se va a la competencia.
@@ -1761,36 +1744,156 @@ function ArticleDisenoMovilPrimero() {
       <Separator />
 
       <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
-        Errores clásicos en RD
+        Los tres segundos, segundo a segundo
       </h2>
 
-      <ul className="space-y-3 my-6">
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Para entender qué decide el cliente, conviene dividir esos tres segundos en tres momentos. Cada uno tiene un criterio distinto, y fallar cualquiera de los tres cuesta la visita.
+      </p>
+
+      <h3 className="font-serif text-xl md:text-2xl text-[#1C1C1E] mt-10 mb-4">Segundo 0 al 1: ¿carga o no carga?</h3>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Antes de ver tu logo, el usuario ve blanco. Si esa pantalla blanca dura más de dos o tres segundos con conexión móvil promedio, una fracción grande de las personas abandona antes de ver nada. Google lo mide con las Core Web Vitals — específicamente el LCP (Largest Contentful Paint), que recomienda mantener por debajo de 2.5 segundos — y además lo usa como factor de posicionamiento. Es decir: un sitio lento no solo pierde visitas, también baja en el ranking que las trae.
+      </p>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8] mt-6">
+        Los culpables típicos que encontramos: imágenes originales de cámara subidas sin comprimir (una foto de galería de 6 MB cuando debería pesar 150 KB), animaciones pesadas de plantillas genéricas, y hosting compartido barato que arranca bien pero se ahoga con tráfico.
+      </p>
+
+      <h3 className="font-serif text-xl md:text-2xl text-[#1C1C1E] mt-10 mb-4">Segundo 1 al 2: ¿entiendo qué es esto?</h3>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        La página cargó. Ahora el usuario escanea: ¿qué vende este negocio, para quién, y sirve para mí? Aquí muere la mayoría de sitios corporativos que abren con una frase bonita e indescifrable ("Soluciones integrales que transforman tu futuro") en lugar de una respuesta directa ("Clínica dental en Santiago — citas el mismo día").
+      </p>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8] mt-6">
+        La regla que aplicamos: en el primer scroll de un móvil debe caber la respuesta completa a "¿qué es, dónde está, y qué hago ahora?". Nada de carruseles de cinco diapositivas que nadie desliza — el titular, un subtítulo con ubicación, y un botón de acción visible sin hacer scroll.
+      </p>
+
+      <h3 className="font-serif text-xl md:text-2xl text-[#1C1C1E] mt-10 mb-4">Segundo 2 al 3: ¿cómo contacto?</h3>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        El visitante decidió que le interesa. Busca el botón. Y aquí ocurre el error más caro del mercado local: el número de teléfono vive como texto plano en el footer, el WhatsApp no tiene enlace directo, y el formulario pide nombre, email, teléfono, provincia y "mensaje" obligatorio. En un celular, cada campo extra reduce drásticamente quién completa el formulario. La solución es simple: botón de WhatsApp flotante siempre visible, y formularios de máximo tres campos.
+      </p>
+
+      <DataBox icon="📱">
+        Un diseño móvil deficiente no es un problema estético. Es una fuga comercial medible: cada segundo extra de carga y cada campo innecesario son clientes que llegaron pagados por publicidad y se fueron sin dejar rastro.
+      </DataBox>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        Los cinco errores que más vemos en RD
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Después de auditar sitios de distintos sectores en Santo Domingo, Santiago y la costa turística, estos son los cinco defectos recurrentes — ordenados por cuánto dinero le cuestan al negocio:
+      </p>
+
+      <ul className="space-y-4 my-6">
         <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
-          <span className="text-[#0066CC] flex-shrink-0 mt-0.5">•</span>
-          <span>Menús que no caben</span>
+          <span className="text-[#0066CC] flex-shrink-0 mt-0.5 font-semibold">1.</span>
+          <span><strong className="text-[#1C1C1E]">Imágenes sin comprimir.</strong> Galerías de propiedades y "antes/después" dentales subidas en resolución original. Es el error número uno y el más fácil de corregir: compresión automática y formatos modernos reducen el peso 80–90% sin diferencia visible.</span>
         </li>
         <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
-          <span className="text-[#0066CC] flex-shrink-0 mt-0.5">•</span>
-          <span>Botones pequeños</span>
+          <span className="text-[#0066CC] flex-shrink-0 mt-0.5 font-semibold">2.</span>
+          <span><strong className="text-[#1C1C1E]">WhatsApp sin enlace directo.</strong> El canal favorito del dominicano, enterrado como texto en una imagen o en el footer. Cada visita que quiere escribir y no encuentra el botón es una venta que se enfría.</span>
         </li>
         <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
-          <span className="text-[#0066CC] flex-shrink-0 mt-0.5">•</span>
-          <span>Textos sin espaciado</span>
+          <span className="text-[#0066CC] flex-shrink-0 mt-0.5 font-semibold">3.</span>
+          <span><strong className="text-[#1C1C1E]">Menús heredados del escritorio.</strong> Siete opciones desplegables que en móvil se convierten en un laberinto de submenús. En pantalla pequeña, el menú ideal tiene cuatro o cinco entradas máximo.</span>
         </li>
         <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
-          <span className="text-[#0066CC] flex-shrink-0 mt-0.5">•</span>
-          <span>Formularios sin foco automático</span>
+          <span className="text-[#0066CC] flex-shrink-0 mt-0.5 font-semibold">4.</span>
+          <span><strong className="text-[#1C1C1E]">Textos apretados.</strong> Párrafos de diez líneas con letra pequeña y sin margen entre secciones. En móvil, el texto largo se lee en bloques cortos o no se lee.</span>
+        </li>
+        <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
+          <span className="text-[#0066CC] flex-shrink-0 mt-0.5 font-semibold">5.</span>
+          <span><strong className="text-[#1C1C1E]">Formularios interrogatorios.</strong> Ocho campos porque "queremos conocer bien al cliente". El dato adicional se consigue después, en la conversación; el formulario solo tiene una misión: abrir la conversación.</span>
         </li>
       </ul>
 
       <Separator />
 
       <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
-        Nuestro estándar
+        Anatomía de una corrección real
       </h2>
 
       <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
-        Diseñamos mobile-first, probado con usuarios reales: carga rápida, CTA visible, información esencial arriba.
+        Para que esto no quede en teoría, veamos el caso típico que representa mejor lo que vivimos en el mercado: una clínica dental con inversión en publicidad, buen volumen de visitas… y pocas citas. Su sitio tardaba varios segundos en cargar en móvil porque la galería de resultados pesaba decenas de megabytes; el titular hablaba de "bienestar integral" sin mencionar la ciudad; y el único contacto era un formulario de siete campos.
+      </p>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8] mt-6">
+        La intervención fue quirúrgica, no cosmética: compresión de toda la galería, nuevo titular directo ("Odontología en [ciudad] — primera consulta esta semana"), botón de WhatsApp flotante en todas las páginas, y formulario reducido a nombre, teléfono y motivo. El mismo tráfico que ya pagaban pasó a convertir en conversaciones de WhatsApp en lugar de evaporarse. Ninguna métrica de publicidad cambió — cambió lo que pasaba después del clic.
+      </p>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8] mt-6">
+        Esta es la lección central del enfoque móvil primero: antes de gastar un peso más en atraer visitas, asegúrate de que tu puerta digital no las expulse. La optimización de conversión suele costar una fracción de lo que cuesta el tráfico adicional que la hace innecesaria.
+      </p>
+
+      <PullQuote>
+        Antes de comprar más tráfico, pregunta qué pasa con el que ya tienes. La fuga más común no está en la publicidad: está en la pantalla de seis pulgadas.
+      </PullQuote>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        Checklist móvil: 10 puntos para auditar hoy
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Abre tu sitio en tu propio teléfono (no en la computadora) y evalúa estos diez puntos. Cinco minutos que valen más que cualquier informe de marketing:
+      </p>
+
+      <ul className="space-y-3 my-6">
+        <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
+          <span className="text-[#0066CC] flex-shrink-0 mt-0.5">✓</span>
+          <span>El sitio carga completamente en menos de 3 segundos con datos móviles</span>
+        </li>
+        <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
+          <span className="text-[#0066CC] flex-shrink-0 mt-0.5">✓</span>
+          <span>Entiendes qué vende el negocio sin hacer ningún scroll</span>
+        </li>
+        <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
+          <span className="text-[#0066CC] flex-shrink-0 mt-0.5">✓</span>
+          <span>La ciudad o zona aparece en el titular o subtítulo principal</span>
+        </li>
+        <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
+          <span className="text-[#0066CC] flex-shrink-0 mt-0.5">✓</span>
+          <span>Hay un botón de acción visible sin hacer scroll (WhatsApp o llamada)</span>
+        </li>
+        <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
+          <span className="text-[#0066CC] flex-shrink-0 mt-0.5">✓</span>
+          <span>El botón de WhatsApp abre la conversación directamente (wa.me)</span>
+        </li>
+        <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
+          <span className="text-[#0066CC] flex-shrink-0 mt-0.5">✓</span>
+          <span>El menú tiene 5 opciones o menos y funciona con el pulgar</span>
+        </li>
+        <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
+          <span className="text-[#0066CC] flex-shrink-0 mt-0.5">✓</span>
+          <span>Los párrafos tienen máximo 4-5 líneas en pantalla</span>
+        </li>
+        <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
+          <span className="text-[#0066CC] flex-shrink-0 mt-0.5">✓</span>
+          <span>El formulario pide 3 campos o menos</span>
+        </li>
+        <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
+          <span className="text-[#0066CC] flex-shrink-0 mt-0.5">✓</span>
+          <span>Ningún elemento importante queda tapado por pop-ups o cookies</span>
+        </li>
+        <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
+          <span className="text-[#0066CC] flex-shrink-0 mt-0.5">✓</span>
+          <span>Las fotos pesan poco y se ven nítidas (prueba desplazándolas rápido)</span>
+        </li>
+      </ul>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8] mt-6">
+        Si tu sitio falla tres o más puntos, no necesitas un rediseño completo — necesitas priorizar esas correcciones específicas. Si falla más de la mitad, cada día que pasa con la publicidad encendida es dinero que entra por una puerta rota.
+      </p>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        Cómo trabajamos este punto en Verano Media
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Todo sitio que construimos sigue el estándar móvil primero: se diseña en pantalla pequeña antes que en escritorio, se prueba con usuarios reales sobre conexiones móviles dominicanas, y se entrega con carga rápida, CTA visible desde el primer vistazo e información esencial arriba del pliegue. Además, integramos desde el día uno el botón de WhatsApp con enlace directo y el chatbot que responde fuera de horario — porque el móvil no solo cambia cómo se ve el sitio: cambia a qué hora llega el cliente.
       </p>
 
       <Separator />
@@ -1800,12 +1903,12 @@ function ArticleDisenoMovilPrimero() {
       </h2>
 
       <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
-        Tu web no es tuya; es de quien llega primero. Si no está optimizada, tu competencia se lleva la venta.
+        Tu web, en móvil, no compite contra otras webs: compite contra la impaciencia humana. El cliente que te encuentra hoy decide en segundos, y no vuelve a intentar leer lo que no se dejó leer la primera vez.
       </p>
 
-      <PullQuote>
-        Escribinos y la revisamos sin costo.
-      </PullQuote>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8] mt-6">
+        Si quieres una segunda opinión, escríbenos y te revisamos el sitio sin costo: te decimos exactamente qué corregir, en qué orden, y qué tanto está afectando tu facturación. Sin compromiso — el diagnóstico es gratuito aunque decidas ejecutarlo por tu cuenta.
+      </p>
 
       <div className="my-10 text-center">
         <p className="text-xs text-[#8E8E93] uppercase tracking-[0.15em] mb-2">

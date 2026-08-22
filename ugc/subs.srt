@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:03,500
+Tu clínica no pierde pacientes.
+
+2
+00:00:03,500 --> 00:00:06,500
+Pierde tiempo.
+
+3
+00:00:06,500 --> 00:00:09,400
+El problema no es la odontología.
+Es el sistema.

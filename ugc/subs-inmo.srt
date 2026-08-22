@@ -1,0 +1,11 @@
+1
+00:00:00,000 --> 00:00:03,400
+Tu próxima casa no se encuentra buscando.
+
+2
+00:00:03,400 --> 00:00:06,900
+Se encuentra con el sistema correcto.
+
+3
+00:00:06,900 --> 00:00:10,416
+El problema no es el mercado. Es la herramienta.
