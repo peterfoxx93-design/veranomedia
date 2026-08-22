@@ -59,6 +59,15 @@ const realProjects = [
     overlayStyle: 'bg-gradient-to-b from-black/10 via-black/30 to-black/60',
   },
   {
+    brand: 'KINETIC REST',
+    tag: 'GIMNASIO & FITNESS',
+    tagline: 'Donde el movimiento encuentra su equilibrio.',
+    url: 'https://kinetic-rest.vercel.app',
+    accent: '#007AFF',
+    heroImage: '/images/demos/kinetic-hero.jpg',
+    overlayStyle: 'bg-gradient-to-b from-black/10 via-black/30 to-black/60',
+  },
+  {
     brand: 'ATLÁNTICO REAL STATE',
     tag: 'BIENES RAÍCES',
     tagline: 'Redefiniendo el lujo tropical.',
