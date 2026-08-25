@@ -124,7 +124,7 @@ export default function Portfolio() {
             initial={{ opacity: 0, y: 10 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5 }}
-            className="text-sm font-semibold text-[#0066CC] uppercase tracking-widest"
+            className="text-sm font-semibold text-[#5170FF] uppercase tracking-widest"
           >
             Demos de proyectos
           </motion.span>

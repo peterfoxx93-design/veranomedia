@@ -83,7 +83,7 @@ export default function SistemaVerano() {
       {/* Hero */}
       <section className="relative bg-[#0A0A0A] text-white overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-1/3 left-1/4 w-[500px] h-[500px] bg-[#0066CC]/10 rounded-full blur-3xl" />
+          <div className="absolute top-1/3 left-1/4 w-[500px] h-[500px] bg-[#5170FF]/10 rounded-full blur-3xl" />
           <div className="absolute bottom-1/4 right-1/4 w-[300px] h-[300px] bg-[#34C759]/10 rounded-full blur-3xl" />
         </div>
 
@@ -104,7 +104,7 @@ export default function SistemaVerano() {
             className="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.1] max-w-4xl"
           >
             No vendemos páginas web.<br />
-            <span className="text-[#0066CC]">Implementamos sistemas inteligentes para captar, atender y convertir clientes.</span>
+            <span className="text-[#5170FF]">Implementamos sistemas inteligentes para captar, atender y convertir clientes.</span>
           </motion.h1>
 
           <motion.p
@@ -124,7 +124,7 @@ export default function SistemaVerano() {
           >
             <Link
               to="/contacto"
-              className="inline-flex items-center gap-2 bg-[#0066CC] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#0066CC]/90 transition-all duration-300 shadow-lg shadow-[#0066CC]/25 hover:shadow-[#0066CC]/40 hover:-translate-y-1"
+              className="inline-flex items-center gap-2 bg-[#5170FF] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#5170FF]/90 transition-all duration-300 shadow-lg shadow-[#5170FF]/25 hover:shadow-[#5170FF]/40 hover:-translate-y-1"
             >
               Solicitar diagnóstico gratuito
             </Link>
@@ -142,7 +142,7 @@ export default function SistemaVerano() {
             <motion.span
               initial={{ opacity: 0, y: 10 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              className="text-sm font-semibold text-[#0066CC] uppercase tracking-widest"
+              className="text-sm font-semibold text-[#5170FF] uppercase tracking-widest"
             >
               Resultados
             </motion.span>
@@ -173,7 +173,7 @@ export default function SistemaVerano() {
                 transition={{ delay: 0.2 + i * 0.1 }}
                 className="glass-card glass-shine rounded-vm-xl p-8 text-center"
               >
-                <div className="text-4xl md:text-5xl font-extrabold text-[#0066CC] mb-2">{item.metric}</div>
+                <div className="text-4xl md:text-5xl font-extrabold text-[#5170FF] mb-2">{item.metric}</div>
                 <div className="text-sm text-[#636366]">{item.label}</div>
               </motion.div>
             ))}
@@ -188,7 +188,7 @@ export default function SistemaVerano() {
             <motion.span
               initial={{ opacity: 0, y: 10 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              className="text-sm font-semibold text-[#0066CC] uppercase tracking-widest"
+              className="text-sm font-semibold text-[#5170FF] uppercase tracking-widest"
             >
               El sistema
             </motion.span>
@@ -229,7 +229,7 @@ export default function SistemaVerano() {
             <motion.span
               initial={{ opacity: 0, y: 10 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              className="text-sm font-semibold text-[#0066CC] uppercase tracking-widest"
+              className="text-sm font-semibold text-[#5170FF] uppercase tracking-widest"
             >
               Metodología
             </motion.span>
@@ -251,13 +251,13 @@ export default function SistemaVerano() {
                   transition={{ delay: 0.1 + index * 0.1 }}
                   className="relative text-center"
                 >
-                  <div className="mx-auto mb-4 flex items-center justify-center w-12 h-12 rounded-full bg-[#0066CC] text-white font-bold text-lg">
+                  <div className="mx-auto mb-4 flex items-center justify-center w-12 h-12 rounded-full bg-[#5170FF] text-white font-bold text-lg">
                     {index + 1}
                   </div>
                   <h4 className="font-semibold text-[#1C1C1E] mb-1">{item.title}</h4>
                   <p className="text-sm text-[#8E8E93] max-w-[260px] mx-auto">{item.desc}</p>
                   {index < steps.length - 1 ? (
-                    <div className="hidden md:block absolute top-6 left-[calc(50%+24px)] w-[calc(100%-48px)] h-[1px] bg-gradient-to-r from-[#0066CC]/40 to-transparent" />
+                    <div className="hidden md:block absolute top-6 left-[calc(50%+24px)] w-[calc(100%-48px)] h-[1px] bg-gradient-to-r from-[#5170FF]/40 to-transparent" />
                   ) : null}
                 </motion.div>
               ))}
@@ -288,7 +288,7 @@ export default function SistemaVerano() {
       {/* CTA Final */}
       <section className="relative bg-[#0F1A2E] text-white overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-1/2 left-1/4 w-[400px] h-[400px] bg-[#007AFF]/10 rounded-full blur-3xl" />
+          <div className="absolute top-1/2 left-1/4 w-[400px] h-[400px] bg-[#5170FF]/10 rounded-full blur-3xl" />
           <div className="absolute bottom-1/4 right-1/4 w-[300px] h-[300px] bg-[#34C759]/5 rounded-full blur-3xl" />
         </div>
 
@@ -318,7 +318,7 @@ export default function SistemaVerano() {
           >
             <Link
               to="/contacto"
-              className="bg-[#007AFF] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#007AFF]/90 transition-all duration-300 shadow-lg shadow-[#007AFF]/25 hover:shadow-[#007AFF]/40 hover:-translate-y-1 inline-flex items-center gap-2"
+              className="bg-[#5170FF] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#5170FF]/90 transition-all duration-300 shadow-lg shadow-[#5170FF]/25 hover:shadow-[#5170FF]/40 hover:-translate-y-1 inline-flex items-center gap-2"
             >
               Solicitar diagnóstico gratuito
             </Link>

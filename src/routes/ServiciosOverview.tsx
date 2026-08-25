@@ -51,11 +51,11 @@ export default function ServiciosOverview() {
           transition={{ duration: 0.5 }}
           className="max-w-3xl"
         >
-          <p className="text-sm font-semibold text-[#0066CC] uppercase tracking-[0.15em] mb-4">Servicios</p>
+          <p className="text-sm font-semibold text-[#5170FF] uppercase tracking-[0.15em] mb-4">Servicios</p>
           <h1 className="font-serif text-4xl md:text-5xl text-[#1C1C1E] leading-tight">
             No vendemos piezas sueltas.
             <br />
-            Instalamos <span className="text-[#0066CC]">sistemas de captación</span>.
+            Instalamos <span className="text-[#5170FF]">sistemas de captación</span>.
           </h1>
           <p className="text-base md:text-lg text-[#636366] leading-relaxed mt-6">
             Un sitio bonito no paga facturas. Nosotros entregamos el sistema completo
@@ -82,7 +82,7 @@ export default function ServiciosOverview() {
               <ul className="mt-5 space-y-2.5">
                 {v.puntos.map((p) => (
                   <li key={p} className="flex gap-2.5 text-sm text-[#636366]">
-                    <span className="text-[#0066CC] flex-shrink-0">✓</span>
+                    <span className="text-[#5170FF] flex-shrink-0">✓</span>
                     <span>{p}</span>
                   </li>
                 ))}
@@ -115,7 +115,7 @@ export default function ServiciosOverview() {
               transition={{ duration: 0.45, delay: i * 0.08 }}
               className="rounded-vm-lg bg-[#F5F5F7]/70 p-7"
             >
-              <span className="text-sm font-bold text-[#0066CC] tracking-widest">{p.n}</span>
+              <span className="text-sm font-bold text-[#5170FF] tracking-widest">{p.n}</span>
               <h3 className="font-serif text-lg text-[#1C1C1E] mt-3">{p.title}</h3>
               <p className="text-sm text-[#636366] leading-relaxed mt-3">{p.desc}</p>
             </motion.div>
@@ -128,7 +128,7 @@ export default function ServiciosOverview() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="mt-16 rounded-vm-lg border-l-4 border-[#0066CC] bg-[#F5F5F7]/50 p-8 md:p-10"
+          className="mt-16 rounded-vm-lg border-l-4 border-[#5170FF] bg-[#F5F5F7]/50 p-8 md:p-10"
         >
           <p className="font-serif text-xl md:text-2xl text-[#1C1C1E] leading-relaxed">
             "El negocio no necesita más publicidad: necesita dejar de perder los
@@ -155,13 +155,13 @@ export default function ServiciosOverview() {
               href="https://wa.me/18093586497"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-[#0066CC] hover:bg-[#0066CC]/90 text-white font-semibold px-8 py-3.5 rounded-full transition-all duration-300 shadow-lg shadow-[#0066CC]/25"
+              className="inline-flex items-center gap-2 bg-[#5170FF] hover:bg-[#5170FF]/90 text-white font-semibold px-8 py-3.5 rounded-full transition-all duration-300 shadow-lg shadow-[#5170FF]/25"
             >
               Diagnóstico Gratuito
             </a>
             <Link
               to="/portafolio"
-              className="text-[#0066CC] border border-[#0066CC]/30 hover:border-[#0066CC]/60 font-medium px-8 py-3.5 rounded-full transition-all duration-300"
+              className="text-[#5170FF] border border-[#5170FF]/30 hover:border-[#5170FF]/60 font-medium px-8 py-3.5 rounded-full transition-all duration-300"
             >
               Ver casos reales
             </Link>

@@ -11,7 +11,7 @@ import ShareButtons from '../components/ShareButtons'
 
 function DropCap({ children }: { children: string }) {
   return (
-    <span className="float-left text-6xl md:text-7xl leading-[0.8] mr-3 mt-1 font-serif font-bold text-[#0066CC] select-none">
+    <span className="float-left text-6xl md:text-7xl leading-[0.8] mr-3 mt-1 font-serif font-bold text-[#5170FF] select-none">
       {children}
     </span>
   )
@@ -19,7 +19,7 @@ function DropCap({ children }: { children: string }) {
 
 function PullQuote({ children }: { children: string }) {
   return (
-    <div className="my-10 md:my-12 pl-5 md:pl-6 border-l-4 border-[#0066CC] bg-[#F5F5F7] rounded-r-vm-md py-5 md:py-6 pr-5 md:pr-8">
+    <div className="my-10 md:my-12 pl-5 md:pl-6 border-l-4 border-[#5170FF] bg-[#F5F5F7] rounded-r-vm-md py-5 md:py-6 pr-5 md:pr-8">
       <p className="font-serif text-xl md:text-2xl leading-relaxed text-[#1C1C1E] italic">
         {children}
       </p>
@@ -29,7 +29,7 @@ function PullQuote({ children }: { children: string }) {
 
 function DataBox({ icon, children }: { icon: string; children: React.ReactNode }) {
   return (
-    <div className="my-8 bg-[#0066CC]/5 border border-[#0066CC]/10 rounded-vm-md p-5 md:p-6">
+    <div className="my-8 bg-[#5170FF]/5 border border-[#5170FF]/10 rounded-vm-md p-5 md:p-6">
       <div className="flex gap-4 items-start">
         <span className="text-xl flex-shrink-0 mt-0.5">{icon}</span>
         <div className="text-base text-[#636366] leading-relaxed">{children}</div>
@@ -287,7 +287,7 @@ function ArticleLandingVsSitio() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 my-8">
         <div className="bg-[#F5F5F7] rounded-vm-xl p-6 border border-[#E8E8ED]/50">
-          <div className="text-sm font-semibold text-[#0066CC] uppercase tracking-[0.1em] mb-3">Landing Page</div>
+          <div className="text-sm font-semibold text-[#5170FF] uppercase tracking-[0.1em] mb-3">Landing Page</div>
           <ul className="space-y-2 text-sm text-[#636366]">
             <li className="flex gap-2">• Tienes una oferta única</li>
             <li className="flex gap-2">• Vas a invertir en anuncios</li>
@@ -297,7 +297,7 @@ function ArticleLandingVsSitio() {
           </ul>
         </div>
         <div className="bg-[#F5F5F7] rounded-vm-xl p-6 border border-[#E8E8ED]/50">
-          <div className="text-sm font-semibold text-[#0066CC] uppercase tracking-[0.1em] mb-3">Sitio Web</div>
+          <div className="text-sm font-semibold text-[#5170FF] uppercase tracking-[0.1em] mb-3">Sitio Web</div>
           <ul className="space-y-2 text-sm text-[#636366]">
             <li className="flex gap-2">• Múltiples servicios o productos</li>
             <li className="flex gap-2">• Quieres aparecer en Google</li>
@@ -469,28 +469,28 @@ function ArticleChatbotsWhatsApp() {
 
       <div className="space-y-4 my-8">
         <div className="flex gap-4 items-start">
-          <span className="w-7 h-7 rounded-full bg-[#0066CC] text-white text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">1</span>
+          <span className="w-7 h-7 rounded-full bg-[#5170FF] text-white text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">1</span>
           <div>
             <p className="text-sm font-semibold text-[#1C1C1E]">Define las preguntas frecuentes</p>
             <p className="text-sm text-[#636366] mt-0.5">Horarios, precios, servicios, ubicación — todo lo que te preguntan 10 veces al día.</p>
           </div>
         </div>
         <div className="flex gap-4 items-start">
-          <span className="w-7 h-7 rounded-full bg-[#0066CC] text-white text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">2</span>
+          <span className="w-7 h-7 rounded-full bg-[#5170FF] text-white text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">2</span>
           <div>
             <p className="text-sm font-semibold text-[#1C1C1E]">Configura las respuestas automáticas</p>
             <p className="text-sm text-[#636366] mt-0.5">Con el tono de tu marca. No suena a robot: suena a tu negocio.</p>
           </div>
         </div>
         <div className="flex gap-4 items-start">
-          <span className="w-7 h-7 rounded-full bg-[#0066CC] text-white text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">3</span>
+          <span className="w-7 h-7 rounded-full bg-[#5170FF] text-white text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">3</span>
           <div>
             <p className="text-sm font-semibold text-[#1C1C1E]">Define las reglas de derivación</p>
             <p className="text-sm text-[#636366] mt-0.5">¿Qué conversaciones pasan a un humano? ¿Después de cuántas preguntas sin resolver?</p>
           </div>
         </div>
         <div className="flex gap-4 items-start">
-          <span className="w-7 h-7 rounded-full bg-[#0066CC] text-white text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">4</span>
+          <span className="w-7 h-7 rounded-full bg-[#5170FF] text-white text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">4</span>
           <div>
             <p className="text-sm font-semibold text-[#1C1C1E]">Prueba, ajusta, repite</p>
             <p className="text-sm text-[#636366] mt-0.5">Los chatbots mejoran con el uso. Las primeras semanas son de aprendizaje mutuo.</p>
@@ -506,7 +506,7 @@ function ArticleChatbotsWhatsApp() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 my-8">
         <div className="bg-[#F5F5F7] rounded-vm-xl p-6 border border-[#E8E8ED]/50">
-          <div className="text-sm font-semibold text-[#0066CC] uppercase tracking-[0.1em] mb-3">Sin chatbot</div>
+          <div className="text-sm font-semibold text-[#5170FF] uppercase tracking-[0.1em] mb-3">Sin chatbot</div>
           <ul className="space-y-2 text-sm text-[#636366]">
             <li className="flex gap-2">• Pierdes leads después del horario laboral</li>
             <li className="flex gap-2">• Tu equipo se satura con preguntas repetitivas</li>
@@ -516,7 +516,7 @@ function ArticleChatbotsWhatsApp() {
           </ul>
         </div>
         <div className="bg-[#F5F5F7] rounded-vm-xl p-6 border border-[#E8E8ED]/50">
-          <div className="text-sm font-semibold text-[#0066CC] uppercase tracking-[0.1em] mb-3">Con chatbot</div>
+          <div className="text-sm font-semibold text-[#5170FF] uppercase tracking-[0.1em] mb-3">Con chatbot</div>
           <ul className="space-y-2 text-sm text-[#636366]">
             <li className="flex gap-2">• Captas leads 24/7 sin esfuerzo extra</li>
             <li className="flex gap-2">• Tu equipo solo atiende lo importante</li>
@@ -664,35 +664,35 @@ function ArticleGoogleMaps() {
 
       <div className="space-y-4 my-8">
         <div className="flex gap-4 items-start">
-          <span className="w-7 h-7 rounded-full bg-[#0066CC] text-white text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">1</span>
+          <span className="w-7 h-7 rounded-full bg-[#5170FF] text-white text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">1</span>
           <div>
             <p className="text-sm font-semibold text-[#1C1C1E]">Reclamá o creá tu perfil</p>
             <p className="text-sm text-[#636366] mt-0.5">Andá a google.com/business. Si tu negocio ya aparece, reclamalo. Si no, crealo desde cero.</p>
           </div>
         </div>
         <div className="flex gap-4 items-start">
-          <span className="w-7 h-7 rounded-full bg-[#0066CC] text-white text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">2</span>
+          <span className="w-7 h-7 rounded-full bg-[#5170FF] text-white text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">2</span>
           <div>
             <p className="text-sm font-semibold text-[#1C1C1E]">Completá CADA campo</p>
             <p className="text-sm text-[#636366] mt-0.5">Nombre, dirección, teléfono, WhatsApp, horarios (incluyendo feriados), sitio web, categoría exacta. Todo.</p>
           </div>
         </div>
         <div className="flex gap-4 items-start">
-          <span className="w-7 h-7 rounded-full bg-[#0066CC] text-white text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">3</span>
+          <span className="w-7 h-7 rounded-full bg-[#5170FF] text-white text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">3</span>
           <div>
             <p className="text-sm font-semibold text-[#1C1C1E]">Subí 10+ fotos de calidad</p>
             <p className="text-sm text-[#636366] mt-0.5">Fachada, interior, equipo, trabajos realizados. Fotos nítidas, bien iluminadas. Nada de imágenes borrosas.</p>
           </div>
         </div>
         <div className="flex gap-4 items-start">
-          <span className="w-7 h-7 rounded-full bg-[#0066CC] text-white text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">4</span>
+          <span className="w-7 h-7 rounded-full bg-[#5170FF] text-white text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">4</span>
           <div>
             <p className="text-sm font-semibold text-[#1C1C1E]">Gestioná las reseñas</p>
             <p className="text-sm text-[#636366] mt-0.5">Pedile a tus clientes satisfechos que te dejen una reseña. Respondé a TODAS, las buenas y las malas, en menos de 24 horas.</p>
           </div>
         </div>
         <div className="flex gap-4 items-start">
-          <span className="w-7 h-7 rounded-full bg-[#0066CC] text-white text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">5</span>
+          <span className="w-7 h-7 rounded-full bg-[#5170FF] text-white text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">5</span>
           <div>
             <p className="text-sm font-semibold text-[#1C1C1E]">Publicá semanalmente</p>
             <p className="text-sm text-[#636366] mt-0.5">Google premia la actividad. Publicá ofertas, eventos, fotos nuevas. Un negocio activo aparece antes que uno abandonado.</p>
@@ -877,7 +877,7 @@ function ArticleCMvsPublicidad() {
         Una vez que tienes contenido de calidad, interacción orgánica y algunos clientes satisfechos, la publicidad se convierte en un <strong className="text-[#1C1C1E]">acelerador</strong>. Ya no estás poniendo un anuncio delante de personas que no saben quién eres. Estás poniendo un anuncio delante de personas que, al llegar a tu perfil, ven actividad, ven comentarios, ven que hay vida ahí.
       </p>
 
-      <div className="my-6 pl-4 border-l-4 border-[#007AFF]">
+      <div className="my-6 pl-4 border-l-4 border-[#5170FF]">
         <p className="text-base md:text-lg text-[#636366] leading-[1.8] italic">
           "La publicidad sin community management es como invitar gente a una fiesta vacía. Llegan, miran, y se van."
         </p>
@@ -892,7 +892,7 @@ function ArticleCMvsPublicidad() {
       </p>
 
       <div className="my-8 bg-[#F5F5F7] rounded-vm-md p-5 md:p-6 border border-[#E8E8ED]/50">
-        <p className="text-sm font-semibold text-[#007AFF] uppercase tracking-[0.1em] mb-2">El ciclo ideal</p>
+        <p className="text-sm font-semibold text-[#5170FF] uppercase tracking-[0.1em] mb-2">El ciclo ideal</p>
         <ol className="space-y-2 text-sm text-[#636366]">
           <li><strong className="text-[#1C1C1E]">1.</strong> Publicas contenido orgánico que educa y engancha → la gente te conoce</li>
           <li><strong className="text-[#1C1C1E]">2.</strong> Activas anuncios dirigidos a audiencias que ya vieron tu contenido → el clic vale más</li>
@@ -971,7 +971,7 @@ function ArticleCMvsPublicidad() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 my-8">
         <div className="bg-[#F5F5F7] rounded-vm-xl p-6 border border-[#E8E8ED]/50">
-          <div className="text-sm font-semibold text-[#007AFF] uppercase tracking-[0.1em] mb-3">
+          <div className="text-sm font-semibold text-[#5170FF] uppercase tracking-[0.1em] mb-3">
             Solo Community Management
           </div>
           <ul className="space-y-2 text-sm text-[#636366]">
@@ -1079,8 +1079,8 @@ function ArticleIaContenido() {
       </p>
 
       <div className="mt-8 pt-6 border-t border-[#E8E8ED]/40 text-sm text-[#636366]">
-        <p>WhatsApp: <a href="https://wa.me/18093586497" className="text-[#0066CC] hover:underline">wa.me/18093586497</a></p>
-        <p className="mt-1">Web: <a href="https://veranomedia.digital" className="text-[#0066CC] hover:underline">veranomedia.digital</a></p>
+        <p>WhatsApp: <a href="https://wa.me/18093586497" className="text-[#5170FF] hover:underline">wa.me/18093586497</a></p>
+        <p className="mt-1">Web: <a href="https://veranomedia.digital" className="text-[#5170FF] hover:underline">veranomedia.digital</a></p>
       </div>
     </>
   )
@@ -1093,7 +1093,7 @@ function ArticleAutomatizacionPymes() {
         <DropCap>H</DropCap>ace unos meses hablé con el dueño de una ferretería en Santiago. Le mencioné que podía automatizar el envío de cotizaciones por WhatsApp. Su respuesta fue inmediata:
       </p>
 
-      <div className="my-6 pl-4 border-l-4 border-[#007AFF]">
+      <div className="my-6 pl-4 border-l-4 border-[#5170FF]">
         <p className="text-base md:text-lg text-[#636366] leading-[1.8] italic">
           "Eso es para empresas grandes, no para un negocio como el mío."
         </p>
@@ -1204,7 +1204,7 @@ function ArticleAutomatizacionPymes() {
       </p>
 
       <div className="my-8 bg-[#F5F5F7] rounded-vm-md p-5 md:p-6 border border-[#E8E8ED]/50">
-        <p className="text-sm font-semibold text-[#007AFF] uppercase tracking-[0.1em] mb-2">La regla de oro</p>
+        <p className="text-sm font-semibold text-[#5170FF] uppercase tracking-[0.1em] mb-2">La regla de oro</p>
         <p className="text-base text-[#636366] leading-relaxed">
           Si haces una tarea manual más de 3 veces a la semana, pregúntate: <strong className="text-[#1C1C1E]">"¿Puede hacerlo una máquina?"</strong>. Si la respuesta es sí, <strong className="text-[#1C1C1E]">automatízala</strong>.
         </p>
@@ -1222,8 +1222,8 @@ function ArticleAutomatizacionPymes() {
 
       <div className="my-8 space-y-4">
         <div className="flex gap-4 items-start">
-          <div className="w-8 h-8 rounded-full bg-[#0066CC]/10 flex items-center justify-center shrink-0 mt-0.5">
-            <span className="text-sm font-bold text-[#0066CC]">1</span>
+          <div className="w-8 h-8 rounded-full bg-[#5170FF]/10 flex items-center justify-center shrink-0 mt-0.5">
+            <span className="text-sm font-bold text-[#5170FF]">1</span>
           </div>
           <div>
             <p className="text-base font-semibold text-[#1C1C1E]">Identifica el dolor</p>
@@ -1231,8 +1231,8 @@ function ArticleAutomatizacionPymes() {
           </div>
         </div>
         <div className="flex gap-4 items-start">
-          <div className="w-8 h-8 rounded-full bg-[#0066CC]/10 flex items-center justify-center shrink-0 mt-0.5">
-            <span className="text-sm font-bold text-[#0066CC]">2</span>
+          <div className="w-8 h-8 rounded-full bg-[#5170FF]/10 flex items-center justify-center shrink-0 mt-0.5">
+            <span className="text-sm font-bold text-[#5170FF]">2</span>
           </div>
           <div>
             <p className="text-base font-semibold text-[#1C1C1E]">Empieza por una</p>
@@ -1240,8 +1240,8 @@ function ArticleAutomatizacionPymes() {
           </div>
         </div>
         <div className="flex gap-4 items-start">
-          <div className="w-8 h-8 rounded-full bg-[#0066CC]/10 flex items-center justify-center shrink-0 mt-0.5">
-            <span className="text-sm font-bold text-[#0066CC]">3</span>
+          <div className="w-8 h-8 rounded-full bg-[#5170FF]/10 flex items-center justify-center shrink-0 mt-0.5">
+            <span className="text-sm font-bold text-[#5170FF]">3</span>
           </div>
           <div>
             <p className="text-base font-semibold text-[#1C1C1E]">Mide el resultado</p>
@@ -1249,8 +1249,8 @@ function ArticleAutomatizacionPymes() {
           </div>
         </div>
         <div className="flex gap-4 items-start">
-          <div className="w-8 h-8 rounded-full bg-[#0066CC]/10 flex items-center justify-center shrink-0 mt-0.5">
-            <span className="text-sm font-bold text-[#0066CC]">4</span>
+          <div className="w-8 h-8 rounded-full bg-[#5170FF]/10 flex items-center justify-center shrink-0 mt-0.5">
+            <span className="text-sm font-bold text-[#5170FF]">4</span>
           </div>
           <div>
             <p className="text-base font-semibold text-[#1C1C1E]">Escala</p>
@@ -1534,25 +1534,25 @@ function ArticleFunnelDigital() {
 
       <div className="space-y-8 my-8">
         <div className="bg-[#F5F5F7] rounded-vm-md p-5 border border-[#E8E8ED]/50">
-          <div className="text-sm font-semibold text-[#0066CC] uppercase tracking-[0.1em] mb-2">Paso 1</div>
+          <div className="text-sm font-semibold text-[#5170FF] uppercase tracking-[0.1em] mb-2">Paso 1</div>
           <p className="text-base text-[#636366] leading-relaxed">
             <strong className="text-[#1C1C1E]">Define el recorrido.</strong> ¿Dónde busca tu cliente? ¿Qué necesita saber antes de comprar? ¿Cuál es la última pregunta que hace antes de decidir? Responde eso primero.
           </p>
         </div>
         <div className="bg-[#F5F5F7] rounded-vm-md p-5 border border-[#E8E8ED]/50">
-          <div className="text-sm font-semibold text-[#0066CC] uppercase tracking-[0.1em] mb-2">Paso 2</div>
+          <div className="text-sm font-semibold text-[#5170FF] uppercase tracking-[0.1em] mb-2">Paso 2</div>
           <p className="text-base text-[#636366] leading-relaxed">
             <strong className="text-[#1C1C1E]">Asegura el descubrimiento.</strong> Google Business Profile completo, Instagram activo con contenido útil, un artículo que responda la pregunta principal de tu cliente. Una sola fuente de tráfico bien trabajada vale más que cinco a medias.
           </p>
         </div>
         <div className="bg-[#F5F5F7] rounded-vm-md p-5 border border-[#E8E8ED]/50">
-          <div className="text-sm font-semibold text-[#0066CC] uppercase tracking-[0.1em] mb-2">Paso 3</div>
+          <div className="text-sm font-semibold text-[#5170FF] uppercase tracking-[0.1em] mb-2">Paso 3</div>
           <p className="text-base text-[#636366] leading-relaxed">
             <strong className="text-[#1C1C1E]">Construye la consideración.</strong> Una landing page o sitio web que muestre quién eres, qué haces, y por qué deberían confiar en ti. Testimonios, casos, contenido que eduque.
           </p>
         </div>
         <div className="bg-[#F5F5F7] rounded-vm-md p-5 border border-[#E8E8ED]/50">
-          <div className="text-sm font-semibold text-[#0066CC] uppercase tracking-[0.1em] mb-2">Paso 4</div>
+          <div className="text-sm font-semibold text-[#5170FF] uppercase tracking-[0.1em] mb-2">Paso 4</div>
           <p className="text-base text-[#636366] leading-relaxed">
             <strong className="text-[#1C1C1E]">Facilita la decisión.</strong> Botón de WhatsApp visible, formulario simple (3 campos máximo), precio claro, llamado a la acción específico. Elimina toda fricción entre "quiero" y "compro".
           </p>
@@ -1607,19 +1607,19 @@ function ArticleGoogleBusinessProfile() {
 
       <ul className="space-y-3 my-6">
         <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
-          <span className="text-[#0066CC] flex-shrink-0 mt-0.5">•</span>
+          <span className="text-[#5170FF] flex-shrink-0 mt-0.5">•</span>
           <span>Horarios mal cargados → cliente no aparece</span>
         </li>
         <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
-          <span className="text-[#0066CC] flex-shrink-0 mt-0.5">•</span>
+          <span className="text-[#5170FF] flex-shrink-0 mt-0.5">•</span>
           <span>Fotos viejas o inexistentes → pérdida de confianza</span>
         </li>
         <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
-          <span className="text-[#0066CC] flex-shrink-0 mt-0.5">•</span>
+          <span className="text-[#5170FF] flex-shrink-0 mt-0.5">•</span>
           <span>Sin respuestas a reseñas → reputación quieta</span>
         </li>
         <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
-          <span className="text-[#0066CC] flex-shrink-0 mt-0.5">•</span>
+          <span className="text-[#5170FF] flex-shrink-0 mt-0.5">•</span>
           <span>Servicios no actualizados → Google no muestra tu ficha en búsquedas relevantes</span>
         </li>
       </ul>
@@ -1663,19 +1663,19 @@ function ArticleGoogleBusinessProfile() {
 
       <ul className="space-y-3 my-6">
         <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
-          <span className="text-[#0066CC] flex-shrink-0 mt-0.5">•</span>
+          <span className="text-[#5170FF] flex-shrink-0 mt-0.5">•</span>
           <span>Auditoría de perfil actual</span>
         </li>
         <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
-          <span className="text-[#0066CC] flex-shrink-0 mt-0.5">•</span>
+          <span className="text-[#5170FF] flex-shrink-0 mt-0.5">•</span>
           <span>Carga correcta de categorías y atributos</span>
         </li>
         <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
-          <span className="text-[#0066CC] flex-shrink-0 mt-0.5">•</span>
+          <span className="text-[#5170FF] flex-shrink-0 mt-0.5">•</span>
           <span>Sistema de captura de reseñas</span>
         </li>
         <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
-          <span className="text-[#0066CC] flex-shrink-0 mt-0.5">•</span>
+          <span className="text-[#5170FF] flex-shrink-0 mt-0.5">•</span>
           <span>Seguimiento mensual de métricas</span>
         </li>
       </ul>
@@ -1708,10 +1708,10 @@ function ArticleGoogleBusinessProfile() {
           Peter — Verano Media
         </p>
         <p className="text-base text-[#636366] mt-2">
-          WhatsApp: <a href="https://wa.me/18093586497" className="text-[#0066CC] hover:underline">wa.me/18093586497</a>
+          WhatsApp: <a href="https://wa.me/18093586497" className="text-[#5170FF] hover:underline">wa.me/18093586497</a>
         </p>
         <p className="text-base text-[#636366] mt-1">
-          Web: <a href="https://veranomedia.digital" className="text-[#0066CC] hover:underline">veranomedia.digital</a>
+          Web: <a href="https://veranomedia.digital" className="text-[#5170FF] hover:underline">veranomedia.digital</a>
         </p>
       </div>
     </>
@@ -1788,23 +1788,23 @@ function ArticleDisenoMovilPrimero() {
 
       <ul className="space-y-4 my-6">
         <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
-          <span className="text-[#0066CC] flex-shrink-0 mt-0.5 font-semibold">1.</span>
+          <span className="text-[#5170FF] flex-shrink-0 mt-0.5 font-semibold">1.</span>
           <span><strong className="text-[#1C1C1E]">Imágenes sin comprimir.</strong> Galerías de propiedades y "antes/después" dentales subidas en resolución original. Es el error número uno y el más fácil de corregir: compresión automática y formatos modernos reducen el peso 80–90% sin diferencia visible.</span>
         </li>
         <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
-          <span className="text-[#0066CC] flex-shrink-0 mt-0.5 font-semibold">2.</span>
+          <span className="text-[#5170FF] flex-shrink-0 mt-0.5 font-semibold">2.</span>
           <span><strong className="text-[#1C1C1E]">WhatsApp sin enlace directo.</strong> El canal favorito del dominicano, enterrado como texto en una imagen o en el footer. Cada visita que quiere escribir y no encuentra el botón es una venta que se enfría.</span>
         </li>
         <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
-          <span className="text-[#0066CC] flex-shrink-0 mt-0.5 font-semibold">3.</span>
+          <span className="text-[#5170FF] flex-shrink-0 mt-0.5 font-semibold">3.</span>
           <span><strong className="text-[#1C1C1E]">Menús heredados del escritorio.</strong> Siete opciones desplegables que en móvil se convierten en un laberinto de submenús. En pantalla pequeña, el menú ideal tiene cuatro o cinco entradas máximo.</span>
         </li>
         <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
-          <span className="text-[#0066CC] flex-shrink-0 mt-0.5 font-semibold">4.</span>
+          <span className="text-[#5170FF] flex-shrink-0 mt-0.5 font-semibold">4.</span>
           <span><strong className="text-[#1C1C1E]">Textos apretados.</strong> Párrafos de diez líneas con letra pequeña y sin margen entre secciones. En móvil, el texto largo se lee en bloques cortos o no se lee.</span>
         </li>
         <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
-          <span className="text-[#0066CC] flex-shrink-0 mt-0.5 font-semibold">5.</span>
+          <span className="text-[#5170FF] flex-shrink-0 mt-0.5 font-semibold">5.</span>
           <span><strong className="text-[#1C1C1E]">Formularios interrogatorios.</strong> Ocho campos porque "queremos conocer bien al cliente". El dato adicional se consigue después, en la conversación; el formulario solo tiene una misión: abrir la conversación.</span>
         </li>
       </ul>
@@ -1841,43 +1841,43 @@ function ArticleDisenoMovilPrimero() {
 
       <ul className="space-y-3 my-6">
         <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
-          <span className="text-[#0066CC] flex-shrink-0 mt-0.5">✓</span>
+          <span className="text-[#5170FF] flex-shrink-0 mt-0.5">✓</span>
           <span>El sitio carga completamente en menos de 3 segundos con datos móviles</span>
         </li>
         <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
-          <span className="text-[#0066CC] flex-shrink-0 mt-0.5">✓</span>
+          <span className="text-[#5170FF] flex-shrink-0 mt-0.5">✓</span>
           <span>Entiendes qué vende el negocio sin hacer ningún scroll</span>
         </li>
         <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
-          <span className="text-[#0066CC] flex-shrink-0 mt-0.5">✓</span>
+          <span className="text-[#5170FF] flex-shrink-0 mt-0.5">✓</span>
           <span>La ciudad o zona aparece en el titular o subtítulo principal</span>
         </li>
         <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
-          <span className="text-[#0066CC] flex-shrink-0 mt-0.5">✓</span>
+          <span className="text-[#5170FF] flex-shrink-0 mt-0.5">✓</span>
           <span>Hay un botón de acción visible sin hacer scroll (WhatsApp o llamada)</span>
         </li>
         <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
-          <span className="text-[#0066CC] flex-shrink-0 mt-0.5">✓</span>
+          <span className="text-[#5170FF] flex-shrink-0 mt-0.5">✓</span>
           <span>El botón de WhatsApp abre la conversación directamente (wa.me)</span>
         </li>
         <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
-          <span className="text-[#0066CC] flex-shrink-0 mt-0.5">✓</span>
+          <span className="text-[#5170FF] flex-shrink-0 mt-0.5">✓</span>
           <span>El menú tiene 5 opciones o menos y funciona con el pulgar</span>
         </li>
         <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
-          <span className="text-[#0066CC] flex-shrink-0 mt-0.5">✓</span>
+          <span className="text-[#5170FF] flex-shrink-0 mt-0.5">✓</span>
           <span>Los párrafos tienen máximo 4-5 líneas en pantalla</span>
         </li>
         <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
-          <span className="text-[#0066CC] flex-shrink-0 mt-0.5">✓</span>
+          <span className="text-[#5170FF] flex-shrink-0 mt-0.5">✓</span>
           <span>El formulario pide 3 campos o menos</span>
         </li>
         <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
-          <span className="text-[#0066CC] flex-shrink-0 mt-0.5">✓</span>
+          <span className="text-[#5170FF] flex-shrink-0 mt-0.5">✓</span>
           <span>Ningún elemento importante queda tapado por pop-ups o cookies</span>
         </li>
         <li className="flex gap-3 text-base text-[#636366] leading-relaxed">
-          <span className="text-[#0066CC] flex-shrink-0 mt-0.5">✓</span>
+          <span className="text-[#5170FF] flex-shrink-0 mt-0.5">✓</span>
           <span>Las fotos pesan poco y se ven nítidas (prueba desplazándolas rápido)</span>
         </li>
       </ul>
@@ -1915,10 +1915,10 @@ function ArticleDisenoMovilPrimero() {
           Peter — Verano Media
         </p>
         <p className="text-base text-[#636366] mt-2">
-          WhatsApp: <a href="https://wa.me/18093586497" className="text-[#0066CC] hover:underline">wa.me/18093586497</a>
+          WhatsApp: <a href="https://wa.me/18093586497" className="text-[#5170FF] hover:underline">wa.me/18093586497</a>
         </p>
         <p className="text-base text-[#636366] mt-1">
-          Web: <a href="https://veranomedia.digital" className="text-[#0066CC] hover:underline">veranomedia.digital</a>
+          Web: <a href="https://veranomedia.digital" className="text-[#5170FF] hover:underline">veranomedia.digital</a>
         </p>
       </div>
     </>
@@ -1972,7 +1972,7 @@ function BlogPost() {
           <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}>
             <Link
               to="/blog"
-              className="inline-flex items-center gap-1.5 text-xs font-medium text-[#8E8E93] hover:text-[#0066CC] transition-colors uppercase tracking-[0.15em] mb-6"
+              className="inline-flex items-center gap-1.5 text-xs font-medium text-[#8E8E93] hover:text-[#5170FF] transition-colors uppercase tracking-[0.15em] mb-6"
             >
               ← Sistema Verano
             </Link>
@@ -1980,7 +1980,7 @@ function BlogPost() {
 
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}>
             <div className="flex items-center gap-3 text-xs text-[#8E8E93] uppercase tracking-[0.15em] mb-4">
-              <span className="font-semibold text-[#0066CC]">{article.category}</span>
+              <span className="font-semibold text-[#5170FF]">{article.category}</span>
               <span className="w-1 h-1 rounded-full bg-[#D1D1D6]" />
               <span>{article.readTime} min de lectura</span>
             </div>
@@ -2032,14 +2032,14 @@ function BlogPost() {
           <p className="text-xs text-[#8E8E93] uppercase tracking-[0.15em] mb-2">
             Publicado originalmente en
           </p>
-          <Link to="/blog" className="font-serif text-lg text-[#1C1C1E] hover:text-[#0066CC] transition-colors">
+          <Link to="/blog" className="font-serif text-lg text-[#1C1C1E] hover:text-[#5170FF] transition-colors">
             Sistema Verano
           </Link>
           <p className="text-sm text-[#8E8E93] mt-1">por el equipo de Verano Media</p>
           <div className="mt-6 pt-6 border-t border-[#E8E8ED]/40">
             <Link
               to="/blog"
-              className="inline-flex items-center gap-1.5 text-sm font-medium text-[#0066CC] hover:text-[#0052CC] transition-colors"
+              className="inline-flex items-center gap-1.5 text-sm font-medium text-[#5170FF] hover:text-[#0052CC] transition-colors"
             >
               ← Todos los artículos
             </Link>

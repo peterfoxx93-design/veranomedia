@@ -26,9 +26,9 @@ function TeamMemberCard({ member, index }: { member: typeof teamMembers[0]; inde
 
   // Use real image if available, initials otherwise
   const avatarContent = member.img ? (
-    <img src={member.img} alt={member.name} className="w-14 h-14 rounded-full mx-auto object-cover border-2 border-[#0066CC]/20" />
+    <img src={member.img} alt={member.name} className="w-14 h-14 rounded-full mx-auto object-cover border-2 border-[#5170FF]/20" />
   ) : (
-    <div className="w-14 h-14 rounded-full bg-gradient-to-br from-[#0066CC]/20 to-[#0066CC]/5 flex items-center justify-center text-xl font-bold text-[#0066CC] mx-auto">
+    <div className="w-14 h-14 rounded-full bg-gradient-to-br from-[#5170FF]/20 to-[#5170FF]/5 flex items-center justify-center text-xl font-bold text-[#5170FF] mx-auto">
       {member.name.split(' ').map(n => n[0]).slice(0, 2).join('')}
     </div>
   )
@@ -43,7 +43,7 @@ function TeamMemberCard({ member, index }: { member: typeof teamMembers[0]; inde
     >
       {avatarContent}
       <h3 className="text-center font-bold text-[#1C1C1E] text-sm">{member.name}</h3>
-      <p className="text-center text-xs text-[#0066CC] font-medium mt-0.5 mb-2">{member.role}</p>
+      <p className="text-center text-xs text-[#5170FF] font-medium mt-0.5 mb-2">{member.role}</p>
       <p className="text-center text-xs text-[#8E8E93] leading-relaxed">{member.desc}</p>
     </motion.div>
   )
@@ -70,12 +70,12 @@ export default function Nosotros() {
               <motion.span
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="text-sm font-semibold text-[#0066CC] uppercase tracking-widest"
+                className="text-sm font-semibold text-[#5170FF] uppercase tracking-widest"
               >
                 Nosotros
               </motion.span>
               <h1 className="text-heading-lg md:text-[3.5rem] font-extrabold text-[#1C1C1E] mt-3 mb-4 leading-[1.05]">
-                Tu marca en su <span className="text-[#0066CC]">mejor temporada</span>
+                Tu marca en su <span className="text-[#5170FF]">mejor temporada</span>
               </h1>
               <p className="text-lg text-[#636366] leading-relaxed max-w-lg">
                 En Verano Media creemos que todo negocio merece una presencia digital profesional,
@@ -92,7 +92,7 @@ export default function Nosotros() {
               className="relative group cursor-pointer"
             >
               {/* Overlay gradient on hover */}
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0066CC]/0 via-transparent to-[#0066CC]/0 rounded-vm-xl transition-all duration-500 group-hover:from-[#0066CC]/10 group-hover:to-[#0066CC]/10 z-10 pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#5170FF]/0 via-transparent to-[#5170FF]/0 rounded-vm-xl transition-all duration-500 group-hover:from-[#5170FF]/10 group-hover:to-[#5170FF]/10 z-10 pointer-events-none" />
               <img
                 src="team-photo.jpg"
                 alt="Equipo de Verano Media"
@@ -100,8 +100,8 @@ export default function Nosotros() {
                 style={{ maxHeight: '420px' }}
               />
               {/* Decorative border glow on hover */}
-              <div className="absolute inset-0 rounded-vm-xl border-2 border-transparent transition-all duration-500 group-hover:border-[#0066CC]/30 z-10 pointer-events-none" />
-              <div className="absolute -bottom-3 -right-3 bg-[#0066CC] text-white text-xs font-semibold px-4 py-2 rounded-vm-md shadow-lg transition-all duration-500 group-hover:-translate-y-1 group-hover:shadow-[#0066CC]/30 group-hover:shadow-xl z-20">
+              <div className="absolute inset-0 rounded-vm-xl border-2 border-transparent transition-all duration-500 group-hover:border-[#5170FF]/30 z-10 pointer-events-none" />
+              <div className="absolute -bottom-3 -right-3 bg-[#5170FF] text-white text-xs font-semibold px-4 py-2 rounded-vm-md shadow-lg transition-all duration-500 group-hover:-translate-y-1 group-hover:shadow-[#5170FF]/30 group-hover:shadow-xl z-20">
                 🚀 Creciendo juntos
               </div>
             </motion.div>
@@ -113,7 +113,7 @@ export default function Nosotros() {
       <section className="section-vm" ref={ref}>
         <div className="container-vm">
           <div className="text-center max-w-2xl mx-auto mb-14">
-            <span className="text-sm font-semibold text-[#0066CC] uppercase tracking-widest">Nuestro equipo</span>
+            <span className="text-sm font-semibold text-[#5170FF] uppercase tracking-widest">Nuestro equipo</span>
             <h2 className="text-heading-lg text-[#1C1C1E] mt-3 mb-4">Conoce a quienes harán despegar tu negocio</h2>
             <p className="text-lg text-[#8E8E93]">Profesionales apasionados por el marketing digital y la tecnología.</p>
           </div>
@@ -137,7 +137,7 @@ export default function Nosotros() {
               transition={{ duration: 0.6 }}
               className="bg-white rounded-vm-xl p-8 border border-[#E8E8ED]/50 hover:shadow-vm-lg transition-all duration-300 hover:-translate-y-1"
             >
-              <h3 className="text-heading-sm text-[#0066CC] mb-4">Nuestra Misión</h3>
+              <h3 className="text-heading-sm text-[#5170FF] mb-4">Nuestra Misión</h3>
               <p className="text-base text-[#636366] leading-relaxed">
                 Democratizar el marketing digital de calidad para pequeños y medianos negocios.
                 Creemos que tener una presencia digital profesional no debería costar un ojo de la cara.
@@ -150,7 +150,7 @@ export default function Nosotros() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="bg-white rounded-vm-xl p-8 border border-[#E8E8ED]/50 hover:shadow-vm-lg transition-all duration-300 hover:-translate-y-1"
             >
-              <h3 className="text-heading-sm text-[#0066CC] mb-4">Nuestra Visión</h3>
+              <h3 className="text-heading-sm text-[#5170FF] mb-4">Nuestra Visión</h3>
               <p className="text-base text-[#636366] leading-relaxed">
                 Ser la agencia digital de referencia para negocios locales en toda Latinoamérica.
                 Un cliente a la vez, un negocio transformado a la vez.
@@ -164,7 +164,7 @@ export default function Nosotros() {
       <section className="section-vm">
         <div className="container-vm">
           <div className="text-center mb-12">
-            <span className="text-sm font-semibold text-[#0066CC] uppercase tracking-widest">¿Por qué elegirnos?</span>
+            <span className="text-sm font-semibold text-[#5170FF] uppercase tracking-widest">¿Por qué elegirnos?</span>
             <h2 className="text-heading-lg text-[#1C1C1E] mt-3">Nuestros valores</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
@@ -188,13 +188,13 @@ export default function Nosotros() {
       {/* CTA */}
       <section className="relative bg-[#0F1A2E] text-white overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-1/2 left-1/4 w-[400px] h-[400px] bg-[#0066CC]/10 rounded-full blur-3xl" />
+          <div className="absolute top-1/2 left-1/4 w-[400px] h-[400px] bg-[#5170FF]/10 rounded-full blur-3xl" />
         </div>
         <div className="container-vm relative z-10 py-24 md:py-32 text-center">
           <h2 className="text-heading-lg md:text-[3.5rem] font-extrabold mb-6">¿Listo para trabajar con nosotros?</h2>
           <p className="text-lg md:text-xl text-white/70 mb-10 max-w-xl mx-auto">Háblanos sin compromiso. Te escuchamos, te diagnosticamos y te proponemos.</p>
           <a href="https://wa.me/18093586497" target="_blank" rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-[#0066CC] text-white px-8 py-4 rounded-vm-md text-base font-semibold hover:bg-[#0066CC]/90 transition-all duration-300 hover:shadow-vm-lg hover:-translate-y-1">
+            className="inline-flex items-center gap-2 bg-[#5170FF] text-white px-8 py-4 rounded-vm-md text-base font-semibold hover:bg-[#5170FF]/90 transition-all duration-300 hover:shadow-vm-lg hover:-translate-y-1">
             Escríbenos por WhatsApp
           </a>
         </div>

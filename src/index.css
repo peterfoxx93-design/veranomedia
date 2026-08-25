@@ -12,7 +12,7 @@
   }
 
   ::selection {
-    @apply bg-[#007AFF]/20 text-[#007AFF];
+    @apply bg-[#5170FF]/20 text-[#5170FF];
   }
 }
 
@@ -64,7 +64,7 @@
 
   /* Gradient text */
   .text-gradient {
-    background: linear-gradient(135deg, #007AFF, #34C759);
+    background: linear-gradient(135deg, #5170FF, #8A9BFF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -100,7 +100,7 @@
   }
   .price-pill-one {
     background: rgba(0, 122, 255, 0.08);
-    color: #007AFF;
+    color: #5170FF;
   }
   .price-pill-monthly {
     background: rgba(52, 199, 89, 0.08);

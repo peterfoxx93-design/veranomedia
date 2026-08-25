@@ -33,7 +33,7 @@ export default function Services() {
             initial={{ opacity: 0, y: 10 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5 }}
-            className="text-sm font-semibold text-[#007AFF] uppercase tracking-widest"
+            className="text-sm font-semibold text-[#5170FF] uppercase tracking-widest"
           >
             Nuestro Sistema
           </motion.span>
@@ -60,7 +60,7 @@ export default function Services() {
             {
               title: '¿Qué incluye el sistema?',
               items: systemItems,
-              accent: '#0066CC',
+              accent: '#5170FF',
             },
             {
               title: '¿Cómo funciona?',
@@ -113,7 +113,7 @@ export default function Services() {
         <div className="text-center">
           <Link
             to="/paquete-completo"
-            className="inline-flex items-center gap-2 bg-[#007AFF] hover:bg-[#0066CC] text-white font-semibold px-8 py-3.5 rounded-full transition-all duration-300 shadow-lg shadow-[#007AFF]/20 hover:shadow-[#007AFF]/35"
+            className="inline-flex items-center gap-2 bg-[#5170FF] hover:bg-[#5170FF] text-white font-semibold px-8 py-3.5 rounded-full transition-all duration-300 shadow-lg shadow-[#5170FF]/20 hover:shadow-[#5170FF]/35"
           >
             Ver sistema completo
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">

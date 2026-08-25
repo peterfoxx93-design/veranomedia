@@ -56,7 +56,7 @@ export default function Navbar() {
   // Text color: always readable on white background
   const linkColor = (href: string) => {
     const active = isActive(href)
-    return active ? 'text-[#0066CC] font-semibold' : 'text-[#636366] hover:text-[#0066CC]'
+    return active ? 'text-[#5170FF] font-semibold' : 'text-[#636366] hover:text-[#5170FF]'
   }
 
   return (
@@ -73,7 +73,7 @@ export default function Navbar() {
       <nav className="container-vm flex items-center justify-between h-16 lg:h-20">
         <Link to="/" className="flex items-center gap-2">
           <span className="text-xl font-bold text-[#1C1C1E] tracking-tight">
-            Verano<span className="text-[#0066CC]">Media</span>
+            Verano<span className="text-[#5170FF]">Media</span>
           </span>
         </Link>
 
@@ -115,7 +115,7 @@ export default function Navbar() {
                   <div className="w-56 bg-white rounded-vm-lg shadow-vm-lg border border-[#E8E8ED]/50 overflow-hidden">
                     <Link
                       to="/servicios"
-                      className="block px-5 py-3 text-sm font-semibold text-[#0066CC] border-b border-[#E8E8ED]/50 hover:bg-[#F5F5F7] transition-colors duration-150"
+                      className="block px-5 py-3 text-sm font-semibold text-[#5170FF] border-b border-[#E8E8ED]/50 hover:bg-[#F5F5F7] transition-colors duration-150"
                     >
                       Todos los servicios →
                     </Link>
@@ -125,7 +125,7 @@ export default function Navbar() {
                         to={cat.href}
                         className={`block px-5 py-3 text-sm transition-colors duration-150 ${
                           isActive(cat.href)
-                            ? 'bg-[#0066CC]/5 text-[#0066CC] font-semibold'
+                            ? 'bg-[#5170FF]/5 text-[#5170FF] font-semibold'
                             : 'text-[#636366] hover:bg-[#F5F5F7] hover:text-[#1C1C1E]'
                         }`}
                       >
@@ -150,13 +150,13 @@ export default function Navbar() {
             href="https://veranomedia-crm.vercel.app"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm transition-colors duration-200 font-medium text-[#636366] hover:text-[#0066CC]"
+            className="text-sm transition-colors duration-200 font-medium text-[#636366] hover:text-[#5170FF]"
           >
             Admin
           </a>
           <Link
             to="/contacto"
-            className="bg-[#0066CC] text-white px-5 py-2.5 rounded-vm-md text-sm font-semibold hover:bg-[#0066CC]/90 transition-all duration-200 hover:shadow-vm-md hover:-translate-y-0.5"
+            className="bg-[#5170FF] text-white px-5 py-2.5 rounded-vm-md text-sm font-semibold hover:bg-[#5170FF]/90 transition-all duration-200 hover:shadow-vm-md hover:-translate-y-0.5"
           >
             Diagnóstico Gratuito
           </Link>
@@ -186,7 +186,7 @@ export default function Navbar() {
               to="/"
               onClick={() => setMobileOpen(false)}
               className={`text-base font-medium py-2.5 transition-colors ${
-                location.pathname === '/' ? 'text-[#0066CC]' : 'text-[#636366]'
+                location.pathname === '/' ? 'text-[#5170FF]' : 'text-[#636366]'
               }`}
             >
               Inicio
@@ -197,7 +197,7 @@ export default function Navbar() {
               to="/servicios"
               onClick={() => setMobileOpen(false)}
               className={`text-base font-medium py-2.5 transition-colors ${
-                location.pathname.startsWith('/servicios') ? 'text-[#0066CC]' : 'text-[#636366]'
+                location.pathname.startsWith('/servicios') ? 'text-[#5170FF]' : 'text-[#636366]'
               }`}
             >
               Servicios
@@ -206,7 +206,7 @@ export default function Navbar() {
               <Link
                 to="/servicios"
                 onClick={() => setMobileOpen(false)}
-                className="text-sm py-2 text-[#0066CC] font-semibold"
+                className="text-sm py-2 text-[#5170FF] font-semibold"
               >
                 Todos los servicios →
               </Link>
@@ -216,7 +216,7 @@ export default function Navbar() {
                   to={cat.href}
                   onClick={() => setMobileOpen(false)}
                   className={`text-sm py-2 transition-colors ${
-                    isActive(cat.href) ? 'text-[#0066CC] font-medium' : 'text-[#8E8E93]'
+                    isActive(cat.href) ? 'text-[#5170FF] font-medium' : 'text-[#8E8E93]'
                   }`}
                 >
                   {cat.label}
@@ -228,7 +228,7 @@ export default function Navbar() {
               to="/portafolio"
               onClick={() => setMobileOpen(false)}
               className={`text-base font-medium py-2.5 transition-colors ${
-                isActive('/portafolio') ? 'text-[#0066CC]' : 'text-[#636366]'
+                isActive('/portafolio') ? 'text-[#5170FF]' : 'text-[#636366]'
               }`}
             >
               Portafolio
@@ -237,7 +237,7 @@ export default function Navbar() {
               to="/nosotros"
               onClick={() => setMobileOpen(false)}
               className={`text-base font-medium py-2.5 transition-colors ${
-                isActive('/nosotros') ? 'text-[#0066CC]' : 'text-[#636366]'
+                isActive('/nosotros') ? 'text-[#5170FF]' : 'text-[#636366]'
               }`}
             >
               Nosotros
@@ -246,7 +246,7 @@ export default function Navbar() {
               to="/blog"
               onClick={() => setMobileOpen(false)}
               className={`text-base font-medium py-2.5 transition-colors ${
-                isActive('/blog') ? 'text-[#0066CC]' : 'text-[#636366]'
+                isActive('/blog') ? 'text-[#5170FF]' : 'text-[#636366]'
               }`}
             >
               Blog
@@ -255,7 +255,7 @@ export default function Navbar() {
               href="https://veranomedia-crm.vercel.app"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm transition-colors duration-200 font-medium text-[#636366] hover:text-[#0066CC]"
+              className="text-sm transition-colors duration-200 font-medium text-[#636366] hover:text-[#5170FF]"
             >
               Admin
             </a>
@@ -264,7 +264,7 @@ export default function Navbar() {
               <Link
                 to="/contacto"
                 onClick={() => setMobileOpen(false)}
-                className="block bg-[#0066CC] text-white px-5 py-3 rounded-vm-md text-base font-semibold text-center"
+                className="block bg-[#5170FF] text-white px-5 py-3 rounded-vm-md text-base font-semibold text-center"
               >
                 Diagnóstico Gratuito
               </Link>

@@ -63,7 +63,7 @@ const realProjects = [
     tag: 'GIMNASIO & FITNESS',
     tagline: 'Donde el movimiento encuentra su equilibrio.',
     url: 'https://kinetic-rest.vercel.app',
-    accent: '#007AFF',
+    accent: '#5170FF',
     heroImage: '/images/demos/kinetic-hero.jpg',
     overlayStyle: 'bg-gradient-to-b from-black/10 via-black/30 to-black/60',
   },
@@ -156,10 +156,10 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
       transition={{ duration: 0.6, delay: index * 0.12, ease: [0.16, 1, 0.3, 1] }}
       className={`rounded-vm-xl p-8 bg-gradient-to-br ${project.gradient} border border-[#E8E8ED]/50 hover:shadow-vm-lg transition-all duration-500 hover:-translate-y-1 cursor-default`}
     >
-      <div className="w-10 h-10 rounded-vm-md flex items-center justify-center mb-4 text-[#0066CC] bg-[#0066CC]/10">
+      <div className="w-10 h-10 rounded-vm-md flex items-center justify-center mb-4 text-[#5170FF] bg-[#5170FF]/10">
         {project.icon}
       </div>
-      <div className="text-xs font-semibold text-[#0066CC] uppercase tracking-wider mb-2">{project.category}</div>
+      <div className="text-xs font-semibold text-[#5170FF] uppercase tracking-wider mb-2">{project.category}</div>
       <h3 className="text-heading-sm text-[#1C1C1E] mb-3">{project.title}</h3>
       <p className="text-base text-[#636366] leading-relaxed">{project.desc}</p>
     </motion.div>
@@ -174,7 +174,7 @@ export default function PortafolioPage() {
       <section className="section-vm">
         <div className="container-vm text-center max-w-3xl mx-auto">
           <motion.span initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}
-            className="text-sm font-semibold text-[#0066CC] uppercase tracking-widest">Portafolio</motion.span>
+            className="text-sm font-semibold text-[#5170FF] uppercase tracking-widest">Portafolio</motion.span>
           <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}
             className="text-heading-lg text-[#1C1C1E] mt-3 mb-4">Nuestro trabajo habla</motion.h1>
           <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}
@@ -196,7 +196,7 @@ export default function PortafolioPage() {
       <section className="section-vm">
         <div className="container-vm">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <span className="text-sm font-semibold text-[#0066CC] uppercase tracking-widest">Demos de proyectos</span>
+            <span className="text-sm font-semibold text-[#5170FF] uppercase tracking-widest">Demos de proyectos</span>
             <h2 className="text-heading-lg text-[#1C1C1E] mt-3 mb-4">Construido para negocios como el tuyo</h2>
             <p className="text-lg text-[#8E8E93]">Listos para configurar tu negocio.</p>
           </div>
@@ -210,13 +210,13 @@ export default function PortafolioPage() {
 
       <section className="relative bg-[#0F1A2E] text-white overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-1/2 left-1/4 w-[400px] h-[400px] bg-[#0066CC]/10 rounded-full blur-3xl" />
+          <div className="absolute top-1/2 left-1/4 w-[400px] h-[400px] bg-[#5170FF]/10 rounded-full blur-3xl" />
         </div>
         <div className="container-vm relative z-10 py-24 md:py-32 text-center">
           <h2 className="text-heading-lg md:text-[3.5rem] font-extrabold mb-6">¿Tu proyecto podría ser el próximo?</h2>
           <p className="text-lg md:text-xl text-white/70 mb-10 max-w-xl mx-auto">Hablemos de cómo podemos transformar tu presencia digital.</p>
           <a href="https://wa.me/18093586497" target="_blank" rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-[#0066CC] text-white px-8 py-4 rounded-vm-md text-base font-semibold hover:bg-[#0066CC]/90 transition-all duration-300 hover:shadow-vm-lg hover:-translate-y-1">
+            className="inline-flex items-center gap-2 bg-[#5170FF] text-white px-8 py-4 rounded-vm-md text-base font-semibold hover:bg-[#5170FF]/90 transition-all duration-300 hover:shadow-vm-lg hover:-translate-y-1">
             Escríbenos por WhatsApp
           </a>
         </div>

@@ -20,13 +20,13 @@ const steps = [
 function Step({ item, index }: { item: typeof steps[0]; index: number }) {
   return (
     <div className="relative text-center">
-      <div className="mx-auto mb-4 flex items-center justify-center w-12 h-12 rounded-full bg-[#0066CC] text-white font-bold text-lg">
+      <div className="mx-auto mb-4 flex items-center justify-center w-12 h-12 rounded-full bg-[#5170FF] text-white font-bold text-lg">
         {index + 1}
       </div>
       <h4 className="font-semibold text-[#1C1C1E] mb-1">{item.title}</h4>
       <p className="text-sm text-[#8E8E93] max-w-[260px] mx-auto">{item.desc}</p>
       {index < steps.length - 1 ? (
-        <div className="hidden md:block absolute top-6 left-[calc(50%+24px)] w-[calc(100%-48px)] h-[1px] bg-gradient-to-r from-[#0066CC]/40 to-transparent" />
+        <div className="hidden md:block absolute top-6 left-[calc(50%+24px)] w-[calc(100%-48px)] h-[1px] bg-gradient-to-r from-[#5170FF]/40 to-transparent" />
       ) : null}
     </div>
   )
@@ -44,7 +44,7 @@ export default function About() {
             initial={{ opacity: 0, y: 10 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5 }}
-            className="text-sm font-semibold text-[#007AFF] uppercase tracking-widest"
+            className="text-sm font-semibold text-[#5170FF] uppercase tracking-widest"
           >
             Nosotros
           </motion.span>
@@ -88,7 +88,7 @@ export default function About() {
             initial={{ opacity: 0, y: 10 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5 }}
-            className="text-sm font-semibold text-[#007AFF] uppercase tracking-widest"
+            className="text-sm font-semibold text-[#5170FF] uppercase tracking-widest"
           >
             Metodología
           </motion.span>

@@ -117,7 +117,7 @@ export default function KommentSection({ articleSlug }: { articleSlug: string })
   const inputClass =
     'w-full px-4 py-3.5 bg-[#F5F5F7] border border-[#E8E8ED]/60 ' +
     'rounded-vm-md text-sm text-[#1C1C1E] placeholder:text-[#8E8E93] ' +
-    'focus:outline-none focus:ring-2 focus:ring-[#0066CC]/20 focus:border-[#0066CC] ' +
+    'focus:outline-none focus:ring-2 focus:ring-[#5170FF]/20 focus:border-[#5170FF] ' +
     'transition-all duration-200'
 
   const labelClass = 'block text-xs font-medium text-[#636366] uppercase tracking-[0.12em] mb-1.5'
@@ -162,7 +162,7 @@ export default function KommentSection({ articleSlug }: { articleSlug: string })
             </p>
             <button
               onClick={() => setSubmitted(false)}
-              className="mt-5 text-sm font-medium text-[#0066CC] hover:text-[#0052CC] transition-colors"
+              className="mt-5 text-sm font-medium text-[#5170FF] hover:text-[#0052CC] transition-colors"
             >
               Escribir otro comentario →
             </button>
@@ -223,7 +223,7 @@ export default function KommentSection({ articleSlug }: { articleSlug: string })
               <button
                 type="submit"
                 disabled={submitting}
-                className="inline-flex items-center gap-2 px-6 py-3 bg-[#0066CC] text-white text-sm font-medium rounded-vm-md hover:bg-[#0052CC] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-[#5170FF] text-white text-sm font-medium rounded-vm-md hover:bg-[#0052CC] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {submitting ? (
                   <>Enviando…</>
@@ -248,7 +248,7 @@ export default function KommentSection({ articleSlug }: { articleSlug: string })
         {/* ── Lista de comentarios ── */}
         {loading ? (
           <div className="text-center py-8">
-            <div className="w-6 h-6 border-2 border-[#0066CC] border-t-transparent rounded-full animate-spin mx-auto" />
+            <div className="w-6 h-6 border-2 border-[#5170FF] border-t-transparent rounded-full animate-spin mx-auto" />
             <p className="text-xs text-[#8E8E93] mt-3">Cargando comentarios…</p>
           </div>
         ) : comments.length > 0 ? (
@@ -272,7 +272,7 @@ export default function KommentSection({ articleSlug }: { articleSlug: string })
                     className="pb-6 border-b border-[#E8E8ED]/30 last:border-0"
                   >
                     <div className="flex items-center gap-2.5 mb-2">
-                      <span className="w-8 h-8 rounded-full bg-[#0066CC]/10 flex items-center justify-center text-xs font-semibold text-[#0066CC]">
+                      <span className="w-8 h-8 rounded-full bg-[#5170FF]/10 flex items-center justify-center text-xs font-semibold text-[#5170FF]">
                         {c.name.charAt(0).toUpperCase()}
                       </span>
                       <div>

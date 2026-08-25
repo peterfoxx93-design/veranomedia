@@ -10,11 +10,11 @@ export default function ProyectoLandingPages() {
       {/* Hero */}
       <section className="relative bg-[#0A0A0A] text-white overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-1/2 left-1/3 w-[500px] h-[500px] bg-[#007AFF]/10 rounded-full blur-3xl" />
+          <div className="absolute top-1/2 left-1/3 w-[500px] h-[500px] bg-[#5170FF]/10 rounded-full blur-3xl" />
         </div>
         <div className="container-vm relative z-10 py-24 md:py-32">
           <motion.span initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}
-            className="text-sm font-semibold text-[#007AFF] uppercase tracking-widest">Demo • Diseño Web</motion.span>
+            className="text-sm font-semibold text-[#5170FF] uppercase tracking-widest">Demo • Diseño Web</motion.span>
           <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}
             className="text-heading-lg md:text-[3.5rem] font-extrabold mt-4 mb-6">Landing Pages & Sitios Web</motion.h1>
           <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}
@@ -48,7 +48,7 @@ export default function ProyectoLandingPages() {
           <p className="text-lg text-[#8E8E93] mb-12 max-w-xl mx-auto">Sitios prediseñados que personalizamos para tu negocio.</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { title: 'Clínica Dental', link: '/modelos/clinica-dental', color: '#007AFF' },
+              { title: 'Clínica Dental', link: '/modelos/clinica-dental', color: '#5170FF' },
               { title: 'Bienes Raíces', link: '/modelos/bienes-raices', color: '#34C759' },
               { title: 'Bufete Abogados', link: '/modelos/bufete-abogados', color: '#AF52DE' },
             ].map((m, i) => (
@@ -58,7 +58,7 @@ export default function ProyectoLandingPages() {
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke={m.color} strokeWidth="1.5"><rect x="2" y="3" width="20" height="14" rx="2" /><line x1="8" y1="21" x2="16" y2="21" /><line x1="12" y1="17" x2="12" y2="21" /></svg>
                 </div>
                 <h3 className="text-lg font-bold text-[#1C1C1E] mb-2">{m.title}</h3>
-                <span className="text-sm font-semibold text-[#007AFF] group-hover:gap-3 inline-flex items-center gap-2 transition-all">Ver demo →</span>
+                <span className="text-sm font-semibold text-[#5170FF] group-hover:gap-3 inline-flex items-center gap-2 transition-all">Ver demo →</span>
               </Link>
             ))}
           </div>
@@ -71,7 +71,7 @@ export default function ProyectoLandingPages() {
           <h2 className="text-heading-lg font-extrabold mb-6">¿Listo para tu landing page?</h2>
           <p className="text-white/70 mb-8 max-w-lg mx-auto">Contáctanos y en 48 horas tienes un prototipo de tu sitio.</p>
           <a href="https://wa.me/18093586497" target="_blank" rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-[#007AFF] text-white px-8 py-4 rounded-vm-md font-semibold hover:bg-[#007AFF]/90 transition-all hover:-translate-y-1">
+            className="inline-flex items-center gap-2 bg-[#5170FF] text-white px-8 py-4 rounded-vm-md font-semibold hover:bg-[#5170FF]/90 transition-all hover:-translate-y-1">
             Solicitar diagnóstico gratuito
           </a>
         </div>

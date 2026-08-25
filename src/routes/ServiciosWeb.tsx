@@ -12,7 +12,7 @@ const services = [
     desc: 'Página profesional de 1 página, optimizada para convertir visitantes en clientes. Diseño responsive, SEO básico y hosting incluido.',
     tagline: '"Tu negocio merece una primera impresión impecable."',
     price: 'Desde $8,000 RD$',
-    color: '#0066CC',
+    color: '#5170FF',
   },
   {
     icon: (
@@ -70,7 +70,7 @@ function ServiceCard({ s, i }: { s: (typeof services)[number]; i: number }) {
       <h3 className="text-heading-sm text-[#1C1C1E] mb-3">{s.title}</h3>
       <p className="text-base text-[#636366] mb-3">{s.desc}</p>
       <p className="text-sm text-[#8E8E93] italic mb-4">{s.tagline}</p>
-      <div className="text-sm font-semibold text-[#0066CC]">{s.price}</div>
+      <div className="text-sm font-semibold text-[#5170FF]">{s.price}</div>
     </motion.div>
   )
 }
@@ -87,7 +87,7 @@ export default function ServiciosWeb() {
           <motion.span
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-sm font-semibold text-[#0066CC] uppercase tracking-widest"
+            className="text-sm font-semibold text-[#5170FF] uppercase tracking-widest"
           >
             Diseño Web
           </motion.span>
@@ -124,7 +124,7 @@ export default function ServiciosWeb() {
       {/* CTA */}
       <section className="relative bg-[#0F1A2E] text-white overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-1/2 left-1/4 w-[400px] h-[400px] bg-[#0066CC]/10 rounded-full blur-3xl" />
+          <div className="absolute top-1/2 left-1/4 w-[400px] h-[400px] bg-[#5170FF]/10 rounded-full blur-3xl" />
         </div>
         <div className="container-vm relative z-10 py-24 md:py-32 text-center">
           <h2 className="text-heading-lg md:text-[3.5rem] font-extrabold mb-6">¿Listo para tu sitio web?</h2>
@@ -132,7 +132,7 @@ export default function ServiciosWeb() {
             Agenda tu Diagnóstico Digital Gratuito y descubre qué oportunidades estás perdiendo en internet.
           </p>
           <a href="https://wa.me/18093586497" target="_blank" rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-[#0066CC] text-white px-8 py-4 rounded-vm-md text-base font-semibold hover:bg-[#0066CC]/90 transition-all duration-300 hover:shadow-vm-lg hover:-translate-y-1">
+            className="inline-flex items-center gap-2 bg-[#5170FF] text-white px-8 py-4 rounded-vm-md text-base font-semibold hover:bg-[#5170FF]/90 transition-all duration-300 hover:shadow-vm-lg hover:-translate-y-1">
             Escríbenos por WhatsApp
           </a>
         </div>

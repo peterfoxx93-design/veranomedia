@@ -18,10 +18,10 @@ function ArticleCard({ article, index }: { article: typeof articles[0]; index: n
         to={`/blog/${article.slug}`}
         className="group block bg-white rounded-vm-lg p-8 border border-[#E8E8ED]/50 hover:border-[#D1D1D6] transition-all duration-500 hover:shadow-vm-lg hover:-translate-y-0.5"
       >
-        <div className="text-xs font-semibold text-[#0066CC] uppercase tracking-[0.15em] mb-2">
+        <div className="text-xs font-semibold text-[#5170FF] uppercase tracking-[0.15em] mb-2">
           {article.category}
         </div>
-        <h2 className="font-serif text-heading-sm text-[#1C1C1E] group-hover:text-[#0066CC] transition-colors duration-300 mb-3">
+        <h2 className="font-serif text-heading-sm text-[#1C1C1E] group-hover:text-[#5170FF] transition-colors duration-300 mb-3">
           {article.title}
         </h2>
         <p className="text-base text-[#636366] leading-relaxed mb-4">
@@ -48,7 +48,7 @@ export default function Blog() {
           <motion.span
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-sm font-semibold text-[#0066CC] uppercase tracking-widest"
+            className="text-sm font-semibold text-[#5170FF] uppercase tracking-widest"
           >
             Sistema Verano
           </motion.span>

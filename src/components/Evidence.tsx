@@ -6,7 +6,7 @@ const marketData = [
   {
     stat: '27,8%',
     label: 'de las PyMEs dominicanas se sienten listas para la IA — el mayor optimismo de Latinoamérica.',
-    accent: '#007AFF',
+    accent: '#5170FF',
   },
   {
     stat: '36,1%',
@@ -58,7 +58,7 @@ export default function Evidence() {
             initial={{ opacity: 0, y: 10 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5 }}
-            className="text-sm font-semibold text-[#007AFF] uppercase tracking-widest"
+            className="text-sm font-semibold text-[#5170FF] uppercase tracking-widest"
           >
             Los datos del mercado
           </motion.span>
@@ -146,7 +146,7 @@ export default function Evidence() {
         <div className="text-center">
           <Link
             to="/diagnostico"
-            className="inline-flex items-center gap-2 bg-[#007AFF] hover:bg-[#0066CC] text-white font-semibold px-8 py-3.5 rounded-full transition-all duration-300 shadow-lg shadow-[#007AFF]/20 hover:shadow-[#007AFF]/35"
+            className="inline-flex items-center gap-2 bg-[#5170FF] hover:bg-[#5170FF] text-white font-semibold px-8 py-3.5 rounded-full transition-all duration-300 shadow-lg shadow-[#5170FF]/20 hover:shadow-[#5170FF]/35"
           >
             Diagnóstico gratuito
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">

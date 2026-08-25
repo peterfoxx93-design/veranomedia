@@ -50,7 +50,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-1">
             <Link to="/" className="text-xl font-bold tracking-tight">
-              Verano<span className="text-[#0066CC]">Media</span>
+              Verano<span className="text-[#5170FF]">Media</span>
             </Link>
             <p className="mt-3 text-sm text-white/50 max-w-xs leading-relaxed">
               Agencia de marketing digital. Tu marca en su mejor temporada.
@@ -63,7 +63,7 @@ export default function Footer() {
                   href={s.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white/60 hover:bg-[#0066CC] hover:text-white transition-all duration-200"
+                  className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white/60 hover:bg-[#5170FF] hover:text-white transition-all duration-200"
                   aria-label={s.label}
                 >
                   {s.icon}
@@ -82,7 +82,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     to={link.href}
-                    className="text-sm text-white/50 hover:text-[#0066CC] transition-colors duration-200"
+                    className="text-sm text-white/50 hover:text-[#5170FF] transition-colors duration-200"
                   >
                     {link.label}
                   </Link>
@@ -101,7 +101,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     to={link.href}
-                    className="text-sm text-white/50 hover:text-[#0066CC] transition-colors duration-200"
+                    className="text-sm text-white/50 hover:text-[#5170FF] transition-colors duration-200"
                   >
                     {link.label}
                   </Link>
@@ -129,7 +129,7 @@ export default function Footer() {
               </a>
               <a
                 href="https://mail.google.com/mail/?view=cm&fs=1&to=hola@veranomedia.digital"
-                className="flex items-center gap-2 hover:text-[#0066CC] transition-colors duration-200"
+                className="flex items-center gap-2 hover:text-[#5170FF] transition-colors duration-200"
               >
                 <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />

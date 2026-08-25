@@ -69,7 +69,7 @@ function SectionHeader({
   return (
     <div className="text-center max-w-2xl mx-auto mb-12">
       {label && (
-        <span className="text-sm font-semibold text-[#007AFF] uppercase tracking-widest">
+        <span className="text-sm font-semibold text-[#5170FF] uppercase tracking-widest">
           {label}
         </span>
       )}
@@ -146,7 +146,7 @@ export default function ClinicaDental() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-sm font-semibold text-[#007AFF] uppercase tracking-widest mb-4"
+              className="text-sm font-semibold text-[#5170FF] uppercase tracking-widest mb-4"
             >
               Clínica Dental
             </motion.span>
@@ -158,7 +158,7 @@ export default function ClinicaDental() {
               className="text-[2.5rem] md:text-heading-xl lg:text-[3.5rem] font-extrabold text-[#1C1C1E] leading-[1.05]"
             >
               Sonrisa Dental{' '}
-              <span className="text-[#007AFF]">Puerto Plata</span>
+              <span className="text-[#5170FF]">Puerto Plata</span>
             </motion.h1>
 
             <motion.p
@@ -190,7 +190,7 @@ export default function ClinicaDental() {
                 href="https://wa.me/18090000000"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-[#007AFF] hover:bg-[#0066CC] text-white font-semibold px-8 py-3.5 rounded-full transition-all duration-300 shadow-lg shadow-[#007AFF]/25 hover:shadow-[#007AFF]/40 hover:scale-[1.02]"
+                className="inline-flex items-center justify-center gap-2 bg-[#5170FF] hover:bg-[#5170FF] text-white font-semibold px-8 py-3.5 rounded-full transition-all duration-300 shadow-lg shadow-[#5170FF]/25 hover:shadow-[#5170FF]/40 hover:scale-[1.02]"
               >
                 <svg className="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
                   <path d="M10 0C4.48 0 0 4.48 0 10c0 1.85.5 3.58 1.38 5.07L.02 20l5.15-1.36C6.6 19.5 8.25 20 10 20c5.52 0 10-4.48 10-10S15.52 0 10 0zm0 18c-1.45 0-2.8-.4-3.97-1.08l-.3-.18-3.06.8.82-2.98-.2-.32A7.97 7.97 0 012 10c0-4.42 3.58-8 8-8s8 3.58 8 8-3.58 8-8 8zm5.1-5.5c-.28.28-1.16.56-1.65.56-.33 0-.38-.07-.74-.23-.5-.22-1.5-.6-2.87-1.77-1.1-.94-1.82-2.04-2.03-2.4-.2-.36-.1-.56.02-.68.1-.1.22-.27.33-.4.1-.13.14-.24.2-.4s.02-.3-.02-.42c-.04-.12-.36-1.06-.5-1.46-.14-.4-.28-.4-.42-.4H5.5c-.2 0-.44.12-.58.28-.14.16-.68.76-.68 1.84 0 1.08.76 2.12.86 2.28.1.16 1.5 2.4 3.68 3.6 2.18 1.2 2.18.8 2.56.76.4-.04 1.28-.56 1.46-1.1.18-.54.18-1 .12-1.1-.06-.1-.2-.16-.34-.22-.14-.06-.26-.1-.36-.18-.1-.08-.1-.18-.06-.32.04-.14.62-1.42.7-1.54.08-.12.16-.12.26-.1.1.02.32.06.44.08.12.02.3 0 .42-.06.14-.06.68-.34 1.2-.7.24-.17.48-.35.68-.5.16-.12.32-.1.44.04.14.14.56.74.68.84.12.1.2.18.28.22.08.04.14.1.16.18.02.08.02.42-.18.7z" />
@@ -199,7 +199,7 @@ export default function ClinicaDental() {
               </a>
               <a
                 href="tel:18090000000"
-                className="inline-flex items-center justify-center gap-2 text-[#007AFF] border-2 border-[#007AFF]/20 hover:border-[#007AFF]/40 font-semibold px-8 py-3.5 rounded-full transition-all duration-300"
+                className="inline-flex items-center justify-center gap-2 text-[#5170FF] border-2 border-[#5170FF]/20 hover:border-[#5170FF]/40 font-semibold px-8 py-3.5 rounded-full transition-all duration-300"
               >
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -267,7 +267,7 @@ export default function ClinicaDental() {
         <div className="container-vm">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <FadeIn direction="left">
-              <span className="text-sm font-semibold text-[#007AFF] uppercase tracking-widest">
+              <span className="text-sm font-semibold text-[#5170FF] uppercase tracking-widest">
                 Nuestro equipo
               </span>
               <h2 className="text-heading-lg text-[#1C1C1E] mt-3 mb-6">
@@ -298,7 +298,7 @@ export default function ClinicaDental() {
                   className="w-full h-auto rounded-vm-xl shadow-vm-lg object-cover"
                   style={{ maxHeight: '400px' }}
                 />
-                <div className="absolute -bottom-3 -right-3 bg-[#007AFF] text-white text-xs font-semibold px-4 py-2 rounded-vm-md shadow-lg">
+                <div className="absolute -bottom-3 -right-3 bg-[#5170FF] text-white text-xs font-semibold px-4 py-2 rounded-vm-md shadow-lg">
                   🏆 Excelencia dental
                 </div>
               </div>
@@ -312,11 +312,11 @@ export default function ClinicaDental() {
         <div className="container-vm">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <FadeIn direction="left">
-              <span className="text-sm font-semibold text-[#007AFF] uppercase tracking-widest">
+              <span className="text-sm font-semibold text-[#5170FF] uppercase tracking-widest">
                 Ubicación
               </span>
               <h2 className="text-heading-lg text-[#1C1C1E] mt-3 mb-6">
-                Estamos en <span className="text-[#007AFF]">Puerto Plata</span>
+                Estamos en <span className="text-[#5170FF]">Puerto Plata</span>
               </h2>
               <p className="text-base text-[#636366] leading-relaxed mb-6">
                 Nuestra clínica está ubicada en el corazón de Puerto Plata,
@@ -384,7 +384,7 @@ export default function ClinicaDental() {
                     "{t.text}"
                   </p>
                   <div className="flex items-center gap-3 pt-3 border-t border-[#E8E8ED]/50">
-                    <div className="w-10 h-10 rounded-full bg-[#007AFF]/10 flex items-center justify-center text-sm font-bold text-[#007AFF]">
+                    <div className="w-10 h-10 rounded-full bg-[#5170FF]/10 flex items-center justify-center text-sm font-bold text-[#5170FF]">
                       {t.name.split(' ').map(n => n[0]).join('')}
                     </div>
                     <div>
@@ -402,11 +402,11 @@ export default function ClinicaDental() {
       {/* ─────────────── CTA FINAL ─────────────── */}
       <section className="relative bg-[#0F1A2E] text-white overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-1/2 left-1/4 w-[400px] h-[400px] bg-[#007AFF]/10 rounded-full blur-3xl" />
+          <div className="absolute top-1/2 left-1/4 w-[400px] h-[400px] bg-[#5170FF]/10 rounded-full blur-3xl" />
         </div>
         <div className="container-vm relative z-10 py-24 md:py-32 text-center">
           <FadeIn>
-            <span className="text-sm font-semibold text-[#007AFF] uppercase tracking-widest">
+            <span className="text-sm font-semibold text-[#5170FF] uppercase tracking-widest">
               Contacto
             </span>
             <h2 className="text-heading-lg md:text-[3.5rem] font-extrabold mt-3 mb-6">
@@ -421,7 +421,7 @@ export default function ClinicaDental() {
                 href="https://wa.me/18090000000"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-[#007AFF] hover:bg-[#0066CC] text-white px-8 py-4 rounded-vm-md text-base font-semibold transition-all duration-300 hover:shadow-vm-lg hover:-translate-y-1"
+                className="inline-flex items-center gap-2 bg-[#5170FF] hover:bg-[#5170FF] text-white px-8 py-4 rounded-vm-md text-base font-semibold transition-all duration-300 hover:shadow-vm-lg hover:-translate-y-1"
               >
                 <svg className="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
                   <path d="M10 0C4.48 0 0 4.48 0 10c0 1.85.5 3.58 1.38 5.07L.02 20l5.15-1.36C6.6 19.5 8.25 20 10 20c5.52 0 10-4.48 10-10S15.52 0 10 0zm0 18c-1.45 0-2.8-.4-3.97-1.08l-.3-.18-3.06.8.82-2.98-.2-.32A7.97 7.97 0 012 10c0-4.42 3.58-8 8-8s8 3.58 8 8-3.58 8-8 8zm5.1-5.5c-.28.28-1.16.56-1.65.56-.33 0-.38-.07-.74-.23-.5-.22-1.5-.6-2.87-1.77-1.1-.94-1.82-2.04-2.03-2.4-.2-.36-.1-.56.02-.68.1-.1.22-.27.33-.4.1-.13.14-.24.2-.4s.02-.3-.02-.42c-.04-.12-.36-1.06-.5-1.46-.14-.4-.28-.4-.42-.4H5.5c-.2 0-.44.12-.58.28-.14.16-.68.76-.68 1.84 0 1.08.76 2.12.86 2.28.1.16 1.5 2.4 3.68 3.6 2.18 1.2 2.18.8 2.56.76.4-.04 1.28-.56 1.46-1.1.18-.54.18-1 .12-1.1-.06-.1-.2-.16-.34-.22-.14-.06-.26-.1-.36-.18-.1-.08-.1-.18-.06-.32.04-.14.62-1.42.7-1.54.08-.12.16-.12.26-.1.1.02.32.06.44.08.12.02.3 0 .42-.06.14-.06.68-.34 1.2-.7.24-.17.48-.35.68-.5.16-.12.32-.1.44.04.14.14.56.74.68.84.12.1.2.18.28.22.08.04.14.1.16.18.02.08.02.42-.18.7z" />

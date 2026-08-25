@@ -17,7 +17,7 @@ export default function Diagnostico() {
     <div className="pt-20">
       <section className="relative bg-[#1C1C1E] text-white overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-1/3 left-1/4 w-[500px] h-[500px] bg-[#0066CC]/10 rounded-full blur-3xl" />
+          <div className="absolute top-1/3 left-1/4 w-[500px] h-[500px] bg-[#5170FF]/10 rounded-full blur-3xl" />
           <div className="absolute bottom-1/4 right-1/4 w-[300px] h-[300px] bg-[#34C759]/10 rounded-full blur-3xl" />
         </div>
 
@@ -71,7 +71,7 @@ export default function Diagnostico() {
           >
             <Link
               to="/contacto"
-              className="bg-[#0066CC] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#0066CC]/90 transition-all duration-300 shadow-lg shadow-[#0066CC]/25 hover:shadow-[#0066CC]/40 hover:-translate-y-1 inline-flex items-center gap-2"
+              className="bg-[#5170FF] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#5170FF]/90 transition-all duration-300 shadow-lg shadow-[#5170FF]/25 hover:shadow-[#5170FF]/40 hover:-translate-y-1 inline-flex items-center gap-2"
             >
               Solicitar diagnóstico gratuito
             </Link>

@@ -38,7 +38,7 @@ export default function App() {
         botName="María"
         avatarUrl="/maria-avatar.jpg"
         greeting="¡Hola! Soy María, asesora de Verano Media. ¿En qué puedo ayudarte?"
-        primaryColor="#007AFF"
+        primaryColor="#5170FF"
       />
       </BrowserRouter>
   )
