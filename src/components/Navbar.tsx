@@ -3,12 +3,9 @@ import { useState, useEffect, useRef } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 
 const serviceCategories = [
-  { label: 'Diseño Web', href: '/servicios/web', desc: 'Landing, sitios, tiendas' },
-  { label: 'Redes Sociales', href: '/servicios/redes', desc: 'Community management' },
-  { label: 'SEO y Anuncios', href: '/servicios/anuncios-seo', desc: 'Google Ads, SEO' },
-  { label: 'Automatización', href: '/servicios/automatizacion', desc: 'Chatbots, email' },
-  { label: 'Contenido', href: '/servicios/contenido', desc: 'Video, marketing' },
-  { label: 'Paquete Completo', href: '/paquete-completo', desc: 'Todo en uno' },
+  { label: 'Clínicas Dentales', href: '/servicios', desc: 'Sistema de captación de pacientes' },
+  { label: 'Inmobiliarias', href: '/servicios', desc: 'Captación y calificación de compradores' },
+  { label: 'Bufetes Legales', href: '/servicios', desc: 'Triage y agenda de consultas' },
 ]
 
 const navItems = [

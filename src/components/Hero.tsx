@@ -57,7 +57,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.45, ease: [0.16, 1, 0.3, 1] }}
           className="text-white/60 text-sm md:text-base max-w-2xl mx-auto mb-10 text-center leading-relaxed"
         >
-          Creamos sitios web, branding, SEO y contenido que convierten visitantes en clientes.
+          Creamos sistemas de captación con IA que convierten visitantes en clientes — para clínicas dentales, inmobiliarias y bufetes legales.
         </motion.p>
 
         {/* CTAs */}

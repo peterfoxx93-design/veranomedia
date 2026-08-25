@@ -2,12 +2,9 @@ import { Link } from 'react-router-dom'
 
 const footerLinks = {
   servicios: [
-    { label: 'Diseño Web', href: '/servicios/web' },
-    { label: 'Redes Sociales', href: '/servicios/redes' },
-    { label: 'SEO y Anuncios', href: '/servicios/anuncios-seo' },
-    { label: 'Automatización', href: '/servicios/automatizacion' },
-    { label: 'Contenido', href: '/servicios/contenido' },
-    { label: 'Paquete Completo', href: '/paquete-completo' },
+    { label: 'Clínicas Dentales', href: '/servicios' },
+    { label: 'Inmobiliarias', href: '/servicios' },
+    { label: 'Bufetes Legales', href: '/servicios' },
   ],
   company: [
     { label: 'Blog', href: '/blog' },
