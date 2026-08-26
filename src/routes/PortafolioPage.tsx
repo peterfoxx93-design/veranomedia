@@ -1,53 +1,6 @@
 import { motion, useInView } from 'motion/react'
 import { useRef, useEffect } from 'react'
 
-const projects = [
-  {
-    icon: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <rect x="2" y="3" width="20" height="14" rx="2" ry="2" /><line x1="8" y1="21" x2="16" y2="21" /><line x1="12" y1="17" x2="12" y2="21" />
-      </svg>
-    ),
-    title: 'Landing Pages y Sitios Web',
-    category: 'Diseño',
-    desc: 'Páginas profesionales optimizadas para convertir. Diseño responsive, animaciones fluidas y SEO incluido.',
-    gradient: 'from-blue-500/10 to-blue-600/5',
-  },
-  {
-    icon: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" />
-      </svg>
-    ),
-    title: 'Posicionamiento Local',
-    category: 'Google Business',
-    desc: 'Clínicas, restaurantes y comercios locales optimizados para aparecer en Google Maps y atraer clientes.',
-    gradient: 'from-green-500/10 to-green-600/5',
-  },
-  {
-    icon: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" />
-      </svg>
-    ),
-    title: 'Estrategias de Contenido',
-    category: 'Redes Sociales',
-    desc: 'Planes de contenido para Instagram, Facebook y LinkedIn que generan engagement y seguidores reales.',
-    gradient: 'from-orange-500/10 to-orange-600/5',
-  },
-  {
-    icon: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
-      </svg>
-    ),
-    title: 'Automatización Inteligente',
-    category: 'Chatbots y Email',
-    desc: 'Chatbots en WhatsApp que atienden 24/7 y campañas de email marketing que convierten en automático.',
-    gradient: 'from-purple-500/10 to-purple-600/5',
-  },
-]
-
 const realProjects = [
   {
     brand: 'HERNÁNDEZ & ASOCIADOS',
@@ -145,27 +98,6 @@ function RealProjectCard({ project, index }: { project: typeof realProjects[0]; 
   )
 }
 
-function ProjectCard({ project, index }: { project: typeof projects[0]; index: number }) {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: '-50px' })
-
-  return (
-    <motion.div ref={ref}
-      initial={{ opacity: 0, y: 30 }}
-      animate={isInView ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.6, delay: index * 0.12, ease: [0.16, 1, 0.3, 1] }}
-      className={`rounded-vm-xl p-8 bg-gradient-to-br ${project.gradient} border border-[#E8E8ED]/50 hover:shadow-vm-lg transition-all duration-500 hover:-translate-y-1 cursor-default`}
-    >
-      <div className="w-10 h-10 rounded-vm-md flex items-center justify-center mb-4 text-[#5170FF] bg-[#5170FF]/10">
-        {project.icon}
-      </div>
-      <div className="text-xs font-semibold text-[#5170FF] uppercase tracking-wider mb-2">{project.category}</div>
-      <h3 className="text-heading-sm text-[#1C1C1E] mb-3">{project.title}</h3>
-      <p className="text-base text-[#636366] leading-relaxed">{project.desc}</p>
-    </motion.div>
-  )
-}
-
 export default function PortafolioPage() {
   useEffect(() => { window.scrollTo(0, 0) }, [])
 
@@ -178,27 +110,16 @@ export default function PortafolioPage() {
           <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}
             className="text-heading-lg text-[#1C1C1E] mt-3 mb-4">Nuestro trabajo habla</motion.h1>
           <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}
-            className="text-lg text-[#8E8E93]">Proyectos que demuestran lo que somos capaces de hacer por tu negocio.</motion.p>
+            className="text-lg text-[#8E8E93]">Demos funcionales del Sistema Verano: web premium + asistente IA + captación de leads, listos para tu negocio.</motion.p>
         </div>
       </section>
 
       <section className="section-vm-alt">
         <div className="container-vm">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {projects.map((p, i) => (
-              <ProjectCard key={p.title} project={p} index={i} />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Demos de proyectos */}
-      <section className="section-vm">
-        <div className="container-vm">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <span className="text-sm font-semibold text-[#5170FF] uppercase tracking-widest">Demos de proyectos</span>
             <h2 className="text-heading-lg text-[#1C1C1E] mt-3 mb-4">Construido para negocios como el tuyo</h2>
-            <p className="text-lg text-[#8E8E93]">Listos para configurar tu negocio.</p>
+            <p className="text-lg text-[#8E8E93]">Cada demo incluye el sistema completo: abre cualquiera y habla con su asistente.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {realProjects.map((p, i) => (
