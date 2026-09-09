@@ -29,7 +29,7 @@ export default function Hero() {
         >
           <span className="w-2 h-2 bg-[#34C759] rounded-full animate-pulse" />
           <span className="text-sm text-white/80 font-medium tracking-wide">
-            Sistema Inteligente de Captación
+            Sistema Verano · Empleado IA de Captación
           </span>
         </motion.div>
 
@@ -37,9 +37,9 @@ export default function Hero() {
         <h1
           className="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight leading-[1.05] text-center"
         >
-          <span className="text-white">Más clientes.</span>
-          <span className="text-[#5170FF]"> Más autoridad.</span>
-          <span className="text-white"> Más crecimiento.</span>
+          <span className="text-white">Tu negocio,</span>
+          <span className="text-[#5170FF]"> captando clientes</span>
+          <span className="text-white"> solo</span>
         </h1>
 
         {/* Value prop — <5s clarity */}
@@ -49,7 +49,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
           className="text-white/80 text-base md:text-lg max-w-2xl mx-auto mt-6 mb-2 text-center leading-relaxed"
         >
-          Ayudamos a empresas a crecer mediante estrategia, diseño y marketing digital.
+          No es una web con un chatbot. Es un empleado IA que atiende 24/7, capta cada lead, lo organiza en tu CRM y te reporta lo que importa
         </motion.p>
         <motion.p
           initial={{ opacity: 0, y: 15 }}
@@ -57,7 +57,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.45, ease: [0.16, 1, 0.3, 1] }}
           className="text-white/60 text-sm md:text-base max-w-2xl mx-auto mb-10 text-center leading-relaxed"
         >
-          Creamos sistemas de captación con IA que convierten visitantes en clientes — para clínicas dentales, inmobiliarias y bufetes legales.
+          Sistemas de captación con IA que convierten visitantes en clientes para clínicas dentales, inmobiliarias y bufetes legales
         </motion.p>
 
         {/* CTAs */}
@@ -79,10 +79,10 @@ export default function Hero() {
             Diagnóstico Gratuito
           </a>
           <Link
-            to="/servicios"
+            to="/sistema-verano"
             className="inline-flex items-center gap-2 text-white/80 hover:text-white border border-white/20 hover:border-white/40 font-medium px-8 py-3.5 rounded-full transition-all duration-300"
           >
-            Ver Servicios
+            Ver el Sistema Verano
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
             </svg>

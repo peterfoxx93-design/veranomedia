@@ -10,7 +10,7 @@ const systemItems = [
  'SEO y Google Maps',
  'Automatizaciones',
  'Analítica y seguimiento',
- 'Contenido estratégico',
+ 'AI Employee: investiga leads y reporta',
 ]
 
 const process = [
@@ -51,7 +51,7 @@ export default function Services() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg text-[#8E8E93]"
           >
-            No vendemos piezas sueltas. Te implementamos un sistema que atrae, atiende, convierte y organiza a tus clientes sin que pierdas oportunidades.
+            No vendemos piezas sueltas. Implementamos un empleado IA que atrae, atiende, convierte y organiza a tus clientes sin que pierdas oportunidades
           </motion.p>
         </div>
 
