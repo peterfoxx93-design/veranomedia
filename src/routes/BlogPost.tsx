@@ -1925,6 +1925,349 @@ function ArticleDisenoMovilPrimero() {
   )
 }
 
+function ArticleEmailVsWhatsApp() {
+  return (
+    <>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        <DropCap>C</DropCap>ada semana alguien te dice que el canal ganador es uno: unos juran por el email, otros por WhatsApp. Y los dos se equivocan por la misma razón: están eligiendo una herramienta cuando deberían estar diseñando un flujo.
+      </p>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        En República Dominicana esto se nota más que en ningún lado. El <strong className="text-[#1C1C1E]">82% de los hogares compra o consulta por WhatsApp</strong>; el email, en cambio, se abre y se olvida. Pero eso no significa que el email esté muerto: significa que está mal ubicado. Este artículo te muestra dónde gana cada uno y, sobre todo, cómo se combinan en un solo sistema que no te obliga a estar pegado al teléfono.
+      </p>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Porque el objetivo no es tener más canales. Es que ninguna oportunidad se pierda. Y para eso hace falta un sistema, no un canal.
+      </p>
+
+      <Separator />
+
+      <PullQuote>
+        Te responden en el canal donde el cliente ya está; te convierten en el canal donde el cliente te recuerda.
+      </PullQuote>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        LO QUE MIDE CADA CANAL
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Cada canal tiene un trabajo distinto. Confundirlos es el error que hace que inviertas horas y no veas resultados. Esta es la división honesta:
+      </p>
+
+      <MiniTable rows={[
+        ["WhatsApp", "Respuesta inmediata, cierre de citas, seguimiento cercano — el 82% de los hogares RD"],
+        ["Email", "Formalidad, reportes, contenido duradero, promociones con antelación"],
+        ["Redes", "Alcance, marca y comunidad — no cierran la venta solas"],
+        ["SMS", "Recordatorios puntuales de citas y pagos"]
+      ]} />
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Mira la diferencia: WhatsApp es el canal de la <strong className="text-[#1C1C1E]">respuesta</strong>, el email es el canal de la <strong className="text-[#1C1C1E]">memoria</strong>. Si los usás al revés, pierdes las dos cosas.
+      </p>
+
+      <Separator />
+
+      <DataBox icon="📊">
+        En Latinoamérica, WhatsApp registra tasas de respuesta que el email no alcanza ni de cerca. El 80% de las ventas se pierden en el seguimiento, no en la oferta. El canal que responde en minutos gana esa venta.
+      </DataBox>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        EL MITO DEL CANAL ÚNICO
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        El email no es inútil; está mal usado. Si tus clientes escriben por WhatsApp y tu negocio solo escucha el correo, esa consulta se enfría. Al revés: si usás WhatsApp para mandar el reporte mensual o el catálogo completo, te pidieron la información en un canal que no guarda la atención.
+      </p>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        El mito de que "un solo canal basta" nace de una confusión: <strong className="text-[#1C1C1E]">canal ≠ sistema</strong>. Un canal es un medio. Un sistema es el flujo completo: el cliente llega, pregunta, se le responde, se le agenda, se le confirma y se le mide.
+      </p>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Cuando el propietario responde en el canal correcto y el sistema registra, agenda y hace seguimiento solo, la diferencia se nota en días: dejas de perder ventas por silencio.
+      </p>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        CUÁNDO SÍ FUNCIONA CADA UNO
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        <strong className="text-[#1C1C1E]">Email, para lo duradero.</strong> Boletines, guías, propuestas, reportes y ese contenido que el cliente va a leer cuando tenga tiempo. El email construye autoridad y reutiliza tu contenido.
+      </p>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        <strong className="text-[#1C1C1E]">WhatsApp, para lo urgente.</strong> Consultas, cotizaciones, confirmaciones de cita y seguimiento postventa. Aquí la velocidad decide la venta.
+      </p>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        La regla simple: <strong className="text-[#1C1C1E]">lo que necesita respuesta en minutos va por WhatsApp; lo que necesita que te recuerden va por email.</strong> Cada uno en su lugar y ninguno empieza a fallar.
+      </p>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        EL ERROR QUE MÁS DINERO CUESTA
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        El error más caro no es elegir mal el canal, es <strong className="text-[#1C1C1E]">no tener un sistema que responda cuando tú no puedes</strong>. El cliente escribe y espera. Si no responde en minutos, la oportunidad se va con otro. Esto no se resuelve con más personal: se resuelve con un flujo que captura, responde y agenda aunque tu equipo esté atendiendo el local.
+      </p>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Con la cantidad de datos que hoy se pierden por no responder a tiempo, tener los canales sin un sistema detrás es como tener varias puertas abiertas y nadie en la entrada.
+      </p>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        EL SISTEMA QUE LOS UNE
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        En Verano Media no vendemos un canal. Integramos la web, la IA, WhatsApp y un CRM en un solo sistema: el cliente llega por el canal que prefiera, el sistema responde al instante, califica, agenda, confirma y te deja el reporte. Todo sin cambiar de herramienta y sin que nadie tenga que atender 24/7.
+      </p>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Un sistema así no depende de que el dueño esté despierto. Depende de que esté bien diseñado. Y ese es exactamente el trabajo que hacemos.
+      </p>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        CÓMO EMPEZAR HOY (SIN LOCURA)
+      </h2>
+
+      <CheckList items={[
+        "Usá WhatsApp para atención inmediata, citas y confirmaciones",
+        "Usá email para contenido duradero, propuestas y reportes",
+        "Definí un flujo que responda solo, no que dependa de una persona",
+        "Registrá cada consulta en un solo lugar (CRM), no en la cabeza",
+        "Medí respuesta por canal y por tiempo de cierre, no solo por envíos"
+      ]} />
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        CASO REAL: DE 15 A 42 RESERVAS SEMANALES
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Un restaurante en la Zona Colonial pasó de <strong className="text-[#1C1C1E]">15 a 42 reservas semanales en 4 semanas</strong>. No contrató más personal, no cambió de local. Lo que cambió fue el flujo: WhatsApp para responder al instante, un CRM para registrar y confirmar, y una web que captura fuera de horario.
+      </p>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Antes, las reservas que llegaban tarde se perdían; hoy, cada consulta se captura, se confirma en segundos y la agenda se llena. El costo fijo no cambió, pero el resultado sí.
+      </p>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        CIERRE
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        No elijas entre email y WhatsApp. Diseñá el flujo que los usa donde ganan. Si querés ver cómo se ve un sistema de captación funcionando para tu negocio, escribinos y armamos tu diagnóstico hoy.
+      </p>
+
+      <Separator />
+
+      <div className="my-10 text-center">
+        <p className="text-base md:text-lg text-[#636366] leading-relaxed">
+          Peter — Verano Media
+        </p>
+        <p className="text-base text-[#636366] mt-2">
+          WhatsApp: <a href="https://wa.me/18093586497" className="text-[#5170FF] hover:underline">wa.me/18093586497</a>
+        </p>
+        <p className="text-base text-[#636366] mt-1">
+          Web: <a href="https://veranomedia.digital" className="text-[#5170FF] hover:underline">veranomedia.digital</a>
+        </p>
+      </div>
+    </>
+  )
+}
+
+function ArticlePromptsIA() {
+  return (
+    <>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        <DropCap>D</DropCap>os personas le piden lo mismo a la misma inteligencia artificial y reciben resultados opuestos: una obtiene un texto generico que parece escrito por nadie; la otra, una pieza lista para publicar y vender. No cambiaron de herramienta. Cambiaron cuatro lineas del pedido.
+      </p>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        A eso le llamamos un prompt con estructura: el conjunto minimo de informacion que la IA necesita para dejar de escribir para "el mundo" y empezar a escribir para tu cliente. Es la diferencia entre "haceme un post" y "escribime la pieza que va a hacer que un dueno de clinica en Santiago me escriba hoy".
+      </p>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        En este articulo te mostramos la formula que usamos todos los dias en Verano Media para generar calendarios, borradores, propuestas y respuestas de atencion. No es teoria de laboratorio: es el metodo con el que sacamos contenido publicable sin contratar un equipo de redaccion.
+      </p>
+
+      <Separator />
+
+      <PullQuote>
+        La IA no adivina. Si no le decis el contexto, te devuelve contenido del mundo, no de tu cliente.
+      </PullQuote>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        LA FORMULA MINIMA VIABLE
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Un prompt utilizable no es un parrafo largo: es una estructura. Si falta cualquiera de estos cinco bloques, la IA rellena el hueco con supuestos genericos y el resultado se nota.
+      </p>
+
+      <DataBox icon="⚡">
+        <strong>Contexto + Rol + Tarea + Restricciones + Formato = output utilizable.</strong>
+        <div className="mt-3 space-y-1.5 text-sm text-[#636366] leading-relaxed">
+          <p>Contexto: quien es el negocio, donde opera y que vende</p>
+          <p>Rol: desde que lugar debe escribir la IA</p>
+          <p>Tarea: la accion exacta que queres obtener</p>
+          <p>Restricciones: tono, canal, longitud y lo que NO debe decir</p>
+          <p>Formato: como queres recibir el resultado</p>
+        </div>
+      </DataBox>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        <strong className="text-[#1C1C1E]">Ejemplo malo:</strong> "Escribi un post para mi negocio." Con ese pedido la IA no sabe si le habla a un paciente, a un inversionista o a un vecino; no sabe si vendes una consulta o un plan anual; no sabe si el canal es LinkedIn, Instagram o WhatsApp. El resultado llega generico porque el encargo llego generico.
+      </p>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        <strong className="text-[#1C1C1E]">Ejemplo bueno:</strong> "Sos copywriter de clinicas dentales en Republica Dominicana. Escribi 1 post para LinkedIn dirigido a duenos de clinica. Tono directo y profesional, 1200 caracteres, sin emojis, con un cierre que invite a escribir por WhatsApp y un bullet por beneficio." Fijate lo que cambio: publico, canal, largo, tono y cierre. La IA ya no inventa el encargo, solo lo ejecuta.
+      </p>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        LOS 5 ELEMENTOS QUE NUNCA PUEDEN FALTAR
+      </h2>
+
+      <CheckList items={[
+        "Rol y contexto del negocio: quien sos y que problema resolvés",
+        "Publico objetivo: a quien le habla la pieza y que le duele",
+        "Objetivo concreto: que accion debe provocar (escribir, agendar, comprar)",
+        "Restricciones de tono y canal: largo, formato y palabras prohibidas",
+        "Ejemplo o formato esperado: como queres recibir el resultado",
+      ]} />
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Cuando esos cinco elementos estan en el pedido, dejas de corregir el texto tres veces. La primera version ya sale cerca de lo que querias publicar.
+      </p>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        QUE RESPONDE CADA ELEMENTO
+      </h2>
+
+      <MiniTable rows={[
+        ["Contexto", "Quien es el negocio, donde opera y que vende exactamente"],
+        ["Publico", "A quien le habla la pieza y que decision debe tomar"],
+        ["Objetivo", "La accion concreta que queres provocar al final"],
+        ["Restricciones", "Tono, canal, longitud y lo que no se puede decir"],
+        ["Formato", "Estructura y extension esperada del resultado"],
+      ]} />
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        La regla de oro: si vos no podes responder esas cinco lineas en tu cabeza, la IA tampoco. El prompt no reemplaza la estrategia: la ordena.
+      </p>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        EL ERROR QUE MAS SE REPITE
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        El error mas comun no es pedir mal: es pedir sin datos propios. La IA conoce el mundo, no tu negocio. Si el prompt no incluye tus servicios, tus precios, tu zona y tus objeciones reales, el texto sale lindo y vacio, y el cliente lo detecta en la primera linea.
+      </p>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Por eso, antes de escribir un solo prompt, cargamos el contexto del negocio: que vende, a quien, en que zona, con que objeciones y con que tono habla su dueno. Ese documento es el que convierte a la IA en un redactor util y no en un generador de frases bonitas.
+      </p>
+
+      <DataBox icon="📊">
+        El contenido generico no vende. Un texto que no menciona el problema real del cliente no genera consultas, y por eso medimos cada pieza: si un post no produce conversaciones en 48 horas, se cambia el angulo, no se repite.
+      </DataBox>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        UN MENSAJE, CINCO VERSIONES
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Con el mismo nucleo de contexto, adaptamos el mensaje al canal sin reescribir desde cero. Es una de las partes mas rentables de trabajar con prompts bien armados: una idea, cinco formatos, un solo esfuerzo.
+      </p>
+
+      <CheckList items={[
+        "LinkedIn: pieza larga, tono ejecutivo, sin emojis y con cierre de autoridad",
+        "Instagram: gancho corto, beneficio en la primera linea, llamado a escribir",
+        "WhatsApp: respuesta breve, personalizada y orientada a agendar",
+        "Email: contexto formal, propuesta concreta y siguiente paso claro",
+        "Web: texto de conversion, beneficio antes que caracteristica",
+      ]} />
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        APLICACION REAL EN UNA PYME DOMINICANA
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        En la practica no usamos prompts sueltos: usamos prompts guardados por tipo de pieza. Uno para posts de LinkedIn, otro para correos de seguimiento, otro para respuestas de atencion y otro para propuestas comerciales. Cada uno tiene su contexto cargado y sus restricciones.
+      </p>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Con eso, lo que antes tomaba una tarde de redaccion se resuelve en minutos de edicion. Lo que diferencia el resultado no es el modelo de IA que uses: es el detalle del pedido y el contexto que le hayas dado antes.
+      </p>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        CASO REAL: CLINICAS QUE RECUPERARON CONSULTAS
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Los duenos de clinicas en Puerto Plata perdian entre <strong className="text-[#1C1C1E]">8 y 12 consultas por semana</strong> por no responder a tiempo. Con contexto cargado, prompts por tipo de mensaje y un agente que responde WhatsApp 24/7, en 30 dias esas consultas volvieron a entrar al sistema y quedaron registradas.
+      </p>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Nada de eso lo hizo "la IA sola". Lo hizo un proceso: entender el negocio, escribir el contexto, definir el prompt y medir el resultado cada semana.
+      </p>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        COMO EMPEZAR HOY (SIN CONTRATAR A NADIE)
+      </h2>
+
+      <CheckList items={[
+        "Escribi el contexto de tu negocio en una sola pagina: que vendes, a quien y en que zona",
+        "Defini el objetivo de la pieza antes de abrir la herramienta de IA",
+        "Guarda tus mejores prompts como plantilla reutilizable por canal",
+        "Edita siempre: la IA borra, vos firmas",
+        "Medi el resultado de cada pieza y cambia el angulo si no genera consultas",
+      ]} />
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        CIERRE
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Podes aprender a escribir prompts o podes contratar a quien ya los usa para vender. En Verano Media hacemos las dos cosas: generamos y editamos el contenido para que tu negocio publique hoy mismo, con un sistema detras que captura cada consulta.
+      </p>
+
+      <Separator />
+
+      <div className="my-10 text-center">
+        <p className="text-base md:text-lg text-[#636366] leading-relaxed">
+          Peter — Verano Media
+        </p>
+        <p className="text-base text-[#636366] mt-2">
+          WhatsApp: <a href="https://wa.me/18093586497" className="text-[#5170FF] hover:underline">wa.me/18093586497</a>
+        </p>
+        <p className="text-base text-[#636366] mt-1">
+          Web: <a href="https://veranomedia.digital" className="text-[#5170FF] hover:underline">veranomedia.digital</a>
+        </p>
+      </div>
+    </>
+  )
+}
+
 // ═══════════════════════════════════════════════════════════
 // Componente principal
 // ═══════════════════════════════════════════════════════════
@@ -1959,6 +2302,10 @@ function BlogPost() {
         return <ArticleGoogleBusinessProfile />
       case 'diseno-web-movil-primero':
         return <ArticleDisenoMovilPrimero />
+      case 'email-vs-whatsapp-marketing-rd':
+        return <ArticleEmailVsWhatsApp />
+      case 'prompts-ia-resultados-profesionales':
+        return <ArticlePromptsIA />
       default:
         return <ArticleLandingVsSitio />
   }
