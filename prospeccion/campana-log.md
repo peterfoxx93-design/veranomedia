@@ -1,0 +1,13 @@
+- 2026-09-15 09:30 — Toque 1 enviado a Cosmetic Dental Center <cosmeticdentalcenter.rd@gmail.com>
+- 2026-09-15 09:30 — Toque 1 enviado a Dental Cibao Spa <info@dentalcibao.com>
+- 2026-09-15 09:30 — Toque 1 enviado a Dentisalud <info@dentisalud.com.do>
+- 2026-09-15 09:30 — Toque 1 enviado a Biodental <biodental@biodental.com.do>
+- 2026-09-15 09:30 — Toque 1 enviado a Centro Implantológico del Cibao <citas@centroimplantologicodelcibao.com>
+- 2026-09-15 09:30 — Toque 1 enviado a Guzmán Ariza <info@drlawyer.com>
+- 2026-09-15 09:31 — Toque 1 enviado a CityMax <contacto@citymax-sd.com>
+- 2026-09-15 09:31 — Toque 1 enviado a DOMLAND Real Estate <info@domland.com>
+- 2026-09-15 09:31 — Toque 1 enviado a Grupo Actúa Properties <gustavo@grupoactua.com.do>
+- 2026-09-15 09:31 — Toque 1 enviado a Marka Inversiones <ivan@plusval.com.do>
+- 2026-09-15 09:31 — Toque 1 enviado a Renta House <rentahouserd@gmail.com>
+- 2026-09-15 09:31 — Toque 1 enviado a The Wendy Gomez Team <wgomez@plusval.com.do>
+- 2026-09-15 09:31 — Toque 1 enviado a VITA HOME <vitaadm@vitahomerd.com>

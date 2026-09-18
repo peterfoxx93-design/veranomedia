@@ -35,7 +35,7 @@
 - final_v4_final.mp4 (15s, 704×1280, audio sincronizado)
 - Cara intacta, aligner en palma, piel limpia
 
-### SEO veranomedia.digital ✅
+### SEO veranomedia.click ✅
 - LCP móvil fix (orbs blur ocultos + H1 estático) commit 0ccd4a6
 - Sección Evidence con datos reales commit 1e3f7dd
 

@@ -255,7 +255,7 @@ caption     Texto de caption      0.75rem / 12px • Inter Medium
 | **Facebook** | Logotipo completo (fondo azul marino) | *Agencia de Marketing Digital con enfoque en resultados. Diseño web, redes sociales, SEO, automatización y más. 🇩🇴 República Dominicana.* |
 
 ### Website
-- **URL:** veranomedia.digital (pendiente de configuración)
+- **URL:** veranomedia.click (pendiente de configuración)
 - **Deploy actual:** GitHub Pages (https://peterfoxx93-design.github.io/veranomedia)
 - **Stack:** React + Vite + Tailwind CSS + Motion (Framer Motion)
 - **Páginas:** Inicio, Servicios (×10+), Portafolio, Blog, Nosotros, Contacto, Paquete Completo

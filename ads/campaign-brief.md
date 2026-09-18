@@ -1,6 +1,6 @@
 # Campaign Brief: Verano Media
 **Generated:** 2026-08-20
-**Website:** https://veranomedia.digital
+**Website:** https://veranomedia.click
 **Platforms:** Meta, LinkedIn
 **Objective:** Leads/Demos
 **Concepts:** 3

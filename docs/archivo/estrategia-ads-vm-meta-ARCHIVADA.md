@@ -126,7 +126,7 @@ Empieza por un diagnóstico gratuito de tu presencia digital.
 
 ## 7. Tracking (pendiente de configurar)
 
-- [ ] **Píxel Meta** en veranomedia.digital (Meta Pixel + CAPI para iOS)
+- [ ] **Píxel Meta** en veranomedia.click (Meta Pixel + CAPI para iOS)
 - [ ] **Evento Lead** (click a WhatsApp / submit formulario diagnóstico)
 - [ ] **UTM** en todos los enlaces: `utm_source=meta&utm_medium=cpc&utm_campaign=VM_META_CONV_Prospeccion_RD_2026Q3`
 - [ ] **Webhook WhatsApp** → CRM (veranomedia-crm) para contar leads reales
