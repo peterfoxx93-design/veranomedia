@@ -262,8 +262,8 @@ caption     Texto de caption      0.75rem / 12px • Inter Medium
 
 ### Email Corporativo
 - Pendiente de configuración
-- Formato sugerido: `nombre@veranomedia.digital`
-- Principal: `hola@veranomedia.digital` o `info@veranomedia.digital`
+- Formato sugerido: `nombre@veranomedia.click`
+- Principal: `hola@veranomedia.click` o `hola@veranomedia.click`
 
 ---
 

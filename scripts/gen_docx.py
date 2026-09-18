@@ -484,9 +484,9 @@ add_bullet("Stack: React + Vite + Tailwind CSS + Motion")
 add_bullet("Páginas: Inicio, Servicios (10+), Portafolio, Blog, Nosotros, Contacto")
 
 add_heading("Email Corporativo", level=2)
-add_para("Pendiente de configuración. Formato sugerido: nombre@veranomedia.digital")
-add_bullet("Principal: hola@veranomedia.digital")
-add_bullet("Alternativo: info@veranomedia.digital")
+add_para("Pendiente de configuración. Formato sugerido: nombre@veranomedia.click")
+add_bullet("Principal: hola@veranomedia.click")
+add_bullet("Alternativo: hola@veranomedia.click")
 
 doc.add_page_break()
 

@@ -40,10 +40,10 @@ export default function CTA() {
               Escríbenos por WhatsApp
             </a>
             <a
-              href="mailto:hola@veranomedia.digital"
+              href="mailto:hola@veranomedia.click"
               className="text-white/80 hover:text-white px-8 py-4 rounded-vm-md text-base font-semibold border-2 border-white/20 hover:border-white/40 transition-all duration-300"
             >
-              hola@veranomedia.digital
+              hola@veranomedia.click
             </a>
           </div>
 

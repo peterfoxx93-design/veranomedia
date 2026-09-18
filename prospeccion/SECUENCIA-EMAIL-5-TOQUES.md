@@ -195,7 +195,7 @@ María — Verano Media RD · wa.me/18093586497
 
 ## Envío y medición
 
-- **Canal:** Gmail 1:1 (`info.veranomediaweb@gmail.com`) para listas pequeñas — parece humano y mejora entregabilidad. Para volumen (>50/día) usar Resend con `hola@veranomedia.digital`.
+- **Canal:** Gmail 1:1 (`info.veranomediaweb@gmail.com`) para listas pequeñas — parece humano y mejora entregabilidad. Para volumen (>50/día) usar Resend con `hola@veranomedia.click`.
 - **Registro:** cada envío se anota en el CRM (nota "📤 Toque N — fecha") y en `Neo-Brain/VM/Prospeccion/`.
 - **Métricas:** respuesta por toque y por sector. Se detiene la secuencia al responder.
 - **Escala:** arrancar con los 12 prioritarios, medir 2 semanas, ajustar, y solo entonces escalar.
