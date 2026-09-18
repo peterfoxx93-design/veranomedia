@@ -478,7 +478,7 @@ add_table(
 )
 
 add_heading("Website", level=2)
-add_bullet("URL: veranomedia.digital (pendiente de configuración)")
+add_bullet("URL: veranomedia.click (pendiente de configuración)")
 add_bullet("Deploy actual: GitHub Pages (peterfoxx93-design.github.io/veranomedia)")
 add_bullet("Stack: React + Vite + Tailwind CSS + Motion")
 add_bullet("Páginas: Inicio, Servicios (10+), Portafolio, Blog, Nosotros, Contacto")

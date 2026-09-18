@@ -1080,7 +1080,7 @@ function ArticleIaContenido() {
 
       <div className="mt-8 pt-6 border-t border-[#E8E8ED]/40 text-sm text-[#636366]">
         <p>WhatsApp: <a href="https://wa.me/18093586497" className="text-[#5170FF] hover:underline">wa.me/18093586497</a></p>
-        <p className="mt-1">Web: <a href="https://veranomedia.digital" className="text-[#5170FF] hover:underline">veranomedia.digital</a></p>
+        <p className="mt-1">Web: <a href="https://veranomedia.click" className="text-[#5170FF] hover:underline">veranomedia.click</a></p>
       </div>
     </>
   )
@@ -1711,7 +1711,7 @@ function ArticleGoogleBusinessProfile() {
           WhatsApp: <a href="https://wa.me/18093586497" className="text-[#5170FF] hover:underline">wa.me/18093586497</a>
         </p>
         <p className="text-base text-[#636366] mt-1">
-          Web: <a href="https://veranomedia.digital" className="text-[#5170FF] hover:underline">veranomedia.digital</a>
+          Web: <a href="https://veranomedia.click" className="text-[#5170FF] hover:underline">veranomedia.click</a>
         </p>
       </div>
     </>
@@ -1918,7 +1918,7 @@ function ArticleDisenoMovilPrimero() {
           WhatsApp: <a href="https://wa.me/18093586497" className="text-[#5170FF] hover:underline">wa.me/18093586497</a>
         </p>
         <p className="text-base text-[#636366] mt-1">
-          Web: <a href="https://veranomedia.digital" className="text-[#5170FF] hover:underline">veranomedia.digital</a>
+          Web: <a href="https://veranomedia.click" className="text-[#5170FF] hover:underline">veranomedia.click</a>
         </p>
       </div>
     </>
@@ -2076,7 +2076,7 @@ function ArticleEmailVsWhatsApp() {
           WhatsApp: <a href="https://wa.me/18093586497" className="text-[#5170FF] hover:underline">wa.me/18093586497</a>
         </p>
         <p className="text-base text-[#636366] mt-1">
-          Web: <a href="https://veranomedia.digital" className="text-[#5170FF] hover:underline">veranomedia.digital</a>
+          Web: <a href="https://veranomedia.click" className="text-[#5170FF] hover:underline">veranomedia.click</a>
         </p>
       </div>
     </>
@@ -2261,7 +2261,7 @@ function ArticlePromptsIA() {
           WhatsApp: <a href="https://wa.me/18093586497" className="text-[#5170FF] hover:underline">wa.me/18093586497</a>
         </p>
         <p className="text-base text-[#636366] mt-1">
-          Web: <a href="https://veranomedia.digital" className="text-[#5170FF] hover:underline">veranomedia.digital</a>
+          Web: <a href="https://veranomedia.click" className="text-[#5170FF] hover:underline">veranomedia.click</a>
         </p>
       </div>
     </>
