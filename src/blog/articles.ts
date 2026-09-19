@@ -89,6 +89,16 @@ export const articles = [
     date: 'Septiembre 2026',
     published: true,
   },
+  {
+    id: 'customer-journey-2026-cita-en-4-clics',
+    title: 'El customer journey en 2026: de Google Maps a la cita en 4 clics',
+    category: 'Estrategia',
+    slug: 'customer-journey-2026-cita-en-4-clics',
+    readTime: 8,
+    excerpt: 'El cliente no te elige por una visita: te elige por el camino mas corto y mas confiable. Estas son las 4 estaciones donde se gana o se pierde la consulta.',
+    date: 'Septiembre 2026',
+    published: true,
+  },
 ]
 
 export type Article = typeof articles[0]

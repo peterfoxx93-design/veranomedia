@@ -2268,6 +2268,219 @@ function ArticlePromptsIA() {
   )
 }
 
+function ArticleCustomerJourney() {
+  return (
+    <>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        <DropCap>E</DropCap>l cliente no te elige por una visita. Te elige por el camino mas corto y mas confiable. En 2026 ese camino empieza en una busqueda local desde el movil y termina, si todo esta bien armado, en una cita confirmada en menos de cuatro clics.
+      </p>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        El problema es que casi ningun negocio en Republica Dominicana tiene ese camino completo. Tiene piezas: una ficha de Google Maps a medias, una web que tarda ocho segundos en abrir, un WhatsApp que contesta cuando alguien puede, y ningun lugar donde quede registrado quien llego y quien se perdio.
+      </p>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Este articulo es el mapa real de ese recorrido, paso por paso, con los puntos donde se cae la mayoria de las consultas y lo que hacemos en Verano Media para taparlos.
+      </p>
+
+      <Separator />
+
+      <PullQuote>
+        Si un paso tuyo esta roto, el cliente no llega al final. El viaje se construye pieza por pieza.
+      </PullQuote>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        EL MAPA REAL DEL VIAJE
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        El recorrido de un cliente de servicios locales hoy tiene cuatro estaciones. No son teoria: son los cuatro momentos donde se gana o se pierde la consulta.
+      </p>
+
+      <MiniTable rows={[
+        ["1. Busca por necesidad", "Google Maps, resenas, cercania"],
+        ["2. Evalua opciones", "Compara fotos, servicios, horarios"],
+        ["3. Contacta", "WhatsApp, formulario, llamada"],
+        ["4. Confirma asistencia", "Recordatorio, facilidad de acceso"],
+      ]} />
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Lo importante de esta tabla no es el orden, sino que <strong className="text-[#1C1C1E]">cada estacion es un filtro</strong>. En cada una se cae un porcentaje de gente. Tu trabajo no es brillar en una sola: es no ser el peor en ninguna.
+      </p>
+
+      <DataBox icon="📍">
+        <strong>El 76% de las busquedas locales desde el movil termina en una visita o llamada en menos de 24 horas.</strong>
+        <div className="mt-3 space-y-1.5 text-sm text-[#636366] leading-relaxed">
+          <p>La intencion de compra ya existe cuando el cliente busca.</p>
+          <p>Lo que decide todo es la velocidad con la que le respondes.</p>
+          <p>El negocio que aparece y contesta primero se queda con esa consulta.</p>
+        </div>
+      </DataBox>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        ESTACION 1: LA BUSQUEDA
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        El viaje empieza antes de que el cliente sepa tu nombre. Escribe "dentista cerca de mi" o "abogado laboral Santo Domingo" y recibe un mapa con tres o cuatro opciones. Ahi se decide si existis o si no existis.
+      </p>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        No es suficiente tener una ficha: la ficha tiene que estar completa. Categoria correcta, horarios reales, fotos de calidad, servicios cargados, telefono que contesta y resenas recientes. Una ficha incompleta le dice al cliente lo mismo que un local con las luces apagadas.
+      </p>
+
+      <CheckList items={[
+        "Categoria y servicios cargados con las palabras que usa el cliente, no las que usa tu industria",
+        "Horarios actualizados, incluidos feriados y emergencias",
+        "Fotos propias del espacio y del equipo, no imagenes de banco",
+        "Resenas respondidas una por una, incluidas las negativas",
+      ]} />
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        ESTACION 2: LA EVALUACION EN TRES SEGUNDOS
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Con dos o tres opciones en pantalla, el cliente no lee: escanea. Compara si entiende que haces, si ve un telefono o un boton de WhatsApp, y si la pagina abre rapido. Si tu web tarda mas de tres segundos, ya perdistes esa comparacion sin que nadie te avise.
+      </p>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Ese escaneo se gana con jerarquia visual: titular que dice el beneficio, prueba social visible, y un solo llamado a la accion. Todo lo demas distrae.
+      </p>
+
+      <DataBox icon="📱">
+        Mas de <strong>7 de cada 10</strong> visitas a sitios de pymes dominicanas vienen del movil. Si tu web esta pensada para escritorio, estas compitiendo con una mano atada.
+      </DataBox>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        ESTACION 3: EL CONTACTO (DONDE MAS SE PIERDE)
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Esta es la estacion que mas dinero cuesta en Republica Dominicana. El cliente escribe por WhatsApp a las 9:40 de la noche, cuando decidio actuar. Si nadie contesta, no espera: escribe al siguiente negocio de la lista.
+      </p>
+
+      <CheckList items={[
+        "Ficha incompleta: no encuentra horario ni forma de contacto",
+        "Web lenta: se va antes de escribirte",
+        "Sin respuesta en 10 minutos: busca otro negocio y no vuelve",
+        "Formulario eterno: pide siete campos cuando bastan dos",
+      ]} />
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        La velocidad de respuesta no es un detalle de servicio al cliente: es la variable comercial mas determinante del embudo local. Contestar primero, aunque sea con un mensaje de confirmacion, cambia la tasa de conversion mas que cualquier rediseno.
+      </p>
+
+      <PullQuote>
+        El cliente no compara precios cuando nadie le contesta. Compara quien le respondio.
+      </PullQuote>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        ESTACION 4: LA CITA CONFIRMADA
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Conseguir el contacto no es cerrar. Entre "escribio" y "llego" hay una brecha silenciosa: gente que agenda y no aparece. Cada ausencia es una silla vacia, un profesional esperando y una hora que no se recupera.
+      </p>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Se cierra con tres cosas simples: confirmacion inmediata con fecha y hora exactas, recordatorio 24 horas antes y un mensaje corto el mismo dia con la ubicacion y el parqueo. Nada de eso es tecnologia avanzada. Es proceso.
+      </p>
+
+      <MiniTable rows={[
+        ["Confirmacion inmediata", "Fecha, hora y que debe traer el cliente"],
+        ["Recordatorio 24h antes", "Reduce ausencias y libera cupos a tiempo"],
+        ["Mensaje el mismo dia", "Ubicacion, acceso y nombre de quien atiende"],
+        ["Registro en CRM", "Quien llego, de donde vino y que paso despues"],
+      ]} />
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        COMO LO HACEMOS EN VERANO MEDIA
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        No vendemos piezas sueltas. Disenamos el recorrido completo y lo dejamos medible: busqueda local trabajada, landing optimizada para movil, automatizacion de respuestas que atiende a cualquier hora, CRM donde cada conversacion queda registrada y confirmacion sin friccion.
+      </p>
+
+      <DataBox icon="⚙️">
+        <strong>Web + IA + WhatsApp + CRM sobre un mismo objetivo: que ninguna consulta se pierda por falta de respuesta.</strong>
+        <div className="mt-3 space-y-1.5 text-sm text-[#636366] leading-relaxed">
+          <p>La web captura, el agente responde, el CRM ordena y tu equipo cierra.</p>
+          <p>Sin este orden, cada herramienta por separado genera trabajo y no ventas.</p>
+        </div>
+      </DataBox>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        CASO REAL: DE 40 MENSAJES A CERO PERDIDOS
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Una clinica dental en Puerto Plata recibia alrededor de <strong className="text-[#1C1C1E]">40 mensajes por semana</strong> y no tenia manera de saber cuantos terminaban en cita. La recepcion contestaba cuando podia, entre pacientes.
+      </p>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Se documento el recorrido completo: ficha de Google completa, landing movil con un solo llamado a la accion, agente que responde en segundos y registro de cada conversacion con su estado. En 30 dias, las <strong className="text-[#1C1C1E]">ausencias a cita bajaron de forma visible</strong> y el equipo dejo de cargar los contactos a mano en un cuaderno.
+      </p>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        No cambio el servicio de la clinica. Cambio el camino entre el cliente y esa silla.
+      </p>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        TU RECORRIDO EN 5 PREGUNTAS
+      </h2>
+
+      <CheckList items={[
+        "Apareces cuando alguien busca tu servicio en Google Maps desde el movil",
+        "Tu web abre en menos de 3 segundos y se entiende sin zoom",
+        "Contestas cualquier mensaje en menos de 10 minutos, a cualquier hora",
+        "Sabes cuantos contactos del mes terminaron en cliente",
+        "Confirmas y recuerdas cada cita para reducir ausencias",
+      ]} />
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Si fallaste en dos o mas, el problema no es el marketing: es el recorrido. Y el recorrido se arregla una vez, no cada mes.
+      </p>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        CIERRE
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Un recorrido corto gana. Cada clic que le ahorras al cliente es un clic mas cerca de la cita. Si tu viaje de cliente tiene huecos, hoy los cerramos: revisamos las cuatro estaciones, te decimos donde estas perdiendo gente y lo implementamos.
+      </p>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Escribinos por WhatsApp y te mostramos, con tu propio recorrido, donde se estan cayendo las consultas.
+      </p>
+
+      <Separator />
+
+      <div className="my-10 text-center">
+        <p className="text-base md:text-lg text-[#636366] leading-relaxed">
+          Peter — Verano Media
+        </p>
+        <p className="text-base text-[#636366] mt-2">
+          WhatsApp: <a href="https://wa.me/18093586497" className="text-[#5170FF] hover:underline">wa.me/18093586497</a>
+        </p>
+        <p className="text-base text-[#636366] mt-1">
+          Web: <a href="https://veranomedia.click" className="text-[#5170FF] hover:underline">veranomedia.click</a>
+        </p>
+      </div>
+    </>
+  )
+}
+
 // ═══════════════════════════════════════════════════════════
 // Componente principal
 // ═══════════════════════════════════════════════════════════
@@ -2306,6 +2519,8 @@ function BlogPost() {
         return <ArticleEmailVsWhatsApp />
       case 'prompts-ia-resultados-profesionales':
         return <ArticlePromptsIA />
+      case 'customer-journey-2026-cita-en-4-clics':
+        return <ArticleCustomerJourney />
       default:
         return <ArticleLandingVsSitio />
   }
