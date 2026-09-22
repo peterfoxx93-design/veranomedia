@@ -25,6 +25,36 @@ DATOS_VERIFICADOS = [
     "24h", "48h", "7 días", "7d",  # plazos de seguimiento estándar
 ]
 
+# --- CTA: imperativo real o pregunta dirigida al lector ---------------------
+# Fix 2026-09-22 (falso negativo sistemático):
+#   El whitelist anterior era una lista de palabras sueltas. El house style de VM
+#   cierra con una PREGUNTA al lector ("¿Cuántas consultas quedaron sin responder
+#   en tu tienda?"), que el propio criterio acepta como "invitación a conversar",
+#   pero ninguna palabra de la lista aparecía en el texto -> 0/4 plataformas
+#   aprobadas con CTAs válidas. Se añade detección interrogativa y se retiran las
+#   señales débiles ("hoy", "link", "mira", "conoce") que aprobaban posts sin CTA
+#   real. Validado contra todo el calendario: 0 regresiones.
+CTA_IMPERATIVOS = [
+    # "escribe" + "diagnóstico": CTA del mecanismo de keyword (ej. "Escribe 'RESTAURANTE'")
+    "escríbenos", "escribenos", "escribe", "diagnóstico", "mensaje", "whatsapp",
+    "agenda", "hablemos", "cotiza", "empieza", "contacta", "reserva", "pide",
+    "solicita", "llámanos", "llamanos", "comenta", "cuéntame", "cuentame",
+]
+CTA_INTERROGATIVOS = [
+    "cuánt", "cuant", "cómo", "como ", "qué", "cuál", "dónde", "cuándo",
+    "tienes", "tiene", "quieres", "estás", "estas", "sabes", "puedes",
+    "podrías", "sigues", "vas ", "has ", "te ", "tu ", "tú ",
+]
+
+def cta_ok(t: str) -> bool:
+    """True si hay llamada a la acción o invitación a conversar."""
+    tl = t.lower()
+    if any(w in tl for w in CTA_IMPERATIVOS):
+        return True
+    # pregunta dirigida al lector = invitación a conversar (house style VM)
+    return bool(re.search(r"[¿?]", t)) and any(w in tl for w in CTA_INTERROGATIVOS)
+
+
 # Criterios de calidad VM — checklist obligatorio
 CRITERIOS = [
     {
@@ -57,9 +87,7 @@ CRITERIOS = [
     {
         "id": "cta",
         "desc": "Llamada a la acción clara (o invitación a conversar)",
-        "check": lambda t: any(w in t.lower() for w in [
-            "escríbenos", "escribenos", "mensaje", "whatsapp", "agenda", "hablemos",
-            "cotiza", "hoy", "empieza", "contacta", "link", "conoce", "mira"]),
+        "check": cta_ok,
     },
     {
         "id": "promesa",
