@@ -13,6 +13,8 @@ import Blog from './routes/Blog'
 import BlogPost from './routes/BlogPost'
 import SistemaVerano from './routes/SistemaVerano'
 import Diagnostico from './routes/Diagnostico'
+import Privacidad from './routes/Privacidad'
+import Terminos from './routes/Terminos'
 
 export default function App() {
   return (
@@ -31,6 +33,8 @@ export default function App() {
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/sistema-verano" element={<SistemaVerano />} />
           <Route path="/diagnostico" element={<Diagnostico />} />
+          <Route path="/privacidad" element={<Privacidad />} />
+          <Route path="/terminos" element={<Terminos />} />
         </Route>
       </Routes>
       <ChatWidget
