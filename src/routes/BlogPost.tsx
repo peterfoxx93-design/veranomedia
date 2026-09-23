@@ -2493,6 +2493,229 @@ function BlogPost() {
 
   useEffect(() => { window.scrollTo(0, 0) }, [slug])
 
+function ArticleSeguridadWeb() {
+  return (
+    <>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        <DropCap>N</DropCap>adie hackea tu web por diversión. En la práctica casi nunca hay un atacante
+        mirándote a ti: hay un robot que recorre internet buscando puertas abiertas, y tu web aparece en su
+        lista porque una versión quedó vieja, porque un plugin que ya no usas sigue instalado, o porque la
+        contraseña del panel es la misma desde hace tres años.
+      </p>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Por eso este artículo no es sobre "ciberseguridad". Es sobre lo mínimo que cualquier negocio con
+        web debería tener funcionando esta semana: candado activo, respaldo que se pueda restaurar, y algo
+        que mantenga todo actualizado sin depender de que alguien se acuerde.
+      </p>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Sin tecnicismos y sin alarmismo. Lo que sigue es lo que de verdad mueve la aguja.
+      </p>
+
+      <Separator />
+
+      <PullQuote>
+        La seguridad no es un producto que se compra una vez. Es una rutina que alguien ejecuta.
+      </PullQuote>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        POR QUÉ TU WEB ES UN BLANCO FÁCIL
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        No es que tu web sea débil. Es que lleva meses sin que nadie la mire, y el software que la sostiene
+        envejece solo. Un estudio publicado en agosto de 2026 por Equinet Academy, sobre 102 sitios de
+        negocios, encontró algo que se repite en cualquier país:
+      </p>
+
+      <DataBox icon="🔒">
+        <strong>4 de cada 5 sitios empresariales analizados tenía al menos una vulnerabilidad detectable.</strong>
+        <div className="mt-3 space-y-1.5 text-sm text-[#636366] leading-relaxed">
+          <p><strong className="text-[#1C1C1E]">80,4%</strong> con al menos una falla detectable en el estudio de Equinet Academy (2026).</p>
+          <p><strong className="text-[#1C1C1E]">70,6%</strong> tenía al menos un plugin con vulnerabilidad confirmada (CVE).</p>
+          <p><strong className="text-[#1C1C1E]">91%</strong> de las vulnerabilidades nuevas del ecosistema WordPress en 2025 estaban en plugins, según Patchstack. No en el programa base.</p>
+          <p><strong className="text-[#1C1C1E]">88%</strong> de los ataques básicos a aplicaciones web involucran contraseñas robadas o débiles (Verizon DBIR).</p>
+        </div>
+      </DataBox>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Lee esos números al revés y aparece la conclusión útil: <strong className="text-[#1C1C1E]">casi todo
+        el riesgo vive en piezas que se actualizan con un clic</strong>. No hace falta reescribir tu web. Hace
+        falta que alguien las mantenga.
+      </p>
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        LOS TRES PILARES QUE CUBREN CASI TODO
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Si tuvieras que elegir solo tres cosas, son estas. En este orden.
+      </p>
+
+      <h3 className="font-serif text-xl md:text-2xl text-[#1C1C1E] mt-8 mb-4">
+        1. El candado (SSL) activo y sin advertencias
+      </h3>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Cuando alguien entra a tu web y el navegador dice <strong className="text-[#1C1C1E]">"No es
+        seguro"</strong>, la conversación terminó antes de empezar. El visitante no sabe qué es un certificado:
+        interpreta que tu negocio es descuidado. Y el candado vence solo — normalmente cada 90 días — así que
+        un sitio abandonado tarde o temprano muestra ese aviso.
+      </p>
+
+      <h3 className="font-serif text-xl md:text-2xl text-[#1C1C1E] mt-8 mb-4">
+        2. Un respaldo diario, fuera del mismo servidor y probado
+      </h3>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        El respaldo es lo que convierte una catástrofe en una molestia. Pero cuidado con la trampa de
+        siempre: <strong className="text-[#1C1C1E]">un respaldo que nunca se ha restaurado no es un respaldo,
+        es una esperanza</strong>. Tiene que estar guardado en otro lugar y tiene que haberse probado al menos
+        una vez.
+      </p>
+
+      <h3 className="font-serif text-xl md:text-2xl text-[#1C1C1E] mt-8 mb-4">
+        3. Actualizaciones aplicadas sin esperar al rediseño
+      </h3>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        La mayoría de los ataques masivos no buscan un fallo desconocido: aprovechan un fallo que ya tenía
+        parche disponible. Cada semana que pasa con una versión vieja es una semana en la que el robot
+        encuentra la puerta abierta. Y por eso el plugin que instalaste una vez y nunca volviste a usar es
+        peor que un plugin actualizado: <strong className="text-[#1C1C1E]">es superficie de ataque
+        desatendida</strong>.
+      </p>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        EL DIAGNÓSTICO EN UNA TABLA
+      </h2>
+
+      <MiniTable rows={[
+        ["El navegador dice 'No seguro'", "SSL vencido: se renueva automático"],
+        ["Aparece código extraño en la web", "Plugin o tema desactualizado: actualizar y limpiar accesos"],
+        ["No entras al panel", "Contraseña débil o filtrada: restaurar respaldo y activar 2FA"],
+        ["Se perdieron las consultas del mes", "Sin respaldo reciente: respaldo diario fuera del servidor"],
+        ["Todo funciona, pero nadie vigila", "Sin monitoreo: aviso automático cuando la web se cae"],
+      ]} />
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Fíjate que ninguna de las cinco filas es "te hackearon porque eras importante". Las cinco son
+        mantenimiento. Eso es exactamente la buena noticia: <strong className="text-[#1C1C1E]">se previene
+        con rutina, no con presupuesto de banco</strong>.
+      </p>
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        EL ERROR QUE MÁS CARO SALE: EL RESPALDO QUE NO SE PUEDE RESTAURAR
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Cuando un sitio cae, el problema nunca es la caída. El problema es lo que pasa en las siguientes
+        horas: no sabes a quién llamar, el proveedor dice que el respaldo es de hace tres semanas, y cada día
+        que la web está abajo estás pagando publicidad que manda gente a una página que no abre.
+      </p>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Ahí es cuando se rompe algo más difícil de recuperar que el sitio: la confianza del cliente que sí
+        te estaba buscando. Un cliente que no te encuentra hoy no vuelve mañana a intentarlo — <strong
+        className="text-[#1C1C1E]">le compra al que sí apareció</strong>.
+      </p>
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        LA RUTINA QUE SÍ SE CUMPLE
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        De poco sirve saber esto si depende de tu memoria. Por eso se automatiza. Esta es la lista mínima:
+      </p>
+
+      <CheckList items={[
+        "SSL activo y con renovación automática",
+        "Respaldo diario guardado fuera del servidor",
+        "Restauración de prueba hecha al menos una vez",
+        "Acceso al panel con 2FA obligatorio",
+        "Plugins y temas actualizados, y los que no usas, borrados",
+        "Monitoreo que avise si la web se cae",
+      ]} />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        QUÉ HACEMOS NOSOTROS CON ESTO
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        En Verano Media la seguridad básica no es un extra que se vende aparte: va dentro del mantenimiento.
+        Concretamente:
+      </p>
+
+      <ul className="space-y-3 my-8">
+        <li className="flex gap-3 text-base md:text-lg text-[#636366] leading-[1.8]">
+          <span className="text-[#5170FF] font-bold flex-shrink-0">→</span>
+          <span><strong className="text-[#1C1C1E]">Monitoreo permanente.</strong> Si la web se cae, nos enteramos nosotros antes que tú.</span>
+        </li>
+        <li className="flex gap-3 text-base md:text-lg text-[#636366] leading-[1.8]">
+          <span className="text-[#5170FF] font-bold flex-shrink-0">→</span>
+          <span><strong className="text-[#1C1C1E]">Respaldos automáticos</strong> y verificación de que se pueden restaurar.</span>
+        </li>
+        <li className="flex gap-3 text-base md:text-lg text-[#636366] leading-[1.8]">
+          <span className="text-[#5170FF] font-bold flex-shrink-0">→</span>
+          <span><strong className="text-[#1C1C1E]">Actualizaciones controladas:</strong> se prueban antes de aplicarlas, para no romper lo que funciona.</span>
+        </li>
+        <li className="flex gap-3 text-base md:text-lg text-[#636366] leading-[1.8]">
+          <span className="text-[#5170FF] font-bold flex-shrink-0">→</span>
+          <span><strong className="text-[#1C1C1E]">Registro de errores del sitio</strong> conectado a un panel: si algo falla, queda documentado con la causa exacta, no en "creo que fue el hosting".</span>
+        </li>
+      </ul>
+
+      <PullQuote>
+        El mejor día para revisar tu web fue hace meses. El segundo mejor día es hoy.
+      </PullQuote>
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        EMPIEZA POR ESTA PREGUNTA
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Antes de contratar cualquier cosa, pregúntate una sola cosa y respóndete con honestidad:
+        <strong className="text-[#1C1C1E]"> si mi web desapareciera ahora mismo, ¿cuándo tendría el respaldo
+        más reciente?</strong>
+      </p>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Si la respuesta es "no sé" o "creo que el hosting hace algo", ahí está tu prioridad número uno. Todo
+        lo demás — anuncios, publicaciones, rediseños — se construye encima de eso.
+      </p>
+
+      <Separator />
+
+      <div className="my-12 p-6 md:p-8 bg-[#F5F5F7] rounded-vm-lg">
+        <p className="font-serif text-xl md:text-2xl text-[#1C1C1E] leading-snug mb-4">
+          ¿Quieres saber cómo está tu web hoy?
+        </p>
+        <p className="text-base text-[#636366] leading-[1.8] mb-6">
+          Revisamos el estado de tu sitio — candado, respaldos y actualizaciones — y te decimos qué está
+          urgente y qué puede esperar. Sin costo y sin compromiso.
+        </p>
+        <div className="flex flex-wrap gap-3">
+          <Link
+            to="/diagnostico"
+            className="rounded-full bg-[#5170FF] text-white text-sm font-medium px-6 py-3"
+          >
+            Diagnóstico gratuito
+          </Link>
+          <a
+            href="https://wa.me/18093586497"
+            className="rounded-full border border-[#E8E8ED] text-[#1C1C1E] text-sm font-medium px-6 py-3"
+          >
+            Escribir por WhatsApp
+          </a>
+        </div>
+      </div>
+    </>
+  )
+}
+
   function renderArticleBody() {
     switch (article.slug) {
       case 'landing-vs-sitio':
@@ -2521,6 +2744,8 @@ function BlogPost() {
         return <ArticlePromptsIA />
       case 'customer-journey-2026-cita-en-4-clics':
         return <ArticleCustomerJourney />
+      case 'seguridad-web-basica-no-expertos':
+        return <ArticleSeguridadWeb />
       default:
         return <ArticleLandingVsSitio />
   }

@@ -99,6 +99,16 @@ export const articles = [
     date: 'Septiembre 2026',
     published: true,
   },
+  {
+    id: 'seguridad-web-basica-no-expertos',
+    title: 'Seguridad web para no expertos: SSL, respaldos y protección básica',
+    category: 'Infraestructura',
+    slug: 'seguridad-web-basica-no-expertos',
+    readTime: 7,
+    excerpt: 'No hace falta ser hacker para sufrir un incidente: basta un plugin sin actualizar y un respaldo fuera de fecha. Lo mínimo que tu web necesita esta semana.',
+    date: 'Septiembre 2026',
+    published: true,
+  },
 ]
 
 export type Article = typeof articles[0]
