@@ -9,7 +9,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@rollup/rollup-android-arm64": "^4.63.4",
     "@sentry/react": "^11.0.0",
     "motion": "^12.38.0",
     "react": "^18.3.1",
