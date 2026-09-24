@@ -17,6 +17,9 @@ from datetime import datetime
 # Datos verificados citables VM (lista blanca) — evita rechazos falsos
 DATOS_VERIFICADOS = [
     "82%",      # hogares RD compran por WhatsApp (fuente: análisis mercado local)
+    "66%",      # 66% del volumen de ventas por internet en RD = retail (PCMI 2025:
+                #  "El 66 % de volumen de ventas por internet corresponde al sector retail")
+                # https://paymentscmi.com/insights/comercio-electronico-republica-dominicana-datos-clave/
     "27,8%",    # negocios RD listos para IA (Alegra 2026)
     "36,1%",    # negocios RD sin automatizar (Alegra 2026)
     "20%",      # citas dentales no-show
