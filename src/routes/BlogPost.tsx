@@ -2973,6 +2973,225 @@ function ArticleAutomatizarIa() {
   )
 }
 
+function ArticleDejamePensarlo() {
+  return (
+    <>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        <DropCap>«D</DropCap>éjame pensarlo. Yo te aviso.» Es la frase que cierra más ventas perdidas que
+        cualquier precio alto. Y casi nunca es un rechazo: es una salida elegante para una conversación que
+        no llegó al punto donde la decisión se vuelve fácil.
+      </p>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Cuando alguien te dice eso, no te está diciendo que no. Te está diciendo <strong
+        className="text-[#1C1C1E]">que todavía no tiene claro qué gana, cuándo lo gana, o qué riesgo
+        corre</strong>. Tu trabajo no es insistir más fuerte. Es encontrar cuál de las tres falta.
+      </p>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Este artículo es sobre eso: cómo tratar el «déjame pensarlo» sin perseguir a nadie, sin rebajar el
+        precio por desesperación, y sin dejar que se enfríe en silencio.
+      </p>
+
+      <Separator />
+
+      <PullQuote>
+        Nadie deja de comprar porque necesita pensar. Deja de comprar porque no sabe qué está decidiendo.
+      </PullQuote>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        POR QUÉ «DÉJAME PENSARLO» CASI NUNCA SIGNIFICA «NO PUEDO PAGARLO»
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        El precio aparece en el 100% de las conversaciones y en muy pocas es el verdadero motivo. Cuando
+        alguien sí tiene un problema real de presupuesto, lo dice: pregunta por planes, por cuotas, por
+        empezar por algo más pequeño. El «déjame pensarlo» es distinto: <strong className="text-[#1C1C1E]">es
+        una decisión que no terminó de formarse</strong>.
+      </p>
+
+      <DataBox icon="🧩">
+        <strong>Los tres motivos reales detrás del «déjame pensarlo»</strong>
+        <div className="mt-3 space-y-2 text-sm text-[#636366] leading-relaxed">
+          <p><strong className="text-[#1C1C1E]">1. No ve el problema como urgente.</strong> Entiende que necesita el servicio, pero no hoy. Sin costo de esperar, esperar es gratis.</p>
+          <p><strong className="text-[#1C1C1E]">2. No confía todavía.</strong> No confía en ti, en el resultado o en que vaya a funcionar <em>en su caso concreto</em>.</p>
+          <p><strong className="text-[#1C1C1E]">3. No entiende qué pasa después.</strong> No tiene claro el siguiente paso, quién hace qué, ni cuánto tiempo toma.</p>
+        </div>
+      </DataBox>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Fíjate que ninguna de las tres se resuelve bajando el precio. De hecho, bajarlo genera un cuarto
+        problema: <strong className="text-[#1C1C1E]">si era caro y de repente no lo es, ¿cuánto valía
+        entonces?</strong>
+      </p>
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        LO QUE NO HAY QUE HACER (AUNQUE DEN GANAS)
+      </h2>
+
+      <MiniTable rows={[
+        ["Preguntar \"¿y qué decidiste?\" cada dos días", "Convierte tu seguimiento en presión: deja de responder"],
+        ["Ofrecer un descuento para cerrar hoy", "Enseña que tu precio era negociable y que basta esperar"],
+        ["Mandar un mensaje largo recordando todo", "Suma trabajo al cliente en el momento de menos atención"],
+        ["Decir \"última oportunidad\" sin que sea cierto", "Si después sigues disponible, perdiste credibilidad"],
+        ["Desaparecer y esperar a que vuelva solo", "El olvido no es una estrategia de cierre"],
+      ]} />
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        El problema común de las cinco es el mismo: <strong className="text-[#1C1C1E]">intentan cerrar
+        moviendo <em>tu</em> urgencia, cuando lo que falta es mover la <em>suya</em></strong>.
+      </p>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        QUÉ HACER EN LOS SIGUIENTES 10 MINUTOS
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Justo después del «déjame pensarlo», hay una ventana corta donde todavía tienes toda su atención.
+        Ahí se hace una sola cosa: <strong className="text-[#1C1C1E]">preguntar por el motivo, sin
+        defenderte</strong>.
+      </p>
+
+      <CheckList items={[
+        '"Claro que sí. Para no mandarte cosas que no te sirvan: ¿qué es lo que quieres terminar de evaluar?"',
+        '"¿Es más el momento, el monto, o alguna duda de cómo funciona?"',
+        '"Si te resuelvo esa parte hoy, ¿avanzaríamos o hay algo más de fondo?"',
+      ]} />
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        La clave es el tono: no estás discutiendo, estás <strong className="text-[#1C1C1E]">ayudando a
+        ordenar una decisión</strong>. Cuando el cliente te dice el motivo real, ya no tienes que
+        persuadir: tienes que resolver una cosa concreta.
+      </p>
+
+      <DataBox icon="⏱️">
+        <strong>El costo de esperar, dicho en su idioma</strong>
+        <div className="mt-3 text-sm text-[#636366] leading-relaxed">
+          <p>No sirve "esto te conviene ya". Sirve mostrar lo que la espera le cuesta <em>a él</em>: consultas que siguen llegando sin respuesta, el tiempo de la persona que las contesta a mano, la publicidad que manda gente a un canal que no atiende. Urgencia real, no presión de venta.</p>
+        </div>
+      </DataBox>
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        EL SEGUIMIENTO QUE NO MOLESTA
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Un «déjame pensarlo» sin seguimiento es una venta regalada al competidor. Pero el seguimiento tiene
+        que aportar algo cada vez, o se convierte en ruido.
+      </p>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        La regla: <strong className="text-[#1C1C1E]">cada mensaje lleva un dato nuevo, no un
+        recordatorio</strong>. Una cifra, un ejemplo de otro cliente, una respuesta a la duda que quedó
+        abierta. Nunca "solo pasaba a saludar".
+      </p>
+
+      <CheckList items={[
+        'Día 1 — Resumen corto de lo que hablaron y el siguiente paso concreto',
+        'Día 3 — Un dato útil o un caso parecido al suyo',
+        'Día 7 — La pregunta directa: ¿lo dejamos para más adelante o lo cerramos?',
+        'Día 14 — Cierre honesto: "te escribo por última vez para no llenarte el chat"',
+      ]} />
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        El último mensaje es el más importante y el que casi nadie manda. <strong className="text-[#1C1C1E]">Un
+        cierre honesto produce respuestas</strong>: "no por ahora, escríbeme en enero" es información
+        valiosa, y además te deja bien parado.
+      </p>
+
+      <PullQuote>
+        El silencio no dice que no. Dice que nadie le puso una decisión delante.
+      </PullQuote>
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        CÓMO MEDIR SI ESTÁS MEJORANDO
+      </h2>
+
+      <CheckList items={[
+        'Porcentaje de "déjame pensarlo" que terminan con motivo identificado',
+        'Seguimientos ejecutados vs. los que tocaban (lo que casi nadie mide)',
+        'Cierres que llegaron en el toque 2 o 3, no en la primera reunión',
+        'Propuestas que se caen en silencio, sin respuesta final',
+      ]} />
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        El negocio no se mide solo por cuántas propuestas mandas, sino por <strong
+        className="text-[#1C1C1E]">cuántas de esas conversaciones llegaron a una decisión</strong> — sea
+        sí, sea no con fecha.
+      </p>
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        QUÉ HACEMOS NOSOTROS CON ESTO
+      </h2>
+
+      <ul className="space-y-3 my-8">
+        <li className="flex gap-3 text-base md:text-lg text-[#636366] leading-[1.8]">
+          <span className="text-[#5170FF] font-bold flex-shrink-0">→</span>
+          <span><strong className="text-[#1C1C1E]">Cada conversación queda registrada con su estado</strong>, para que ningún "déjame pensarlo" se pierda por olvido.</span>
+        </li>
+        <li className="flex gap-3 text-base md:text-lg text-[#636366] leading-[1.8]">
+          <span className="text-[#5170FF] font-bold flex-shrink-0">→</span>
+          <span><strong className="text-[#1C1C1E]">Seguimientos programados</strong> que salen en los días que toca, con un dato nuevo cada vez.</span>
+        </li>
+        <li className="flex gap-3 text-base md:text-lg text-[#636366] leading-[1.8]">
+          <span className="text-[#5170FF] font-bold flex-shrink-0">→</span>
+          <span><strong className="text-[#1C1C1E]">Aviso cuando un prospecto lleva días sin respuesta</strong>, antes de que se enfríe del todo.</span>
+        </li>
+        <li className="flex gap-3 text-base md:text-lg text-[#636366] leading-[1.8]">
+          <span className="text-[#5170FF] font-bold flex-shrink-0">→</span>
+          <span><strong className="text-[#1C1C1E]">Respuesta inmediata</strong> al primer contacto, que es cuando el interés está más caliente.</span>
+        </li>
+      </ul>
+
+      <PullQuote>
+        Una venta perdida en silencio no es un cliente que no quería. Es un cliente que nadie volvió a contactar.
+      </PullQuote>
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        EMPIEZA POR UNA PREGUNTA
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Abre tu WhatsApp o tu correo y busca la última persona que te dijo «déjame pensarlo». Cuenta cuántos
+        días han pasado y cuántas veces le escribiste después.
+      </p>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Si la respuesta es <strong className="text-[#1C1C1E]">"ninguna vez"</strong>, ahí tienes tu primera
+        tarea de mañana. No necesitas un discurso nuevo: necesitas una pregunta y un dato.
+      </p>
+
+      <Separator />
+
+      <div className="my-12 p-6 md:p-8 bg-[#F5F5F7] rounded-vm-lg">
+        <p className="font-serif text-xl md:text-2xl text-[#1C1C1E] leading-snug mb-4">
+          ¿Cuántas propuestas tuyas quedaron en silencio?
+        </p>
+        <p className="text-base text-[#636366] leading-[1.8] mb-6">
+          Revisamos cómo estás dando seguimiento a cada conversación y montamos el sistema para que ninguna
+          decisión quede sin respuesta.
+        </p>
+        <div className="flex flex-wrap gap-3">
+          <Link
+            to="/diagnostico"
+            className="rounded-full bg-[#5170FF] text-white text-sm font-medium px-6 py-3"
+          >
+            Diagnóstico gratuito
+          </Link>
+          <a
+            href="https://wa.me/18093586497"
+            className="rounded-full border border-[#E8E8ED] text-[#1C1C1E] text-sm font-medium px-6 py-3"
+          >
+            Escribir por WhatsApp
+          </a>
+        </div>
+      </div>
+    </>
+  )
+}
+
   function renderArticleBody() {
     switch (article.slug) {
       case 'landing-vs-sitio':
@@ -3005,6 +3224,8 @@ function ArticleAutomatizarIa() {
         return <ArticleSeguridadWeb />
       case 'automatizar-ia-negocio-que-delegar':
         return <ArticleAutomatizarIa />
+      case 'cliente-dice-dejame-pensarlo':
+        return <ArticleDejamePensarlo />
       default:
         return <ArticleLandingVsSitio />
   }

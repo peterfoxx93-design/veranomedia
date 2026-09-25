@@ -119,6 +119,16 @@ export const articles = [
     date: 'Septiembre 2026',
     published: true,
   },
+  {
+    id: 'cliente-dice-dejame-pensarlo',
+    title: 'El cliente dijo "déjame pensarlo": qué hacer en los próximos 10 minutos',
+    category: 'Ventas',
+    slug: 'cliente-dice-dejame-pensarlo',
+    readTime: 8,
+    excerpt: '"Déjame pensarlo" cierra más ventas perdidas que cualquier precio alto. Los 3 motivos reales detrás de esa frase y el seguimiento que sí produce respuesta.',
+    date: 'Septiembre 2026',
+    published: true,
+  },
 ]
 
 export type Article = typeof articles[0]
