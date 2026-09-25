@@ -2716,6 +2716,263 @@ function ArticleSeguridadWeb() {
   )
 }
 
+function ArticleAutomatizarIa() {
+  return (
+    <>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        <DropCap>H</DropCap>ay una escena que se repite en casi todo negocio pequeño: son las once de la
+        noche, el dueño sigue contestando WhatsApp, y alguien le escribió a las 3 de la tarde preguntando
+        precio. Ese mensaje lleva ocho horas sin respuesta. La persona que preguntó ya le escribió a otro.
+      </p>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Ese hueco — el tiempo entre que alguien pregunta y alguien contesta — es donde se pierden la
+        mayoría de los clientes que nunca supiste que tuviste. Y es exactamente lo que la automatización
+        resuelve bien.
+      </p>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Pero acá viene la parte que casi nadie dice: <strong className="text-[#1C1C1E]">automatizar todo
+        es peor que no automatizar nada</strong>. Un bot que responde mal espanta al cliente que sí iba a
+        comprar. Este artículo separa una cosa de la otra, con lo que hemos aprendido operando esto a diario.
+      </p>
+
+      <Separator />
+
+      <PullQuote>
+        La pregunta no es "¿puedo automatizar esto?". Es "¿el cliente nota que es un robot — y le importa?".
+      </PullQuote>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        LA REGLA QUE ORDENA TODO
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Antes de ver la lista, hay un criterio único que decide cada caso. Se llama <strong
+        className="text-[#1C1C1E]">reversibilidad y riesgo</strong>, y funciona así:
+      </p>
+
+      <DataBox icon="⚖️">
+        <strong>Automatiza lo que es repetitivo, verificable y de bajo riesgo.</strong>
+        <div className="mt-3 space-y-1.5 text-sm text-[#636366] leading-relaxed">
+          <p>· <strong className="text-[#1C1C1E]">Repetitivo:</strong> pasa muchas veces y siempre igual.</p>
+          <p>· <strong className="text-[#1C1C1E]">Verificable:</strong> si sale mal, te das cuenta rápido y se corrige.</p>
+          <p>· <strong className="text-[#1C1C1E]">Bajo riesgo:</strong> un error no te cuesta un cliente, una multa ni tu reputación.</p>
+        </div>
+      </DataBox>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Cualquier tarea que falle en uno de los tres criterios se queda con una persona — y eso no es
+        atraso técnico, es criterio comercial.
+      </p>
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        QUÉ SÍ AUTOMATIZAR (Y POR QUÉ FUNCIONA)
+      </h2>
+
+      <h3 className="font-serif text-xl md:text-2xl text-[#1C1C1E] mt-8 mb-4">
+        1. La primera respuesta, a cualquier hora
+      </h3>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        No hace falta que un robot cierre la venta. Hace falta que <strong className="text-[#1C1C1E]">nadie
+        quede sin respuesta</strong>. Un mensaje que llega a las 11 de la noche y recibe contestación en
+        segundos — aunque sea para decir "te atiendo mañana a primera hora con los detalles" — conserva al
+        cliente. El silencio lo pierde.
+      </p>
+
+      <CheckList items={[
+        'Confirmar que el mensaje llegó y que alguien lo va a atender',
+        'Recoger los datos básicos: nombre, qué necesita, cuándo',
+        'Agendar la cita o dar los horarios disponibles',
+        'Responder las 5 preguntas frecuentes de siempre (precio rango, ubicación, horario)',
+      ]} />
+
+      <h3 className="font-serif text-xl md:text-2xl text-[#1C1C1E] mt-8 mb-4">
+        2. El registro de cada contacto, sin que nadie lo apunte
+      </h3>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Este es el que más subestima la gente. Cuando todos los contactos viven en la memoria del dueño o
+        en un cuaderno, <strong className="text-[#1C1C1E]">el negocio no tiene activos, tiene
+        recuerdos</strong>. El día que esa persona falta, se va el pipeline completo.
+      </p>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Automatizar el registro significa que cada mensaje que entra queda guardado con fecha, estado y
+        siguiente paso. Suena administrativo hasta que lo necesitas: puedes ver cuántas personas
+        preguntaron este mes, cuántas siguen sin respuesta, y a quién le toca seguimiento hoy.
+      </p>
+
+      <h3 className="font-serif text-xl md:text-2xl text-[#1C1C1E] mt-8 mb-4">
+        3. El seguimiento que hoy no se hace
+      </h3>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        La mayoría de los negocios pierde clientes <strong className="text-[#1C1C1E]">no por precio, sino
+        por olvido</strong>. La persona dijo "déjame pensarlo" y nunca hubo un segundo mensaje. Eso no es
+        falta de interés del cliente: es falta de sistema del negocio.
+      </p>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Un seguimiento programado — al día 2, al día 7, al día 14 — recupera conversaciones que ya estaban
+        calientes y solo necesitaban un empujón. Es de las automatizaciones con mejor retorno, precisamente
+        porque reemplaza algo que casi nadie hace de forma constante.
+      </p>
+
+      <h3 className="font-serif text-xl md:text-2xl text-[#1C1C1E] mt-8 mb-4">
+        4. El contenido que se publica a tiempo
+      </h3>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Publicar es de las cosas que más se abandonan, porque siempre es lo último de la lista. Preparar los
+        contenidos de un mes en una sola sesión y dejar que salgan solos es mucho más realista que
+        "publicar todos los días cuando me acuerde".
+      </p>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        QUÉ NO DELEGAR NUNCA A UN BOT
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Esta lista es más importante que la anterior. Aquí es donde los negocios se queman.
+      </p>
+
+      <MiniTable rows={[
+        ["Definir el precio de un caso especial", "Compromete margen con información que el bot no tiene"],
+        ["Dar un diagnóstico médico o legal", "Riesgo real para el cliente y responsabilidad para ti"],
+        ["Aceptar un reclamo o una disculpa", "El tono ante un problema es decisión humana"],
+        ["Prometer un plazo que no controlas", "El bot no sabe si el equipo puede cumplirlo"],
+        ["Responder un cliente enojado", "Un texto automático en el peor momento empeora todo"],
+      ]} />
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Fíjate que ninguna de esas cinco es "tareas difíciles". Son <strong className="text-[#1C1C1E]">las
+        que llevan criterio, contexto o consecuencias</strong>. Un bot no falla por falta de inteligencia:
+        falla porque no tiene el contexto que tú sí tienes.
+      </p>
+
+      <DataBox icon="🚦">
+        <strong>La regla de las tres palabras: ¿esto tiene consecuencia?</strong>
+        <div className="mt-3 text-sm text-[#636366] leading-relaxed">
+          <p>Si un error en esta tarea le cuesta dinero, salud, tiempo o confianza a alguien, va con una persona. Si solo cuesta una repetición, va con el bot.</p>
+        </div>
+      </DataBox>
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        EL PASO QUE CASI TODOS SE SALTAN
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Aquí está el error que hemos visto más veces: <strong className="text-[#1C1C1E]">automatizar sin
+        haber definido primero la respuesta</strong>. Se instala el chatbot y el dueño descubre que no tiene
+        claro qué contestar cuando preguntan por precio. Entonces el bot improvisa, y el cliente recibe una
+        respuesta vaga.
+      </p>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        El orden correcto es al revés: <strong className="text-[#1C1C1E]">primero se escribe la mejor
+        respuesta humana, después se automatiza</strong>. Si no sabes contestar bien como persona, un bot
+        solo va a contestar mal más rápido.
+      </p>
+
+      <PullQuote>
+        Automatizar no arregla un proceso desordenado. Lo acelera.
+      </PullQuote>
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        CÓMO MEDIR SI ESTÁ FUNCIONANDO
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        No se mide por "qué moderno quedó". Se mide por cuatro números que sí importan:
+      </p>
+
+      <CheckList items={[
+        'Tiempo de primera respuesta: de horas a segundos',
+        'Mensajes sin contestar al final del día: debe tender a cero',
+        'Seguimientos ejecutados vs. seguimientos que tocaban',
+        'Contactos que quedan registrados con su siguiente paso',
+      ]} />
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Si esos cuatro no mejoran, la automatización es decorativa — aunque el formulario se vea muy bien.
+      </p>
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        QUÉ HACEMOS NOSOTROS CON ESTO
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        En Verano Media no vendemos "un chatbot". Montamos el sistema donde la atención automática y el
+        criterio humano conviven:
+      </p>
+
+      <ul className="space-y-3 my-8">
+        <li className="flex gap-3 text-base md:text-lg text-[#636366] leading-[1.8]">
+          <span className="text-[#5170FF] font-bold flex-shrink-0">→</span>
+          <span><strong className="text-[#1C1C1E]">Atención 24/7 con escalado.</strong> El asistente responde lo repetitivo y pasa a una persona en cuanto el tema requiere criterio.</span>
+        </li>
+        <li className="flex gap-3 text-base md:text-lg text-[#636366] leading-[1.8]">
+          <span className="text-[#5170FF] font-bold flex-shrink-0">→</span>
+          <span><strong className="text-[#1C1C1E]">Registro automático en el CRM.</strong> Cada conversación queda guardada con su estado, sin depender de la memoria de nadie.</span>
+        </li>
+        <li className="flex gap-3 text-base md:text-lg text-[#636366] leading-[1.8]">
+          <span className="text-[#5170FF] font-bold flex-shrink-0">→</span>
+          <span><strong className="text-[#1C1C1E]">Seguimientos programados</strong> que salen solos en los días que correspondan.</span>
+        </li>
+        <li className="flex gap-3 text-base md:text-lg text-[#636366] leading-[1.8]">
+          <span className="text-[#5170FF] font-bold flex-shrink-0">→</span>
+          <span><strong className="text-[#1C1C1E]">Contenido adelantado y publicado a tiempo</strong>, sin que la constancia dependa del ánimo del día.</span>
+        </li>
+      </ul>
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        POR DÓNDE EMPEZAR MAÑANA
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        No empieces por lo más vistoso. Empieza por lo más caro de dejar como está. Una forma simple de
+        encontrarlo: <strong className="text-[#1C1C1E]">revisa los últimos mensajes que no contestaste y
+        cuenta cuántos llevan más de un día ahí</strong>.
+      </p>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Ese número es tu punto de partida. Y es, casi siempre, dinero que ya pagaste por atraer y que
+        dejaste escapar por no tener con qué contestar.
+      </p>
+
+      <Separator />
+
+      <div className="my-12 p-6 md:p-8 bg-[#F5F5F7] rounded-vm-lg">
+        <p className="font-serif text-xl md:text-2xl text-[#1C1C1E] leading-snug mb-4">
+          ¿Cuántos mensajes quedaron sin respuesta este mes?
+        </p>
+        <p className="text-base text-[#636366] leading-[1.8] mb-6">
+          Revisamos cómo estás atendiendo hoy y te mostramos qué se puede automatizar sin perder el trato
+          humano en lo que de verdad importa.
+        </p>
+        <div className="flex flex-wrap gap-3">
+          <Link
+            to="/diagnostico"
+            className="rounded-full bg-[#5170FF] text-white text-sm font-medium px-6 py-3"
+          >
+            Diagnóstico gratuito
+          </Link>
+          <a
+            href="https://wa.me/18093586497"
+            className="rounded-full border border-[#E8E8ED] text-[#1C1C1E] text-sm font-medium px-6 py-3"
+          >
+            Escribir por WhatsApp
+          </a>
+        </div>
+      </div>
+    </>
+  )
+}
+
   function renderArticleBody() {
     switch (article.slug) {
       case 'landing-vs-sitio':
@@ -2746,6 +3003,8 @@ function ArticleSeguridadWeb() {
         return <ArticleCustomerJourney />
       case 'seguridad-web-basica-no-expertos':
         return <ArticleSeguridadWeb />
+      case 'automatizar-ia-negocio-que-delegar':
+        return <ArticleAutomatizarIa />
       default:
         return <ArticleLandingVsSitio />
   }

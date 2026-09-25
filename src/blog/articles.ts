@@ -109,6 +109,16 @@ export const articles = [
     date: 'Septiembre 2026',
     published: true,
   },
+  {
+    id: 'automatizar-ia-negocio-que-delegar',
+    title: 'Automatización con IA en tu negocio: qué delegar y qué no delegar nunca',
+    category: 'Automatización',
+    slug: 'automatizar-ia-negocio-que-delegar',
+    readTime: 8,
+    excerpt: 'Automatizar todo es peor que no automatizar nada. La regla para separar lo que un bot hace mejor que tú de lo que jamás debería tocar.',
+    date: 'Septiembre 2026',
+    published: true,
+  },
 ]
 
 export type Article = typeof articles[0]
