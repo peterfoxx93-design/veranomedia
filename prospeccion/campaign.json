@@ -1,239 +1,597 @@
 {
- "name": "R4-Email-5-Toques",
- "created": "2026-09-13",
- "cadence_days": [
-  0,
-  3,
-  8,
-  14,
-  21
- ],
- "from": "info.veranomediaweb@gmail.com",
- "status": "active",
- "prospects": [
-  {
-   "id": "cosmetic-dental",
-   "name": "Cosmetic Dental Center",
-   "email": "cosmeticdentalcenter.rd@gmail.com",
-   "sector": "dental",
-   "city": "Santo Domingo",
-   "subject_1": "captación de pacientes",
-   "body_1": "Hola,\n\nVi que Cosmetic Dental Center trabaja con tecnología de alta gama, Smile Design y odontología pediátrica en Santo Domingo.\n\nLe escribo porque casi toda clínica depende de referidos y de que alguien conteste el teléfono a tiempo. Cuando no pasa, ese paciente agenda en otra clínica.\n\nMontamos un sistema que trabaja solo: web que convierte, asistente IA que atiende 24/7 y captura el contacto, y un CRM que ordena cada paciente para que ninguno se pierda.\n\n¿Le hago un diagnóstico gratuito? Me toma 5 minutos. Sin compromiso.\n\nMaría — Verano Media RD\nWhatsApp: wa.me/18093586497\n\nSi no le interesa, respóndame \"no\" y no le escribo más.",
-   "sent": [
+  "name": "R4-Email-5-Toques",
+  "created": "2026-09-13",
+  "cadence_days": [
+    0,
+    3,
+    8,
+    14,
+    21
+  ],
+  "from": "hola@veranomedia.click",
+  "status": "active",
+  "prospects": [
     {
-     "toque": 1,
-     "date": "2026-09-15"
-    }
-   ],
-   "started": "2026-09-15",
-   "replied": false
-  },
-  {
-   "id": "dental-cibao",
-   "name": "Dental Cibao Spa",
-   "email": "info@dentalcibao.com",
-   "sector": "dental",
-   "city": "Santiago",
-   "subject_1": "pacientes nuevos",
-   "body_1": "Hola,\n\nVi que Dental Cibao Spa ofrece diseño de sonrisa, carillas, implantes y odontología láser, con versión en inglés para pacientes internacionales.\n\nUn paciente internacional investiga de noche y decide rápido: si el sitio no lo atiende en ese momento, se va a otra clínica.\n\nMontamos un sistema que captura y atiende solo, 24/7 — web que convierte, asistente IA que responde y toma el contacto, y un CRM que ordena cada paciente.\n\n¿Le hago un diagnóstico gratuito? Me toma 5 minutos. Sin compromiso.\n\nMaría — Verano Media RD\nWhatsApp: wa.me/18093586497\n\nSi no le interesa, respóndame \"no\" y no le escribo más.",
-   "sent": [
+      "id": "cosmetic-dental",
+      "name": "Cosmetic Dental Center",
+      "email": "cosmeticdentalcenter.rd@gmail.com",
+      "sector": "dental",
+      "city": "Santo Domingo",
+      "subject_1": "captación de pacientes",
+      "body_1": "Hola,\n\nVi que Cosmetic Dental Center trabaja con tecnología de alta gama, Smile Design y odontología pediátrica en Santo Domingo.\n\nLe escribo porque casi toda clínica depende de referidos y de que alguien conteste el teléfono a tiempo. Cuando no pasa, ese paciente agenda en otra clínica.\n\nMontamos un sistema que trabaja solo: web que convierte, asistente IA que atiende 24/7 y captura el contacto, y un CRM que ordena cada paciente para que ninguno se pierda.\n\n¿Le hago un diagnóstico gratuito? Me toma 5 minutos. Sin compromiso.\n\nMaría — Verano Media RD\nWhatsApp: wa.me/18093586497\n\nSi no le interesa, respóndame \"no\" y no le escribo más.",
+      "sent": [
+        {
+          "toque": 1,
+          "date": "2026-09-15"
+        },
+        {
+          "toque": 2,
+          "date": "2026-09-22"
+        },
+        {
+          "toque": 3,
+          "date": "2026-09-24"
+        }
+      ],
+      "started": "2026-09-15",
+      "replied": false
+    },
     {
-     "toque": 1,
-     "date": "2026-09-15"
-    }
-   ],
-   "started": "2026-09-15",
-   "replied": false
-  },
-  {
-   "id": "dentisalud",
-   "name": "Dentisalud",
-   "email": "info@dentisalud.com.do",
-   "sector": "dental",
-   "city": "Santiago",
-   "subject_1": "agenda de pacientes",
-   "body_1": "Hola,\n\nVi que Dentisalud está afiliada a la mayoría de los seguros nacionales y tiene especialistas en cada área — un diferencial fuerte en Santiago.\n\nJusto por eso sorprende que la captación dependa de que alguien conteste a tiempo. Los pacientes que escriben fuera de horario se pierden.\n\nMontamos un sistema que atiende 24/7, toma el contacto y ordena cada paciente en un CRM, para que su agenda no dependa de la suerte.\n\n¿Le hago un diagnóstico gratuito? Me toma 5 minutos. Sin compromiso.\n\nMaría — Verano Media RD\nWhatsApp: wa.me/18093586497\n\nSi no le interesa, respóndame \"no\" y no le escribo más.",
-   "sent": [
+      "id": "dental-cibao",
+      "name": "Dental Cibao Spa",
+      "email": "info@dentalcibao.com",
+      "sector": "dental",
+      "city": "Santiago",
+      "subject_1": "pacientes nuevos",
+      "body_1": "Hola,\n\nVi que Dental Cibao Spa ofrece diseño de sonrisa, carillas, implantes y odontología láser, con versión en inglés para pacientes internacionales.\n\nUn paciente internacional investiga de noche y decide rápido: si el sitio no lo atiende en ese momento, se va a otra clínica.\n\nMontamos un sistema que captura y atiende solo, 24/7 — web que convierte, asistente IA que responde y toma el contacto, y un CRM que ordena cada paciente.\n\n¿Le hago un diagnóstico gratuito? Me toma 5 minutos. Sin compromiso.\n\nMaría — Verano Media RD\nWhatsApp: wa.me/18093586497\n\nSi no le interesa, respóndame \"no\" y no le escribo más.",
+      "sent": [
+        {
+          "toque": 1,
+          "date": "2026-09-15"
+        },
+        {
+          "toque": 2,
+          "date": "2026-09-22"
+        },
+        {
+          "toque": 3,
+          "date": "2026-09-24"
+        }
+      ],
+      "started": "2026-09-15",
+      "replied": false
+    },
     {
-     "toque": 1,
-     "date": "2026-09-15"
-    }
-   ],
-   "started": "2026-09-15",
-   "replied": false
-  },
-  {
-   "id": "biodental",
-   "name": "Biodental",
-   "email": "biodental@biodental.com.do",
-   "sector": "dental",
-   "city": "Santiago",
-   "subject_1": "más citas agendadas",
-   "body_1": "Hola,\n\nVi que Biodental lleva 12 años en Santiago y trabaja con los principales seguros (ARS) — eso genera confianza, pero también mucha consulta repetida.\n\nCuando el volumen crece, el seguimiento manual se cae: mensajes sin contestar, citas sin confirmar, pacientes que no vuelven.\n\nMontamos un sistema que atiende y da seguimiento solo — web, asistente IA 24/7 y CRM con cada paciente en su estado.\n\n¿Le hago un diagnóstico gratuito? Me toma 5 minutos. Sin compromiso.\n\nMaría — Verano Media RD\nWhatsApp: wa.me/18093586497\n\nSi no le interesa, respóndame \"no\" y no le escribo más.",
-   "sent": [
+      "id": "dentisalud",
+      "name": "Dentisalud",
+      "email": "info@dentisalud.com.do",
+      "sector": "dental",
+      "city": "Santiago",
+      "subject_1": "agenda de pacientes",
+      "body_1": "Hola,\n\nVi que Dentisalud está afiliada a la mayoría de los seguros nacionales y tiene especialistas en cada área — un diferencial fuerte en Santiago.\n\nJusto por eso sorprende que la captación dependa de que alguien conteste a tiempo. Los pacientes que escriben fuera de horario se pierden.\n\nMontamos un sistema que atiende 24/7, toma el contacto y ordena cada paciente en un CRM, para que su agenda no dependa de la suerte.\n\n¿Le hago un diagnóstico gratuito? Me toma 5 minutos. Sin compromiso.\n\nMaría — Verano Media RD\nWhatsApp: wa.me/18093586497\n\nSi no le interesa, respóndame \"no\" y no le escribo más.",
+      "sent": [
+        {
+          "toque": 1,
+          "date": "2026-09-15"
+        },
+        {
+          "toque": 2,
+          "date": "2026-09-22"
+        },
+        {
+          "toque": 3,
+          "date": "2026-09-24"
+        }
+      ],
+      "started": "2026-09-15",
+      "replied": false
+    },
     {
-     "toque": 1,
-     "date": "2026-09-15"
-    }
-   ],
-   "started": "2026-09-15",
-   "replied": false
-  },
-  {
-   "id": "centro-implantologico",
-   "name": "Centro Implantológico del Cibao",
-   "email": "citas@centroimplantologicodelcibao.com",
-   "sector": "dental",
-   "city": "Santiago",
-   "subject_1": "pacientes para implantes",
-   "body_1": "Hola,\n\nVi que el Centro Implantológico del Cibao se especializa en implantes con staff propio y horario de lunes a viernes 9-6.\n\nEl implante es una decisión que el paciente investiga en la noche o el fin de semana — justo cuando la clínica está cerrada. Ahí se pierde el caso.\n\nMontamos un sistema que atiende 24/7, explica lo básico, captura el contacto y lo deja agendado en un CRM para que usted lo vea al día siguiente.\n\n¿Le hago un diagnóstico gratuito? Me toma 5 minutos. Sin compromiso.\n\nMaría — Verano Media RD\nWhatsApp: wa.me/18093586497\n\nSi no le interesa, respóndame \"no\" y no le escribo más.",
-   "sent": [
+      "id": "biodental",
+      "name": "Biodental",
+      "email": "biodental@biodental.com.do",
+      "sector": "dental",
+      "city": "Santiago",
+      "subject_1": "más citas agendadas",
+      "body_1": "Hola,\n\nVi que Biodental lleva 12 años en Santiago y trabaja con los principales seguros (ARS) — eso genera confianza, pero también mucha consulta repetida.\n\nCuando el volumen crece, el seguimiento manual se cae: mensajes sin contestar, citas sin confirmar, pacientes que no vuelven.\n\nMontamos un sistema que atiende y da seguimiento solo — web, asistente IA 24/7 y CRM con cada paciente en su estado.\n\n¿Le hago un diagnóstico gratuito? Me toma 5 minutos. Sin compromiso.\n\nMaría — Verano Media RD\nWhatsApp: wa.me/18093586497\n\nSi no le interesa, respóndame \"no\" y no le escribo más.",
+      "sent": [
+        {
+          "toque": 1,
+          "date": "2026-09-15"
+        },
+        {
+          "toque": 2,
+          "date": "2026-09-22"
+        },
+        {
+          "toque": 3,
+          "date": "2026-09-24"
+        }
+      ],
+      "started": "2026-09-15",
+      "replied": false
+    },
     {
-     "toque": 1,
-     "date": "2026-09-15"
-    }
-   ],
-   "started": "2026-09-15",
-   "replied": false
-  },
-  {
-   "id": "guzman-ariza",
-   "name": "Guzmán Ariza",
-   "email": "info@drlawyer.com",
-   "sector": "legal",
-   "city": "Santo Domingo / Punta Cana / Puerto Plata",
-   "subject_1": "consultas que no llegan",
-   "body_1": "Saludos,\n\nVi que Guzmán Ariza tiene oficinas en Santo Domingo, Punta Cana y Puerto Plata, y su sitio opera en 5 idiomas — atienden clientes internacionales.\n\nCon ese perfil, muchas consultas entran por el formulario web o fuera de horario, y se pierden si nadie las ordena y les da seguimiento.\n\nTrabajamos con firmas montando un sistema que captura cada consulta, la califica y la organiza en un CRM, sin depender de que alguien se acuerde.\n\n¿Le hago un diagnóstico gratuito? Me toma 5 minutos. Sin compromiso.\n\nMaría — Verano Media RD\nWhatsApp: wa.me/18093586497\n\nSi no le interesa, respóndame \"no\" y no le escribo más.",
-   "sent": [
+      "id": "centro-implantologico",
+      "name": "Centro Implantológico del Cibao",
+      "email": "citas@centroimplantologicodelcibao.com",
+      "sector": "dental",
+      "city": "Santiago",
+      "subject_1": "pacientes para implantes",
+      "body_1": "Hola,\n\nVi que el Centro Implantológico del Cibao se especializa en implantes con staff propio y horario de lunes a viernes 9-6.\n\nEl implante es una decisión que el paciente investiga en la noche o el fin de semana — justo cuando la clínica está cerrada. Ahí se pierde el caso.\n\nMontamos un sistema que atiende 24/7, explica lo básico, captura el contacto y lo deja agendado en un CRM para que usted lo vea al día siguiente.\n\n¿Le hago un diagnóstico gratuito? Me toma 5 minutos. Sin compromiso.\n\nMaría — Verano Media RD\nWhatsApp: wa.me/18093586497\n\nSi no le interesa, respóndame \"no\" y no le escribo más.",
+      "sent": [
+        {
+          "toque": 1,
+          "date": "2026-09-15"
+        },
+        {
+          "toque": 2,
+          "date": "2026-09-22"
+        },
+        {
+          "toque": 3,
+          "date": "2026-09-24"
+        }
+      ],
+      "started": "2026-09-15",
+      "replied": false
+    },
     {
-     "toque": 1,
-     "date": "2026-09-15"
-    }
-   ],
-   "started": "2026-09-15",
-   "replied": false
-  },
-  {
-   "id": "citymax",
-   "name": "CityMax",
-   "email": "contacto@citymax-sd.com",
-   "sector": "inmobiliaria",
-   "city": "Santo Domingo",
-   "subject_1": "interesados calificados",
-   "body_1": "Hola,\n\nVi que CityMax ya usa un asistente virtual (\"Maxy\") en su web — buen paso. El detalle es que tener el bot no es lo mismo que tener el sistema completo.\n\nLo que falta debajo: dónde queda guardado cada interesado, si alguien le da seguimiento, y cómo sabe usted a quién llamar primero.\n\nMontamos esa parte: el bot captura, el CRM ordena y clasifica por intención de compra, y usted recibe el reporte.\n\n¿Le hago un diagnóstico gratuito? Me toma 5 minutos. Sin compromiso.\n\nMaría — Verano Media RD\nWhatsApp: wa.me/18093586497\n\nSi no le interesa, respóndame \"no\" y no le escribo más.",
-   "sent": [
+      "id": "guzman-ariza",
+      "name": "Guzmán Ariza",
+      "email": "info@drlawyer.com",
+      "sector": "legal",
+      "city": "Santo Domingo / Punta Cana / Puerto Plata",
+      "subject_1": "consultas que no llegan",
+      "body_1": "Saludos,\n\nVi que Guzmán Ariza tiene oficinas en Santo Domingo, Punta Cana y Puerto Plata, y su sitio opera en 5 idiomas — atienden clientes internacionales.\n\nCon ese perfil, muchas consultas entran por el formulario web o fuera de horario, y se pierden si nadie las ordena y les da seguimiento.\n\nTrabajamos con firmas montando un sistema que captura cada consulta, la califica y la organiza en un CRM, sin depender de que alguien se acuerde.\n\n¿Le hago un diagnóstico gratuito? Me toma 5 minutos. Sin compromiso.\n\nMaría — Verano Media RD\nWhatsApp: wa.me/18093586497\n\nSi no le interesa, respóndame \"no\" y no le escribo más.",
+      "sent": [
+        {
+          "toque": 1,
+          "date": "2026-09-15"
+        },
+        {
+          "toque": 2,
+          "date": "2026-09-22"
+        },
+        {
+          "toque": 3,
+          "date": "2026-09-24"
+        }
+      ],
+      "started": "2026-09-15",
+      "replied": false
+    },
     {
-     "toque": 1,
-     "date": "2026-09-15"
-    }
-   ],
-   "started": "2026-09-15",
-   "replied": false
-  },
-  {
-   "id": "domland",
-   "name": "DOMLAND Real Estate",
-   "email": "info@domland.com",
-   "sector": "inmobiliaria",
-   "city": "Santo Domingo (Piantini)",
-   "subject_1": "compradores interesados",
-   "body_1": "Hola,\n\nVi que DOMLAND opera desde Piantini y tiene búsqueda por mapa en su sitio — buena base para mostrar propiedades.\n\nEl punto débil suele estar después del clic: el interesado llena un formulario y nadie lo sigue en el momento. En inmobiliaria, el que responde primero se queda con el cliente.\n\nMontamos un sistema que atiende al interesado al instante, captura su contacto y lo organiza en un CRM con seguimiento.\n\n¿Le hago un diagnóstico gratuito? Me toma 5 minutos. Sin compromiso.\n\nMaría — Verano Media RD\nWhatsApp: wa.me/18093586497\n\nSi no le interesa, respóndame \"no\" y no le escribo más.",
-   "sent": [
+      "id": "citymax",
+      "name": "CityMax",
+      "email": "contacto@citymax-sd.com",
+      "sector": "inmobiliaria",
+      "city": "Santo Domingo",
+      "subject_1": "interesados calificados",
+      "body_1": "Hola,\n\nVi que CityMax ya usa un asistente virtual (\"Maxy\") en su web — buen paso. El detalle es que tener el bot no es lo mismo que tener el sistema completo.\n\nLo que falta debajo: dónde queda guardado cada interesado, si alguien le da seguimiento, y cómo sabe usted a quién llamar primero.\n\nMontamos esa parte: el bot captura, el CRM ordena y clasifica por intención de compra, y usted recibe el reporte.\n\n¿Le hago un diagnóstico gratuito? Me toma 5 minutos. Sin compromiso.\n\nMaría — Verano Media RD\nWhatsApp: wa.me/18093586497\n\nSi no le interesa, respóndame \"no\" y no le escribo más.",
+      "sent": [
+        {
+          "toque": 1,
+          "date": "2026-09-15"
+        },
+        {
+          "toque": 2,
+          "date": "2026-09-22"
+        },
+        {
+          "toque": 3,
+          "date": "2026-09-24"
+        }
+      ],
+      "started": "2026-09-15",
+      "replied": false
+    },
     {
-     "toque": 1,
-     "date": "2026-09-15"
-    }
-   ],
-   "started": "2026-09-15",
-   "replied": false
-  },
-  {
-   "id": "grupo-actua",
-   "name": "Grupo Actúa Properties",
-   "email": "gustavo@grupoactua.com.do",
-   "sector": "inmobiliaria",
-   "city": "Cap Cana / Punta Cana",
-   "subject_1": "inversores para Cap Cana",
-   "body_1": "Hola,\n\nVi que Grupo Actúa está enfocado en Cap Cana: villas, proyectos y alquiler vacacional. Ese comprador es inversionista — decide comparando, no esperando.\n\nEl problema típico: llega el interesado, pide detalles de una villa a las 9pm, y hasta el día siguiente no hay respuesta. Para entonces ya está hablando con otro agente.\n\nMontamos un sistema que responde al instante, captura el contacto y lo ordena en un CRM para que su equipo cierre, no persiga.\n\n¿Le hago un diagnóstico gratuito? Me toma 5 minutos. Sin compromiso.\n\nMaría — Verano Media RD\nWhatsApp: wa.me/18093586497\n\nSi no le interesa, respóndame \"no\" y no le escribo más.",
-   "sent": [
+      "id": "domland",
+      "name": "DOMLAND Real Estate",
+      "email": "info@domland.com",
+      "sector": "inmobiliaria",
+      "city": "Santo Domingo (Piantini)",
+      "subject_1": "compradores interesados",
+      "body_1": "Hola,\n\nVi que DOMLAND opera desde Piantini y tiene búsqueda por mapa en su sitio — buena base para mostrar propiedades.\n\nEl punto débil suele estar después del clic: el interesado llena un formulario y nadie lo sigue en el momento. En inmobiliaria, el que responde primero se queda con el cliente.\n\nMontamos un sistema que atiende al interesado al instante, captura su contacto y lo organiza en un CRM con seguimiento.\n\n¿Le hago un diagnóstico gratuito? Me toma 5 minutos. Sin compromiso.\n\nMaría — Verano Media RD\nWhatsApp: wa.me/18093586497\n\nSi no le interesa, respóndame \"no\" y no le escribo más.",
+      "sent": [
+        {
+          "toque": 1,
+          "date": "2026-09-15"
+        },
+        {
+          "toque": 2,
+          "date": "2026-09-22"
+        },
+        {
+          "toque": 3,
+          "date": "2026-09-24"
+        }
+      ],
+      "started": "2026-09-15",
+      "replied": false
+    },
     {
-     "toque": 1,
-     "date": "2026-09-15"
-    }
-   ],
-   "started": "2026-09-15",
-   "replied": false
-  },
-  {
-   "id": "marka",
-   "name": "Marka Inversiones",
-   "email": "ivan@plusval.com.do",
-   "sector": "inmobiliaria",
-   "city": "Santo Domingo",
-   "subject_1": "captación de inversionistas",
-   "body_1": "Hola,\n\nVi que trabajas con Plusval en el mercado de inversión inmobiliaria. Con la cartera que manejan, el cuello de botella no suele ser la propiedad — es el seguimiento.\n\nCada interesado que pregunta y no recibe respuesta rápida es una comisión que se va a otro asesor.\n\nMontamos un sistema que atiende al instante, captura el contacto y organiza cada interesado por intención de compra, para que tú cierres y no persigas.\n\n¿Le hago un diagnóstico gratuito? Me toma 5 minutos. Sin compromiso.\n\nMaría — Verano Media RD\nWhatsApp: wa.me/18093586497\n\nSi no le interesa, respóndame \"no\" y no le escribo más.",
-   "sent": [
+      "id": "grupo-actua",
+      "name": "Grupo Actúa Properties",
+      "email": "gustavo@grupoactua.com.do",
+      "sector": "inmobiliaria",
+      "city": "Cap Cana / Punta Cana",
+      "subject_1": "inversores para Cap Cana",
+      "body_1": "Hola,\n\nVi que Grupo Actúa está enfocado en Cap Cana: villas, proyectos y alquiler vacacional. Ese comprador es inversionista — decide comparando, no esperando.\n\nEl problema típico: llega el interesado, pide detalles de una villa a las 9pm, y hasta el día siguiente no hay respuesta. Para entonces ya está hablando con otro agente.\n\nMontamos un sistema que responde al instante, captura el contacto y lo ordena en un CRM para que su equipo cierre, no persiga.\n\n¿Le hago un diagnóstico gratuito? Me toma 5 minutos. Sin compromiso.\n\nMaría — Verano Media RD\nWhatsApp: wa.me/18093586497\n\nSi no le interesa, respóndame \"no\" y no le escribo más.",
+      "sent": [
+        {
+          "toque": 1,
+          "date": "2026-09-15"
+        },
+        {
+          "toque": 2,
+          "date": "2026-09-22"
+        },
+        {
+          "toque": 3,
+          "date": "2026-09-24"
+        }
+      ],
+      "started": "2026-09-15",
+      "replied": false
+    },
     {
-     "toque": 1,
-     "date": "2026-09-15"
-    }
-   ],
-   "started": "2026-09-15",
-   "replied": false
-  },
-  {
-   "id": "renta-house",
-   "name": "Renta House",
-   "email": "rentahouserd@gmail.com",
-   "sector": "inmobiliaria",
-   "city": "Nacional / franquicias",
-   "subject_1": "franquicias y leads",
-   "body_1": "Hola,\n\nVi que Rent-A-House opera con modelo de franquicias en varios países de la región — muchos puntos de contacto y, a la vez, mucho riesgo de que un interesado se pierda entre oficinas.\n\nCuando cada franquicia capta por su lado y nada se centraliza, la casa matriz no sabe cuántos interesados reales entraron esta semana.\n\nMontamos un sistema que captura, organiza y reporta cada interesado, con visibilidad por sucursal.\n\n¿Le hago un diagnóstico gratuito? Me toma 5 minutos. Sin compromiso.\n\nMaría — Verano Media RD\nWhatsApp: wa.me/18093586497\n\nSi no le interesa, respóndame \"no\" y no le escribo más.",
-   "sent": [
+      "id": "marka",
+      "name": "Marka Inversiones",
+      "email": "ivan@plusval.com.do",
+      "sector": "inmobiliaria",
+      "city": "Santo Domingo",
+      "subject_1": "captación de inversionistas",
+      "body_1": "Hola,\n\nVi que trabajas con Plusval en el mercado de inversión inmobiliaria. Con la cartera que manejan, el cuello de botella no suele ser la propiedad — es el seguimiento.\n\nCada interesado que pregunta y no recibe respuesta rápida es una comisión que se va a otro asesor.\n\nMontamos un sistema que atiende al instante, captura el contacto y organiza cada interesado por intención de compra, para que tú cierres y no persigas.\n\n¿Le hago un diagnóstico gratuito? Me toma 5 minutos. Sin compromiso.\n\nMaría — Verano Media RD\nWhatsApp: wa.me/18093586497\n\nSi no le interesa, respóndame \"no\" y no le escribo más.",
+      "sent": [
+        {
+          "toque": 1,
+          "date": "2026-09-15"
+        },
+        {
+          "toque": 2,
+          "date": "2026-09-22"
+        },
+        {
+          "toque": 3,
+          "date": "2026-09-24"
+        }
+      ],
+      "started": "2026-09-15",
+      "replied": false
+    },
     {
-     "toque": 1,
-     "date": "2026-09-15"
-    }
-   ],
-   "started": "2026-09-15",
-   "replied": false
-  },
-  {
-   "id": "wendy-gomez",
-   "name": "The Wendy Gomez Team",
-   "email": "wgomez@plusval.com.do",
-   "sector": "inmobiliaria",
-   "city": "Santo Domingo",
-   "subject_1": "interesados en propiedades",
-   "body_1": "Hola Wendy,\n\nVi que tu equipo trabaja dentro de Plusval. Con tu volumen de propiedades, el tiempo se va en lo repetitivo: responder lo mismo, confirmar visitas, recordar a quién hay que llamar.\n\n\n\nMontamos un sistema que hace esa parte sola — atiende 24/7, captura el contacto y organiza a cada interesado por intención de compra, con seguimiento automático. Así tu equipo dedica el tiempo a cerrar.\n\n¿Le hago un diagnóstico gratuito? Me toma 5 minutos. Sin compromiso.\n\nMaría — Verano Media RD\nWhatsApp: wa.me/18093586497\n\nSi no le interesa, respóndame \"no\" y no le escribo más.",
-   "sent": [
+      "id": "renta-house",
+      "name": "Renta House",
+      "email": "rentahouserd@gmail.com",
+      "sector": "inmobiliaria",
+      "city": "Nacional / franquicias",
+      "subject_1": "franquicias y leads",
+      "body_1": "Hola,\n\nVi que Rent-A-House opera con modelo de franquicias en varios países de la región — muchos puntos de contacto y, a la vez, mucho riesgo de que un interesado se pierda entre oficinas.\n\nCuando cada franquicia capta por su lado y nada se centraliza, la casa matriz no sabe cuántos interesados reales entraron esta semana.\n\nMontamos un sistema que captura, organiza y reporta cada interesado, con visibilidad por sucursal.\n\n¿Le hago un diagnóstico gratuito? Me toma 5 minutos. Sin compromiso.\n\nMaría — Verano Media RD\nWhatsApp: wa.me/18093586497\n\nSi no le interesa, respóndame \"no\" y no le escribo más.",
+      "sent": [
+        {
+          "toque": 1,
+          "date": "2026-09-15"
+        },
+        {
+          "toque": 2,
+          "date": "2026-09-22"
+        },
+        {
+          "toque": 3,
+          "date": "2026-09-24"
+        }
+      ],
+      "started": "2026-09-15",
+      "replied": false
+    },
     {
-     "toque": 1,
-     "date": "2026-09-15"
-    }
-   ],
-   "started": "2026-09-15",
-   "replied": false
-  },
-  {
-   "id": "vita-home",
-   "name": "VITA HOME",
-   "email": "vitaadm@vitahomerd.com",
-   "sector": "inmobiliaria",
-   "city": "Punta Cana",
-   "subject_1": "inversionistas Punta Cana",
-   "body_1": "Hola,\n\nVi que VITA HOME se enfoca en acompañar a invertir correctamente el patrimonio, con operación en Punta Cana.\n\nEse cliente no compra por impulso: investiga, compara y pregunta a cualquier hora. Si la respuesta tarda, la oportunidad se enfría.\n\nMontamos un sistema que atiende al instante, captura el contacto y lo ordena en un CRM para que tu equipo dé seguimiento sin perder a nadie.\n\n¿Le hago un diagnóstico gratuito? Me toma 5 minutos. Sin compromiso.\n\nMaría — Verano Media RD\nWhatsApp: wa.me/18093586497\n\nSi no le interesa, respóndame \"no\" y no le escribo más.",
-   "sent": [
+      "id": "wendy-gomez",
+      "name": "The Wendy Gomez Team",
+      "email": "wgomez@plusval.com.do",
+      "sector": "inmobiliaria",
+      "city": "Santo Domingo",
+      "subject_1": "interesados en propiedades",
+      "body_1": "Hola Wendy,\n\nVi que tu equipo trabaja dentro de Plusval. Con tu volumen de propiedades, el tiempo se va en lo repetitivo: responder lo mismo, confirmar visitas, recordar a quién hay que llamar.\n\n\n\nMontamos un sistema que hace esa parte sola — atiende 24/7, captura el contacto y organiza a cada interesado por intención de compra, con seguimiento automático. Así tu equipo dedica el tiempo a cerrar.\n\n¿Le hago un diagnóstico gratuito? Me toma 5 minutos. Sin compromiso.\n\nMaría — Verano Media RD\nWhatsApp: wa.me/18093586497\n\nSi no le interesa, respóndame \"no\" y no le escribo más.",
+      "sent": [
+        {
+          "toque": 1,
+          "date": "2026-09-15"
+        },
+        {
+          "toque": 2,
+          "date": "2026-09-22"
+        },
+        {
+          "toque": 3,
+          "date": "2026-09-24"
+        }
+      ],
+      "started": "2026-09-15",
+      "replied": false
+    },
     {
-     "toque": 1,
-     "date": "2026-09-15"
+      "id": "vita-home",
+      "name": "VITA HOME",
+      "email": "vitaadm@vitahomerd.com",
+      "sector": "inmobiliaria",
+      "city": "Punta Cana",
+      "subject_1": "inversionistas Punta Cana",
+      "body_1": "Hola,\n\nVi que VITA HOME se enfoca en acompañar a invertir correctamente el patrimonio, con operación en Punta Cana.\n\nEse cliente no compra por impulso: investiga, compara y pregunta a cualquier hora. Si la respuesta tarda, la oportunidad se enfría.\n\nMontamos un sistema que atiende al instante, captura el contacto y lo ordena en un CRM para que tu equipo dé seguimiento sin perder a nadie.\n\n¿Le hago un diagnóstico gratuito? Me toma 5 minutos. Sin compromiso.\n\nMaría — Verano Media RD\nWhatsApp: wa.me/18093586497\n\nSi no le interesa, respóndame \"no\" y no le escribo más.",
+      "sent": [
+        {
+          "toque": 1,
+          "date": "2026-09-15"
+        }
+      ],
+      "started": "2026-09-15",
+      "replied": true,
+      "replied_at": "auto-detectado",
+      "reply_from": "karla morillo <vitaadm@vitahomerd.com>"
+    },
+    {
+      "id": "wdalaw",
+      "name": "WDALaw",
+      "email": "info@wdalaw.com",
+      "sector": "legal",
+      "city": "Santiago",
+      "subject_1": "consultas penales 24/7",
+      "body_1": "Hola, soy María de Verano Media RD.\n\nVi que WDALaw se especializa en derecho penal en Santiago.\n\nLe escribo porque la mayoría de los bufetes depende de referidos y de que alguien conteste el teléfono a tiempo. Una consulta que entra a las 8pm y no se responde, al día siguiente ya llamó a otro abogado.\n\nMontamos un sistema que trabaja solo: web que convierte, un asistente con IA que atiende 24/7 y responde en segundos (aunque sea de noche), y un CRM que ordena cada consulta para que ninguna se quede sin seguimiento.\n\n¿Le hago un diagnóstico gratuito? Me toma 5 minutos. Sin compromiso.\n\nMaría — Verano Media RD\nWhatsApp: wa.me/18093586497\nCorreo: hola@veranomedia.click\n\nSi no le interesa, respóndame \"no\" y no le escribo más.",
+      "sent": [
+        {
+          "toque": 1,
+          "date": "2026-09-24"
+        }
+      ],
+      "started": "2026-09-23",
+      "replied": false
+    },
+    {
+      "id": "raposo-asociados",
+      "name": "Raposo & Asociados",
+      "email": "raposo29@hotmail.com",
+      "sector": "legal",
+      "city": "Santiago",
+      "subject_1": "consultas fuera de horario",
+      "body_1": "Hola, soy María de Verano Media RD.\n\nVi que Raposo & Asociados lleva más de 30 años defendiendo casos en Santiago.\n\nLe escribo porque la mayoría de los bufetes depende de referidos y de que alguien conteste el teléfono a tiempo. Una consulta que entra a las 8pm y no se responde, al día siguiente ya llamó a otro abogado.\n\nMontamos un sistema que trabaja solo: web que convierte, un asistente con IA que atiende 24/7 y responde en segundos (aunque sea de noche), y un CRM que ordena cada consulta para que ninguna se quede sin seguimiento.\n\n¿Le hago un diagnóstico gratuito? Me toma 5 minutos. Sin compromiso.\n\nMaría — Verano Media RD\nWhatsApp: wa.me/18093586497\nCorreo: hola@veranomedia.click\n\nSi no le interesa, respóndame \"no\" y no le escribo más.",
+      "sent": [
+        {
+          "toque": 1,
+          "date": "2026-09-24"
+        }
+      ],
+      "started": "2026-09-23",
+      "replied": false
+    },
+    {
+      "id": "jimenez-pena",
+      "name": "Jimenez Peña Abogados",
+      "email": "info@jpadvisors.do",
+      "sector": "legal",
+      "city": "Santo Domingo",
+      "subject_1": "clientes corporativos",
+      "body_1": "Hola, soy María de Verano Media RD.\n\nVi que Jimenez Peña Abogados asesora a empresas en materia legal y fiscal en Santo Domingo.\n\nLe escribo porque una firma corporativa pierde igual que un bufete pequeño cuando una consulta entra por WhatsApp a las 9pm y nadie la contesta hasta el día siguiente. El cliente no espera: busca otro.\n\nMontamos un sistema que trabaja solo: web que convierte, un asistente con IA que atiende 24/7 y responde en segundos (aunque sea de noche), y un CRM que ordena cada consulta para que ninguna se quede sin seguimiento.\n\n¿Le hago un diagnóstico gratuito? Me toma 5 minutos. Sin compromiso.\n\nMaría — Verano Media RD\nWhatsApp: wa.me/18093586497\nCorreo: hola@veranomedia.click\n\nSi no le interesa, respóndame \"no\" y no le escribo más.",
+      "sent": [
+        {
+          "toque": 1,
+          "date": "2026-09-24"
+        }
+      ],
+      "started": "2026-09-23",
+      "replied": false
+    },
+    {
+      "id": "altura-legal",
+      "name": "ALTURA Estudio Legal",
+      "email": "info@altura.do",
+      "sector": "legal",
+      "city": "Santo Domingo",
+      "subject_1": "nuevas consultas",
+      "body_1": "Hola, soy María de Verano Media RD.\n\nVi que ALTURA Estudio Legal fue fundado por profesionales con más de 50 años de experiencia combinada en Santo Domingo.\n\nLe escribo porque la mayoría de los bufetes depende de referidos y de que alguien conteste el teléfono a tiempo. Una consulta que entra a las 8pm y no se responde, al día siguiente ya llamó a otro abogado.\n\nMontamos un sistema que trabaja solo: web que convierte, un asistente con IA que atiende 24/7 y responde en segundos (aunque sea de noche), y un CRM que ordena cada consulta para que ninguna se quede sin seguimiento. Con esa trayectoria, lo que falta no es reputación: es que esa reputación se convierta en consultas cuando alguien busca asesoría de noche.\n\n¿Le hago un diagnóstico gratuito? Me toma 5 minutos. Sin compromiso.\n\nMaría — Verano Media RD\nWhatsApp: wa.me/18093586497\nCorreo: hola@veranomedia.click\n\nSi no le interesa, respóndame \"no\" y no le escribo más.",
+      "sent": [
+        {
+          "toque": 1,
+          "date": "2026-09-24"
+        }
+      ],
+      "started": "2026-09-23",
+      "replied": false
+    },
+    {
+      "id": "francis-valerio",
+      "name": "Dr. Francis Valerio (Orthoprotesis)",
+      "email": "",
+      "sector": "dental",
+      "city": "Santiago",
+      "subject_1": "",
+      "body_1": "Saludos, soy María de Verano Media RD. Vi que en Orthoprotesis cubren tres especialidades —prótesis, implantes y ortodoncia— y que quien le atiende en la primera visita es quien le hace el tratamiento. Eso es raro de encontrar.\n\nLe escribo porque casi toda clínica depende de referidos y de que alguien conteste el teléfono a tiempo. Cuando no pasa, ese paciente agenda en otra clínica.\n\nMontamos un sistema que trabaja solo: web que convierte, asistente IA que atiende 24/7 y captura el contacto, y un CRM que ordena cada paciente para que ninguno se pierda.\n\n¿Le preparo un diagnóstico gratuito? Me toma 5 minutos. Sin compromiso.\n\nMaría — Verano Media RD\nWhatsApp: wa.me/18093586497\nCorreo: hola@veranomedia.click\n\nSi no le interesa, respóndame \"no\" y no le escribo más.",
+      "sent": [
+        {
+          "canal": "whatsapp",
+          "toque": 1,
+          "date": "2026-09-23"
+        }
+      ],
+      "started": "2026-09-23",
+      "replied": false,
+      "email_bounce": "info@orthoprotesisdental.com",
+      "channel": "whatsapp",
+      "jid": "18095817059@s.whatsapp.net",
+      "phone": "(809) 581-7059",
+      "has_whatsapp": true,
+      "nota": "su correo corporativo no tiene servidor (rebotaría) → movido a WhatsApp"
+    },
+    {
+      "id": "hugo-quezada",
+      "name": "Dr. Hugo Quezada",
+      "email": "drhugoquezada@gmail.com",
+      "sector": "dental",
+      "city": "Santiago",
+      "subject_1": "pacientes para implantes",
+      "body_1": "Hola, soy María de Verano Media RD.\n\nVi que el Dr. Hugo Quezada es especialista en implantes dentales en Santiago, con más de 5 años de experiencia.\n\nLe escribo porque casi toda clínica depende de referidos y de que alguien conteste el teléfono a tiempo. Cuando no pasa, ese paciente agenda en otra clínica.\n\nMontamos un sistema que trabaja solo: web que convierte, asistente IA que atiende 24/7 y captura el contacto, y un CRM que ordena cada paciente para que ninguno se pierda.\n\n¿Le hago un diagnóstico gratuito? Me toma 5 minutos. Sin compromiso.\n\nMaría — Verano Media RD\nWhatsApp: wa.me/18093586497\nCorreo: hola@veranomedia.click\n\nSi no le interesa, respóndame \"no\" y no le escribo más.",
+      "sent": [
+        {
+          "toque": 1,
+          "date": "2026-09-24"
+        }
+      ],
+      "started": "2026-09-23",
+      "replied": false
+    },
+    {
+      "id": "elite-dental",
+      "name": "Elite Dental Care",
+      "email": "",
+      "sector": "dental",
+      "city": "Santo Domingo",
+      "subject_1": "",
+      "body_1": "Saludos, soy María de Verano Media RD. Vi que en Elite Dental Care hacen ortodoncia y estética odontológica \"todo en un solo lugar\", con atención personalizada.\n\nLe escribo porque casi toda clínica depende de referidos y de que alguien conteste el teléfono a tiempo. Cuando no pasa, ese paciente agenda en otra clínica.\n\nMontamos un sistema que trabaja solo: web que convierte, asistente IA que atiende 24/7 y captura el contacto, y un CRM que ordena cada paciente para que ninguno se pierda.\n\n¿Le preparo un diagnóstico gratuito? Me toma 5 minutos. Sin compromiso.\n\nMaría — Verano Media RD\nWhatsApp: wa.me/18093586497\nCorreo: hola@veranomedia.click\n\nSi no le interesa, respóndame \"no\" y no le escribo más.",
+      "sent": [
+        {
+          "canal": "whatsapp",
+          "toque": 1,
+          "date": "2026-09-23"
+        }
+      ],
+      "started": "2026-09-23",
+      "replied": false,
+      "email_bounce": "info@elitedentalcare.rd",
+      "channel": "whatsapp",
+      "jid": "18299376644@s.whatsapp.net",
+      "phone": "(829) 937-6644",
+      "has_whatsapp": true,
+      "nota": "su correo corporativo no tiene servidor (rebotaría) → movido a WhatsApp"
+    },
+    {
+      "id": "denta-sana",
+      "name": "Denta Sana",
+      "email": "info@dentasana.clinic",
+      "sector": "dental",
+      "city": "Santo Domingo",
+      "subject_1": "agenda de pacientes",
+      "body_1": "Hola, soy María de Verano Media RD.\n\nVi que Denta Sana está en Piantini y trabaja distinto: evaluación completa, especialistas coordinados y la tecnología explicada con claridad antes de decidir.\n\nLe escribo porque casi toda clínica depende de referidos y de que alguien conteste el teléfono a tiempo. Cuando no pasa, ese paciente agenda en otra clínica.\n\nMontamos un sistema que trabaja solo: web que convierte, asistente IA que atiende 24/7 y captura el contacto, y un CRM que ordena cada paciente para que ninguno se pierda.\n\n¿Le hago un diagnóstico gratuito? Me toma 5 minutos. Sin compromiso.\n\nMaría — Verano Media RD\nWhatsApp: wa.me/18093586497\nCorreo: hola@veranomedia.click\n\nSi no le interesa, respóndame \"no\" y no le escribo más.",
+      "sent": [
+        {
+          "toque": 1,
+          "date": "2026-09-24"
+        }
+      ],
+      "started": "2026-09-23",
+      "replied": false
+    },
+    {
+      "id": "wa-instituto-dermatológico-domi",
+      "name": "Instituto Dermatológico Dominicano",
+      "email": "",
+      "sector": "estetica",
+      "city": "Santo Domingo",
+      "phone": "(809) 684-3257",
+      "jid": "18096843257@s.whatsapp.net",
+      "channel": "whatsapp",
+      "has_whatsapp": false,
+      "subject_1": "",
+      "body_1": "Saludos, soy María de Verano Media RD. Vi que el Instituto Dermatológico Dominicano es un centro de referencia nacional en dermatología y cirugía de piel, en Santo Domingo.\n\nLe escribo porque en salud la mayoría de las citas se pierde en el primer contacto: alguien pregunta por WhatsApp de noche, nadie contesta, y esa persona agenda en otro centro al día siguiente.\n\nMontamos un sistema que responde solo las 24 horas, captura el contacto y ordena cada consulta en un CRM para que ninguna se quede sin seguimiento.\n\n¿Le preparo un diagnóstico gratuito de su captación de pacientes? Me toma 5 minutos. Sin compromiso.\n\nMaría — Verano Media RD\nWhatsApp: wa.me/18093586497\nCorreo: hola@veranomedia.click\n\nSi no le interesa, respóndame \"no\" y no le escribo más.",
+      "sent": [],
+      "started": null,
+      "replied": false
+    },
+    {
+      "id": "wa-clínica-de-piel-dr.-bogaert",
+      "name": "Clínica de Piel Dr. Bogaert",
+      "email": "",
+      "sector": "estetica",
+      "city": "Santo Domingo",
+      "phone": "(809) 689-9911",
+      "jid": "18096899911@s.whatsapp.net",
+      "channel": "whatsapp",
+      "has_whatsapp": false,
+      "subject_1": "",
+      "body_1": "Saludos, soy María de Verano Media RD. Vi que la Clínica de Piel Dr. Bogaert hace dermatología clínica y estética en Santo Domingo, con décadas de trayectoria.\n\nLe escribo porque con esa reputación el problema no es la fama: es que se convierta en citas cuando alguien pregunta de noche o un domingo y no hay quien conteste.\n\nMontamos un sistema que atiende solo 24/7, captura el contacto y ordena cada consulta en un CRM para que ninguna se pierda.\n\n¿Le preparo un diagnóstico gratuito? Me toma 5 minutos. Sin compromiso.\n\nMaría — Verano Media RD\nWhatsApp: wa.me/18093586497\nCorreo: hola@veranomedia.click\n\nSi no le interesa, respóndame \"no\" y no le escribo más.",
+      "sent": [],
+      "started": null,
+      "replied": false
+    },
+    {
+      "id": "wa-centro-de-medicina-estética-",
+      "name": "Centro de Medicina Estética y Nutrición",
+      "email": "",
+      "sector": "estetica",
+      "city": "Santiago",
+      "phone": "829-964-1331",
+      "jid": "18299641331@s.whatsapp.net",
+      "channel": "whatsapp",
+      "has_whatsapp": true,
+      "subject_1": "",
+      "body_1": "Saludos, soy María de Verano Media RD. Vi que el Centro de Medicina Estética y Nutrición trabaja estética y nutrición en Santiago.\n\nLe escribo porque en estética el paciente decide rápido: quien responde primero, agenda. Si la consulta entra a las 9pm y nadie contesta, al día siguiente ya escribió a otro centro.\n\nMontamos un sistema que responde solo las 24 horas, captura el contacto y ordena cada paciente en un CRM para que ninguna consulta se pierda.\n\n¿Le preparo un diagnóstico gratuito? Me toma 5 minutos. Sin compromiso.\n\nMaría — Verano Media RD\nWhatsApp: wa.me/18093586497\nCorreo: hola@veranomedia.click\n\nSi no le interesa, respóndame \"no\" y no le escribo más.",
+      "sent": [
+        {
+          "canal": "whatsapp",
+          "toque": 1,
+          "date": "2026-09-19"
+        },
+        {
+          "canal": "whatsapp",
+          "toque": 2,
+          "date": "2026-09-21"
+        }
+      ],
+      "started": "2026-09-19",
+      "replied": false,
+      "body_2": "Saludos, soy María de Verano Media RD. Le escribí el sábado sobre captar más pacientes para su centro y le dejo el mensaje en una línea por si se perdió entre los demás.\n\nEn estética el paciente decide rápido: quien responde primero, agenda. Montamos un sistema que atiende 24/7, captura el contacto y ordena cada consulta en un CRM para que ninguna se pierda.\n\n¿Le preparo el diagnóstico gratuito? 5 minutos, sin compromiso.\n\nMaría — Verano Media RD\nWhatsApp: wa.me/18093586497\nCorreo: hola@veranomedia.click\n\nSi no le interesa, respóndame \"no\" y no le escribo más."
+    },
+    {
+      "id": "wa-hibu-dental",
+      "name": "Hibu Dental",
+      "email": "",
+      "sector": "dental",
+      "city": "Santiago",
+      "phone": "(829) 606-0222",
+      "jid": "18296060222@s.whatsapp.net",
+      "channel": "whatsapp",
+      "has_whatsapp": true,
+      "subject_1": "",
+      "body_1": "Saludos, soy María de Verano Media RD. Vi que Hibu Dental se presenta como clínica odontológica especializada y No.1 en armonización orofacial en Santiago.\n\nLe escribo porque casi toda clínica depende de referidos y de que alguien conteste el teléfono a tiempo. Cuando no pasa, ese paciente agenda en otra clínica.\n\nMontamos un sistema que trabaja solo: web que convierte, asistente IA que atiende 24/7 y captura el contacto, y un CRM que ordena cada paciente para que ninguno se pierda.\n\n¿Le preparo un diagnóstico gratuito? Me toma 5 minutos. Sin compromiso.\n\nMaría — Verano Media RD\nWhatsApp: wa.me/18093586497\nCorreo: hola@veranomedia.click\n\nSi no le interesa, respóndame \"no\" y no le escribo más.",
+      "sent": [
+        {
+          "canal": "whatsapp",
+          "toque": 1,
+          "date": "2026-09-19"
+        },
+        {
+          "canal": "whatsapp",
+          "toque": 2,
+          "date": "2026-09-21"
+        }
+      ],
+      "started": "2026-09-19",
+      "replied": false,
+      "replied_at": "2026-09-19 23:44",
+      "replies": [
+        {
+          "text": "Gracias por comunicarte con Hibu Dental. ¿Cómo pod...",
+          "jid": "232516661321955@lid"
+        }
+      ],
+      "body_2": "Saludos de nuevo, soy María de Verano Media RD. Le escribí el sábado y me contestó su sistema automático, así que le dejo el punto concreto en dos líneas.\n\nVi que Hibu Dental es referente en armonización orofacial en Santiago. El detalle: cada consulta que entra fuera de horario y no recibe respuesta a tiempo suele terminar agendando en otra clínica.\n\n¿Le preparo el diagnóstico gratuito? Son 5 minutos y le muestro 2-3 oportunidades concretas que hoy está dejando pasar. Sin compromiso.\n\nMaría — Verano Media RD\nWhatsApp: wa.me/18093586497\nCorreo: hola@veranomedia.click\n\nSi no le interesa, respóndame \"no\" y no le escribo más.",
+      "auto_replied": true
+    },
+    {
+      "id": "wa-bella-forma-salud-y-belleza",
+      "name": "Bella Forma Salud y Belleza",
+      "email": "",
+      "sector": "estetica",
+      "city": "Santo Domingo",
+      "phone": "(809) 276-8880",
+      "jid": "18092768880@s.whatsapp.net",
+      "channel": "whatsapp",
+      "has_whatsapp": false,
+      "subject_1": "",
+      "body_1": "Saludos, soy María de Verano Media RD. Vi el trabajo de Bella Forma en salud y belleza en Santo Domingo.\n\nLe escribo porque en estética y bienestar el cliente decide rápido: quien responde primero, agenda. Si la consulta entra de noche y nadie contesta, al día siguiente ya escribió a otro centro.\n\nMontamos un sistema que responde solo las 24 horas, captura el contacto y ordena cada cliente en un CRM para que ninguna consulta se pierda.\n\n¿Le preparo un diagnóstico gratuito? Me toma 5 minutos. Sin compromiso.\n\nMaría — Verano Media RD\nWhatsApp: wa.me/18093586497\nCorreo: hola@veranomedia.click\n\nSi no le interesa, respóndame \"no\" y no le escribo más.",
+      "sent": [],
+      "started": null,
+      "replied": false
     }
-   ],
-   "started": "2026-09-15",
-   "replied": true,
-   "replied_at": "auto-detectado",
-   "reply_from": "karla morillo <vitaadm@vitahomerd.com>"
-  }
- ],
- "send_start": "2026-09-15T09:30:00-04:00"
+  ],
+  "send_start": "2026-09-15T09:30:00-04:00"
 }
