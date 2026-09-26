@@ -26,9 +26,9 @@ export default function middleware(request: Request) {
   <meta name="description" content="${article.excerpt}" />
   <meta property="og:title" content="${article.title} — Un cuaderno de Verano" />
   <meta property="og:description" content="${article.excerpt}" />
-  <meta property="og:url" content="https://veranomedia.digital/blog/${slug}" />
+  <meta property="og:url" content="https://veranomedia.click/blog/${slug}" />
   <meta property="og:type" content="article" />
-  <meta property="og:image" content="https://veranomedia.digital/og-image.jpg" />
+  <meta property="og:image" content="https://veranomedia.click/og-image.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="${article.title}" />
   <meta name="twitter:description" content="${article.excerpt}" />
