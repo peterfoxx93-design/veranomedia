@@ -129,6 +129,16 @@ export const articles = [
     date: 'Septiembre 2026',
     published: true,
   },
+  {
+    id: 'caso-clinica-dental-0-a-20-pacientes',
+    title: 'Caso práctico: cómo una clínica dental pasó de 0 a 20 pacientes/mes online',
+    category: 'Estrategia',
+    slug: 'caso-clinica-dental-0-a-20-pacientes',
+    readTime: 8,
+    excerpt: 'No fue magia, fue orden: web lista, ficha de Google optimizada, respuesta en minutos y confirmación automática. El desglose de los 45 días.',
+    date: 'Septiembre 2026',
+    published: true,
+  },
 ]
 
 export type Article = typeof articles[0]

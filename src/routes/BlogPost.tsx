@@ -3192,6 +3192,301 @@ function ArticleDejamePensarlo() {
   )
 }
 
+function ArticleCasoClinicaDental() {
+  return (
+    <>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        <DropCap>E</DropCap>n agosto de 2026 una clínica dental llegó a nuestra mesa con una situación que
+        se repite más de lo que parece: dos sillones, agenda con huecos, y ni un solo paciente que hubiera
+        llegado por internet en el trimestre anterior. No era una clínica mala ni un negocio sin demanda.
+        Era una clínica invisible.
+      </p>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        La doctora tenía Instagram activo, tenía WhatsApp Business, y hasta había pagado una web tres años
+        atrás que ya nadie abría. En el papel tenía presencia digital. En la práctica, cuando alguien la
+        buscaba en Google a las nueve de la noche, encontraba una ficha desactualizada, sin horarios, sin
+        fotos y sin ninguna forma directa de pedir una cita.
+      </p>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Cuarenta y cinco días después, esa misma clínica cerraba el mes con 20 pacientes nuevos llegados
+        desde canales digitales. Lo que sigue es el desglose exacto de lo que se hizo, en qué orden y por
+        qué funcionó. Por privacidad no publicamos el nombre del centro, pero el proceso está completo.
+      </p>
+
+      <Separator />
+
+      <PullQuote>
+        El canal no era el problema. Era que cada pieza del viaje del cliente estaba incompleta.
+      </PullQuote>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        PUNTO DE PARTIDA: CERO LEADS DIGITALES CONFIABLES
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Antes de tocar una sola pieza, medimos. Esto es lo que encontramos el primer día:
+      </p>
+
+      <CheckList
+        items={[
+          'Sin web actualizada: el sitio cargaba en más de seis segundos en datos móviles y no tenía un solo botón de acción.',
+          'Google Maps desactualizado: horarios viejos, sin fotos del consultorio, sin servicios listados y sin enlace para agendar.',
+          'Respuestas intermitentes: los mensajes entraban al WhatsApp de la recepción y se contestaban cuando alguien podía, a veces al día siguiente.',
+          'Cero leads digitales confiables: lo poco que llegaba no se registraba, así que nadie sabía cuántos mensajes se perdían.',
+        ]}
+      />
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Ese último punto es el que más se repite en los negocios que analizamos: no hay línea base. Si no
+        sabes cuántos mensajes entran y cuántos se convierten en cita, cualquier resultado posterior es
+        cuestión de fe. Y con la fe no se maneja un negocio.
+      </p>
+
+      <DataBox icon="📈">
+        <strong>Resultado al día 45: 20 pacientes nuevos por mes llegados desde canales digitales.</strong>
+        <div className="mt-3 space-y-1.5 text-sm text-[#636366] leading-relaxed">
+          <p><strong className="text-[#1C1C1E]">Punto de partida:</strong> 0 leads digitales confiables en el trimestre previo.</p>
+          <p><strong className="text-[#1C1C1E]">Piezas cambiadas:</strong> 4, en orden. Ninguna fue un rediseño completo de marca.</p>
+          <p><strong className="text-[#1C1C1E]">Tiempo hasta el primer paciente digital:</strong> dentro de la primera semana de la web y la ficha listas.</p>
+        </div>
+      </DataBox>
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        LOS CUATRO CAMBIOS, EN EL ORDEN EXACTO
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        El orden importa más que las herramientas. Si hubiéramos empezado por el paso cuatro, el resultado
+        habría sido cero. Esto fue lo que se ejecutó, una pieza por semana.
+      </p>
+
+      <h3 className="font-serif text-xl md:text-2xl text-[#1C1C1E] mt-8 mb-4">
+        1. Una web mobile-first con un solo CTA dominante
+      </h3>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        No pedimos un sitio nuevo de veinte secciones. Pedimos una página que cargara rápido en el teléfono
+        y que tuviera una única acción evidente: pedir cita por WhatsApp. Todo lo demás — historia de la
+        clínica, biografía, convenios — quedó como información secundaria, debajo y sin competir.
+      </p>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Cuando un negocio tiene cinco botones distintos, el visitante no elige; se va. Con un solo camino,
+        la decisión deja de ser un problema y pasa a ser un reflejo.
+      </p>
+
+      <h3 className="font-serif text-xl md:text-2xl text-[#1C1C1E] mt-8 mb-4">
+        2. La ficha de Google: la pieza que casi todos descuidan
+      </h3>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        La ficha del negocio en Google Maps es, para una clínica dental, la puerta de entrada más caliente
+        que existe: quien la abre ya está buscando un dentista en su zona. Actualizamos horarios reales,
+        subimos fotos del consultorio, listamos los servicios principales y conectamos el enlace de cita.
+      </p>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Ese cambio no cuesta publicidad y se puede hacer en una tarde, pero es de los que más mueve la
+        aguja en servicios locales. La razón es simple: apareces donde la persona ya decidió buscar.
+      </p>
+
+      <h3 className="font-serif text-xl md:text-2xl text-[#1C1C1E] mt-8 mb-4">
+        3. Responder en menos de 10 minutos, incluso de madrugada
+      </h3>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Aquí es donde se ganó la mayor parte del resultado. Se montó una primera respuesta automática que
+        saluda, confirma el interés y pide los datos mínimos para agendar, con un aviso inmediato al
+        personal para que la conversación humana continúe. El detalle que suele sabotear esto: un buffer de
+        unos siete segundos antes de enviar, para que el mensaje no salga instantáneo y se sienta natural.
+      </p>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Un mensaje respondido en minutos tiene una probabilidad de convertirse en cita muchísimo más alta
+        que uno respondido al día siguiente. No es un tema de tecnología: es que la persona que pregunta
+        hoy está preguntándole también a otros dos consultorios, y cierra con el que contesta primero.
+      </p>
+
+      <h3 className="font-serif text-xl md:text-2xl text-[#1C1C1E] mt-8 mb-4">
+        4. Confirmación automática para que la cita no se caiga
+      </h3>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Conseguir la cita es la mitad del trabajo. La otra mitad es que el paciente llegue. Se activó una
+        confirmación automática antes de la cita y una ruta clara para reprogramar sin que nadie tenga que
+        perseguir a nadie por teléfono.
+      </p>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Los huecos en la agenda de una clínica casi nunca son falta de demanda. Son citas agendadas que
+        nadie confirmó y pacientes que se olvidaron. Ese recordatorio es el que convierte una agenda llena
+        en una agenda cobrada.
+      </p>
+
+      <Separator />
+
+      <PullQuote>
+        No faltaba marketing. Faltaba secuencia: presencia, claridad, respuesta y medición. En ese orden.
+      </PullQuote>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        EL ANTES Y EL DESPUÉS, SÍNTOMA POR SÍNTOMA
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Si reconoces tu negocio en la columna izquierda, ya sabes por dónde empezar:
+      </p>
+
+      <MiniTable
+        rows={[
+          ['Web sin llamado a la acción', 'Una sola acción visible: pedir cita por WhatsApp'],
+          ['Ficha de Google desactualizada', 'Horarios reales, fotos, servicios y enlace de cita'],
+          ['Mensajes contestados tarde', 'Primera respuesta en minutos, con aviso al personal'],
+          ['Citas que no se presentan', 'Confirmación automática antes de la cita'],
+        ]}
+      />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        POR QUÉ FUNCIONÓ (Y POR QUÉ CASI NADIE LO EJECUTA ASÍ)
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        La causa raíz era una sola: cada estación del viaje del cliente estaba a medias. La web existía
+        pero no pedía nada. La ficha existía pero mentía en los horarios. El WhatsApp existía pero
+        respondía tarde. La agenda existía pero no confirmaba.
+      </p>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Cuando cuatro piezas están al 40%, el resultado no es 40%. Es cero, porque el cliente se rompe en la
+        primera pieza débil que encuentra. Por eso los negocios que invierten en publicidad sin arreglar
+        esto sienten que <strong className="text-[#1C1C1E]">pagan por tráfico que se fuga</strong>: no es
+        que la publicidad no funcione, es que el balde tiene agujeros.
+      </p>
+
+      <DataBox icon="🧭">
+        La secuencia que sostiene el resultado, y que aplica a cualquier negocio de servicio:
+        <div className="mt-3 space-y-1.5 text-sm text-[#636366] leading-relaxed">
+          <p><strong className="text-[#1C1C1E]">Presencia:</strong> que te encuentren cuando te buscan.</p>
+          <p><strong className="text-[#1C1C1E]">Claridad:</strong> que entiendan qué haces y cómo pedirte algo, en menos de diez segundos.</p>
+          <p><strong className="text-[#1C1C1E]">Respuesta:</strong> que la conversación empiece en minutos, no en días.</p>
+          <p><strong className="text-[#1C1C1E]">Medición:</strong> que sepas cuántos entraron y cuántos cerraron.</p>
+        </div>
+      </DataBox>
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        LOS CUATRO NÚMEROS QUE EMPEZAMOS A MIRAR
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Este es el tablero mínimo que le dejamos a la clínica. Cuatro números, revisados una vez por semana:
+      </p>
+
+      <MiniTable
+        rows={[
+          ['Mensajes que entran', 'Cuántas personas escribieron por web o WhatsApp'],
+          ['Tiempo de primera respuesta', 'Minutos entre el mensaje y el primer contacto'],
+          ['Citas agendadas', 'De esos mensajes, cuántos terminaron en agenda'],
+          ['Citas confirmadas', 'Cuántas de las agendadas se presentaron'],
+        ]}
+      />
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Con estos cuatro datos, cualquier decisión deja de ser una apuesta. Si los mensajes suben y las
+        citas no, el problema está en la respuesta o en la oferta. Si las citas suben y las confirmaciones
+        no, el problema está en el recordatorio. Cada número te dice dónde meter la mano.
+      </p>
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        LO QUE NO HICIMOS (Y POR QUÉ)
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Tan importante como lo que se ejecutó es lo que se descartó a propósito:
+      </p>
+
+      <CheckList
+        items={[
+          'No empezamos con publicidad pagada. Primero se arregla el balde; después se abre la llave.',
+          'No lanzamos un rediseño de marca. El problema no era la estética, era el camino.',
+          'No montamos un CRM de doce módulos. Se usó lo mínimo que el personal podía aprender en una tarde.',
+          'No publicamos contenido a diario. Con la ficha bien armada y la web respondiendo, el tráfico llegaba solo.',
+        ]}
+      />
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Cada una de esas tentaciones habría retrasado el resultado. Un rediseño de marca toma semanas y no
+        agrega un paciente. La publicidad sin sistema de captura quema presupuesto. La herramienta
+        complicada se abandona en el segundo mes.
+      </p>
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        QUÉ PUEDES REPLICAR ESTA SEMANA
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        No necesitas todos los módulos el mismo mes. Necesitas este orden:
+      </p>
+
+      <CheckList
+        items={[
+          'Abre tu web en el teléfono y cronometra: si tarda más de tres segundos, esa es tu prioridad.',
+          'Cuenta los botones o llamados a la acción de tu página principal. Si hay más de dos, deja uno.',
+          'Busca tu negocio en Google Maps como si fueras un cliente. Si los horarios o las fotos están mal, corrígelos hoy.',
+          'Mide por una semana cuántos mensajes entran y en cuánto tiempo se contestan. Sin ese número, no hay decisión posible.',
+          'Antes de invertir un peso en anuncios, verifica que cada mensaje que entre reciba respuesta en menos de diez minutos.',
+        ]}
+      />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        LA PREGUNTA INCÓMODA
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        La clínica de este caso no tenía un problema de talento ni de demanda. Tenía un problema de orden,
+        y el orden no se resuelve comprando más: se resuelve ejecutando una pieza por semana en la
+        secuencia correcta.
+      </p>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Pregúntate una sola cosa:
+        <strong className="text-[#1C1C1E]"> si alguien te busca ahora mismo desde el celular, ¿la
+        siguiente acción es evidente, rápida y en tu agenda?</strong> Si la respuesta es no, ahí está el
+        próximo paciente que vas a perder — y no es un problema de marketing.
+      </p>
+
+      <Separator />
+
+      <div className="my-12 p-6 md:p-8 bg-[#F5F5F7] rounded-vm-lg">
+        <p className="font-serif text-xl md:text-2xl text-[#1C1C1E] leading-snug mb-4">
+          Este caso podría ser el tuyo.
+        </p>
+        <p className="text-base text-[#636366] leading-[1.8] mb-6">
+          Revisamos tu presencia digital como lo hicimos con esta clínica — web, ficha de Google, respuesta
+          y medición — y te decimos qué está frenando la captación. Sin costo y sin compromiso.
+        </p>
+        <div className="flex flex-wrap gap-3">
+          <Link
+            to="/diagnostico"
+            className="rounded-full bg-[#5170FF] text-white text-sm font-medium px-6 py-3"
+          >
+            Diagnóstico gratuito
+          </Link>
+          <a
+            href="https://wa.me/18093586497"
+            className="rounded-full border border-[#E8E8ED] text-[#1C1C1E] text-sm font-medium px-6 py-3"
+          >
+            Escribir por WhatsApp
+          </a>
+        </div>
+      </div>
+    </>
+  )
+}
+
   function renderArticleBody() {
     switch (article.slug) {
       case 'landing-vs-sitio':
@@ -3226,6 +3521,8 @@ function ArticleDejamePensarlo() {
         return <ArticleAutomatizarIa />
       case 'cliente-dice-dejame-pensarlo':
         return <ArticleDejamePensarlo />
+      case 'caso-clinica-dental-0-a-20-pacientes':
+        return <ArticleCasoClinicaDental />
       default:
         return <ArticleLandingVsSitio />
   }
