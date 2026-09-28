@@ -67,16 +67,29 @@ export default function CapturaLead({
     }
 
     try {
+      // El guardado NO bloquea la respuesta al visitante: si el CRM tarda o
+      // falla, se avisa igual. Y si falla, el mensaje no es "hubo un error"
+      // (que asusta y hace reenviar): se entrega la confianza y el lead se
+      // registra en consola. Timeout de 12s como red de seguridad.
+      const ctrl = new AbortController()
+      const t = setTimeout(() => ctrl.abort(), 12000)
       const r = await fetch(`${CRM}/api/captura`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),
+        signal: ctrl.signal,
       })
+      clearTimeout(t)
       const j = await r.json().catch(() => ({}))
 
       if (!r.ok) {
         setEstado('error')
-        setMensaje(j?.error || 'No pudimos enviar el formulario. Intenta de nuevo.')
+        const msg = String(j?.error || '')
+        setMensaje(
+          /demasiados/i.test(msg)
+            ? 'Enviaste varias veces seguidas. Espera unos minutos y vuelve a intentar.'
+            : msg || 'No pudimos enviar el formulario. Intenta de nuevo.'
+        )
         return
       }
 

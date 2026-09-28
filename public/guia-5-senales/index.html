@@ -279,32 +279,39 @@ async function submitForm(){
   const err=document.getElementById('errorMsg');
   if(!name||!phone){err.style.display='block';return}
   err.style.display='none';
-  const btn=document.querySelector('#formContent .btn');btn.disabled=true;btn.textContent='Enviando...';
-  // FIX 2026-09-28:
-  //  1) El endpoint viejo (veranomedia-crm.vercel.app/api/maria/lead) exigía el
-  //     header X-VM-Secret con el valor por defecto hardcodeado, que quedaba
-  //     expuesto en este HTML público -> cualquiera podía inyectar leads falsos.
-  //  2) El .catch(()=>{}) mostraba "éxito" aunque el envío fallara: falso positivo
-  //     silencioso (el lead se perdía y el visitante creía haberlo enviado).
-  // Ahora usa el endpoint público /api/captura (sin secret) y SOLO muestra éxito
-  // si el servidor confirmó con 2xx. Si falla, muestra error y ofrece WhatsApp.
-  try{
-    const r=await fetch('https://crm.veranomedia.click/api/captura',{
-      method:'POST',
-      headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({name,phone,email,business:'Lead Magnet Guia 5 senales',notes:'Descargo la guia 5 senales',form:'lead-magnet'})
-    });
-    if(!r.ok){
-      const j=await r.json().catch(()=>({}));
-      throw new Error(j.error||'No se pudo enviar');
-    }
+  const btn=document.querySelector('#formContent .btn');
+  btn.disabled=true;btn.textContent='Enviando…';
+
+  // Muestra la pantalla de descarga. La guia es gratis: el visitante se la
+  // lleva SIEMPRE, aunque el CRM falle. Caso real 2026-09-28: Pedro Felix
+  // relleno el formulario 5 veces porque el error le decia "no pudimos enviar"
+  // mientras los leads SI se guardaban, y al quinto el rate limit lo corto.
+  // Perdio la guia y nosotros quedamos como un sitio roto.
+  function entregar(){
     document.getElementById('formContent').style.display='none';
     document.getElementById('successContent').style.display='block';
-  }catch(e){
-    btn.disabled=false;btn.textContent='Enviar y ver las soluciones →';
-    err.textContent='No pudimos enviar el formulario. Intenta de nuevo o escríbenos por WhatsApp: 809-358-6497';
-    err.style.display='block';
   }
+
+  // El guardado va en segundo plano: NO se espera para entregar el PDF.
+  // Si el POST falla (red, rate limit, CRM caido), el visitante ya tiene su
+  // guia y nosotros perdemos el lead — que es lo correcto: no se castiga al
+  // visitante por un fallo nuestro. Queda constancia en la consola del sitio
+  // para poder detectarlo, pero NUNCA se le muestra un error a quien solo
+  // queria la guia.
+  const guardar = fetch('https://crm.veranomedia.click/api/captura',{
+    method:'POST',
+    headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({name,phone,email,business:'Lead Magnet Guia 5 senales',notes:'Descargo la guia 5 senales',form:'lead-magnet'})
+  }).catch(()=>null);
+
+  // La entrega no espera al CRM: si tarda mas de 2s, se muestra igual.
+  const timeout = new Promise((res)=>setTimeout(res,2000));
+  await Promise.race([guardar, timeout]);
+  entregar();
+
+  guardar.then((r)=>{
+    if(!r || !r.ok) console.warn('[lead-magnet] lead no guardado:', name, phone);
+  });
 }
 </script>
 </body>
