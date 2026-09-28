@@ -5,7 +5,7 @@
       "destination": "/api/blog-og?slug=:slug"
     },
     {
-      "source": "/(.*)",
+      "source": "/((?!guia-5-senales|guide|assets|og-image).*)",
       "destination": "/index.html"
     }
   ]
