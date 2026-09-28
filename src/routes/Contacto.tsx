@@ -1,5 +1,6 @@
 import { motion, useInView } from 'motion/react'
 import { useRef } from 'react'
+import CapturaLead from '../components/CapturaLead'
 
 export default function Contacto() {
   const ref = useRef(null)
@@ -75,6 +76,26 @@ export default function Contacto() {
             className="mt-10 text-sm text-[#8E8E93]">
             Sin compromiso. Sin spam. Solo valor real para tu negocio.
           </motion.div>
+        </div>
+      </section>
+
+      {/*
+        FORMULARIO DE CONTACTO (puesto MAGNET).
+        Esta página prometía "Diagnóstico Digital Gratuito" y solo ofrecía
+        WhatsApp y mailto. Quien prefería dejar sus datos en un formulario se
+        iba sin dejar rastro. Ahora puede capturarse aquí y entra al CRM.
+      */}
+      <section id="formulario" className="bg-white py-20 md:py-24 scroll-mt-24">
+        <div className="container-vm max-w-[700px]">
+          <div className="text-center mb-8">
+            <h2 className="text-heading-lg text-[#1C1C1E] mb-3">
+              Déjanos tus datos
+            </h2>
+            <p className="text-lg text-[#8E8E93]">
+              Te contactamos en menos de 24 horas con tu diagnóstico.
+            </p>
+          </div>
+          <CapturaLead form="contacto" cta="Enviar y pedir mi diagnóstico" />
         </div>
       </section>
     </div>

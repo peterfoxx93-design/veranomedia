@@ -1,6 +1,6 @@
 import { motion, useInView } from 'motion/react'
 import { useRef } from 'react'
-import { Link } from 'react-router-dom'
+import CapturaLead from '../components/CapturaLead'
 
 const bullets = [
   'Respuesta 24/7 sin demoras',
@@ -69,12 +69,12 @@ export default function Diagnostico() {
             transition={{ delay: 0.4 }}
             className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
           >
-            <Link
-              to="/contacto"
+            <a
+              href="#formulario"
               className="bg-[#5170FF] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#5170FF]/90 transition-all duration-300 shadow-lg shadow-[#5170FF]/25 hover:shadow-[#5170FF]/40 hover:-translate-y-1 inline-flex items-center gap-2"
             >
               Solicitar diagnóstico gratuito
-            </Link>
+            </a>
             <a
               href="https://wa.me/18093586497"
               target="_blank"
@@ -84,6 +84,27 @@ export default function Diagnostico() {
               Escríbenos por WhatsApp
             </a>
           </motion.div>
+        </div>
+      </section>
+
+      {/*
+        FORMULARIO DE CAPTURA (puesto MAGNET).
+        Antes: el botón llevaba a /contacto, que no tenía formulario -> el embudo
+        moría ahí y no se capturaba ningún dato. Ahora el formulario está en la
+        propia página, debajo del pliegue, y envía al CRM (/api/captura).
+      */}
+      <section id="formulario" className="bg-white py-20 md:py-28 scroll-mt-24">
+        <div className="container-vm">
+          <div className="text-center max-w-2xl mx-auto mb-10">
+            <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight text-black">
+              Pide tu diagnóstico gratuito
+            </h2>
+            <p className="text-black/60 text-lg mt-4">
+              Revisamos tu negocio, medimos qué te está frenando y te entregamos un
+              plan concreto. En menos de 20 minutos.
+            </p>
+          </div>
+          <CapturaLead form="diagnostico" />
         </div>
       </section>
     </div>

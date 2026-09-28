@@ -4,6 +4,7 @@ import { Link, useParams } from 'react-router-dom'
 import { articles } from '../blog/articles'
 import KommentSection from '../components/KommentSection'
 import ShareButtons from '../components/ShareButtons'
+import CapturaLead from '../components/CapturaLead'
 
 // ═══════════════════════════════════════════════════════════
 // Componentes editoriales reutilizables
@@ -3586,6 +3587,22 @@ function ArticleCasoClinicaDental() {
           <div className="prose-custom">
             {renderArticleBody()}
             <ShareButtons slug={article.slug} title={article.title} excerpt={article.excerpt} />
+          </div>
+
+          {/*
+            CAPTURA AL FINAL DEL ARTÍCULO (puesto MAGNET).
+            El lector llegó al final = máxima receptividad. Antes, el artículo
+            terminaba y no pasaba nada: el tráfico se iba sin dejar rastro y no
+            había forma de volver a contactarlo. Aquí es donde el blog (que ya
+            funciona) se conecta con la lista de correo.
+          */}
+          <div className="mt-12 pt-10 border-t border-[#E8E8ED]/60">
+            <CapturaLead
+              form="blog"
+              compacto
+              titulo="¿Te sirvió este artículo?"
+              cta="Quiero mi diagnóstico gratuito"
+            />
           </div>
         </div>
       </article>
