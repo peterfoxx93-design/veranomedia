@@ -15,7 +15,11 @@
 import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
 
-export const config = { runtime: 'edge' }
+// Runtime Node (no Edge): este handler lee dist/index.html del disco con
+// node:fs, y el runtime Edge no soporta esos módulos — Vercel rechazaba el
+// deploy entero con "The Edge Function middleware is referencing unsupported
+// modules: node:fs, node:path".
+export const config = { runtime: 'nodejs' }
 
 const CRAWLERS = /LinkedInBot|facebookexternalhit|Twitterbot|WhatsApp|Slack|Discord|Pinterest|TelegramBot|bot|crawler|spider|preview/i
 const SITE = 'https://veranomedia.click'
