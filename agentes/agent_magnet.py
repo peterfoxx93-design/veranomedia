@@ -134,9 +134,14 @@ def guardar_estado(e: dict) -> None:
 
 
 def main() -> int:
-    ap = argparse.ArgumentParser(description="MAGNET — motor de captura VM")
+    ap = argparse.ArgumentParser(description="MAGNET — captura de leads VM")
     ap.add_argument("--dias", type=int, default=2, help="ventana en días (default 2)")
     ap.add_argument("--test-wa", action="store_true", help="probar la alerta WhatsApp")
+    ap.add_argument(
+        "--json",
+        action="store_true",
+        help="salida estructurada para que Neo (u otro agente) la lea y actúe",
+    )
     args = ap.parse_args()
 
     if args.test_wa:
@@ -163,15 +168,21 @@ def main() -> int:
     ayer = hoy - timedelta(days=1)
 
     # --- desglose por día y por fuente ------------------------------------
+    # OJO: la API del CRM devuelve `created_at` (snake_case), no `createdAt`.
+    # Con el nombre equivocado el bucle se saltaba TODOS los leads y el reporte
+    # decía "0 capturas" aunque hubiera 8 — mentía por omisión. Se aceptan las
+    # dos formas por si el CRM cambia.
     por_fuente: dict[str, int] = {}
     por_dia: dict[str, int] = {}
+    sin_fecha = 0
     for l in leads:
-        creado = (l.get("createdAt") or "")[:10]
-        if not creado:
-            continue
-        por_dia[creado] = por_dia.get(creado, 0) + 1
+        creado = (l.get("created_at") or l.get("createdAt") or "")[:10]
         f = l.get("source") or "sin_fuente"
         por_fuente[f] = por_fuente.get(f, 0) + 1
+        if not creado:
+            sin_fecha += 1
+            continue
+        por_dia[creado] = por_dia.get(creado, 0) + 1
 
     entrados_ayer = por_dia.get(ayer.isoformat(), 0)
     entrados_hoy = por_dia.get(hoy.isoformat(), 0)
@@ -185,7 +196,74 @@ def main() -> int:
         and l.get("status") != "ganado"
     ]
 
-    # --- reporte ----------------------------------------------------------
+    # --- salida estructurada (para que Neo u otro agente la lea) -----------
+    # Los scripts devuelven datos, no prosa: quien los consuma (yo, un agente
+    # con prompt, un dashboard) decide qué hacer. La prosa va aparte.
+    if args.json:
+        salida = {
+            "agente": "magnet",
+            "ts": datetime.now(RD).isoformat(),
+            "ventana_dias": args.dias,
+            "leads": {
+                "total": len(leads),
+                "ayer": entrados_ayer,
+                "hoy": entrados_hoy,
+                "sin_fecha": sin_fecha,
+                "por_fuente": por_fuente,
+                "por_dia": por_dia,
+            },
+            "calientes": [
+                {
+                    "id": l.get("id"),
+                    "name": l.get("name"),
+                    "business": l.get("business"),
+                    "score": l.get("score"),
+                    "contacto": l.get("phone") or l.get("email"),
+                    "status": l.get("status"),
+                }
+                for l in calientes
+            ],
+            "hallazgos": [],
+            "recomendaciones": [],
+        }
+
+        # Hallazgos: lo que un humano no vería de un vistazo.
+        if not leads:
+            salida["hallazgos"].append("Cero leads en la ventana.")
+            salida["recomendaciones"].append(
+                "Verificar que los formularios de captura del sitio siguen publicados."
+            )
+        if por_fuente:
+            mejor = max(por_fuente.items(), key=lambda x: x[1])
+            salida["hallazgos"].append(
+                f"La fuente con más leads es '{mejor[0]}' ({mejor[1]})."
+            )
+            if len(por_fuente) > 1 and mejor[1] >= 2:
+                salida["recomendaciones"].append(
+                    f"Concentrar esfuerzo en '{mejor[0]}': es la que más convierte."
+                )
+        if calientes:
+            salida["hallazgos"].append(
+                f"{len(calientes)} lead(s) caliente(s) sin atender."
+            )
+            salida["recomendaciones"].append(
+                "Contactar los calientes hoy mismo: el interés se enfría en días."
+            )
+        if entrados_hoy == 0 and entrados_ayer == 0 and not sin_fecha:
+            salida["recomendaciones"].append(
+                "Dos días sin captura: revisar si hay tráfico llegando a las páginas."
+            )
+        if sin_fecha and sin_fecha == len(leads):
+            salida["hallazgos"].append(
+                f"Ninguno de los {len(leads)} leads trae fecha legible: "
+                "revisar el campo created_at en la API del CRM."
+            )
+
+        print(json.dumps(salida, ensure_ascii=False, indent=2))
+        log(f"json: {len(leads)} leads, {len(calientes)} calientes")
+        return 0
+
+    # --- reporte humano ---------------------------------------------------
     lineas = [
         f"🧲 MAGNET — captura de leads ({args.dias}d)",
         "",

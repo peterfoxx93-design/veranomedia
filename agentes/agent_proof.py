@@ -199,6 +199,11 @@ def escribir_md(pruebas: list[dict]) -> None:
 def main() -> int:
     ap = argparse.ArgumentParser(description="PROOF — banco de pruebas VM")
     ap.add_argument("--solo-listar", action="store_true")
+    ap.add_argument(
+        "--json",
+        action="store_true",
+        help="salida estructurada para que Neo (u otro agente) la lea y actúe",
+    )
     args = ap.parse_args()
 
     if args.solo_listar:
@@ -209,6 +214,13 @@ def main() -> int:
             if isinstance(cargado, list):
                 pruebas = [p for p in cargado if isinstance(p, dict)]
         except Exception:
+            if args.json:
+                print(json.dumps({
+                    "agente": "proof", "nuevos": 0, "pruebas": [],
+                    "hallazgos": ["No hay banco todavía."],
+                    "recomendaciones": ["Correr sin --solo-listar para generarlo."],
+                }, ensure_ascii=False, indent=2))
+                return 0
             print("(no hay banco todavía — corre sin --solo-listar)")
             return 0
     else:
@@ -225,6 +237,26 @@ def main() -> int:
         return 1
 
     verified = sum(1 for p in pruebas if p.get("band") == "verified")
+    possible = sum(1 for p in pruebas if p.get("band") == "possible")
+
+    if args.json:
+        print(json.dumps({
+            "agente": "proof",
+            "ts": datetime.now(RD).isoformat(),
+            "total": len(pruebas),
+            "verificadas": verified,
+            "sin_verificar": possible,
+            "archivo_json": BANCO,
+            "archivo_md": BANCO_MD,
+            "pruebas": pruebas,
+            "hallazgos": [f"{len(pruebas)} pruebas en el banco, {verified} verificadas."],
+            "recomendaciones": (
+                ["Hay pruebas sin verificar: no usarlas en contenido público."]
+                if possible else []
+            ),
+        }, ensure_ascii=False, indent=2))
+        return 0
+
     print(f"📚 BANCO DE PRUEBAS VM — {len(pruebas)} pruebas ({verified} verificadas)")
     print()
     for p in pruebas:

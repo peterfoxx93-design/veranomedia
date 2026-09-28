@@ -151,31 +151,45 @@ def main() -> int:
     ap.add_argument("--ciudad", default="Santo Domingo")
     ap.add_argument("--cantidad", type=int, default=20)
     ap.add_argument("--sin-places", action="store_true", help="no usar Places")
+    ap.add_argument(
+        "--json",
+        action="store_true",
+        help="salida estructurada para que Neo (u otro agente) la lea y actúe",
+    )
     args = ap.parse_args()
 
     verticales = sorted(VERTICALES) if args.vertical == "todas" else [args.vertical]
     nombres_ya, tels_ya = existentes()
 
-    print(f"🏹 HUNTER — buscando prospectos en {args.ciudad}")
-    print(f"   verticales: {', '.join(verticales)}")
-    print(f"   ya en la campaña: {len(nombres_ya)} nombres / {len(tels_ya)} teléfonos")
-    print()
+    # En modo --json la salida debe ser JSON PURO: cualquier print de progreso
+    # rompería el parseo de quien lo consuma (yo, un agente, un dashboard).
+    # Los mensajes de avance van a stderr, que no contamina el stdout.
+    def aviso(txt: str) -> None:
+        if args.json:
+            print(txt, file=sys.stderr)
+        else:
+            print(txt)
+
+    aviso(f"🏹 HUNTER — buscando prospectos en {args.ciudad}")
+    aviso(f"   verticales: {', '.join(verticales)}")
+    aviso(f"   ya en la campaña: {len(nombres_ya)} nombres / {len(tels_ya)} teléfonos")
+    aviso("")
 
     encontrados: list[dict] = []
     fallos: list[str] = []
 
     for v in verticales:
         categoria = VERTICALES[v]
-        print(f"  ▸ {categoria}…")
+        aviso(f"  ▸ {categoria}…")
         if args.sin_places:
             fallos.append(f"{v}: se pidió --sin-places (vía web no implementada aún)")
-            print("     ⚠️ vía web aún no implementada")
+            aviso("     ⚠️ vía web aún no implementada")
             continue
 
         res, motivo = buscar_places(categoria, args.ciudad, args.cantidad)
         if motivo:
             # NO se traga el error: se imprime y se acumula para el reporte
-            print(f"     ❌ {motivo}")
+            aviso(f"     ❌ {motivo}")
             fallos.append(f"{v}: {motivo}")
             continue
 
@@ -204,10 +218,23 @@ def main() -> int:
                 "fuente": "google-places",
             })
             nuevos += 1
-        print(f"     ✅ {nuevos} nuevo(s) de {len(res)} resultado(s)")
+        aviso(f"     ✅ {nuevos} nuevo(s) de {len(res)} resultado(s)")
 
-    print()
+    aviso("")
     if not encontrados:
+        if args.json:
+            print(json.dumps({
+                "agente": "hunter",
+                "ts": datetime.now(RD).isoformat(),
+                "ciudad": args.ciudad,
+                "verticales": verticales,
+                "nuevos": 0,
+                "prospectos": [],
+                "hallazgos": list(fallos),
+                "recomendaciones": [],
+                "bloqueado_por": fallos[0] if fallos else "",
+            }, ensure_ascii=False, indent=2))
+            return 1
         print("⚠️ HUNTER no encontró prospectos nuevos.")
         if fallos:
             print()
@@ -221,6 +248,35 @@ def main() -> int:
     destino = os.path.join(OUT_DIR, f"prospectos-nuevos-{hoy}.json")
     with open(destino, "w", encoding="utf-8") as f:
         json.dump(encontrados, f, ensure_ascii=False, indent=2)
+
+    if args.json:
+        por_vertical: dict[str, int] = {}
+        for p in encontrados:
+            v = str(p.get("vertical") or "sin_vertical")
+            por_vertical[v] = por_vertical.get(v, 0) + 1
+        con_tel = sum(1 for p in encontrados if p.get("phone"))
+        con_web = sum(1 for p in encontrados if p.get("website"))
+        print(json.dumps({
+            "agente": "hunter",
+            "ts": datetime.now(RD).isoformat(),
+            "ciudad": args.ciudad,
+            "verticales": verticales,
+            "nuevos": len(encontrados),
+            "por_vertical": por_vertical,
+            "con_telefono": con_tel,
+            "con_web": con_web,
+            "archivo": destino,
+            "prospectos": encontrados,
+            "hallazgos": [
+                f"{len(encontrados)} prospectos nuevos en {args.ciudad}.",
+                f"{con_tel} traen teléfono (contactables por WhatsApp/llamada).",
+            ],
+            "recomendaciones": [
+                "Revisar la lista antes de meterla a la campaña: HUNTER no envía nada."
+            ],
+            "bloqueado_por": "",
+        }, ensure_ascii=False, indent=2))
+        return 0
 
     print(f"🏹 {len(encontrados)} prospecto(s) nuevo(s) — guardados en:")
     print(f"   {destino}")
