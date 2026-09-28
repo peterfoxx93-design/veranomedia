@@ -1,7 +1,6 @@
 import { motion } from 'motion/react'
 import { useInView } from 'motion/react'
 import { useRef } from 'react'
-import { Link } from 'react-router-dom'
 
 export default function CTA() {
   const ref = useRef(null)
@@ -29,12 +28,14 @@ export default function CTA() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link
-              to="/guia-5-senales"
+            {/* <a> y no <Link>: /guia-5-senales es HTML estático fuera de la
+                SPA. Con <Link> React Router deja la pantalla en blanco. */}
+            <a
+              href="/guia-5-senales"
               className="bg-[#5170FF] text-white px-8 py-4 rounded-vm-md text-base font-semibold hover:bg-[#5170FF]/90 transition-all duration-300 hover:shadow-vm-lg hover:-translate-y-1 inline-flex items-center gap-2"
             >
               📥 Descargar la guía gratis
-            </Link>
+            </a>
             <a
               href="https://wa.me/18093586497"
               target="_blank"

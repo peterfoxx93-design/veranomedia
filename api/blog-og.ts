@@ -52,7 +52,17 @@ function escapar(s: string): string {
     .replace(/"/g, '&quot;')
 }
 
-export default async function handler(request: Request): Promise<Response> {
+// Firma Web Standard. Vercel NO invoca `export default function handler(...)`:
+// la Function API pide `fetch(request)` o named exports (GET/POST). Con la
+// firma vieja la funcion existia pero Vercel devolvia 500 en cada /blog/:slug
+// (verificado 2026-09-28 en todos los articulos publicados).
+export default {
+  async fetch(request: Request): Promise<Response> {
+    return manejar(request)
+  },
+}
+
+async function manejar(request: Request): Promise<Response> {
   const url = new URL(request.url)
   const slug = url.searchParams.get('slug') || ''
   const ua = request.headers.get('user-agent') || ''

@@ -11,6 +11,20 @@
 body{font-family:'Inter',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased;overflow-x:hidden}
 .wrap{max-width:640px;margin:0 auto;padding:0 20px}
 
+/* NAV — la pagina del lead magnet es una landing independiente (HTML estatico
+   en /public, fuera de la SPA). Sin esta barra el visitante quedaba atrapado:
+   sin menu, sin forma de volver al sitio. */
+.nav{position:sticky;top:0;z-index:50;background:rgba(10,12,16,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.nav-in{max-width:640px;margin:0 auto;padding:0 20px;height:60px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.nav-logo{font-weight:800;font-size:17px;letter-spacing:-.3px;color:var(--text);text-decoration:none}
+.nav-logo span{color:var(--brand)}
+.nav-links{display:flex;align-items:center;gap:18px}
+.nav-links a{color:var(--t2);text-decoration:none;font-size:14px;font-weight:500;transition:color .2s}
+.nav-links a:hover{color:var(--brand)}
+.nav-cta{background:var(--brand);color:#fff;padding:8px 16px;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;transition:background .2s}
+.nav-cta:hover{background:#5d75f7}
+@media(max-width:520px){.nav-links a.oculto-movil{display:none}}
+
 /* HERO */
 .hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:60px 0;position:relative}
 .hero::before{content:'';position:absolute;top:-40%;right:-30%;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(79,106,245,.06),transparent 70%);pointer-events:none}
@@ -90,6 +104,10 @@ body{font-family:'Inter',system-ui,-apple-system,sans-serif;background:var(--bg)
 .cta-section h2{font-size:26px;font-weight:700;letter-spacing:-.4px;margin-bottom:12px}
 .cta-section p{font-size:15px;color:var(--t2);line-height:1.6;margin-bottom:24px;max-width:480px;margin-left:auto;margin-right:auto}
 .cta-section .btn{margin:0 auto}
+/* El CTA final debe verse y pulsarse: inline-flex + margin auto en un
+   contenedor centrado colapsaba el ancho del enlace (el boton no respondia,
+   reportado 2026-09-28). max-content + margin auto lo centra sin colapsarlo. */
+.cta-section a.btn{display:inline-flex;align-items:center;gap:10px;width:max-content;max-width:100%}
 
 footer{padding:30px 0;text-align:center;font-size:13px;color:var(--t4);border-top:1px solid var(--border)}
 
@@ -122,6 +140,20 @@ footer{padding:30px 0;text-align:center;font-size:13px;color:var(--t4);border-to
 </style>
 </head>
 <body>
+
+<!-- NAV: el visitante nunca debe quedar atrapado en la landing -->
+<nav class="nav">
+  <div class="nav-in">
+    <a href="/" class="nav-logo">Verano<span>Media</span></a>
+    <div class="nav-links">
+      <a href="/servicios" class="oculto-movil">Servicios</a>
+      <a href="/blog" class="oculto-movil">Blog</a>
+      <a href="/contacto" class="oculto-movil">Contacto</a>
+      <a href="/" class="nav-cta">← Volver al inicio</a>
+    </div>
+  </div>
+</nav>
+
 <div class="wrap">
 
 <!-- HERO -->
@@ -228,7 +260,7 @@ footer{padding:30px 0;text-align:center;font-size:13px;color:var(--t4);border-to
 <section class="cta-section" id="cta">
   <h2>No estás perdiendo oportunidades.<br>Estás perdiendo sistemas.</h2>
   <p>Cada una de estas 5 señales tiene solución en 48 horas. En Verano Media trabajamos con dueños de negocio en RD que están cansados de invertir en marketing que no les devuelve leads concretos.</p>
-  <a href="https://wa.me/18093586497?text=Hola%2C%20vi%20la%20gu%C3%ADa%20de%20las%205%20se%C3%B1ales%20y%20quiero%20agendar%20una%20llamada%20de%20diagn%C3%B3stico" target="_blank" class="btn btn-primary" style="display:inline-flex;text-decoration:none">
+  <a href="https://wa.me/18093586497?text=Hola%2C%20vi%20la%20gu%C3%ADa%20de%20las%205%20se%C3%B1ales%20y%20quiero%20agendar%20una%20llamada%20de%20diagn%C3%B3stico" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
     💬 Agendar llamada gratis →
   </a>
 </section>

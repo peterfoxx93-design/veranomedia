@@ -63,7 +63,10 @@ export default function Navbar() {
   // "Guía gratis" es el imán de leads: se marca aparte para que no se pierda
   // entre los enlaces de navegación. Sin destacarlo, nadie lo ve (el lead magnet
   // estuvo publicado semanas sin un solo enlace desde la web).
-  const linkStyle = (item: { href: string; highlight?: boolean }) =>
+  // OJO: usa <a> y no <Link> a propósito. /guia-5-senales es un HTML estático
+  // en /public, fuera de la SPA: con <Link> React Router monta una ruta que no
+  // existe y deja la pantalla en blanco (había que refrescar a mano).
+  const linkStyle = (item: { href: string; highlight?: boolean; externa?: boolean }) =>
     item.highlight
       ? 'text-sm font-semibold text-[#5170FF] border border-[#5170FF]/30 bg-[#5170FF]/5 px-3 py-1.5 rounded-vm-md hover:bg-[#5170FF]/10 transition-colors duration-200'
       : `text-sm transition-colors duration-200 font-medium ${linkColor(item.href)}`
@@ -145,6 +148,14 @@ export default function Navbar() {
                   </div>
                 </div>
               </div>
+            ) : item.highlight ? (
+              <a
+                key={item.href}
+                href={item.href}
+                className={linkStyle(item)}
+              >
+                {item.label}
+              </a>
             ) : (
               <Link
                 key={item.href}
@@ -242,6 +253,13 @@ export default function Navbar() {
             >
               Portafolio
             </Link>
+            {/* <a> y no <Link>: ver comentario en linkStyle */}
+            <a
+              href="/guia-5-senales"
+              className="text-base font-semibold py-2.5 text-[#5170FF]"
+            >
+              Guía gratis 📥
+            </a>
             <Link
               to="/nosotros"
               onClick={() => setMobileOpen(false)}
