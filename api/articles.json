@@ -1,0 +1,142 @@
+[
+  {
+    "id": "automatizacion-pymes",
+    "slug": "automatizacion-pymes",
+    "title": "No vendemos páginas web: implementamos sistemas de captación",
+    "category": "Estrategia",
+    "excerpt": "Un sitio web no alcanza. Un chatbot aislado no alcanza. Lo que convierte es un sistema integrado: web + IA + WhatsApp + CRM. Esto es el Sistema Verano.",
+    "date": "Julio 2026",
+    "published": true,
+    "readTime": 7
+  },
+  {
+    "id": "landing-vs-sitio",
+    "slug": "landing-vs-sitio",
+    "title": "Páginas web, redes, SEO y CRM por separado vs. un solo sistema",
+    "category": "Modelo de negocio",
+    "excerpt": "Comprar herramientas sueltas genera costos duplicados, puntos de falla y pobre coordinación. Un sistema integrado busca un solo objetivo: conseguir clientes sin perder oportunidades.",
+    "date": "Julio 2026",
+    "published": true,
+    "readTime": 7
+  },
+  {
+    "id": "chatbots-whatsapp",
+    "slug": "chatbots-whatsapp",
+    "title": "Cómo implementar un sistema 24/7 sin levantar una sola llamada",
+    "category": "Captación",
+    "excerpt": "Web de alta conversión, chatbot con IA, atención por WhatsApp y CRM organizado. Flujo real en República Dominicana para clínicas e inmobiliarias.",
+    "date": "Julio 2026",
+    "published": true,
+    "readTime": 6
+  },
+  {
+    "id": "funnel-digital",
+    "slug": "funnel-digital",
+    "title": "Métricas que importan en un sistema de captación (no las vanidades)",
+    "category": "Analítica",
+    "excerpt": "Visitas, likes y clics no pagan el sueldo. Estos son los KPIs que permiten saber si tu sistema está captando, atendiendo y cerrando clientes.",
+    "date": "Agosto 2026",
+    "published": true,
+    "readTime": 7
+  },
+  {
+    "id": "tu-negocio-no-aparece-en-google-maps",
+    "slug": "tu-negocio-no-aparece-en-google-maps",
+    "title": "SEO local para clínicas e inmobiliarias: de Google Maps a llamada real",
+    "category": "SEO Local",
+    "excerpt": "Aparecer en Google Maps no es suficiente. Este es el flujo para transformar búsquedas locales en leads cualificados dentro de un sistema.",
+    "date": "Agosto 2026",
+    "published": true,
+    "readTime": 6
+  },
+  {
+    "id": "diseno-web-movil-primero",
+    "slug": "diseno-web-movil-primero",
+    "title": "Diseño web móvil primero: por qué tu cliente decide en 3 segundos",
+    "category": "Diseño Web",
+    "excerpt": "El 78% de las visitas a sitios de pymes en RD vienen del móvil. Si tu web no se lee bien en celular, estás perdiendo clientes sin saberlo.",
+    "date": "Agosto 2026",
+    "published": true,
+    "readTime": 6
+  },
+  {
+    "id": "email-vs-whatsapp-marketing-rd",
+    "slug": "email-vs-whatsapp-marketing-rd",
+    "title": "Email marketing vs WhatsApp Marketing: qué funciona mejor en RD",
+    "category": "Redes Sociales",
+    "excerpt": "La respuesta corta: en RD, WhatsApp obtiene respuesta; email obtiene silencio. Pero el email sigue sirviendo si lo usás para lo correcto.",
+    "date": "Agosto 2026",
+    "published": true,
+    "readTime": 7
+  },
+  {
+    "id": "ia-contenido",
+    "slug": "ia-contenido",
+    "title": "Cómo usar IA para contenido que no parezca escrito por IA",
+    "category": "Contenido",
+    "excerpt": "La IA produce rápido, pero produce genérico. Estas son las 5 reglas para que tu contenido suene humano, cite datos propios y genere consultas.",
+    "date": "Agosto 2026",
+    "published": true,
+    "readTime": 6
+  },
+  {
+    "id": "prompts-ia-resultados-profesionales",
+    "slug": "prompts-ia-resultados-profesionales",
+    "title": "Cómo escribir prompts de IA que den resultados profesionales",
+    "category": "Contenido",
+    "excerpt": "Un prompt mal escrito devuelve contenido genérico. Un prompt bien escrito devuelve contenido listo para vender. La diferencia está en 4 líneas.",
+    "date": "Septiembre 2026",
+    "published": true,
+    "readTime": 7
+  },
+  {
+    "id": "customer-journey-2026-cita-en-4-clics",
+    "slug": "customer-journey-2026-cita-en-4-clics",
+    "title": "El customer journey en 2026: de Google Maps a la cita en 4 clics",
+    "category": "Estrategia",
+    "excerpt": "El cliente no te elige por una visita: te elige por el camino mas corto y mas confiable. Estas son las 4 estaciones donde se gana o se pierde la consulta.",
+    "date": "Septiembre 2026",
+    "published": true,
+    "readTime": 8
+  },
+  {
+    "id": "seguridad-web-basica-no-expertos",
+    "slug": "seguridad-web-basica-no-expertos",
+    "title": "Seguridad web para no expertos: SSL, respaldos y protección básica",
+    "category": "Infraestructura",
+    "excerpt": "No hace falta ser hacker para sufrir un incidente: basta un plugin sin actualizar y un respaldo fuera de fecha. Lo mínimo que tu web necesita esta semana.",
+    "date": "Septiembre 2026",
+    "published": true,
+    "readTime": 7
+  },
+  {
+    "id": "automatizar-ia-negocio-que-delegar",
+    "slug": "automatizar-ia-negocio-que-delegar",
+    "title": "Automatización con IA en tu negocio: qué delegar y qué no delegar nunca",
+    "category": "Automatización",
+    "excerpt": "Automatizar todo es peor que no automatizar nada. La regla para separar lo que un bot hace mejor que tú de lo que jamás debería tocar.",
+    "date": "Septiembre 2026",
+    "published": true,
+    "readTime": 8
+  },
+  {
+    "id": "cliente-dice-dejame-pensarlo",
+    "slug": "cliente-dice-dejame-pensarlo",
+    "title": "El cliente dijo \"déjame pensarlo\": qué hacer en los próximos 10 minutos",
+    "category": "Ventas",
+    "excerpt": "\"Déjame pensarlo\" cierra más ventas perdidas que cualquier precio alto. Los 3 motivos reales detrás de esa frase y el seguimiento que sí produce respuesta.",
+    "date": "Septiembre 2026",
+    "published": true,
+    "readTime": 8
+  },
+  {
+    "id": "caso-clinica-dental-0-a-20-pacientes",
+    "slug": "caso-clinica-dental-0-a-20-pacientes",
+    "title": "Caso práctico: cómo una clínica dental pasó de 0 a 20 pacientes/mes online",
+    "category": "Estrategia",
+    "excerpt": "No fue magia, fue orden: web lista, ficha de Google optimizada, respuesta en minutos y confirmación automática. El desglose de los 45 días.",
+    "date": "Septiembre 2026",
+    "published": true,
+    "readTime": 8
+  }
+]

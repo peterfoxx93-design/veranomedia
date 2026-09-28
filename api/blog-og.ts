@@ -33,12 +33,18 @@ interface Article {
   published?: boolean
 }
 
-// Los artículos se leen del mismo archivo que usa la SPA: una sola fuente de
-// verdad. El import es dinámico porque el módulo es TypeScript del proyecto.
-async function getArticles(): Promise<Article[]> {
+// Los articulos se leen de api/articles.json, generado desde src/blog/articles.ts
+// (el mismo contenido que usa la SPA). NO se puede importar el .ts directamente:
+// una Function de Vercel se empaqueta sola y no incluye modulos de src/, asi que
+// el import dinamico fallaba y el catch devolvia [] en silencio — el handler
+// respondia la SPA generica sin OG tags, sin ningun error visible.
+// Si se anade un articulo nuevo hay que regenerar el JSON:
+//   python3 -c "..."  (ver scripts/gen-articles-json.py en el repo)
+import articlesData from './articles.json'
+
+function getArticles(): Article[] {
   try {
-    const { articles } = await import('../src/blog/articles')
-    return articles as Article[]
+    return (articlesData as Article[]) || []
   } catch {
     return []
   }
@@ -68,7 +74,7 @@ async function manejar(request: Request): Promise<Response> {
   const ua = request.headers.get('user-agent') || ''
   const esCrawler = CRAWLERS.test(ua)
 
-  const articles = await getArticles()
+  const articles = getArticles()
   const art = articles.find(a => a.slug === slug && a.published !== false)
 
   // -------- Crawler: HTML con las OG tags del artículo --------
