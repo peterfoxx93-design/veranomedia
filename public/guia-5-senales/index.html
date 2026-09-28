@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guía: 5 señales de que tu negocio está perdiendo leads</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0a0c10;--card:#12141a;--border:#1e212a;--brand:#4f6af5;--brand-glow:rgba(79,106,245,.12);--gold:#f0b34b;--text:#e8ebf0;--t2:#9aa2b8;--t3:#656d85;--t4:#3d4459;--radius:14px}
+body{font-family:'Inter',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.wrap{max-width:640px;margin:0 auto;padding:0 20px}
+
+/* HERO */
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:60px 0;position:relative}
+.hero::before{content:'';position:absolute;top:-40%;right:-30%;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(79,106,245,.06),transparent 70%);pointer-events:none}
+.badge{display:inline-flex;align-items:center;gap:6px;background:var(--brand-glow);color:var(--brand);font-size:12px;font-weight:600;padding:6px 14px 6px 10px;border-radius:100px;margin-bottom:24px;border:1px solid rgba(79,106,245,.15);text-transform:uppercase;letter-spacing:.4px}
+.badge::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--brand);box-shadow:0 0 8px var(--brand)}
+.hero h1{font-size:clamp(32px,5vw,48px);font-weight:800;line-height:1.15;letter-spacing:-.8px;margin-bottom:14px}
+.hero h1 span{background:linear-gradient(135deg,var(--brand),#7b92ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero p{font-size:18px;color:var(--t2);line-height:1.6;max-width:520px;margin-bottom:32px}
+.hero-stats{display:flex;gap:24px;margin-bottom:32px;flex-wrap:wrap}
+.hero-stat{font-size:14px;color:var(--t3)}
+.hero-stat strong{color:var(--brand);font-size:20px;display:block}
+.btn{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:16px 32px;border-radius:10px;
+  font-size:16px;font-weight:600;font-family:inherit;
+  cursor:pointer;border:none;transition:all .25s;
+  text-decoration:none;
+}
+.btn-primary{background:var(--brand);color:#fff}
+.btn-primary:hover{background:#5d75f7;transform:translateY(-2px);box-shadow:0 8px 30px rgba(79,106,245,.3)}
+.btn-secondary{background:transparent;color:var(--t2);border:1px solid var(--border)}
+.btn-secondary:hover{background:var(--card);color:var(--text)}
+
+/* SEÑALES */
+.signals{padding:80px 0}
+.section-label{font-size:12px;font-weight:600;color:var(--brand);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px}
+.section-title{font-size:28px;font-weight:700;letter-spacing:-.4px;margin-bottom:40px}
+
+.signal-card{
+  background:var(--card);border-radius:var(--radius);
+  border:1px solid var(--border);
+  padding:32px;
+  margin-bottom:20px;
+  position:relative;
+  transition:all .3s;
+}
+.signal-card:hover{border-color:var(--brand);transform:translateY(-2px);box-shadow:0 12px 40px rgba(0,0,0,.3)}
+.signal-num{
+  position:absolute;top:-10px;right:24px;
+  font-size:72px;font-weight:900;
+  color:rgba(79,106,245,.06);
+  line-height:1;
+  letter-spacing:-3px;
+}
+.signal-tag{
+  display:inline-flex;align-items:center;gap:4px;
+  background:var(--brand-glow);color:var(--brand);
+  font-size:11px;font-weight:600;padding:4px 10px;
+  border-radius:6px;margin-bottom:12px;
+}
+.signal-card h2{font-size:20px;font-weight:700;letter-spacing:-.3px;margin-bottom:6px}
+.signal-sub{font-size:14px;color:var(--t3);margin-bottom:16px;line-height:1.5}
+.signal-body{font-size:15px;color:var(--t2);line-height:1.7;margin-bottom:16px}
+
+.signal-box{
+  background:var(--bg);border-radius:10px;
+  padding:16px 18px;margin-bottom:12px;
+  border-left:3px solid var(--gold);
+}
+.signal-box.gold{border-left-color:var(--gold)}
+.signal-box.blue{border-left-color:var(--brand)}
+.signal-box-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--t3);margin-bottom:4px}
+.signal-box-label.gold{color:var(--gold)}
+.signal-box-label.blue{color:var(--brand)}
+.signal-box-text{font-size:14px;color:var(--t2);line-height:1.5}
+
+.signal-data{
+  display:flex;align-items:center;gap:16px;
+  background:var(--bg);border-radius:10px;
+  padding:16px 18px;border:1px solid var(--border);
+}
+.signal-data-num{font-size:32px;font-weight:900;color:var(--brand);line-height:1;flex-shrink:0}
+.signal-data-text{font-size:13px;color:var(--t3);line-height:1.4}
+
+/* CTA FINAL */
+.cta-section{background:linear-gradient(135deg,var(--card),var(--bg));border-radius:var(--radius);border:1px solid var(--border);padding:48px 32px;text-align:center;margin-bottom:80px}
+.cta-section h2{font-size:26px;font-weight:700;letter-spacing:-.4px;margin-bottom:12px}
+.cta-section p{font-size:15px;color:var(--t2);line-height:1.6;margin-bottom:24px;max-width:480px;margin-left:auto;margin-right:auto}
+.cta-section .btn{margin:0 auto}
+
+footer{padding:30px 0;text-align:center;font-size:13px;color:var(--t4);border-top:1px solid var(--border)}
+
+/* FORM MODAL */
+.modal-bg{position:fixed;inset:0;background:rgba(0,0,0,.7);backdrop-filter:blur(4px);z-index:100;display:none;align-items:center;justify-content:center;padding:20px}
+.modal-bg.show{display:flex}
+.modal{background:var(--card);border-radius:var(--radius);border:1px solid var(--border);padding:40px 32px;max-width:440px;width:100%;position:relative;animation:fadeUp .3s ease}
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.modal-close{position:absolute;top:12px;right:16px;background:none;border:none;color:var(--t3);font-size:24px;cursor:pointer}
+.modal h2{font-size:20px;font-weight:700;margin-bottom:6px;text-align:center}
+.modal p{font-size:14px;color:var(--t2);text-align:center;margin-bottom:20px}
+.modal input{width:100%;padding:13px 16px;border-radius:8px;border:1px solid var(--border);background:var(--bg);color:var(--text);font-size:14px;font-family:inherit;outline:none;margin-bottom:10px;transition:border-color .3s}
+.modal input:focus{border-color:var(--brand)}
+.modal input::placeholder{color:var(--t4)}
+.modal .btn{width:100%;justify-content:center}
+.modal .secure{font-size:11px;color:var(--t4);text-align:center;margin-top:12px}
+.modal .error{color:#ef4444;font-size:12px;display:none;margin-bottom:8px;text-align:center}
+
+/* SUCCESS */
+.success-screen{display:none}
+.success-screen.show{display:block;animation:fadeUp .4s ease}
+.success-screen .btn{justify-content:center;margin-bottom:16px}
+
+@media(max-width:500px){
+  .hero{padding:40px 0}
+  .signal-card{padding:24px 20px}
+  .cta-section{padding:32px 20px}
+  .modal{padding:28px 20px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="badge">📥 Guía gratuita</div>
+  <h1>5 señales de que tu <span>negocio está perdiendo leads</span></h1>
+  <p>Y cómo construir un sistema que capture clientes 24/7 en RD — sin depender de anuncios ni estar pegado al teléfono.</p>
+  <div class="hero-stats">
+    <div class="hero-stat"><strong>82%</strong> busca en Google antes de comprar</div>
+    <div class="hero-stat"><strong>70%</strong> de leads se pierde en 1h</div>
+  </div>
+  <button class="btn btn-primary" onclick="openModal()">
+    Descargar guía gratis →
+  </button>
+</section>
+
+<!-- SEÑALES -->
+<section class="signals" id="senales">
+  <p class="section-label">Las 5 señales</p>
+  <h2 class="section-title">Diagnóstico rápido para tu negocio</h2>
+
+  <div class="signal-card">
+    <div class="signal-num">1</div>
+    <div class="signal-tag">SEÑAL #1</div>
+    <h2>Tu web es un folleto digital, no una máquina de captura</h2>
+    <p class="signal-sub">Tienes fotos bonitas, pero cada visitante se va sin dejar rastro.</p>
+    <div class="signal-body">Tu página tiene el logo centrado, galería de fotos, un "contáctanos" escondido al fondo. Nadie llena formularios porque no hay nada que los motive. Cada persona que entra hoy y no deja sus datos es un lead que pagaste por traer — y se fue gratis.</div>
+    <div class="signal-box gold">
+      <div class="signal-box-label gold">✅ Solución concreta (48h)</div>
+      <div class="signal-box-text">Instala un pop-up con un lead magnet, conecta un chatbot a tu WhatsApp Business y agrega un formulario en cada página de servicio. No necesitas rediseñar todo.</div>
+    </div>
+    <div class="signal-data">
+      <div class="signal-data-num">82%</div>
+      <div class="signal-data-text">de los consumidores busca en Google antes de comprar. Si tu sitio no captura datos, estás regalando el tráfico que pagaste.</div>
+    </div>
+  </div>
+
+  <div class="signal-card">
+    <div class="signal-num">2</div>
+    <div class="signal-tag">SEÑAL #2</div>
+    <h2>Respondes los mensajes… cuando el lead ya se fue</h2>
+    <p class="signal-sub">En RD el WhatsApp es el canal de ventas #1 — pero respondes en horas, no en minutos.</p>
+    <div class="signal-body">Un cliente te escribe a las 9:00 AM. Contestas a las 5:30 PM. Para esa hora ya contactó a dos competidores y uno le respondió en 3 minutos. En un mercado pequeño como RD, cada hora de silencio es una venta que cambia de manos.</div>
+    <div class="signal-box gold">
+      <div class="signal-box-label gold">✅ Solución concreta (48h)</div>
+      <div class="signal-box-text">Configura respuestas automáticas en WhatsApp Business. Define un SLA: máximo 5 minutos para leads entrantes. Usa una bandeja compartida con tu equipo. El que responde primero, vende primero.</div>
+    </div>
+    <div class="signal-data">
+      <div class="signal-data-num">70%</div>
+      <div class="signal-data-text">de los leads se pierde si no hay respuesta en la primera hora. Después de 24h, la probabilidad de conversión cae al 1%.</div>
+    </div>
+  </div>
+
+  <div class="signal-card">
+    <div class="signal-num">3</div>
+    <div class="signal-tag">SEÑAL #3</div>
+    <h2>Publicas contenido, pero nadie te compra</h2>
+    <p class="signal-sub">Tienes alcance, no leads. En RD, muchos confunden "me gusta" con ventas.</p>
+    <div class="signal-body">Subes fotos, hablas de tus servicios, pones frases motivacionales. La gente ve, comenta, da like… pero nadie te escribe para comprar. Un post viral sin un CTA claro es un espectáculo, no una estrategia de negocio.</div>
+    <div class="signal-box gold">
+      <div class="signal-box-label gold">✅ Solución concreta (48h)</div>
+      <div class="signal-box-text">Cada contenido público debe terminar con una acción específica: "Descarga el checklist", "Cotiza tu proyecto en 2 minutos", "Reserva tu cita aquí". Crea un lead magnet distinto para cada servicio.</div>
+    </div>
+    <div class="signal-data">
+      <div class="signal-data-num">3x</div>
+      <div class="signal-data-text">más leads generan las empresas con 16+ landing pages versus las que tienen menos de 5. No es el volumen de posts, son las puertas de entrada.</div>
+    </div>
+  </div>
+
+  <div class="signal-card">
+    <div class="signal-num">4</div>
+    <div class="signal-tag">SEÑAL #4</div>
+    <h2>No sabes quién te visita ni qué busca</h2>
+    <p class="signal-sub">Estás manejando tu negocio digital como un restaurante sin ventanas.</p>
+    <div class="signal-body">No sabes cuántas personas llegan a tu web, de dónde vienen, qué páginas ven, ni en qué momento se van. En RD, donde el mercado es pequeño y ganar un cliente cuesta 5x más que mantenerlo, no tener datos no es "normal" — es una fuga de dinero que no estás viendo.</div>
+    <div class="signal-box gold">
+      <div class="signal-box-label gold">✅ Solución concreta (48h)</div>
+      <div class="signal-box-text">Instala Google Analytics 4 y conecta Google Search Console (ambos gratis). En una tarde sabes qué busca tu audiencia, de dónde viene y qué páginas convierten. Ahí decides dónde poner cada peso de publicidad.</div>
+    </div>
+    <div class="signal-data">
+      <div class="signal-data-num">3x</div>
+      <div class="signal-data-text">más probabilidad de mejorar conversiones tienen las empresas que usan datos de analytics para tomar decisiones.</div>
+    </div>
+  </div>
+
+  <div class="signal-card">
+    <div class="signal-num">5</div>
+    <div class="signal-tag">SEÑAL #5</div>
+    <h2>Tratas todos los leads como si fueran iguales</h2>
+    <p class="signal-sub">Y por eso tu mensaje no le llega a nadie.</p>
+    <div class="signal-body">El mismo mensaje de bienvenida, el mismo descuento, el mismo seguimiento para todos. Cuando no segmentas, tu comunicación se vuelve ruido. En RD, donde el mercado es profundamente relacional, la gente compra de quien demuestra que entiende su situación específica.</div>
+    <div class="signal-box gold">
+      <div class="signal-box-label gold">✅ Solución concreta (48h)</div>
+      <div class="signal-box-text">Segmenta tu base en mínimo 3 categorías — quién es, qué necesita, qué tan urgente. Crea secuencias de mensajes distintas para cada una. Un Google Sheets con etiquetas bien organizado es suficiente para empezar.</div>
+    </div>
+    <div class="signal-data">
+      <div class="signal-data-num">80%</div>
+      <div class="signal-data-text">de las ventas requieren 5 o más contactos de seguimiento, pero la mayoría de los negocios se rinden después del segundo intento.</div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-section" id="cta">
+  <h2>No estás perdiendo oportunidades.<br>Estás perdiendo sistemas.</h2>
+  <p>Cada una de estas 5 señales tiene solución en 48 horas. En Verano Media trabajamos con dueños de negocio en RD que están cansados de invertir en marketing que no les devuelve leads concretos.</p>
+  <a href="https://wa.me/18093586497?text=Hola%2C%20vi%20la%20gu%C3%ADa%20de%20las%205%20se%C3%B1ales%20y%20quiero%20agendar%20una%20llamada%20de%20diagn%C3%B3stico" target="_blank" class="btn btn-primary" style="display:inline-flex;text-decoration:none">
+    💬 Agendar llamada gratis →
+  </a>
+</section>
+
+<footer>Verano Media · veranomedia.click</footer>
+</div>
+
+<!-- MODAL FORMULARIO -->
+<div class="modal-bg" id="modalBg">
+  <div class="modal" id="modalContent">
+    <button class="modal-close" onclick="closeModal()">×</button>
+    
+    <div id="formContent">
+      <h2>Descarga la guía completa</h2>
+      <p>Ingresa tus datos y recibe el PDF con las 5 señales + soluciones.</p>
+      <div class="error" id="errorMsg">Completa tu nombre y WhatsApp</div>
+      <input type="text" id="nameInput" placeholder="Tu nombre" required>
+      <input type="tel" id="phoneInput" placeholder="Tu WhatsApp" required>
+      <input type="email" id="emailInput" placeholder="Tu correo (opcional)">
+      <button class="btn btn-primary" onclick="submitForm()">
+        Descargar PDF →
+      </button>
+      <p class="secure">🔒 Tus datos están seguros. Solo te enviaremos la guía.</p>
+    </div>
+    
+    <div id="successContent" style="display:none;text-align:center">
+      <div style="font-size:40px;margin-bottom:8px">🎉</div>
+      <h2 style="margin-bottom:6px">¡Guía enviada!</h2>
+      <p style="margin-bottom:20px">Revisa tu WhatsApp. Mientras tanto, descárgala aquí:</p>
+      <a href="https://veranomedia.click/guide/guia-5-senales-premium.pdf" target="_blank" class="btn btn-primary" style="justify-content:center;margin-bottom:16px">
+        📥 Descargar PDF ahora
+      </a>
+      <p style="font-size:13px;color:var(--t3);margin-bottom:4px">¿Quieres ayuda para aplicar estas soluciones?</p>
+      <a href="https://wa.me/18093586497?text=Gracias%20por%20la%20gu%C3%ADa%2C%20vi%20las%205%20se%C3%B1ales%20y%20quiero%20agendar%20una%20llamada" target="_blank" style="color:var(--brand);font-size:14px;font-weight:600;text-decoration:none">💬 Hablar con Verano Media</a>
+    </div>
+  </div>
+</div>
+
+<script>
+function openModal(){document.getElementById('modalBg').classList.add('show');document.body.style.overflow='hidden'}
+function closeModal(){document.getElementById('modalBg').classList.remove('show');document.body.style.overflow=''}
+document.getElementById('modalBg').addEventListener('click',function(e){if(e.target===this)closeModal()})
+
+async function submitForm(){
+  const name=document.getElementById('nameInput').value.trim();
+  const phone=document.getElementById('phoneInput').value.trim();
+  const email=document.getElementById('emailInput').value.trim();
+  const err=document.getElementById('errorMsg');
+  if(!name||!phone){err.style.display='block';return}
+  err.style.display='none';
+  const btn=document.querySelector('#formContent .btn');btn.disabled=true;btn.textContent='Enviando...';
+  // FIX 2026-09-28:
+  //  1) El endpoint viejo (veranomedia-crm.vercel.app/api/maria/lead) exigía el
+  //     header X-VM-Secret con el valor por defecto hardcodeado, que quedaba
+  //     expuesto en este HTML público -> cualquiera podía inyectar leads falsos.
+  //  2) El .catch(()=>{}) mostraba "éxito" aunque el envío fallara: falso positivo
+  //     silencioso (el lead se perdía y el visitante creía haberlo enviado).
+  // Ahora usa el endpoint público /api/captura (sin secret) y SOLO muestra éxito
+  // si el servidor confirmó con 2xx. Si falla, muestra error y ofrece WhatsApp.
+  try{
+    const r=await fetch('https://crm.veranomedia.click/api/captura',{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({name,phone,email,business:'Lead Magnet Guia 5 senales',notes:'Descargo la guia 5 senales',form:'lead-magnet'})
+    });
+    if(!r.ok){
+      const j=await r.json().catch(()=>({}));
+      throw new Error(j.error||'No se pudo enviar');
+    }
+    document.getElementById('formContent').style.display='none';
+    document.getElementById('successContent').style.display='block';
+  }catch(e){
+    btn.disabled=false;btn.textContent='Enviar y ver las soluciones →';
+    err.textContent='No pudimos enviar el formulario. Intenta de nuevo o escríbenos por WhatsApp: 809-358-6497';
+    err.style.display='block';
+  }
+}
+</script>
+</body>
+</html>
