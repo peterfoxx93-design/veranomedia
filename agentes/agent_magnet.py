@@ -164,6 +164,15 @@ def main() -> int:
         return 1
 
     leads = datos.get("leads", [])
+
+    # ── FILTRO DE ARCHIVADOS (fix 2026-09-28) ────────────────────────────
+    # Los leads marcados 'archivado' son basura conocida: el spam de grupos que
+    # María grababa antes del fix del filtro (31 entradas "Lead WhatsApp"). Si
+    # siguen contando, el reporte dice "8 leads de whatsapp" cuando son
+    # propaganda, y las métricas esconden lo real. Se excluyen del conteo pero
+    # se informan aparte para que nada desaparezca en silencio.
+    archivados = [l for l in leads if l.get("status") == "archivado"]
+    leads = [l for l in leads if l.get("status") != "archivado"]
     hoy = datetime.now(RD).date()
     ayer = hoy - timedelta(days=1)
 
@@ -209,6 +218,7 @@ def main() -> int:
                 "ayer": entrados_ayer,
                 "hoy": entrados_hoy,
                 "sin_fecha": sin_fecha,
+                "archivados": len(archivados),
                 "por_fuente": por_fuente,
                 "por_dia": por_dia,
             },
@@ -269,6 +279,8 @@ def main() -> int:
         "",
         f"📥 Ayer: {entrados_ayer} | Hoy: {entrados_hoy} | Total ventana: {len(leads)}",
     ]
+    if archivados:
+        lineas.append(f"🗑️  {len(archivados)} archivado(s) — basura conocida, no cuentan")
 
     if por_fuente:
         lineas.append("")
