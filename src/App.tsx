@@ -38,7 +38,7 @@ export default function App() {
         </Route>
       </Routes>
       <ChatWidget
-        apiUrl="https://veranomedia-crm.vercel.app/api/chat"
+        apiUrl="https://crm.veranomedia.click/api/chat"
         botName="María"
         avatarUrl="/maria-avatar.jpg"
         greeting="¡Hola! Soy María, asesora de Verano Media. ¿En qué puedo ayudarte?"

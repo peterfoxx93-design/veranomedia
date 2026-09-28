@@ -13,6 +13,7 @@ const navItems = [
   { label: 'Servicios', href: '/servicios', hasDropdown: true },
   { label: 'Portafolio', href: '/portafolio' },
   { label: 'Blog', href: '/blog' },
+  { label: 'Guía gratis', href: '/guia-5-senales', highlight: true },
   { label: 'Nosotros', href: '/nosotros' },
 ]
 
@@ -58,6 +59,14 @@ export default function Navbar() {
     const active = isActive(href)
     return active ? 'text-[#5170FF] font-semibold' : 'text-[#636366] hover:text-[#5170FF]'
   }
+
+  // "Guía gratis" es el imán de leads: se marca aparte para que no se pierda
+  // entre los enlaces de navegación. Sin destacarlo, nadie lo ve (el lead magnet
+  // estuvo publicado semanas sin un solo enlace desde la web).
+  const linkStyle = (item: { href: string; highlight?: boolean }) =>
+    item.highlight
+      ? 'text-sm font-semibold text-[#5170FF] border border-[#5170FF]/30 bg-[#5170FF]/5 px-3 py-1.5 rounded-vm-md hover:bg-[#5170FF]/10 transition-colors duration-200'
+      : `text-sm transition-colors duration-200 font-medium ${linkColor(item.href)}`
 
   return (
     <motion.header
@@ -140,14 +149,14 @@ export default function Navbar() {
               <Link
                 key={item.href}
                 to={item.href}
-                className={`text-sm transition-colors duration-200 font-medium ${linkColor(item.href)}`}
+                className={linkStyle(item)}
               >
                 {item.label}
               </Link>
             )
           )}
           <a
-            href="https://veranomedia-crm.vercel.app"
+            href="https://crm.veranomedia.click"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm transition-colors duration-200 font-medium text-[#636366] hover:text-[#5170FF]"
@@ -252,7 +261,7 @@ export default function Navbar() {
               Blog
             </Link>
             <a
-              href="https://veranomedia-crm.vercel.app"
+              href="https://crm.veranomedia.click"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm transition-colors duration-200 font-medium text-[#636366] hover:text-[#5170FF]"
