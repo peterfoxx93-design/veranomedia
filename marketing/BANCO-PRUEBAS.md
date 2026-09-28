@@ -3,7 +3,7 @@
 > Todas las pruebas citables del departamento de marketing, con su fuente.
 > **Regla dura: no se inventa ninguna métrica.** Si no está aquí, no se usa.
 
-_Generado: 2026-09-28 14:14 AST · 9 pruebas_
+_Generado: 2026-09-28 14:49 AST · 9 pruebas_
 
 ## Cómo leer las bandas
 
