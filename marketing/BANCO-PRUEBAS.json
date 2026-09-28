@@ -1,0 +1,109 @@
+[
+  {
+    "dato": "Caso práctico: cómo una clínica dental pasó de 0 a 20 pacientes/mes online",
+    "detalle": "No fue magia, fue orden: web lista, ficha de Google optimizada, respuesta en minutos y confirmación automática. El desglose de los 45 días.",
+    "fuente": "blog/caso-clinica-dental-0-a-20-pacientes",
+    "band": "verified",
+    "uso": [
+      "blog",
+      "venta",
+      "redes"
+    ],
+    "cliente": ""
+  },
+  {
+    "dato": "Campaña R4: 53 correos a 26 prospectos, 3.8% de respuesta humana",
+    "detalle": "1 respuesta(s) humana(s) de 26 prospectos. Cadencia 0/3/8/14/21 días, ventana mar-mié-jue. (1 autorespuesta(s) de bot, no cuentan como interés.)",
+    "fuente": "medicion-propia (prospeccion/campaign.json)",
+    "band": "verified",
+    "uso": [
+      "venta",
+      "blog"
+    ],
+    "cliente": ""
+  },
+  {
+    "dato": "82%",
+    "detalle": "hogares RD compran por WhatsApp (fuente: análisis mercado local)",
+    "fuente": "agent_audit.py (lista blanca)",
+    "band": "verified",
+    "uso": [
+      "blog",
+      "redes",
+      "venta"
+    ],
+    "cliente": ""
+  },
+  {
+    "dato": "66%",
+    "detalle": "66% del volumen de ventas por internet en RD = retail (PCMI 2025:",
+    "fuente": "agent_audit.py (lista blanca)",
+    "band": "verified",
+    "uso": [
+      "blog",
+      "redes",
+      "venta"
+    ],
+    "cliente": ""
+  },
+  {
+    "dato": "27,8%",
+    "detalle": "negocios RD listos para IA (Alegra 2026)",
+    "fuente": "agent_audit.py (lista blanca)",
+    "band": "verified",
+    "uso": [
+      "blog",
+      "redes",
+      "venta"
+    ],
+    "cliente": ""
+  },
+  {
+    "dato": "36,1%",
+    "detalle": "negocios RD sin automatizar (Alegra 2026)",
+    "fuente": "agent_audit.py (lista blanca)",
+    "band": "verified",
+    "uso": [
+      "blog",
+      "redes",
+      "venta"
+    ],
+    "cliente": ""
+  },
+  {
+    "dato": "20%",
+    "detalle": "citas dentales no-show",
+    "fuente": "agent_audit.py (lista blanca)",
+    "band": "verified",
+    "uso": [
+      "blog",
+      "redes",
+      "venta"
+    ],
+    "cliente": ""
+  },
+  {
+    "dato": "4 de cada 10",
+    "detalle": "consultas inmobiliarias fuera de horario",
+    "fuente": "agent_audit.py (lista blanca)",
+    "band": "verified",
+    "uso": [
+      "blog",
+      "redes",
+      "venta"
+    ],
+    "cliente": ""
+  },
+  {
+    "dato": "80%",
+    "detalle": "ventas perdidas en el seguimiento (mecanismo documentado)",
+    "fuente": "agent_audit.py (lista blanca)",
+    "band": "verified",
+    "uso": [
+      "blog",
+      "redes",
+      "venta"
+    ],
+    "cliente": ""
+  }
+]
