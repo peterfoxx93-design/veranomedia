@@ -41,19 +41,32 @@ Sin métrica de éxito no es un puesto, es un pasatiempo.
      ┌────────────┬────────────┬───┴────────┬────────────┬────────────┐
      ▼            ▼            ▼            ▼            ▼            ▼
 ┌─────────┐ ┌─────────┐  ┌──────────┐ ┌─────────┐ ┌─────────┐ ┌─────────┐
-│ SCOUT   │ │ HUNTER  │  │ CREATOR  │ │ AUDIT   │ │NURTURE  │ │ PROOF   │
-│ Inteli- │ │Prospec- │  │Contenido │ │Calidad  │ │Lista y  │ │ Casos y │
-│ gencia  │ │ cción   │  │ y marca  │ │y verdad │ │nutrición│ │ prueba  │
+│ MAGNET  │ │ HUNTER  │  │ CREATOR  │ │ AUDIT   │ │NURTURE  │ │ PROOF   │
+│ Captura │ │Prospec- │  │Contenido │ │Calidad  │ │Lista y  │ │ Casos y │
+│ de leads│ │ cción   │  │ y marca  │ │y verdad │ │nutrición│ │ prueba  │
 └─────────┘ └─────────┘  └──────────┘ └─────────┘ └─────────┘ └─────────┘
      │            │            │            │            │            │
      └────────────┴────────────┴─────┬──────┴────────────┴────────────┘
                                      ▼
                           ┌────────────────────┐
-                          │   MAGNET           │
-                          │ Captura de leads   │
-                          │ (el motor de todo) │
+                          │   SCOUT            │
+                          │ Inteligencia de    │
+                          │ mercado            │
                           └────────────────────┘
 ```
+
+**Los 7 puestos están vivos.** Estado de cada uno:
+
+| Puesto  | Agente / cron              | Horario          | Estado |
+|---------|----------------------------|------------------|--------|
+| MAGNET  | `agent_magnet.py` / `b9f39569006c` | diario 8:00  | ✅ operativo |
+| HUNTER  | `agent_hunter.py` / `5dbca0af340d` | lunes 7:30   | ⚠️ espera Places API |
+| CREATOR | `VM-Generar-Semana` `dd20ede2f386` | domingo 20:00| ✅ operativo |
+| AUDIT   | `agent_audit.py` / `VM-Audit-PrePublicacion` | diario 6:30 | ✅ operativo |
+| NURTURE | `VM-Campana-Prospeccion`   | mar/mié/jue 9:30 | ✅ operativo |
+| PROOF   | `agent_proof.py` / `063c6d46ba0b`  | domingo 19:30| ✅ operativo |
+| SCOUT   | `agent_scout.py` / `VM-Scout-Señales` | diario 7:00 | ✅ operativo |
+
 
 ---
 
