@@ -353,8 +353,23 @@ async function submitForm(){
   await Promise.race([guardar, timeout]);
   entregar();
 
+  // ── Google Analytics: conversion por defecto del lead magnet ─────────────
+  // El interes del negocio es cuantos leads se CAPTURAN de verdad, no cuantos
+  // ven la pantalla de exito. Por eso el evento no se dispara al entregar la
+  // guia, sino cuando el CRM confirma que guardo el lead. Si el POST falla, no
+  // cuenta: asi la tasa de conversion refleja leads reales y no visitas.
   guardar.then((r)=>{
-    if(!r || !r.ok) console.warn('[lead-magnet] lead no guardado:', name, phone);
+    if(r && r.ok){
+      if(typeof gtag === 'function'){
+        gtag('event','generate_lead',{
+          form: 'lead-magnet',
+          value: 1,
+          currency: 'USD'
+        });
+      }
+    } else {
+      console.warn('[lead-magnet] lead no guardado:', name, phone);
+    }
   });
 }
 </script>
