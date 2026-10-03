@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/blog/:slug",
-      "destination": "/api/blog-og?slug=:slug"
+      "destination": "/index.html"
     },
     {
       "source": "/((?!guia-5-senales|guide|assets|og-image).*)",

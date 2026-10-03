@@ -6,7 +6,7 @@ export const config = {
 
 export default function middleware(request: Request) {
   const userAgent = request.headers.get('User-Agent') || ''
-  const isCrawler = /LinkedIn|facebookexternalhit|Twitterbot|Pinterest|Slack|Discord/i.test(userAgent)
+  const isCrawler = /LinkedIn|facebookexternalhit|Twitterbot|Pinterest|Slack|Discord|WhatsApp|TelegramBot/i.test(userAgent)
 
   // Solo interceptamos crawlers de redes sociales
   if (!isCrawler) return
@@ -29,6 +29,7 @@ export default function middleware(request: Request) {
   <meta property="og:url" content="https://veranomedia.click/blog/${slug}" />
   <meta property="og:type" content="article" />
   <meta property="og:image" content="https://veranomedia.click/og-image.jpg" />
+  <link rel="canonical" href="https://veranomedia.click/blog/${slug}" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="${article.title}" />
   <meta name="twitter:description" content="${article.excerpt}" />
