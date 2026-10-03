@@ -139,6 +139,16 @@ export const articles = [
     date: 'Septiembre 2026',
     published: true,
   },
+  {
+    id: 'plan-anual-marketing-pymes-rd',
+    title: 'El plan anual de marketing digital para pymes en RD',
+    category: 'Estrategia',
+    slug: 'plan-anual-marketing-pymes-rd',
+    readTime: 8,
+    excerpt: 'Un plan anual no es un cronograma perfecto: es una hoja de ruta con prioridades, mitigaciones y criterios escritos para parar lo que no funciona.',
+    date: 'Octubre 2026',
+    published: true,
+  },
 ]
 
 export type Article = typeof articles[0]

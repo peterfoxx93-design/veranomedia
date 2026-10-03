@@ -3488,6 +3488,254 @@ function ArticleCasoClinicaDental() {
   )
 }
 
+function ArticlePlanAnual() {
+  return (
+    <>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        <DropCap>C</DropCap>ada enero pasa lo mismo: alguien abre una hoja de cálculo, escribe
+        &quot;plan de marketing 2026&quot; en la primera celda y empieza a llenar meses con ideas sueltas
+        — publicar tres veces por semana, grabar un video, subir precios, probar anuncios. En marzo esa
+        hoja ya nadie la abre.
+      </p>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        No falló la disciplina del dueño. Falló el diseño del plan. Un plan anual que depende de que
+        alguien se acuerde de revisarlo es una lista de deseos con formato de documento: puede estar
+        bien escrita y no cambia ni un solo número del negocio.
+      </p>
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        En Verano Media armamos planes anuales para clínicas, bufetes, inmobiliarias y comercios en
+        República Dominicana. Los que sobreviven al año tienen tres cosas en común: son cortos, tienen
+        UNA prioridad por trimestre y traen escrito de antemano en qué condiciones se abandona una
+        táctica. Eso es todo el secreto, y en este artículo está la estructura completa.
+      </p>
+
+      <Separator />
+
+      <PullQuote>
+        Si no defines qué NO vas a hacer, lo que termina pasando es que no haces nada con foco.
+      </PullQuote>
+
+      <Separator />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        POR QUÉ LA MAYORÍA DE LOS PLANES ANUALES MUERE EN FEBRERO
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Auditando negocios locales encontramos siempre las mismas tres causas de muerte. Ninguna tiene
+        que ver con falta de esfuerzo ni con falta de ideas.
+      </p>
+
+      <CheckList
+        items={[
+          'El plan no tiene una prioridad: doce meses con quince iniciativas activas significa que ninguna llega a tener datos para decidir.',
+          'No hay criterio de abandono: sin una regla escrita para parar, cada táctica mediocre se queda ocupando presupuesto y tiempo del dueño.',
+          'Nadie mide antes de empezar: sin línea base no se puede saber si el mes fue bueno o si simplemente hubo suerte.',
+        ]}
+      />
+
+      <DataBox icon="🎯">
+        El 82% de los hogares dominicanos compra por WhatsApp. Leído como plan anual, eso significa que
+        si tu estrategia de doce meses no incluye una pieza que capture y responda por WhatsApp en
+        pocos minutos, no estás siguiendo al mercado — le estás pidiendo al cliente que cambie de
+        hábito para comprarte. Y el cliente no cambia de hábito.
+      </DataBox>
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        LA ESTRUCTURA MÍNIMA: CUATRO TRIMESTRES, CUATRO PREGUNTAS
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Un año no se planifica por meses, se planifica por trimestres. El mes es demasiado corto para
+        mostrar resultados y demasiado largo para mantener el foco. El trimestre tiene el tamaño
+        correcto: doce semanas alcanzan para ejecutar una pieza seria y ver si mueve la aguja.
+      </p>
+
+      <MiniTable
+        rows={[
+          ['Ene–Mar', 'Calidad del activo digital'],
+          ['Abr–Jun', 'Contenido + captación'],
+          ['Jul–Sep', 'Conversión + retención'],
+          ['Oct–Dic', 'Escalamiento + cierre'],
+        ]}
+      />
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Cada trimestre responde una sola pregunta. En el primero: ¿el activo digital está en
+        condiciones de recibir tráfico? En el segundo: ¿estamos generando demanda suficiente? En el
+        tercero: ¿esa demanda se está convirtiendo en clientes? En el cuarto: ¿podemos hacer más con
+        lo mismo?
+      </p>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        El orden importa más que la duración. Meter pauta pagada en el trimestre de captación cuando la
+        web carga lenta y el WhatsApp contesta al día siguiente es pagar por llevar gente a una puerta
+        cerrada. El precio del clic no bajó porque tú no arreglaste la puerta.
+      </p>
+
+      <DataBox icon="📊">
+        Dos datos que ordenan las prioridades: el 36,1% de los negocios dominicanos opera sin
+        automatizar ningún proceso, y solo el 27,8% se declara listo para usar IA (Alegra 2026). No
+        competís contra el mejor del mundo: competís contra el promedio de tu cuadra. La ventaja está
+        disponible más barata de lo que la gente cree.
+      </DataBox>
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        QUÉ MEDIR CADA TRIMESTRE (Y SOLO ESO)
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Una métrica principal por trimestre. Las demás se miran, pero no se gestionan. Si el plan tiene
+        catorce indicadores, en la práctica no tiene ninguno: nadie puede tomar una decisión con
+        catorce señales contradictorias.
+      </p>
+
+      <CheckList
+        items={[
+          'Ene–Mar: velocidad de carga, estabilidad del sitio y fichas de Google completas y correctas.',
+          'Abr–Jun: publicaciones sostenidas y consultas orgánicas entrantes (no likes, consultas).',
+          'Jul–Sep: leads útiles, tiempo de primera respuesta y costo por lead.',
+          'Oct–Dic: clientes cerrados, ticket promedio y relación entre lo que cuesta atraer y lo que deja cada cliente.',
+        ]}
+      />
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Fíjate en la secuencia: primero la infraestructura, después el volumen, después la conversión,
+        después la economía. Cada trimestre se apoya en el anterior. Es la diferencia entre planificar
+        y coleccionar tácticas.
+      </p>
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        LO QUE RECOMENDAMOS NO MEDIR
+      </h2>
+
+      <ul className="list-disc pl-6 space-y-2 my-6 text-base text-[#636366] leading-relaxed">
+        <li>Métricas de vanidad sin un objetivo detrás: alcance y reproducciones que no llevan a ninguna acción.</li>
+        <li>Seguidores como meta: un perfil con miles de seguidores y cero consultas registradas no es un activo, es un adorno.</li>
+        <li>Publicaciones sin llamada a la acción: contenido que entretiene y no deja ruta hacia tu negocio.</li>
+      </ul>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        No es que estas cifras sean malas: es que no cambian decisiones cuando se miran solas. Un
+        pico de alcance puede ser buena suerte del algoritmo. Una consulta que llegó a las once de la
+        noche y nadie respondió es un dato que sí cambia lo que vas a hacer el lunes.
+      </p>
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        LOS TRES FRENOS QUE APARECEN SIEMPRE
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Cualquier plan anual se topa con los mismos tres frenos. No son sorpresas, así que pueden
+        planificarse en lugar de sufrirse.
+      </p>
+
+      <CheckList
+        items={[
+          'Presupuesto: no se trata de gastar más, sino de gastar en orden. Un tercio en activo digital, un tercio en captación, un tercio en conversión y seguimiento.',
+          'Tiempo del dueño: presupuesta 4 horas mensuales para revisar números. Si el plan exige más, no se va a cumplir.',
+          'Producción de contenido: decide con quién cuenta de antemano. El mes en que no haya quien grabe es el mes en que la cuenta se queda muda.',
+        ]}
+      />
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        El freno más caro de los tres no es el dinero. Es el tiempo del dueño no presupuestado: cuando
+        el plan depende de que él produzca todo, el plan avanza exactamente al ritmo de su peor semana.
+      </p>
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        EL CRITERIO PARA PARAR: REGLA DE LOS 90 DÍAS
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Cada táctica entra al plan con su regla de salida escrita desde el día uno. Esto es lo que
+        separa un plan de un capricho: la decisión de parar se toma cuando las condiciones se cumplen,
+        no cuando ya no hay presupuesto.
+      </p>
+
+      <MiniTable
+        rows={[
+          ['Sin consultas en 90 días', 'Revisar mensaje y canal antes de renovar'],
+          ['Consultas que no llegan a cita', 'El problema está en la respuesta, no en el anuncio'],
+          ['Costo por lead sube dos meses seguidos', 'Pausar y reasignar a la pieza que sí convierte'],
+          ['Táctica cumplida', 'Documentar qué funcionó y reemplazarla por una nueva'],
+        ]}
+      />
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        UN AÑO REAL, TRIMESTRE A TRIMESTRE
+      </h2>
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Cuando aplicamos esta estructura a uno de los negocios que ya documentamos — el caso del
+        consultorio dental que pasó de cero consultas digitales confiables a veinte pacientes nuevos en
+        un mes y medio — el plan no tenía nada exótico:
+      </p>
+
+      <CheckList
+        items={[
+          'Primeras semanas: reparar el activo. Web rápida, ficha de Google con horarios y fotos reales, un solo botón claro para agendar.',
+          'Semanas siguientes: activar la respuesta. Cada mensaje contestado en minutos, con una ruta directa a la cita.',
+          'Cierre del bloque: medir. Cuántas consultas entraron, cuántas se convirtieron, cuánto costó cada una.',
+        ]}
+      />
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Nada de eso costó una fortuna ni requirió un equipo grande. Requirió orden: una pieza por
+        semana, en la secuencia correcta, con alguien midiendo el resultado. El mismo orden que después
+        se replica mes tras mes durante el año.
+      </p>
+
+      <h2 className="font-serif text-2xl md:text-3xl text-[#1C1C1E] mt-12 mb-6 leading-tight">
+        CÓMO EMPEZAR ESTE MES
+      </h2>
+
+      <CheckList
+        items={[
+          'Define la prioridad del trimestre en una sola frase. Si necesitas dos, todavía no tienes prioridad.',
+          'Mide tu línea base esta semana: cuántas consultas entraron, por dónde y cuántas se convirtieron.',
+          'Escribe tus dos reglas de abandono antes de contratar o invertir un peso.',
+          'Agenda la revisión trimestral en el calendario, con fecha y hora, no como intención.',
+          'Ejecuta una pieza por semana. Una bien hecha vale más que cuatro a medias.',
+        ]}
+      />
+
+      <p className="text-base md:text-lg text-[#636366] leading-[1.8]">
+        Un plan anual no es un cronograma perfecto. Es una hoja de ruta con prioridades, mitigaciones
+        y criterios para parar lo que no funciona. Escribirlo toma una tarde; no escribirlo cuesta un
+        año entero de intentos sueltos.
+      </p>
+
+      <Separator />
+
+      <div className="my-12 p-6 md:p-8 bg-[#F5F5F7] rounded-vm-lg">
+        <p className="font-serif text-xl md:text-2xl text-[#1C1C1E] leading-snug mb-4">
+          Nosotros lo ejecutamos por ti.
+        </p>
+        <p className="text-base text-[#636366] leading-[1.8] mb-6">
+          Revisamos tu negocio, te entregamos el plan por trimestres con sus métricas y sus reglas de
+          abandono, y lo ejecutamos mes a mes. Si tu plan va a terminar archivado como un PDF, mejor
+          hablemos antes de escribirlo.
+        </p>
+        <div className="flex flex-wrap gap-3">
+          <Link
+            to="/diagnostico"
+            className="rounded-full bg-[#5170FF] text-white text-sm font-medium px-6 py-3"
+          >
+            Diagnóstico gratuito
+          </Link>
+          <a
+            href="https://wa.me/18093586497"
+            className="rounded-full border border-[#E8E8ED] text-[#1C1C1E] text-sm font-medium px-6 py-3"
+          >
+            Escribir por WhatsApp
+          </a>
+        </div>
+      </div>
+    </>
+  )
+}
+
   function renderArticleBody() {
     switch (article.slug) {
       case 'landing-vs-sitio':
@@ -3524,6 +3772,8 @@ function ArticleCasoClinicaDental() {
         return <ArticleDejamePensarlo />
       case 'caso-clinica-dental-0-a-20-pacientes':
         return <ArticleCasoClinicaDental />
+      case 'plan-anual-marketing-pymes-rd':
+        return <ArticlePlanAnual />
       default:
         return <ArticleLandingVsSitio />
   }
